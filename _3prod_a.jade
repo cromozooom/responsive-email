@@ -1,0 +1,47 @@
+extends template/3prod_a
+
+block 3prod_a
+	include config
+	- var template = "3prod_a"
+
+	- var imgProd01 				= "http://placehold.it/600/334d67/ffffff&text=Prod+01/3"
+	- var imgProd02 				= "http://placehold.it/600/334d67/ffffff&text=Prod+02/3"
+	- var imgProd03 				= "http://placehold.it/600/334d67/ffffff&text=Prod+02/3"
+
+	- var priceProd01			= "10"
+	- var oldPriceProd01 		= "15"
+
+	- var priceProd02			= "25"
+	- var oldPriceProd02 		= "50"
+
+	- var priceProd03			= "25"
+	- var oldPriceProd03 		= "50"
+
+	if lang == "en"
+		- var cta1 					= "Buy now"
+		- var cta2 					= "Buy at"
+
+
+		- var titleProd01			= "Title prod01/3 en"
+		- var linkProd01			= "linkprod01en"
+
+
+		- var titleProd02			= "Title prod02/3 en"
+		- var linkProd02			= "linkprod02en"
+
+		- var titleProd03			= "Title prod03/3 en"
+		- var linkProd03			= "linkprod03en"
+
+
+	if lang == "it"
+		- var cta1 					= "Acqusita"
+		- var cta2 					= "Acqusita a"
+
+		- var titleProd01			= "Title prod01/3 it"
+		- var linkProd01			= "linkprod01it"
+
+		- var titleProd02			= "Title prod02/3 it"
+		- var linkProd02			= "linkprod02it"
+
+		- var titleProd03			= "Title prod03/3 it"
+		- var linkProd03			= "linkprod03it"

@@ -1,0 +1,42 @@
+extends template/2banner_a
+
+block 2banner
+	include config
+	- var template = "2 banner"
+
+	- var imgProd01 				= "http://placehold.it/600x400/808080/ffffff&text=Banner+01/2"
+	- var imgProd02 				= "http://placehold.it/600x400/334d67/ffffff&text=Banner+02/2"
+
+	if lang == "en"
+		- var cta1 					= "Buy now"
+		- var cta2 					= "Buy at"
+
+
+		- var titleProd01			= "Title prod01 en"
+		- var linkProd01			= "linkprod01en"
+		- var priceProd01			= "10"
+		- var oldPriceProd01 		= "15"
+
+
+		- var titleProd02			= "Title prod02 en"
+		- var linkProd02			= "linkprod02en"
+		- var priceProd02			= "25"
+		- var oldPriceProd02 		= "50"
+
+
+	if lang == "it"
+		- var cta1 					= "Acqusita"
+		- var cta2 					= "Acqusita a"
+
+		- var titleProd01			= "Title prod01 it"
+		- var linkProd01			= "linkprod01it"
+		- var priceProd01			= "10"
+		- var oldPriceProd01 		= "15"
+
+
+
+		- var titleProd02			= "Title prod02 it"
+		- var linkProd02			= "linkprod02it"
+		- var priceProd01			= "10"
+		- var oldPriceProd01 		= "15"
+

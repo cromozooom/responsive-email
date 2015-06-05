@@ -1,0 +1,33 @@
+extends ../view/columns/oneColumn
+block contentCol1_1
+	tr
+		td
+			a(href="#")
+				img(src="http://placehold.it/600x500/334d67/ffffff&text=Hero+Image+I" border="0" alt="The White Whale" width="600" hspace="0" vspace="0" style="max-width:100%;")
+	tr
+		td(align="center")
+			//- //////////////////////////////////////////////////////////////////
+			//- CTA
+			//- //////////////////////////////////////////////////////////////////
+			br
+			table(border="0" cellspacing="0" cellpadding="0" align="center")
+				tr
+					td
+						div
+							// [if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://litmus.com" style="height:36px;v-text-anchor:middle;width:150px;" arcsize="5%" strokecolor="#EB7035" fillcolor="#EB7035"><w:anchorlock/><center style="color:#ffffff;font-family:Helvetica, Arial,sans-serif;font-size:16px;">I am a button &rarr;</center></v:roundrect><![endif]
+							a.buttonsLink(href="http://buttons.cm")
+								| Buy Now &rarr;
+
+			br
+			.hr
+	tr
+		td.container-padding.content(align="left")
+			br
+			.title
+				| Single Column Fluid Layout
+			br
+			.body-text
+				| This is an example of a single column fluid layout. There are no columns. Because the container table width is set to 100%, it automatically resizes itself to all devices. The magic of good old fashioned HTML.
+				br
+				br
+				| The media query change we make is to decrease the content margin from 24px to 12px for devices up to max width of 400px.

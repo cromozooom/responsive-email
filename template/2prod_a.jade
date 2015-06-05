@@ -1,0 +1,51 @@
+extends ../view/columns/twoColumn
+
+block info
+	block infoTwoColProdA
+
+block contentCol1_2
+	//-p #{template}
+	a(href="#{linkProd01}")
+		img.image(src="#{imgProd01}" border="0" alt="#{titleProd}" width="100%" hspace="0" vspace="0" style="max-width:100%;")
+	div.titlePrd
+		| #{titleProd01}
+	if oldPriceProd01
+		.subtitle
+			| #{priceProd01} / #{oldPriceProd01} €
+	else
+		.subtitle
+			| #{priceProd01} €
+	//-.col-copy
+		| It's worse than being in the whirled woods, the last day of the year! Who'd go climbing after chestnuts now? But there they go, all cursing, and here I don't.
+	br
+
+	table(border="0" cellspacing="0" cellpadding="0" align="left")
+		tr
+			td
+				div
+					// [if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://litmus.com" style="height:36px;v-text-anchor:middle;width:150px;" arcsize="5%" strokecolor="#EB7035" fillcolor="#EB7035"><w:anchorlock/><center style="color:#ffffff;font-family:Helvetica, Arial,sans-serif;font-size:16px;">I am a button &rarr;</center></v:roundrect><![endif]
+					a.buttonsLink(href="http://buttons.cm")
+						| #{cta1} &rarr;
+
+block contentCol2_2
+	a(href="#{linkProd02}")
+		img.image(src="#{imgProd02}" border="0" alt="#{titleProd}" width="100%" hspace="0" vspace="0" style="max-width:100%;")
+	div.titlePrd
+		| #{titleProd02}
+	if oldPriceProd02
+		.subtitle
+			| #{priceProd02} / #{oldPriceProd02} €
+	else
+		.subtitle
+			| #{priceProd02} €
+	//-.col-copy
+		| It's worse than being in the whirled woods, the last day of the year! Who'd go climbing after chestnuts now? But there they go, all cursing, and here I don't.
+	br
+
+	table(border="0" cellspacing="0" cellpadding="0" align="left")
+		tr
+			td
+				div
+					// [if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://litmus.com" style="height:36px;v-text-anchor:middle;width:150px;" arcsize="5%" strokecolor="#EB7035" fillcolor="#EB7035"><w:anchorlock/><center style="color:#ffffff;font-family:Helvetica, Arial,sans-serif;font-size:16px;">I am a button &rarr;</center></v:roundrect><![endif]
+					a.buttonsLink(href="http://buttons.cm")
+						| #{cta1} &rarr;
