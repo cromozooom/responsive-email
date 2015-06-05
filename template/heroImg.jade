@@ -19,18 +19,20 @@ block contentCol1_1
 		tr
 			td.container-padding.content(align="center" bgcolor="#{bgColorCopy}")
 				br
-				.title(style="#{fontXXL} #{fontSans} color:#{colorCopy};")
+				.title(style="#{fontXXXL} #{fontSans} color:#{colorHeader};")
 					| #{header}
+				br
+				.hr(style="border-bottom: 1px solid #092439;")
 				br
 				span(align="center" style="#{fontM} #{fontSans} color:#{colorCopy};")
 					if row01
-						| This is an example of a single column fluid layout. There are no columns. Because the container table width is set to 100%, it automatically resizes itself to all devices. The magic of good old fashioned HTML.
+						| #{row01}
 						br
 					if row02
-						| This is an example of a single column fluid layout. There are no columns. Because the container table width is set to 100%, it automatically resizes itself to all devices. The magic of good old fashioned HTML.
+						| #{row02}
 						br
-					if row02
-						| This is an example of a single column fluid layout. There are no columns. Because the container table width is set to 100%, it automatically resizes itself to all devices. The magic of good old fashioned HTML.
+					if row03
+						| #{row03}
 						br
 		tr
 			td(align="center"  bgcolor="#{bgColorCopy}")
