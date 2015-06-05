@@ -11,11 +11,7 @@ block info
 			- var LogoStoreTxt 			= "football4U"
 			- var LogoImgLink 			= "http://www.football4u.it/it/"
 
-		- var instagram = "https://instagram.com/football4uofficial/"
-		- var facebook = "https://www.facebook.com/Football4U.it"
-		- var blog = "http://blog.football4u.it/"
-		- var youTube = "https://www.youtube.com/channel/UCzqG3NzsJtmTa4qJ54ssUEg/"
-		- var gPlus = "https://plus.google.com/+Football4uItF4U/"
+		- var trakingSource = "_header&ga_medium=DEM&ga_source=NL"
 
 		- var logoImgHeight 			= "50px"
 		- var socilaIconWidth 			= "40px"
@@ -24,10 +20,10 @@ block info
 block contentCol1_2
 	table(cellpadding="0" cellspacing="0" width="200" align="center")
 		tr
-			td(height="20px")
+			td(height="10px")
 		tr
 			td(align="center" valign="top")
-				a(href="#{LogoImgLink}" height="#{logoImgHeight}")
+				a(href="#{LogoImgLink}?ga_campaign=#{data}#{lang}#{trakingSource}" height="#{logoImgHeight}")
 					img(src="#{imgLink}#{LogoImg}" alt="#{LogoStoreTxt}" style="display: block; border: 0; height: #{logoImgHeight} !important;")
 		tr
 			td(height="10px")
@@ -36,7 +32,7 @@ block contentCol1_2
 block contentCol2_2
 	table(cellpadding="0" cellspacing="0" width="200" align="center" valign="top")
 		tr
-			td(height="20px" colspan="10")
+			td(height="10px" colspan="10")
 		tr
 			td(align="center" colspan="10")
 				span(style="#{fontS} color: #{colorCopy};") #{folowUscopy}
@@ -45,23 +41,27 @@ block contentCol2_2
 		tr
 			if facebook
 				td(align="center" width="#{socilaIconWidth}" valign="top")
-					a(href="#{facebook}")
-						img(src="#{imgLink}facebook.jpg" alt="" style="display: block; border: 0; height: auto !important;")
+					a(href="#{facebook}?ga_campaign=#{data}#{lang}#{trakingSource}")
+						img(src="#{imgLink}facebook.jpg" alt="facebook - #{siteName}" style="display: block; border: 0; height: auto !important;")
 			if youTube
 				td(align="center" width="#{socilaIconWidth}" valign="top")
-					a(href="#{youTube}")
-						img(src="#{imgLink}youTube.jpg" alt="" style="display: block; border: 0; height: auto !important;")
+					a(href="#{youTube}?ga_campaign=#{data}#{lang}#{trakingSource}")
+						img(src="#{imgLink}youTube.jpg" alt="youtube - #{siteName}" style="display: block; border: 0; height: auto !important;")
 			if gPlus
 				td(align="center" width="#{socilaIconWidth}" valign="top")
-					a(href="#{gPlus}")
-						img(src="#{imgLink}gPlus.jpg" alt="" style="display: block; border: 0; height: auto !important;")
+					a(href="#{gPlus}?ga_campaign=#{data}#{lang}#{trakingSource}")
+						img(src="#{imgLink}gPlus.jpg" alt="gooogle Plus - #{siteName}" style="display: block; border: 0; height: auto !important;")
 			if instagram
 				td(align="center" width="#{socilaIconWidth}" valign="top")
-					a(href="#{instagram}")
-						img(src="#{imgLink}instagram.jpg" alt="" style="display: block; border: 0; height: auto !important;")
+					a(href="#{instagram}?ga_campaign=#{data}#{lang}#{trakingSource}")
+						img(src="#{imgLink}instagram.jpg" alt="instagram - #{siteName}" style="display: block; border: 0; height: auto !important;")
 			if blog
 				td(align="center" width="#{socilaIconWidth}" valign="top")
-					a(href="#{blog}")
-						img(src="#{imgLink}blog.jpg" alt="" style="display: block; border: 0; height: auto !important;")
+					a(href="#{blog}?ga_campaign=#{data}#{lang}#{trakingSource}")
+						img(src="#{imgLink}blog.jpg" alt="blog - #{siteName}" style="display: block; border: 0; height: auto !important;")
+			if pinterest
+				td(align="center" width="#{socilaIconWidth}" valign="top")
+					a(href="#{pinterest}?ga_campaign=#{data}#{lang}#{trakingSource}")
+						img(src="#{imgLink}pinterest.jpg" alt="pinterest - #{siteName}" style="display: block; border: 0; height: auto !important;")
 		tr
-			td(height="10px")
+			td(height="10px" colspan="10")

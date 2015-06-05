@@ -34,6 +34,7 @@ block info
 		- var colorNav 					= "#a2a2a2"
 		- var bgColorNav 				= "#33333d"
 		- var padding 					= "padding: 15px 10px 15px 0px;"
+		- var trakingSource 			= "_header&ga_medium=DEM&ga_source=NL"
 
 block contentCol1_1
 	tr
@@ -44,31 +45,31 @@ block contentCol1_1
 				tr
 					if Nav01
 						td(align="center" style="#{padding}")
-							a(href="#{NavLink01}#{NavigationTraking}" style="color: #{colorNav}; #{fontS} #{decNone} #{fontSans}")
+							a(href="#{NavLink01}?ga_campaign=#{data}#{lang}#{trakingSource}" style="color: #{colorNav}; #{fontS} #{decNone} #{fontSans}")
 								span(style="color: #{colorNav}; #{fontS} #{decNone} #{fontSans}")
 									soan #{Nav01}
 					if Nav02
 						td(align="center" style="#{padding}")
-							a(href="#{NavLink02}#{NavigationTraking}" style="color: #{colorNav}; #{fontS} #{decNone} #{fontSans}")
+							a(href="#{NavLink02}?ga_campaign=#{data}#{lang}#{trakingSource}" style="color: #{colorNav}; #{fontS} #{decNone} #{fontSans}")
 								span(style="color: #{colorNav}; #{fontS} #{decNone} #{fontSans}")
 									soan #{Nav02}
 					if Nav03
 						td(align="center" style="#{padding}")
-							a(href="#{NavLink03}#{NavigationTraking}" style="color: #{colorNav}; #{fontS} #{decNone} #{fontSans}")
+							a(href="#{NavLink03}?ga_campaign=#{data}#{lang}#{trakingSource}" style="color: #{colorNav}; #{fontS} #{decNone} #{fontSans}")
 								span(style="color: #{colorNav}; #{fontS} #{decNone} #{fontSans}")
 									soan #{Nav03}
 					if Nav04
 						td(align="center" style="#{padding}")
-							a(href="#{NavLink04}#{NavigationTraking}" style="color: #{colorNav}; #{fontS} #{decNone} #{fontSans}")
+							a(href="#{NavLink04}?ga_campaign=#{data}#{lang}#{trakingSource}" style="color: #{colorNav}; #{fontS} #{decNone} #{fontSans}")
 								span(style="color: #{colorNav}; #{fontS} #{decNone} #{fontSans}")
 									soan #{Nav04}
 					if Nav05
 						td(align="center" style="#{padding}")
-							a(href="#{NavLink05}#{NavigationTraking}" style="color: #{colorNav}; #{fontS} #{decNone} #{fontSans}")
+							a(href="#{NavLink05}?ga_campaign=#{data}#{lang}#{trakingSource}" style="color: #{colorNav}; #{fontS} #{decNone} #{fontSans}")
 								span(style="color: #{colorNav}; #{fontS} #{decNone} #{fontSans}")
 									soan #{Nav05}
 					if Nav06
 						td(align="center" style="padding: 15px 20px 15px 20px; #{fontS} #{decNone} #{fontSans} background-color: #{colorPrimary};")
-							a(href="#{NavLink06}#{NavigationTraking}" style="color: #{colorSecondary}; #{fontS} #{decNone} #{fontSans}")
+							a(href="#{NavLink06}?ga_campaign=#{data}#{lang}#{trakingSource}" style="color: #{colorSecondary}; #{fontS} #{decNone} #{fontSans}")
 								strong(style="color: #{colorSecondary}; #{fontS} #{decNone} #{fontSans}")
 									| #{Nav06}

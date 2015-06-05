@@ -1,0 +1,15 @@
+block ctaCustom
+
+table(width="100%" border="0" cellspacing="0" cellpadding="0" align="#{align}")
+	tr
+		td(align="#{align}")
+			div
+				//[if mso]
+					<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" style="height:#{height}; v-text-anchor:middle; width:#{width};" arcsize="#{arcsize}" strokecolor="#{bgColor}" fillcolor="#{bgColor}">
+					<w:anchorlock/>
+					<center style="color:#{txtColor};#{fontSans}#{fontM}">I am a button &rarr;</center>
+					</v:roundrect>
+					<![endif]
+				a(href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" style="background-color:#{bgColor}; border:1px solid #{bgColor}; border-radius:#{radiusSize}; color:#{txtColor}; display:inline-block;#{fontSans}#{fontL} line-height:#{lineheight}; text-align:center; text-decoration:none; width:#{width};-webkit-text-size-adjust:none;mso-hide:all;")
+					strong
+						| #{ctaCopy} &rarr;
