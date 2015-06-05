@@ -1,74 +1,31 @@
 extends ../view/columns/threeColumn
 block info
-	block 3prod_a
+
+block ctaCustom
+	- var bgColor		= "#b5ff00"
+	- var txtColor		= "#33333d"
+	- var width			= "120px"
+	- var height 		= "36px"
+	- var arcsize 		= "5%"
+	- var radiusSize 	= "2px"
+	- var lineheight 	= "30px"
+	- var align 		= "right"
+	- var fontSize		= "font-size: 14px; line-height: 11px;"
 
 block contentCol1_3
-	//-p #{template} #{lang}
-
-	a(href="#{linkProd01}")
-		img.image(src="#{imgProd01}" border="0" alt="#{titleProd}" width="100%" hspace="0" vspace="0" style="max-width:100%;")
-	div.titlePrd
-		| #{titleProd01}
-	if oldPriceProd01
-		.subtitle
-			| #{priceProd01} / #{oldPriceProd01} €
-	else
-		.subtitle
-			| #{priceProd01} €
-	//-.col-copy
-		| It's worse than being in the whirled woods, the last day of the year! Who'd go climbing after chestnuts now? But there they go, all cursing, and here I don't.
-	br
-
-	table(border="0" cellspacing="0" cellpadding="0" align="left")
-		tr
-			td
-				div
-					// [if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://litmus.com" style="height:36px;v-text-anchor:middle;width:150px;" arcsize="5%" strokecolor="#EB7035" fillcolor="#EB7035"><w:anchorlock/><center style="color:#ffffff;font-family:Helvetica, Arial,sans-serif;font-size:16px;">I am a button &rarr;</center></v:roundrect><![endif]
-					a.buttonsLink(href="http://buttons.cm")
-						| #{cta1} &rarr;
+	block prodTemplate01
+		- var prod = "01"
+		block 3prod_a
+		include ../view/prod/prod.jade
 
 block contentCol2_3
-	a(href="#{linkProd02}")
-		img.image(src="#{imgProd02}" border="0" alt="#{titleProd}" width="100%" hspace="0" vspace="0" style="max-width:100%;")
-	div.titlePrd
-		| #{titleProd02}
-	if oldPriceProd02
-		.subtitle
-			| #{priceProd02} / #{oldPriceProd02} €
-	else
-		.subtitle
-			| #{priceProd02} €
-	//-.col-copy
-		| It's worse than being in the whirled woods, the last day of the year! Who'd go climbing after chestnuts now? But there they go, all cursing, and here I don't.
-	br
-
-	table(border="0" cellspacing="0" cellpadding="0" align="left")
-		tr
-			td
-				div
-					// [if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://litmus.com" style="height:36px;v-text-anchor:middle;width:150px;" arcsize="5%" strokecolor="#EB7035" fillcolor="#EB7035"><w:anchorlock/><center style="color:#ffffff;font-family:Helvetica, Arial,sans-serif;font-size:16px;">I am a button &rarr;</center></v:roundrect><![endif]
-					a.buttonsLink(href="http://buttons.cm")
-						| #{cta1} &rarr;
+	block prodTemplate02
+		- var prod = "02"
+		block 3prod_a
+		include ../view/prod/prod.jade
 
 block contentCol3_3
-	a(href="#{linkProd03}")
-		img.image(src="#{imgProd03}" border="0" alt="#{titleProd}" width="100%" hspace="0" vspace="0" style="max-width:100%;")
-	div.titlePrd
-		| #{titleProd03}
-	if oldPriceProd01
-		.subtitle
-			| #{priceProd03} / #{oldPriceProd03} €
-	else
-		.subtitle
-			| #{priceProd03} €
-	//-.col-copy
-		| It's worse than being in the whirled woods, the last day of the year! Who'd go climbing after chestnuts now? But there they go, all cursing, and here I don't.
-	br
-
-	table(border="0" cellspacing="0" cellpadding="0" align="left")
-		tr
-			td
-				div
-					// [if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://litmus.com" style="height:36px;v-text-anchor:middle;width:150px;" arcsize="5%" strokecolor="#EB7035" fillcolor="#EB7035"><w:anchorlock/><center style="color:#ffffff;font-family:Helvetica, Arial,sans-serif;font-size:16px;">I am a button &rarr;</center></v:roundrect><![endif]
-					a.buttonsLink(href="http://buttons.cm")
-						| #{cta1} &rarr;
+	block prodTemplate03
+		- var prod = "03"
+		block 3prod_a
+		include ../view/prod/prod.jade

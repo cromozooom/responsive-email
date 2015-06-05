@@ -1,0 +1,23 @@
+
+- var oldPriceProdColor		= "#b2b2b2"
+
+a(href="#{linkProd}")
+	img.image(src="#{imgProd}" border="0" alt="#{titleProd}" width="100%" hspace="0" vspace="0" style="max-width:100%;")
+br
+br
+.titleProd(style="#{fontS}")
+	strong
+		| #{titleProd}
+if oldPriceProd
+	.subtitle(style="text-align: right;")
+		span(style="#{fontL}#{decThrough} color:#{oldPriceProdColor}")
+			| #{oldPriceProd}
+		//span(style="#{fontL} color:#{oldPriceProdColor}")
+			|  | 
+		strong(style="#{fontXL}")
+			| #{priceProd} €
+else
+	.subtitle(style="#{fontXL}")
+		| #{priceProd} €
+br
+include ../cta/cta.jade
