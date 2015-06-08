@@ -16,6 +16,24 @@ block info
 
 block contentCol1_1
 	block heroImg
+		if coupon
+			tr
+				td(align="center" bgcolor="#{bgColorCopy}")
+					span(style="#{center}#{fontSans} color:#{colorCopy};")
+						br
+						| #{couponCopyRow01}
+						center
+							br
+							table(cellpadding="10" cellspacing="0" border="0")
+								tr
+									td(style="border: 1px solid #{colorHeader};")
+										span(style="#{fontXXXL} #{fontSans} color:#{colorHeader};")
+											| #{coupon}
+						br
+						| #{couponCopyRow02}
+						br
+						br
+
 		tr
 			td(align="center" bgcolor="#{bgCopy}")
 				a(href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" target="_blank")
@@ -42,6 +60,10 @@ block contentCol1_1
 					if cowntdown
 						center
 							img(src="http://www.solopx.com/staging/epi/EmailCountdownv01/gif.php?time=#{cowntdown}" border="0" alt="27-03" hspace="0" vspace="0" style="max-width:100%; font-weight: bold; font-size: 24px; color: #272727; font-family: Helvetica, Arial, sans-serif;")
+							br
+							span(style="#{fontXXS}#{italic}") #{copyCowntdown}
+						br
+						.hr(style="border-bottom: 1px solid #092439;")
 					if size == "man"
 						br
 						table(cellpadding="5" cellspacing="0" border="0" width="100%")
@@ -159,6 +181,7 @@ block contentCol1_1
 											//- (7)
 		tr
 			td(align="center"  bgcolor="#{bgColorCopy}")
+				br
 				include ../view/cta/cta.jade
 				br
 
