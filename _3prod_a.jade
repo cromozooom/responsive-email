@@ -4,7 +4,7 @@ block 3prod_a
 	include config
 	- var template 						= "3prod_a"
 	if lang == "en"
-		// see arrow on this page http://character-code.com/arrows-html-codes.php
+		//- see arrow on this page http://character-code.com/arrows-html-codes.php
 		- var ctaCopy 						= "BUY NOW &#10095;&#10095;"
 		if prod == "01"
 			- var linkCTA 				= "http://www.football4u.it/it/nike-mercurial-superfly-fg-wolf-grey-hyper-punch.html"
@@ -27,7 +27,7 @@ block 3prod_a
 			- var priceProd 			= "247,5"
 			- var oldPriceProd			= "275,0"
 	else
-		// see arrow on this page http://character-code.com/arrows-html-codes.php
+		//- see arrow on this page http://character-code.com/arrows-html-codes.php
 		- var ctaCopy 				= "Acquista &#10095;&#10095;"
 		if prod == "01"
 			- var linkCTA 				= "http://www.football4u.it/it/nike-mercurial-superfly-fg-wolf-grey-hyper-punch.html"
@@ -50,7 +50,7 @@ block 3prod_a
 			- var priceProd 			= "247,50"
 			- var oldPriceProd			= "275,00"
 
-	// customize button variable optional
+	//- customize button variable optional
 	block ctaCustom
 		//- 01 = simple CTA (buy now or Acquista)
 		//- 02 = CTA with price (buy at {priceProd} or Acquista a {priceProd})
