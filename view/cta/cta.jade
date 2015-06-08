@@ -7,9 +7,23 @@ table(width="100%" border="0" cellspacing="0" cellpadding="0" align="#{align}")
 				//[if mso]
 					<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" style="height:#{height}; v-text-anchor:middle; width:#{width};" arcsize="#{arcsize}" strokecolor="#{bgColor}" fillcolor="#{bgColor}">
 					<w:anchorlock/>
-					<center style="color:#{txtColor};#{fontSans}#{fontSize}">I am a button &rarr;</center>
+					<center style="color:#{txtColor};#{fontSans}#{fontSize}">#{ctaCopy} &rarr;</center>
 					</v:roundrect>
 					<![endif]
 				a(href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" style="background-color:#{bgColor}; border:1px solid #{bgColor}; border-radius:#{radiusSize}; color:#{txtColor}; display:inline-block;#{fontSans}#{fontSize} line-height:#{lineheight}; text-align:center; text-decoration:none; width:#{width};-webkit-text-size-adjust:none;mso-hide:all;")
-					strong
-						| #{ctaCopy} &rarr;
+
+					//- simple CTA (buy now or Acquista)
+					//- -----------------------------------------------------------------
+					if buttonType == "01"
+						strong
+							| !{ctaCopy}
+
+					//- CTA with price (buy at {price} or Acquista a {price})
+					//- -----------------------------------------------------------------
+					if buttonType == "02"
+						if lang == "en"
+							strong
+								| !{ctaCopy} at #{priceProd}
+						if lang == "it"
+							strong
+								| !{ctaCopy} a #{priceProd}

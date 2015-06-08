@@ -9,13 +9,12 @@ br
 	strong
 		| #{titleProd}
 if oldPriceProd
-	.subtitle(style="text-align: left;")
-		span(style="#{fontL}#{decThrough} color:#{oldPriceProdColor}")
-			| #{oldPriceProd}
-		//span(style="#{fontL} color:#{oldPriceProdColor}")
-			|  | 
+	.subtitle(style="#{left}")
 		strong(style="#{fontXL}")
 			| #{priceProd} €
+			|  | 
+		span(style="#{fontL}#{decThrough} color:#{oldPriceProdColor}")
+			| #{oldPriceProd} 
 else
 	.subtitle(style="#{fontXL}")
 		| #{priceProd} €

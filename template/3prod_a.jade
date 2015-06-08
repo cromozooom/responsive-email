@@ -1,7 +1,17 @@
+//- template for 3 prod in line based on three col template
+//- is imported in "_3prod_a"
+//- -----------------------------------------------------------------
+
+//- has extend threeColumn template and add block info
+//- -----------------------------------------------------------------
 extends ../view/columns/threeColumn
 block info
 
+
+//- customize VTA variable default
+//- -----------------------------------------------------------------
 block ctaCustom
+	- var buttonType 	= "02"
 	- var bgColor		= "#b5ff00"
 	- var txtColor		= "#33333d"
 	- var width			= "120px"
@@ -12,18 +22,24 @@ block ctaCustom
 	- var align 		= "left"
 	- var fontSize		= "font-size: 14px; line-height: 11px;"
 
+//- 1 cols block
+//- -----------------------------------------------------------------
 block contentCol1_3
 	block prodTemplate01
 		- var prod = "01"
 		block 3prod_a
 		include ../view/prod/prod.jade
 
+//- 2 cols block
+//- -----------------------------------------------------------------
 block contentCol2_3
 	block prodTemplate02
 		- var prod = "02"
 		block 3prod_a
 		include ../view/prod/prod.jade
 
+//- 3 cols block
+//- -----------------------------------------------------------------
 block contentCol3_3
 	block prodTemplate03
 		- var prod = "03"

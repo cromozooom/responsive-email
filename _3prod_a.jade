@@ -2,9 +2,9 @@ extends template/3prod_a
 
 block 3prod_a
 	include config
-	- var template = "3prod_a"
-	- var ctaCopy 					= "BUY NOW en"
+	- var template 						= "3prod_a"
 	if lang == "en"
+		- var ctaCopy 						= "BUY NOW"
 		if prod == "01"
 			- var linkCTA 				= "http://www.football4u.it/it/nike-mercurial-superfly-fg-wolf-grey-hyper-punch.html"
 			- var imgProd				= "http://ffaasstt.football4u.it/media/catalog/product/cache/1/small_image/370x/9df78eab33525d08d6e5fb8d27136e95/c/s/cs15001.jpg"
@@ -26,7 +26,7 @@ block 3prod_a
 			- var priceProd 			= "247,5"
 			- var oldPriceProd			= "275,0"
 	else
-		- var ctaCopy 					= "Acquista"
+		- var ctaCopy 				= "Acquista"
 		if prod == "01"
 			- var linkCTA 				= "http://www.football4u.it/it/nike-mercurial-superfly-fg-wolf-grey-hyper-punch.html"
 			- var imgProd				= "http://ffaasstt.football4u.it/media/catalog/product/cache/1/small_image/370x/9df78eab33525d08d6e5fb8d27136e95/c/s/cs15001.jpg"
@@ -47,6 +47,21 @@ block 3prod_a
 			- var titleProd				= "NIKE hypervenom phantom ii fg wolf grey/ total orange"
 			- var priceProd 			= "247,5"
 			- var oldPriceProd			= "275,0"
+
+	// customize button variable optional
+	block ctaCustom
+		//- 01 = simple CTA (buy now or Acquista)
+		//- 02 = CTA with price (buy at {priceProd} or Acquista a {priceProd})
+		- var buttonType 	= "01"
+		- var bgColor		= "#b5ff00"
+		- var txtColor		= "#33333d"
+		- var width			= "120px"
+		- var height 		= "36px"
+		- var arcsize 		= "5%"
+		- var radiusSize 	= "2px"
+		- var lineheight 	= "30px"
+		- var align 		= "left"
+		- var fontSize		= "font-size: 14px; line-height: 11px;"
 
 
 //- var linkProd01 			= "http://www.football4u.it/it/nike-hypervenom-phatal-ii-fg-wolf-grey-total-orange.html"
