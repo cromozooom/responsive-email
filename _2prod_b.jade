@@ -1,8 +1,15 @@
-extends template/3prod_a
+extends template/2prod_b
 
-block 3prod_a
+block 2prod_b
 	include config
-	- var template 						= "3prod_a"
+	// name template
+	- var template 						= "2prod_b"
+
+	//- ////////////////////////////////////////////////////////////////////////////////////////////
+	//-
+	//- 	ENGLISH VERSION
+	//-
+	//- ////////////////////////////////////////////////////////////////////////////////////////////
 	if lang == "en"
 		//- see arrow on this page http://character-code.com/arrows-html-codes.php
 		- var ctaCopy 						= "BUY NOW &#10095;&#10095;"
@@ -20,12 +27,11 @@ block 3prod_a
 			- var priceProd 			= "180,0"
 			- var oldPriceProd			= "200,0"
 
-		if prod == "03"
-			- var linkCTA 				= "http://www.football4u.it/it/nike-hypervenom-phantom-ii-fg-wolf-grey-total-orange.html"
-			- var imgProd				= "http://ffaasstt.football4u.it/media/catalog/product/cache/1/small_image/370x/9df78eab33525d08d6e5fb8d27136e95/c/s/cs15011.jpg"
-			- var titleProd				= "NIKE hypervenom phantom ii fg wolf grey/ total orange"
-			- var priceProd 			= "247,5"
-			- var oldPriceProd			= "275,0"
+	//- ////////////////////////////////////////////////////////////////////////////////////////////
+	//-
+	//- 	ENGLISH VERSION
+	//-
+	//- ////////////////////////////////////////////////////////////////////////////////////////////
 	if lang == "it"
 		//- see arrow on this page http://character-code.com/arrows-html-codes.php
 		- var ctaCopy 				= "Acquista &#10095;&#10095;"
@@ -43,14 +49,11 @@ block 3prod_a
 			- var priceProd 			= "180,00"
 			- var oldPriceProd			= "200,00"
 
-		if prod == "03"
-			- var linkCTA 				= "http://www.football4u.it/it/nike-hypervenom-phantom-ii-fg-wolf-grey-total-orange.html"
-			- var imgProd				= "http://ffaasstt.football4u.it/media/catalog/product/cache/1/small_image/370x/9df78eab33525d08d6e5fb8d27136e95/c/s/cs15011.jpg"
-			- var titleProd				= "NIKE hypervenom phantom ii fg wolf grey/ total orange"
-			- var priceProd 			= "247,50"
-			- var oldPriceProd			= "275,00"
-
-	//- customize button variable optional
+	//- ////////////////////////////////////////////////////////////////////////////////////////////
+	//-
+	//- 	customize button variable optional
+	//-
+	//- ////////////////////////////////////////////////////////////////////////////////////////////
 	block ctaCustom
 		//- 01 = simple CTA (buy now or Acquista)
 		//- 02 = CTA with price (buy at {priceProd} or Acquista a {priceProd})

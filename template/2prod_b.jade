@@ -1,0 +1,39 @@
+//- template for 2 prod in line based on three col template
+//- is imported in "_2prod_b"
+//- -----------------------------------------------------------------
+
+//- has extend threeColumn template and add block info
+//- -----------------------------------------------------------------
+extends ../view/columns/twoColumn
+block info
+
+
+//- customize VTA variable default
+//- -----------------------------------------------------------------
+block ctaCustom
+	- var buttonType 	= "02"
+	- var bgColor		= "#b5ff00"
+	- var txtColor		= "#33333d"
+	- var width			= "120px"
+	- var height 		= "36px"
+	- var arcsize 		= "5%"
+	- var radiusSize 	= "2px"
+	- var lineheight 	= "30px"
+	- var align 		= "left"
+	- var fontSize		= "font-size: 14px; line-height: 11px;"
+
+//- 1 cols block
+//- -----------------------------------------------------------------
+block contentCol1_2
+	block prodTemplate01
+		- var prod = "01"
+		block 2prod_b
+		include ../view/prod/prod.jade
+
+//- 2 cols block
+//- -----------------------------------------------------------------
+block contentCol2_2
+	block prodTemplate02
+		- var prod = "02"
+		block 2prod_b
+		include ../view/prod/prod.jade
