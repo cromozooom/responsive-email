@@ -1,15 +1,18 @@
 extends ../view/columns/oneColumn
 block info
 	block ctaCustom
+		//- 01 = simple CTA (buy now or Acquista)
+		//- 02 = CTA with price (buy at {priceProd} or Acquista a {priceProd})
+		- var buttonType 	= "01"
 		- var bgColor		= "#b5ff00"
 		- var txtColor		= "#33333d"
+		- var width			= "160px"
 		- var height 		= "36px"
-		- var width			= "180px"
 		- var arcsize 		= "5%"
 		- var radiusSize 	= "2px"
 		- var lineheight 	= "44px"
 		- var align 		= "center"
-		- var fontSize		= "font-size: 15px;"
+		- var fontSize		= "font-size: 14px; line-height: 11px;"
 
 block contentCol1_1
 	block heroImg
@@ -35,6 +38,121 @@ block contentCol1_1
 					if row03
 						| #{row03}
 						br
+					if size == "man"
+						br
+						table(cellpadding="5" cellspacing="0" border="0" width="100%")
+							tr
+								td(style="border: 1px solid #{colorHeader};")
+									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=350&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+											| 39
+											//- (21)
+								td(width="1px")
+								td.link(style="border: 1px solid #{colorHeader};")
+									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=412&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+											| 43
+											//- 5 (21)
+								td(width="1px")
+								td.link(style="border: 1px solid #{colorHeader};")
+									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=459&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+											| 46
+											//- 5 (4)
+								td(width="1px")
+								td.link(style="border: 1px solid #{colorHeader};")
+									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=460&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+											| 48
+											//- (1)
+								td(width="1px")
+								td.link(style="border: 1px solid #{colorHeader};")
+									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=302&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+											| 38
+											//- (1)
+								td(width="1px")
+								td.link(style="border: 1px solid #{colorHeader};")
+									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=278&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+											| 40
+											//- (85)
+							tr
+								td(height="1" cospan="100")
+							tr
+								td.link(style="border: 1px solid #{colorHeader};")
+									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=276&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+											| 40
+											//- 5 (86)
+								td(width="1px")
+								td.link(style="border: 1px solid #{colorHeader};")
+									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=353&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+											| 41
+											//- (115)
+								td(width="1px")
+								td.link(style="border: 1px solid #{colorHeader};")
+									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=279&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+											| 41
+											//- 5 (1)
+								td(width="1px")
+								td.link(style="border: 1px solid #{colorHeader};")
+									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=277&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+											| 42
+											//- (117)
+								td(width="1px")
+								td.link(style="border: 1px solid #{colorHeader};")
+									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=283&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+											| 42
+											//- 5 (108)
+								td(width="1px")
+								td.link(style="border: 1px solid #{colorHeader};")
+									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=280&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+											| 43
+											//- (111)
+							tr
+								td(height="1" cospan="100")
+							tr
+								td.link(style="border: 1px solid #{colorHeader};")
+									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=275&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+											| 44
+											//- (117)
+								td(width="1px")
+								td.link(style="border: 1px solid #{colorHeader};")
+									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=281&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+											| 44
+											//- 5 (110)
+								td(width="1px")
+								td.link(style="border: 1px solid #{colorHeader};")
+									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=282&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+											| 45
+											//- (101)
+								td(width="1px")
+								td.link(style="border: 1px solid #{colorHeader};")
+									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=303&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+											| 45
+											//- 5 (7)
+								td(width="1px")
+								td.link(style="border: 1px solid #{colorHeader};")
+									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=294&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+											| 46
+											//- (45)
+								td(width="1px")
+								td.link(style="border: 1px solid #{colorHeader};")
+									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=436&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
+											| 47
+											//- (7)
 		tr
 			td(align="center"  bgcolor="#{bgColorCopy}")
 				include ../view/cta/cta.jade

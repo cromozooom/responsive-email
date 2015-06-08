@@ -10,16 +10,29 @@ block info
 		- var row03						= false
 		- var ctaCopy 					= "BUY NOW  &#10095;&#10095;"
 
-	else
+	if lang == "it"
 		- var heroImage800 				= "600.jpg"
 		- var linkCTA					= "http://www.solopx.com"
 		- var header 					= "#NUOVO SILVER PACK"
 		- var row01						= "Acquista ora le nuove colorazioni di scarpe Nike"
 		- var row02						= false
 		- var row03						= false
-		- var ctaCopy 					= "VEDI MODELLI  &#10095;&#10095;"
+		- var ctaCopy 					= "VEDI TUTTI I MODELLI  &#10095;&#10095;"
 
+	- var trakingSource				= "_b1&ga_medium=DEM&ga_source=NL"
 	- var bgColorCopy				= "#000000"
 	- var colorHeader				= "#b5ff00"
 	- var colorCopy					= "#777777"
-	- var trakingSource				= "_b1&ga_medium=DEM&ga_source=NL"
+	- var size 						= "man"
+
+	block ctaCustom
+		- var buttonType 	= "01"
+		- var bgColor		= "#b5ff00"
+		- var txtColor		= "#33333d"
+		- var width			= "200px"
+		- var height 		= "44px"
+		- var arcsize 		= "5%"
+		- var radiusSize 	= "2px"
+		- var lineheight 	= "44px"
+		- var align 		= "center"
+		- var fontSize		= "font-size: 14px; line-height: 11px;"
