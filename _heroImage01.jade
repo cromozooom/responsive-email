@@ -8,7 +8,8 @@ block info
 		- var row01						= "Football is changing. In the style and way it is played and in the types of players who grace the game."
 		- var row02						= false
 		- var row03						= false
-		- var ctaCopy 					= "BUY NOW"
+		//- see arrow on this page http://character-code.com/arrows-html-codes.php
+		- var ctaCopy 					= "BUY NOW  &#10095;&#10095;"
 
 	else
 		- var heroImage800 				= "800.jpg"
@@ -17,9 +18,26 @@ block info
 		- var row01						= "Football is changing. In the style and way it is played and in the types of players who grace the game."
 		- var row02						= false
 		- var row03						= false
-		- var ctaCopy 					= "ACQUISTA"
+		//- see arrow on this page http://character-code.com/arrows-html-codes.php
+		- var ctaCopy 					= "ACQUISTA  &#10095;&#10095;"
+
+	- var trakingSource				= "_b1&ga_medium=DEM&ga_source=NL"
 
 	- var bgColorCopy				= "#000000"
 	- var colorHeader				= "#b5ff00"
 	- var colorCopy					= "#777777"
-	- var trakingSource				= "_b1&ga_medium=DEM&ga_source=NL"
+
+	// customize button variable optional
+	block ctaCustom
+		//- 01 = simple CTA (buy now or Acquista)
+		//- 02 = CTA with price (buy at {priceProd} or Acquista a {priceProd})
+		- var buttonType 	= "01"
+		- var bgColor		= "#b5ff00"
+		- var txtColor		= "#33333d"
+		- var width			= "160px"
+		- var height 		= "36px"
+		- var arcsize 		= "5%"
+		- var radiusSize 	= "2px"
+		- var lineheight 	= "44px"
+		- var align 		= "center"
+		- var fontSize		= "font-size: 14px; line-height: 11px;"

@@ -1,7 +1,7 @@
 
 - var oldPriceProdColor		= "#b2b2b2"
 
-a(href="#{linkProd}")
+a(href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" target="_blank")
 	img.image(src="#{imgProd}" border="0" alt="#{titleProd}" width="100%" hspace="0" vspace="0" style="max-width:100%;")
 br
 br
@@ -10,11 +10,16 @@ br
 		| #{titleProd}
 if oldPriceProd
 	.subtitle(style="#{left}")
-		strong(style="#{fontXL}")
-			| #{priceProd} €
-			|  | 
-		span(style="#{fontL}#{decThrough} color:#{oldPriceProdColor}")
-			| #{oldPriceProd} 
+		table(cellpadding="5" cellspacing="0" border="0" width="100%")
+			tr
+				td(style="#{center}")
+					span(style="#{fontL}#{decThrough} color:#{oldPriceProdColor}")
+						| #{oldPriceProd}
+						sup(style="#{fontXS} #{normal} #{decNone} color: #{oldPriceProdColor}") €
+				td(style="#{center} border-left-width: 1px; border-left-style: solid; border-left-color: #{oldPriceProdColor};")
+					strong(style="#{fontXL}")
+						| #{priceProd}
+						sup(style="#{fontXS} #{normal}") €
 else
 	.subtitle(style="#{fontXL}")
 		| #{priceProd} €

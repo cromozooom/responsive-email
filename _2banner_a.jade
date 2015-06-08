@@ -3,40 +3,21 @@ extends template/2banner_a
 block 2banner
 	include config
 	- var template = "2 banner"
-
-	- var imgProd01 				= "http://placehold.it/600x400/808080/ffffff&text=Banner+01/2"
-	- var imgProd02 				= "http://placehold.it/600x400/334d67/ffffff&text=Banner+02/2"
-
+	- var trakingSource				= "_smallB&ga_medium=DEM&ga_source=NL"
 	if lang == "en"
-		- var cta1 					= "Buy now"
-		- var cta2 					= "Buy at"
+		- var imgBanner01 			= "images/tuoColProd_01.jpg"
+		- var linkBanner01 			= "http://www.solopx.com"
+		- var copyBanner01 			= "banner 1 copy EN"
 
-
-		- var titleProd01			= "Title prod01 en"
-		- var linkProd01			= "linkprod01en"
-		- var priceProd01			= "10"
-		- var oldPriceProd01 		= "15"
-
-
-		- var titleProd02			= "Title prod02 en"
-		- var linkProd02			= "linkprod02en"
-		- var priceProd02			= "25"
-		- var oldPriceProd02 		= "50"
-
+		- var imgBanner02			= "images/tuoColProd_02.jpg"
+		- var linkBanner02 			= "http://www.solopx.com"
+		- var copyBanner02 			= "banner 2 copy EN"
 
 	if lang == "it"
-		- var cta1 					= "Acqusita"
-		- var cta2 					= "Acqusita a"
+		- var imgBanner01 			= "images/tuoColProd_01.jpg"
+		- var linkBanner01 			= "http://www.solopx.com"
+		- var copyBanner01 			= "banner 1 copy IT"
 
-		- var titleProd01			= "Title prod01 it"
-		- var linkProd01			= "linkprod01it"
-		- var priceProd01			= "10"
-		- var oldPriceProd01 		= "15"
-
-
-
-		- var titleProd02			= "Title prod02 it"
-		- var linkProd02			= "linkprod02it"
-		- var priceProd01			= "10"
-		- var oldPriceProd01 		= "15"
-
+		- var imgBanner02			= "images/tuoColProd_02.jpg"
+		- var linkBanner02 			= "http://www.solopx.com"
+		- var copyBanner02 			= "banner 2 copy IT"
