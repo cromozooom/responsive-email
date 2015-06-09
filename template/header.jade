@@ -2,20 +2,7 @@ extends ../view/columns/twoColumnFull.jade
 block info
 	include ../config
 	append
-		if lang == "en"
-			- var LogoImg 				= "football4u_logo.jpg"
-			- var LogoStoreTxt 			= "football4U"
-			- var LogoImgLink 			= "http://www.football4u.it/it/"
-		else
-			- var LogoImg 				= "football4u_logo.jpg"
-			- var LogoStoreTxt 			= "football4U"
-			- var LogoImgLink 			= "http://www.football4u.it/it/"
-
 		- var trakingSource = "_header&ga_medium=DEM&ga_source=NL"
-
-		- var logoImgHeight 			= "50px"
-		- var socilaIconWidth 			= "40px"
-		- var colorCopy 				= "#a2a2a2"
 
 block contentCol1_2
 	table(cellpadding="0" cellspacing="0" width="200" align="center")
@@ -35,7 +22,7 @@ block contentCol2_2
 			td(height="10px" colspan="10")
 		tr
 			td(align="center" colspan="10")
-				span(style="#{fontS} color: #{colorCopy};") #{folowUscopy}
+				span(style="#{fontS} color: #{colorSecondary_};") #{folowUscopy}
 		tr
 			td(height="10px" colspan="10")
 		tr

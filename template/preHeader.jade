@@ -1,20 +1,22 @@
-block config
-	include ../config.jade
-
-- var textColor  = "#a2a2a2"
+block info
+	include ../config
+	append
+		- var trakingSource = "_header&ga_medium=DEM&ga_source=NL"
+		- var PreheaderHeight = "40px"
+		- var PreheaderHPadding = "20px"
 
 table(border="0" width="100%" height="100%" cellpadding="0" cellspacing="0")
 	tr
-		td(align="left" width="10px")
-		td(align="left" valign="middle" height="40px")
-			small(style="#{fontXS} #{fontSans} color:#{textColor};")
+		td(align="left" width="#{PreheaderHPadding}")
+		td(align="left" valign="middle" height="#{PreheaderHeight}")
+			small(style="#{fontXS} #{fontSans} color:#{colorSecondary_};")
 				| #{previewCopy}
 
-		td(align="right" valign="middle" height="40px")
-			small(style="#{fontXS} #{fontSans} color:#{textColor};")
+		td(align="right" valign="middle" height="#{PreheaderHeight}")
+			small(style="#{fontXS} #{fontSans} color:#{colorSecondary_};")
 				| #{onlineVersionCopy} 
 				nobr
-					a(href="#{viewOnlineLink}" style="#{decNone} color:#{colorPrimary};" )
+					a(href="#{viewOnlineLink}?ga_campaign=#{data}#{lang}#{trakingSource}" style="#{decNone} color:#{colorPrimary};" target="_blank" )
 						span(style="color:#{colorSecondary}; #{decNone} color:#{colorPrimary};")
 							| #{viewOnline}
-		td(align="left" width="10px")
+		td(align="left" width="#{PreheaderHPadding}")

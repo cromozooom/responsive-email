@@ -23,17 +23,18 @@ html(lang="#{lang}")
 
 	body(style="margin:0; padding:0;" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#{containerBg}")
 			//- 100% background wrapper (grey background)
-			table(border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#{containerBg}")
+			table(border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#{colorSecondary}")
 				tr
 					td
-						include template/preHeader
+						block preHeader
+							include template/preHeader
 				tr
 					td(align="center" valign="top" bgcolor="#{containerBg}")
 						br
 
 
 						//- 600px container (white background)
-						table.container(border="0" width="600" cellpadding="0" cellspacing="0" bgcolor="#{wraperCollor}")
+						table.container(border="0" width="600" cellpadding="0" cellspacing="0" bgcolor="#{wrapperCollor}")
 
 							//- content
 							block content

@@ -1,67 +1,153 @@
-- var lang 				= "it"
-- var production 		= false
-- var test 				= false
+//-		 _    _
+//-		| |  | |
+//-		| |  | |___  ___ _ __
+//-		| |  | / __|/ _ \ '__|
+//-		| |__| \__ \  __/ |
+//-		 \____/|___/\___|_|
+//-
 
-- var imgLink = "images/"
-- var data = "27-3"
+block User
 
-if lang == "en"
-	- var title 			= "Samplte title dem en"
-	- var previewCopy		= "Acquista la nuova maglia home del Milan 2015/16"
-	- var onlineVersionCopy	= "E-mail non visualizza correttamente?"
-	- var viewOnline		= "view online version"
-	- var viewOnlineLink	= "#"
-	- var folowUscopy 		= "follow us on"
+	// dev section
+	- var lang 				= "it"
 
-else
-	- var title 			= "Samplte title dem it"
-	- var previewCopy		= "Acquista la nuova maglia home del Milan 2015/16"
-	- var onlineVersionCopy	= "E-mail non visualizza correttamente?"
-	- var viewOnline		= "view online version"
-	- var viewOnlineLink	= "#"
-	- var folowUscopy 		= "seguicci su"
+	- var production 		= false
+	- var test 				= false
 
-//- LAYOUT
-//- /////////////////////////////////////////////////////////////////
+	- var imgLink = "images/"
+	- var data = "27-3"
 
-- var fontSans = "font-family: Helvetica, Arial, sans-serif;"
-- var fontSerif = "font-family: Georgia, sans-serif;"
+	// universal content
+	if lang == "en"
+		- var title 			= "Samplte title dem en"
+		- var previewCopy		= "Acquista la nuova maglia home del Milan 2015/16"
 
-- var fontXXS		= "font-size: 8px; line-height: 10px;"
-- var fontXS		= "font-size: 10px; line-height: 14px;"
-- var fontS			= "font-size: 11px; line-height: 11px;"
-- var fontM			= "font-size: 13px; line-height: 20px;"
-- var fontL			= "font-size: 16px; line-height: 20px;"
-- var fontXL		= "font-size: 20px; line-height: 22px;"
-- var fontXXL		= "font-size: 28px; line-height: 30px;"
-- var fontXXXL		= "font-size: 34px; line-height: 30px;"
+	else
+		- var title 			= "Samplte title dem it"
+		- var previewCopy		= "Acquista la nuova maglia home del Milan 2015/16"
 
-- var decNone 		= "text-decoration: none;"
-- var decThrough 	= "text-decoration: line-through;"
-- var left 			= "text-align: left;"
-- var right 		= "text-align: right;"
-- var center 		= "text-align: center;"
-- var normal 		= "font-weight: normal;"
-- var italic 		= "font-style: italic;"
+//-  _____                       _    _
+//- |  __ \                     | |  | |
+//- | |__) |____      _____ _ __| |  | |___  ___ _ __
+//- |  ___/ _ \ \ /\ / / _ \ '__| |  | / __|/ _ \ '__|
+//- | |  | (_) \ V  V /  __/ |  | |__| \__ \  __/ |
+//- |_|   \___/ \_/\_/ \___|_|   \____/|___/\___|_|
+//-
+
+block PowerUser
+	//- General INFO
+	//- /////////////////////////////////////////////////////////////////
 
 
-//- color Management
-//- /////////////////////////////////////////////////////////////////
+	// Preheader template
 
-- var containerBg 		= "#2b2d29"
-- var wraperCollor 		= "#ffffff"
+	if lang == "en"
+		- var onlineVersionCopy	= "E-mail non visualizza correttamente?"
+		- var viewOnline		= "view online version"
+		- var viewOnlineLink	= "http://www.solopx.com"
 
-- var colorPrimary 		= "#b5ff00"
-- var colorSecondary 	= "#33333d"
-- var colorTertiari 	= "#2b2d29"
+	if lang == "it"
+		- var onlineVersionCopy	= "E-mail non visualizza correttamente?"
+		- var viewOnline		= "view online version"
+		- var viewOnlineLink	= "http://www.solopx.com"
 
-//- Social network
-//- /////////////////////////////////////////////////////////////////
 
-- var siteName = "football4u"
-- var instagram = "https://instagram.com/football4uofficial/"
-- var facebook = "https://www.facebook.com/Football4U.it"
-- var blog = "http://blog.football4u.it/"
-- var youTube = "https://www.youtube.com/channel/UCzqG3NzsJtmTa4qJ54ssUEg/"
-- var gPlus = "https://plus.google.com/+Football4uItF4U/"
-//- var pinterest = ""
+	// header template
+
+	if lang == "en"
+		- var LogoImg 			= "football4u_logo.jpg"
+		- var LogoStoreTxt 		= "football4U"
+		- var LogoImgLink 		= "http://www.football4u.it/it/"
+		- var folowUscopy 		= "follow us on"
+
+	if lang == "it"
+		- var LogoImg 			= "football4u_logo.jpg"
+		- var LogoStoreTxt 		= "football4U"
+		- var LogoImgLink 		= "http://www.football4u.it/it/"
+		- var folowUscopy 		= "seguicci su"
+
+	- var logoImgHeight 		= "50px"
+	- var socilaIconWidth 		= "40px"
+
+	// nav template
+
+	if lang == "en"
+		- var Nav01 					= "FOOTBALL BOOTS"
+		- var NavLink01 				= "http://www.football4u.it/en/football-boots.html"
+		- var Nav02 					= "CLOTHING"
+		- var NavLink02 				= "http://www.football4u.it/en/clothing.html"
+		- var Nav03 					= "EQUIPMENT"
+		- var NavLink03 				= "http://www.football4u.it/en/equipment.html"
+		- var Nav04 					= "GOALKEEPER"
+		- var NavLink04 				= "http://www.football4u.it/en/goalkeeper/goalkeeper.html"
+		- var Nav05 					= "TEAMSPORT"
+		- var NavLink05 				= "http://www.football4u.it/en/teamsport.html"
+		- var Nav06 					= "CLEARANCE"
+		- var NavLink06 				= "http://www.football4u.it/en/clearance.html"
+	else
+		- var Nav01 					= "SCARPE"
+		- var NavLink01 				= "http://www.football4u.it/it/scarpe-calcio.html"
+		- var Nav02 					= "ABBIGLIAMENTO"
+		- var NavLink02 				= "http://www.football4u.it/it/abbigliamento.html"
+		- var Nav03 					= "ATTREZATURE"
+		- var NavLink03 				= "http://www.football4u.it/it/accessori.html"
+		- var Nav04 					= "PORTIERE"
+		- var NavLink04 				= "http://www.football4u.it/it/portiere.html"
+		- var Nav05 					= "TEAMSPORT"
+		- var NavLink05 				= "http://www.football4u.it/it/teamsport.html"
+		- var Nav06 					= "OUTLET"
+		- var NavLink06 				= "http://www.football4u.it/it/outlet.html"
+
+	//- Social network
+	//- /////////////////////////////////////////////////////////////////
+
+	- var siteName = "football4u"
+	- var instagram = "https://instagram.com/football4uofficial/"
+	- var facebook = "https://www.facebook.com/Football4U.it"
+	- var blog = "http://blog.football4u.it/"
+	- var youTube = "https://www.youtube.com/channel/UCzqG3NzsJtmTa4qJ54ssUEg/"
+	- var gPlus = "https://plus.google.com/+Football4uItF4U/"
+	//- var pinterest = ""
+
+	//- LAYOUT
+	//- /////////////////////////////////////////////////////////////////
+
+	// font
+	- var fontSans = "font-family: Helvetica, Arial, sans-serif;"
+	- var fontSerif = "font-family: Georgia, sans-serif;"
+
+	- var fontXXS		= "font-size: 8px; line-height: 10px;"
+	- var fontXS		= "font-size: 10px; line-height: 14px;"
+	- var fontS			= "font-size: 11px; line-height: 11px;"
+	- var fontM			= "font-size: 13px; line-height: 20px;"
+	- var fontL			= "font-size: 16px; line-height: 20px;"
+	- var fontXL		= "font-size: 20px; line-height: 22px;"
+	- var fontXXL		= "font-size: 28px; line-height: 30px;"
+	- var fontXXXL		= "font-size: 34px; line-height: 30px;"
+
+	- var decNone 		= "text-decoration: none;"
+	- var decThrough 	= "text-decoration: line-through;"
+	- var left 			= "text-align: left;"
+	- var right 		= "text-align: right;"
+	- var center 		= "text-align: center;"
+	- var normal 		= "font-weight: normal;"
+	- var italic 		= "font-style: italic;"
+
+
+	//- color Management
+	//- /////////////////////////////////////////////////////////////////
+
+	- var containerBg 		= "#2b2d29"
+	- var wrapperCollor 	= "#ffffff"
+
+	- var colorPrimary 		= "#b5ff00"
+	- var colorPrimary_ 	= "#092439"
+
+	- var colorSecondary	= "#33333d"
+	- var colorSecondary_	= "#ccccc2"
+
+	- var colorTertiari 	= "#2b2d29"
+	- var colorTertiari_ 	= "#d4d2d6"
+
+	- var colorBlack 		= "#000000"
+	- var colorWhite 		= "#ffffff"

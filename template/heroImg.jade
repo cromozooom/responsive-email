@@ -6,172 +6,174 @@ block contentCol1_1
 	block heroImg
 		if coupon
 			tr
-				td(align="center" bgcolor="#{bgColorCopy}")
-					span(style="#{center}#{fontSans} color:#{colorCopy};")
+				td(align="center" bgcolor="#{colorBlack}")
+					span(style="#{center}#{fontSans} color:#{colorSecondary_};")
 						br
 						| #{couponCopyRow01}
 						center
 							br
-							table(cellpadding="10" cellspacing="0" border="0")
+							table(cellpadding="10" cellspacing="0" border="0" bgcolor="#{colorBlack}")
 								tr
-									td(style="border: 3px solid #{colorCopy};")
-										span(style="#{fontXXXL} #{fontSans} color:#{colorHeader};")
+									td(style="border: 3px solid #{colorSecondary_};")
+										span(style="#{fontXXXL} #{fontSans} color:#{colorPrimary};")
 											| #{coupon}
 						br
-						span(style="#{center}#{fontSans}#{fontS} color:#{colorCopy};")
+						span(style="#{center}#{fontSans}#{fontS} color:#{colorSecondary_};")
 							| #{couponCopyRow02}
 						br
 						br
-
-		tr
-			td(align="center" bgcolor="#{bgCopy}")
-				a(href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" target="_blank")
-					img(src="#{imgLink}#{heroImage800}" border="0" alt="#{header}" width="600" hspace="0" vspace="0" style="max-width:100%;")
-		tr
-			td.container-padding.content(align="center" bgcolor="#{bgColorCopy}")
-				br
-				.title(style="#{fontXXXL} #{fontSans} color:#{colorHeader};")
-					| #{header}
-				br
-				.hr(style="border-bottom: 1px solid #092439;")
-				br
-				span(align="center" style="#{fontM} #{fontSans} color:#{colorCopy};")
-					if row01
-						| #{row01}
-						br
-					if row02
-						| #{row02}
-						br
-					if row03
-						| #{row03}
-						br
-					//- adding cowntDown is simple like this: setUp a cowntdown var in _heroImage.jade
-					if cowntdown
-						br
-						center
-							img(src="http://www.solopx.com/staging/epi/EmailCountdownv01/gif.php?time=#{cowntdown}" border="0" alt="27-03" hspace="0" vspace="0" style="max-width:100%; font-weight: bold; font-size: 24px; color: #272727; font-family: Helvetica, Arial, sans-serif;")
+		if heroImage
+			tr
+				td(align="center" bgcolor="#{colorBlack}")
+					a(href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" target="_blank")
+						img(src="#{imgLink}#{heroImage}" border="0" alt="#{heroImageheader}" width="600" hspace="0" vspace="0" style="max-width:100%;")
+		if heroImageheader
+			tr
+				td.container-padding.content(align="center" bgcolor="#{colorBlack}")
+					br
+					.title(style="#{fontXXXL} #{fontSans} color:#{colorPrimary};")
+						| #{heroImageheader}
+					br
+					.hr(style="border-bottom: 1px solid #{colorPrimary_};")
+					br
+					span(align="center" style="#{fontM} #{fontSans} color:#{colorSecondary_};")
+						if row01
+							| #{row01}
 							br
+						if row02
+							| #{row02}
 							br
-							span(style="#{fontXXS}#{italic}") #{copyCowntdown}
+						if row03
+							| #{row03}
+							br
+		if cowntdown
+			//- adding cowntDown is simple like this: setUp a cowntdown var in _heroImage.jade
+			tr
+				td.container-padding.content(align="center" bgcolor="#{colorBlack}")
+					center
+						img(src="http://www.solopx.com/staging/epi/EmailCountdownv01/gif.php?time=#{cowntdown}" border="0" alt="27-03" hspace="0" vspace="0" style="#{bold}#{fontXL}#{fontSans} color: #{containerBg}; max-width:100%; ")
 						br
-						.hr(style="border-bottom: 1px solid #092439;")
-					if size == "man"
+						br
+						span(style="#{fontXXS}#{italic} color: #{colorSecondary_}") #{copyCowntdown}
+					br
+					.hr(style="border-bottom: 1px solid #092439;")
+					if size
 						br
 						table(cellpadding="5" cellspacing="0" border="0" width="100%")
 							tr
-								td(style="border: 1px solid #{colorHeader};")
-									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=350&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-											| 39
+								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+									a(href="#{optionListLink01}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											| #{optionListCopy01}
 											//- (21)
 								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorHeader};")
-									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=412&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-											| 43
+								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+									a(href="#{optionListLink02}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											| #{optionListCopy02}
 											//- 5 (21)
 								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorHeader};")
-									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=459&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-											| 46
+								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+									a(href="#{optionListLink03}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											| #{optionListCopy03}
 											//- 5 (4)
 								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorHeader};")
-									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=460&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-											| 48
+								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+									a(href="#{optionListLink04}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											| #{optionListCopy04}
 											//- (1)
 								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorHeader};")
-									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=302&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-											| 38
+								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+									a(href="#{optionListLink05}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											| #{optionListCopy05}
 											//- (1)
 								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorHeader};")
-									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=278&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-											| 40
+								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+									a(href="#{optionListLink06}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											| #{optionListCopy06}
 											//- (85)
 							tr
 								td(height="1" cospan="100")
 							tr
-								td.link(style="border: 1px solid #{colorHeader};")
-									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=276&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-											| 40
+								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+									a(href="#{optionListLink07}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											| #{optionListCopy07}
 											//- 5 (86)
 								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorHeader};")
-									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=353&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-											| 41
+								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+									a(href="#{optionListLink08}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											| #{optionListCopy08}
 											//- (115)
 								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorHeader};")
-									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=279&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-											| 41
+								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+									a(href="#{optionListLink09}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											| #{optionListCopy09}
 											//- 5 (1)
 								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorHeader};")
-									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=277&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-											| 42
+								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+									a(href="#{optionListLink10}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											| #{optionListCopy10}
 											//- (117)
 								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorHeader};")
-									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=283&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-											| 42
+								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+									a(href="#{optionListLink11}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											| #{optionListCopy11}
 											//- 5 (108)
 								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorHeader};")
-									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=280&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-											| 43
+								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+									a(href="#{optionListLink12}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											| #{optionListCopy12}
 											//- (111)
 							tr
 								td(height="1" cospan="100")
 							tr
-								td.link(style="border: 1px solid #{colorHeader};")
-									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=275&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-											| 44
+								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+									a(href="#{optionListLink13}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											| #{optionListCopy13}
 											//- (117)
 								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorHeader};")
-									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=281&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-											| 44
+								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+									a(href="#{optionListLink14}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											| #{optionListCopy14}
 											//- 5 (110)
 								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorHeader};")
-									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=282&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-											| 45
+								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+									a(href="#{optionListLink15}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											| #{optionListCopy15}
 											//- (101)
 								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorHeader};")
-									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=303&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-											| 45
+								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+									a(href="#{optionListLink16}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											| #{optionListCopy16}
 											//- 5 (7)
 								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorHeader};")
-									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=294&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-											| 46
+								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+									a(href="#{optionListLink17}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											| #{optionListCopy17}
 											//- (45)
 								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorHeader};")
-									a(href="http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=436&limit=all" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorHeader};")
-											| 47
+								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+									a(href="#{optionListLink18}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											| #{optionListCopy18}
 											//- (7)
 		tr
-			td(align="center"  bgcolor="#{bgColorCopy}")
+			td(align="center"  bgcolor="#{colorBlack}")
 				br
 				include ../view/cta/cta.jade
 				br
