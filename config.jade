@@ -12,12 +12,11 @@ block User
 	- var lang 				= "it"
 
 	// option available juve, f4u
-	- var site 				= "f4u"
+	- var site 				= "juve"
 
 	- var production 		= false
 	- var test 				= false
 
-	- var imgLink = "images/"
 	- var data = "27-3"
 
 	// universal content
@@ -56,50 +55,94 @@ block PowerUser
 
 
 	// header template
-
 	if lang == "en"
-		- var LogoImg 			= "football4u_logo.jpg"
-		- var LogoStoreTxt 		= "football4U"
-		- var LogoImgLink 		= "http://www.football4u.it/it/"
+		- var LogoImg 			= "_logo.jpg"
 		- var folowUscopy 		= "follow us on"
 
 	if lang == "it"
-		- var LogoImg 			= "football4u_logo.jpg"
-		- var LogoStoreTxt 		= "football4U"
-		- var LogoImgLink 		= "http://www.football4u.it/it/"
+		- var LogoImg 			= "_logo.jpg"
 		- var folowUscopy 		= "seguicci su"
 
-	- var logoImgHeight 		= "50px"
-	- var socilaIconWidth 		= "40px"
+	if site == "f4u"
+		- var logoImgHeight 		= "50px"
+		- var socilaIconWidth 		= "40px"
+
+
+	if site == "juve"
+		- var logoImgHeight 		= "80px"
+		- var socilaIconWidth 		= "40px"
 
 	// nav template
 
 	if lang == "en"
-		- var Nav01 					= "FOOTBALL BOOTS"
-		- var NavLink01 				= "http://www.football4u.it/en/football-boots.html"
-		- var Nav02 					= "CLOTHING"
-		- var NavLink02 				= "http://www.football4u.it/en/clothing.html"
-		- var Nav03 					= "EQUIPMENT"
-		- var NavLink03 				= "http://www.football4u.it/en/equipment.html"
-		- var Nav04 					= "GOALKEEPER"
-		- var NavLink04 				= "http://www.football4u.it/en/goalkeeper/goalkeeper.html"
-		- var Nav05 					= "TEAMSPORT"
-		- var NavLink05 				= "http://www.football4u.it/en/teamsport.html"
-		- var Nav06 					= "CLEARANCE"
-		- var NavLink06 				= "http://www.football4u.it/en/clearance.html"
-	else
-		- var Nav01 					= "SCARPE"
-		- var NavLink01 				= "http://www.football4u.it/it/scarpe-calcio.html"
-		- var Nav02 					= "ABBIGLIAMENTO"
-		- var NavLink02 				= "http://www.football4u.it/it/abbigliamento.html"
-		- var Nav03 					= "ATTREZATURE"
-		- var NavLink03 				= "http://www.football4u.it/it/accessori.html"
-		- var Nav04 					= "PORTIERE"
-		- var NavLink04 				= "http://www.football4u.it/it/portiere.html"
-		- var Nav05 					= "TEAMSPORT"
-		- var NavLink05 				= "http://www.football4u.it/it/teamsport.html"
-		- var Nav06 					= "OUTLET"
-		- var NavLink06 				= "http://www.football4u.it/it/outlet.html"
+		if site == "f4u"
+			- var LogoStoreTxt 		= "football4u"
+			- var LogoImgLink 		= "http://www.football4u.it/it/"
+
+			- var Nav01 					= "FOOTBALL BOOTS"
+			- var NavLink01 				= "http://www.football4u.it/en/football-boots.html"
+			- var Nav02 					= "CLOTHING"
+			- var NavLink02 				= "http://www.football4u.it/en/clothing.html"
+			- var Nav03 					= "EQUIPMENT"
+			- var NavLink03 				= "http://www.football4u.it/en/equipment.html"
+			- var Nav04 					= "GOALKEEPER"
+			- var NavLink04 				= "http://www.football4u.it/en/goalkeeper/goalkeeper.html"
+			- var Nav05 					= "TEAMSPORT"
+			- var NavLink05 				= "http://www.football4u.it/en/teamsport.html"
+			- var Nav06 					= "CLEARANCE"
+			- var NavLink06 				= "http://www.football4u.it/en/clearance.html"
+
+		if site == "juve"
+			- var LogoStoreTxt 		= "juve"
+			- var LogoImgLink 		= "http://www.juvestore.com/en/"
+
+			- var Nav01 					= "FOOTBALL BOOTS"
+			- var NavLink01 				= "http://www.football4u.it/en/football-boots.html"
+			- var Nav02 					= "CLOTHING"
+			- var NavLink02 				= "http://www.football4u.it/en/clothing.html"
+			- var Nav03 					= "EQUIPMENT"
+			- var NavLink03 				= "http://www.football4u.it/en/equipment.html"
+			- var Nav04 					= "GOALKEEPER"
+			- var NavLink04 				= "http://www.football4u.it/en/goalkeeper/goalkeeper.html"
+			- var Nav05 					= "TEAMSPORT"
+			- var NavLink05 				= "http://www.football4u.it/en/teamsport.html"
+			- var Nav06 					= "CLEARANCE"
+			- var NavLink06 				= "http://www.football4u.it/en/clearance.html"
+
+	if lang == "it"
+		if site == "f4u"
+			- var LogoStoreTxt 		= "football4u"
+			- var LogoImgLink 		= "http://www.football4u.it/it/"
+
+			- var Nav01 					= "SCARPE"
+			- var NavLink01 				= "http://www.football4u.it/it/scarpe-calcio.html"
+			- var Nav02 					= "ABBIGLIAMENTO"
+			- var NavLink02 				= "http://www.football4u.it/it/abbigliamento.html"
+			- var Nav03 					= "ATTREZATURE"
+			- var NavLink03 				= "http://www.football4u.it/it/accessori.html"
+			- var Nav04 					= "PORTIERE"
+			- var NavLink04 				= "http://www.football4u.it/it/portiere.html"
+			- var Nav05 					= "TEAMSPORT"
+			- var NavLink05 				= "http://www.football4u.it/it/teamsport.html"
+			- var Nav06 					= "OUTLET"
+			- var NavLink06 				= "http://www.football4u.it/it/outlet.html"
+
+		if site == "juve"
+			- var LogoStoreTxt 		= "juve"
+			- var LogoImgLink 		= "http://www.juvestore.com/it/"
+
+			- var Nav01 					= "SCARPE"
+			- var NavLink01 				= "http://www.football4u.it/it/scarpe-calcio.html"
+			- var Nav02 					= "ABBIGLIAMENTO"
+			- var NavLink02 				= "http://www.football4u.it/it/abbigliamento.html"
+			- var Nav03 					= "ATTREZATURE"
+			- var NavLink03 				= "http://www.football4u.it/it/accessori.html"
+			- var Nav04 					= "PORTIERE"
+			- var NavLink04 				= "http://www.football4u.it/it/portiere.html"
+			- var Nav05 					= "TEAMSPORT"
+			- var NavLink05 				= "http://www.football4u.it/it/teamsport.html"
+			- var Nav06 					= "OUTLET"
+			- var NavLink06 				= "http://www.football4u.it/it/outlet.html"
 
 	//- Social network
 	//- /////////////////////////////////////////////////////////////////
@@ -164,8 +207,8 @@ block PowerUser
 		- var colorPrimary 		= "#fcc511"
 		- var colorPrimary_ 	= "#1c1c1c"
 
-		- var colorSecondary	= "#33333d"
-		- var colorSecondary_	= "#ccccc2"
+		- var colorSecondary	= "#ffffff"
+		- var colorSecondary_	= "#5a5a55"
 		- var colorSecondary__	= "#5a5a55"
 
 		- var colorTertiari 	= "#2b2d29"
@@ -173,3 +216,11 @@ block PowerUser
 
 		- var colorBlack 		= "#000000"
 		- var colorWhite 		= "#ffffff"
+
+	//- image management
+	//- /////////////////////////////////////////////////////////////////
+	if site == "f4u"
+		- var imgLink = "images/f4u/"
+
+	if site == "juve"
+		- var imgLink = "images/juve/"
