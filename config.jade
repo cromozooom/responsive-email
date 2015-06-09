@@ -8,8 +8,11 @@
 
 block User
 
-	// dev section
+	// option available en, it
 	- var lang 				= "it"
+
+	// option available juve, f4u
+	- var site 				= "f4u"
 
 	- var production 		= false
 	- var test 				= false
@@ -131,23 +134,42 @@ block PowerUser
 	- var right 		= "text-align: right;"
 	- var center 		= "text-align: center;"
 	- var normal 		= "font-weight: normal;"
+	- var bold 			= "font-weight: bold;"
 	- var italic 		= "font-style: italic;"
 
 
 	//- color Management
 	//- /////////////////////////////////////////////////////////////////
+	if site == "f4u"
+		- var containerBg 		= "#2b2d29"
+		- var wrapperCollor 	= "#ffffff"
 
-	- var containerBg 		= "#2b2d29"
-	- var wrapperCollor 	= "#ffffff"
+		- var colorPrimary 		= "#b5ff00"
+		- var colorPrimary_ 	= "#092439"
 
-	- var colorPrimary 		= "#b5ff00"
-	- var colorPrimary_ 	= "#092439"
+		- var colorSecondary	= "#33333d"
+		- var colorSecondary_	= "#ccccc2"
+		- var colorSecondary__	= "#5a5a55"
 
-	- var colorSecondary	= "#33333d"
-	- var colorSecondary_	= "#ccccc2"
+		- var colorTertiari 	= "#2b2d29"
+		- var colorTertiari_ 	= "#d4d2d6"
 
-	- var colorTertiari 	= "#2b2d29"
-	- var colorTertiari_ 	= "#d4d2d6"
+		- var colorBlack 		= "#000000"
+		- var colorWhite 		= "#ffffff"
 
-	- var colorBlack 		= "#000000"
-	- var colorWhite 		= "#ffffff"
+	if site == "juve"
+		- var containerBg 		= "#d3d3d3"
+		- var wrapperCollor 	= "#ffffff"
+
+		- var colorPrimary 		= "#fcc511"
+		- var colorPrimary_ 	= "#1c1c1c"
+
+		- var colorSecondary	= "#33333d"
+		- var colorSecondary_	= "#ccccc2"
+		- var colorSecondary__	= "#5a5a55"
+
+		- var colorTertiari 	= "#2b2d29"
+		- var colorTertiari_ 	= "#d4d2d6"
+
+		- var colorBlack 		= "#000000"
+		- var colorWhite 		= "#ffffff"
