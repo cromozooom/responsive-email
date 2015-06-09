@@ -8,44 +8,22 @@ else
 	//- //////////////////////////////////////////////////////////////////
 tr
 	td.cols-wrapper
-		if test
-			p #{template}
-		else
-			//-
 		//- col 1/3
 		// [if mso]><table border="0" width="576" cellpadding="0" cellspacing="0" style="width: 576px;"><tr><td width="192" style="width: 192px;" valign="top"><![endif]
 		table.force-row(width="192" border="0" cellpadding="0" cellspacing="0" align="left" style="width: 192px;")
 			tr
 				td.col
-					if production
-						//-
-					else
-						// //////////////////////////////////////////////////////////////////
-						// 1/1
-						// //////////////////////////////////////////////////////////////////
 					block contentCol1_3
 
 		// [if mso]></td><td width="192" style="width: 192px;" valign="top"><![endif]
 		table.force-row(width="192" border="0" cellpadding="0" cellspacing="0" align="left" style="width: 192px;")
 			tr
 				td.col
-					if production
-						//-
-					else
-						// //////////////////////////////////////////////////////////////////
-						// 1/2
-						// //////////////////////////////////////////////////////////////////
 					block contentCol2_3
 		//- col 3/3
 		// [if mso]></td><td width="192" style="width: 192px;" valign="top"><![endif]
 		table.force-row(width="192" border="0" cellpadding="0" cellspacing="0" align="left" style="width: 192px;")
 			tr
 				td.col
-					if production
-						//-
-					else
-						// //////////////////////////////////////////////////////////////////
-						// 1/3
-						// //////////////////////////////////////////////////////////////////
 					block contentCol3_3
 		// [if mso]></td></tr></table><![endif]

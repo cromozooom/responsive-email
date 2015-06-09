@@ -1,36 +1,14 @@
 block info
-
-if production
-	//-
-else
-	// //////////////////////////////////////////////////////////////////
-	// 2 column full
-	// //////////////////////////////////////////////////////////////////
-
 tr
 	td.cols-wrapper.column_full(align="left" bgcolor="#{colorSecondary}")
 		// [if mso]><table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#{colorSecondary}"><tr><td width="50%" valign="top"><![endif]
 		table.force-row(width="300" border="0" cellpadding="0" cellspacing="0" align="left" bgcolor="#{colorSecondary}")
 			tr
 				td.col(valign="top" style="width:100%")
-					if production
-						//-
-					else
-						// //////////////////////////////////////////////////////////////////
-						// 1/2 column full
-						// //////////////////////////////////////////////////////////////////
 					block contentCol1_2
-
 		// [if mso]></td><td width="50%" valign="top"><![endif]
 		table.force-row(width="300" border="0" cellpadding="0" cellspacing="0" align="right" bgcolor="#{colorSecondary}")
 			tr
 				td.col(valign="top" style="width:100%")
-					if production
-						//-
-					else
-						// //////////////////////////////////////////////////////////////////
-						// 2/2 column full
-						// //////////////////////////////////////////////////////////////////
 					block contentCol2_2
-
 		// [if mso]></td></tr></table><![endif]

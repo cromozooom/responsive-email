@@ -1,6 +1,8 @@
 extends ../view/columns/oneColumn
 block info
 	block ctaCustom
+	append
+		- var padding 		= "padding: 0px 0px 0px 0px;"
 
 block contentCol1_1
 	block heroImg
@@ -58,121 +60,217 @@ block contentCol1_1
 							| #{copyCowntdown}
 					br
 					.hr(style="border-bottom: 1px solid #{colorPrimary_};")
-					if size
-						br
-						table(cellpadding="5" cellspacing="0" border="0" width="100%")
-							tr
-								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-									a(href="#{optionListLink01}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-											| #{optionListCopy01}
-											//- (21)
-								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-									a(href="#{optionListLink02}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-											| #{optionListCopy02}
-											//- 5 (21)
-								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-									a(href="#{optionListLink03}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-											| #{optionListCopy03}
-											//- 5 (4)
-								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-									a(href="#{optionListLink04}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-											| #{optionListCopy04}
-											//- (1)
-								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-									a(href="#{optionListLink05}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-											| #{optionListCopy05}
-											//- (1)
-								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-									a(href="#{optionListLink06}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-											| #{optionListCopy06}
-											//- (85)
-							tr
-								td(height="1" cospan="100")
-							tr
-								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-									a(href="#{optionListLink07}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-											| #{optionListCopy07}
-											//- 5 (86)
-								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-									a(href="#{optionListLink08}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-											| #{optionListCopy08}
-											//- (115)
-								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-									a(href="#{optionListLink09}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-											| #{optionListCopy09}
-											//- 5 (1)
-								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-									a(href="#{optionListLink10}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-											| #{optionListCopy10}
-											//- (117)
-								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-									a(href="#{optionListLink11}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-											| #{optionListCopy11}
-											//- 5 (108)
-								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-									a(href="#{optionListLink12}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-											| #{optionListCopy12}
-											//- (111)
-							tr
-								td(height="1" cospan="100")
-							tr
-								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-									a(href="#{optionListLink13}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-											| #{optionListCopy13}
-											//- (117)
-								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-									a(href="#{optionListLink14}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-											| #{optionListCopy14}
-											//- 5 (110)
-								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-									a(href="#{optionListLink15}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-											| #{optionListCopy15}
-											//- (101)
-								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-									a(href="#{optionListLink16}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-											| #{optionListCopy16}
-											//- 5 (7)
-								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-									a(href="#{optionListLink17}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-											| #{optionListCopy17}
-											//- (45)
-								td(width="1px") &nbsp;
-								td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-									a(href="#{optionListLink18}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-											| #{optionListCopy18}
-											//- (7)
+		if size == "6"
+			tr
+				td.container-padding.content(align="center" bgcolor="#{colorBlack}")
+					table(cellpadding="5" cellspacing="0" border="0" width="100%")
+						tr
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink01}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy01}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink02}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy02}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink03}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy03}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink04}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy04}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink05}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy05}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink06}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy06}
+						tr
+							td(height="1" cospan="100")
+
+						tr
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink07}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy07}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink08}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy08}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink09}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy09}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink10}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy10}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink11}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy11}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink12}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy12}
+						tr
+							td(height="1" cospan="100")
+						tr
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink13}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy13}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink14}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy14}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink15}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy15}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink16}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy16}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink17}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy17}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink18}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy18}
+		if size == "4"
+			tr
+				td.container-padding.content(align="center" bgcolor="#{colorBlack}")
+					table(cellpadding="5" cellspacing="0" border="0" width="100%")
+						tr
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink01}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy01}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink02}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy02}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink03}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy03}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink04}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy04}
+						tr
+							td(height="1" cospan="100")
+						tr
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink05}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy05}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink06}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy06}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink07}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy07}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink08}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy08}
+						tr
+							td(height="1" cospan="100")
+						tr
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink09}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy09}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink10}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy10}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink11}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy11}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink12}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy12}
+						tr
+							td(height="1" cospan="100")
+						tr
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink13}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy13}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink14}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy14}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink15}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy15}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink16}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy16}
+						tr
+							td(height="1" cospan="100")
+						tr
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink17}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy17}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink18}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy18}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink19}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy19}
+							td(width="1px") &nbsp;
+							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+								a(href="#{optionListLink20}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										| #{optionListCopy20}
 		tr
 			td(align="center"  bgcolor="#{colorBlack}")
 				br
