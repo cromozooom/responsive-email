@@ -1,5 +1,5 @@
 # responsive-email
 
-1. [english version]: http://localhost:8012/responsive-email/index_en.html
-2. [versione italiana]: link http://localhost:8012/responsive-email/index_it.html
+1. [english version](link https://rawgit.com/cromozooom/responsive-email/master/index_en.html)
+2. [versione italiana](link https://rawgit.com/cromozooom/responsive-email/master/index_it.html)
 
