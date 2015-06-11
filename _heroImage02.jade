@@ -4,22 +4,23 @@ block info
 
 	if lang == "en"
 
-		//- 	 _                      _
-		//- 	| |                    (_)
-		//- 	| |__   ___ _ __ ___    _ _ __ ___   __ _
-		//- 	| '_ \ / _ \ '__/ _ \  | | '_ ` _ \ / _` |
-		//- 	| | | |  __/ | | (_) | | | | | | | | (_| |
-		//- 	|_| |_|\___|_|  \___/  |_|_| |_| |_|\__, |
+		//-		 _                      _
+		//-		| |                    (_)
+		//-		| |__   ___ _ __ ___    _ _ __ ___   __ _
+		//-		| '_ \ / _ \ '__/ _ \  | | '_ ` _ \ / _` |
+		//-		| | | |  __/ | | (_) | | | | | | | | (_| |
+		//-		|_| |_|\___|_|  \___/  |_|_| |_| |_|\__, |
 		//-                                      __/ |
 		//-                                     |___/
 
 		- var heroImage 				= "600.jpg"
 		- var linkCTA					= "http://www.solopx.com"
-		- var header 					= "#NUOVO SILVER PACK"
+
+		- var heroImageheader 			= "#NUOVO SILVER PACK"
 		- var row01						= "Acquista ora le nuove colorazioni di scarpe Nike"
 		- var row02						= false
 		- var row03						= false
-		- var ctaCopy 					= "BUY NOW &raquo;"
+		- var ctaCopy 					= "VEDI TUTTI I MODELLI   &raquo;"
 
 		//-		                         _         _
 		//-		                        | |       | |
@@ -42,43 +43,10 @@ block info
 		//-
 		//- 	setUp optionList on HeroImage
 
-		- var size 							= true
-		- var optionListLink01				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=350&limit=all"
-		- var optionListCopy01				= "39"
-		- var optionListLink02				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=412&limit=all"
-		- var optionListCopy02				= "43"
-		- var optionListLink03				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=459&limit=all"
-		- var optionListCopy03				= "46"
-		- var optionListLink04				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=460&limit=all"
-		- var optionListCopy04				= "48"
-		- var optionListLink05				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=302&limit=all"
-		- var optionListCopy05				= "38"
-		- var optionListLink06				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=278&limit=all"
-		- var optionListCopy06				= "40"
-		- var optionListLink07				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=276&limit=all"
-		- var optionListCopy07				= "40"
-		- var optionListLink08				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=353&limit=all"
-		- var optionListCopy08				= "41"
-		- var optionListLink09				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=279&limit=all"
-		- var optionListCopy09				= "41"
-		- var optionListLink10				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=277&limit=all"
-		- var optionListCopy10				= "42"
-		- var optionListLink11				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=283&limit=all"
-		- var optionListCopy11				= "42"
-		- var optionListLink12				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=280&limit=all"
-		- var optionListCopy12				= "43"
-		- var optionListLink13				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=275&limit=all"
-		- var optionListCopy13				= "44"
-		- var optionListLink14				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=281&limit=all"
-		- var optionListCopy14				= "44"
-		- var optionListLink15				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=282&limit=all"
-		- var optionListCopy15				= "45"
-		- var optionListLink16				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=303&limit=all"
-		- var optionListCopy16				= "45"
-		- var optionListLink17				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=294&limit=all"
-		- var optionListCopy17				= "46"
-		- var optionListLink18				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=436&limit=all"
-		- var optionListCopy18				= "47"
+		- var optionRow = 3
+		- var optionLinks01 = [{"itemName":"39","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=350&limit=all"},{"itemName":"43","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=412&limit=all"},{"itemName":"46","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=459&limit=all"},{"itemName":"48","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=460&limit=all"},{"itemName":"38","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=302&limit=all"},{"itemName":"40","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=278&limit=all"}]
+		- var optionLinks00 = [{"itemName":"40","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=276&limit=all"},{"itemName":"41","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=353&limit=all"},{"itemName":"41","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=279&limit=all"},{"itemName":"42","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=277&limit=all"},{"itemName":"42","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=283&limit=all"},{"itemName":"43","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=280&limit=all"}]
+		- var optionLinks00 = [{"itemName":"44","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=275&limit=all"},{"itemName":"44","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=281&limit=all"},{"itemName":"45","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=282&limit=all"},{"itemName":"45","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=303&limit=all"},{"itemName":"46","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=294&limit=all"},{"itemName":"47","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=436&limit=all"}]
 
 
 		//-		   ___ ___  _   _ _ __   ___  _ __
@@ -137,68 +105,11 @@ block info
 		//- 	setUp optionList on HeroImage
 
 		//- set column number
-		- var size 							= "4"
-
-		- var optionListLink01				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=350&limit=all"
-		- var optionListCopy01				= "39"
-
-		- var optionListLink02				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=412&limit=all"
-		- var optionListCopy02				= "43"
-
-		- var optionListLink03				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=459&limit=all"
-		- var optionListCopy03				= "46"
-
-		- var optionListLink04				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=460&limit=all"
-		- var optionListCopy04				= "48"
-
-		- var optionListLink05				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=302&limit=all"
-		- var optionListCopy05				= "38"
-
-		- var optionListLink06				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=278&limit=all"
-		- var optionListCopy06				= "40"
-
-		- var optionListLink07				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=276&limit=all"
-		- var optionListCopy07				= "40"
-
-		- var optionListLink08				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=353&limit=all"
-		- var optionListCopy08				= "41"
-
-		- var optionListLink09				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=279&limit=all"
-		- var optionListCopy09				= "41"
-
-		- var optionListLink10				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=277&limit=all"
-		- var optionListCopy10				= "42"
-
-		- var optionListLink11				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=283&limit=all"
-		- var optionListCopy11				= "42"
-
-		- var optionListLink12				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=280&limit=all"
-		- var optionListCopy12				= "43"
-
-		- var optionListLink13				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=275&limit=all"
-		- var optionListCopy13				= "44"
-
-		- var optionListLink14				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=281&limit=all"
-		- var optionListCopy14				= "44"
-
-		- var optionListLink15				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=282&limit=all"
-		- var optionListCopy15				= "45"
-
-		- var optionListLink16				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=303&limit=all"
-		- var optionListCopy16				= "45"
-
-		- var optionListLink17				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=294&limit=all"
-		- var optionListCopy17				= "46"
-
-		- var optionListLink18				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=436&limit=all"
-		- var optionListCopy18				= "47"
-
-		- var optionListLink19				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=436&limit=all"
-		- var optionListCopy19				= "47"
-
-		- var optionListLink20				= "http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=436&limit=all"
-		- var optionListCopy20				= "47"
-
+		- var optionRow = "3"
+		- var optionRowCopy = "Scegli il tuo numero"
+		- var optionLinks01 = [{"itemName":"39","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=350&limit=all"},{"itemName":"43","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=412&limit=all"},{"itemName":"46","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=459&limit=all"},{"itemName":"48","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=460&limit=all"},{"itemName":"38","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=302&limit=all"},{"itemName":"40","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=278&limit=all"}]
+		- var optionLinks02 = [{"itemName":"40","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=276&limit=all"},{"itemName":"41","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=353&limit=all"},{"itemName":"41","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=279&limit=all"},{"itemName":"42","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=277&limit=all"},{"itemName":"42","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=283&limit=all"},{"itemName":"43","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=280&limit=all"}]
+		//- var optionLinks00 = [{"itemName":"44","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=275&limit=all"},{"itemName":"44","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=281&limit=all"},{"itemName":"45","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=282&limit=all"},{"itemName":"45","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=303&limit=all"},{"itemName":"46","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=294&limit=all"},{"itemName":"47","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=436&limit=all"}]
 
 		//-		   ___ ___  _   _ _ __   ___  _ __
 		//-		  / __/ _ \| | | | '_ \ / _ \| '_ \

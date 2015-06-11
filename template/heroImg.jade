@@ -60,217 +60,57 @@ block contentCol1_1
 							| #{copyCowntdown}
 					br
 					.hr(style="border-bottom: 1px solid #{colorPrimary_};")
-		if size == "6"
+		if optionRow
 			tr
 				td.container-padding.content(align="center" bgcolor="#{colorBlack}")
 					table(cellpadding="5" cellspacing="0" border="0" width="100%")
 						tr
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink01}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy01}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink02}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy02}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink03}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy03}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink04}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy04}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink05}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy05}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink06}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy06}
-						tr
-							td(height="1" cospan="100")
+							td(colspan="100" align="center")
+								span(style="#{center}#{fontSans}#{fontL} color:#{colorPrimary};")
+									| #{optionRowCopy}
+						if optionRow > 0
+							tr
+								each val in optionLinks01
+									td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+										a(href="#{val.url}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+												| #{val.itemName}
+						if optionRow > 1
+							tr
+								each val in optionLinks02
+									td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+										a(href="#{val.url}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+												| #{val.itemName}
+						if optionRow > 2
+							tr
+								each val in optionLinks02
+									td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+										a(href="#{val.url}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+												| #{val.itemName}
+						if optionRow > 3
+							tr
+								each val in optionLinks02
+									td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+										a(href="#{val.url}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+												| #{val.itemName}
+						if optionRow > 4
+							tr
+								each val in optionLinks02
+									td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+										a(href="#{val.url}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+												| #{val.itemName}
+						if optionRow > 5
+							tr
+								each val in optionLinks02
+									td.link(style="border: 1px solid #{colorPrimary}; #{center}")
+										a(href="#{val.url}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+											span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+												| #{val.itemName}
 
-						tr
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink07}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy07}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink08}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy08}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink09}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy09}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink10}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy10}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink11}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy11}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink12}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy12}
-						tr
-							td(height="1" cospan="100")
-						tr
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink13}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy13}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink14}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy14}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink15}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy15}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink16}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy16}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink17}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy17}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink18}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy18}
-		if size == "4"
-			tr
-				td.container-padding.content(align="center" bgcolor="#{colorBlack}")
-					table(cellpadding="5" cellspacing="0" border="0" width="100%")
-						tr
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink01}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy01}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink02}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy02}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink03}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy03}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink04}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy04}
-						tr
-							td(height="1" cospan="100")
-						tr
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink05}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy05}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink06}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy06}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink07}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy07}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink08}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy08}
-						tr
-							td(height="1" cospan="100")
-						tr
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink09}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy09}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink10}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy10}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink11}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy11}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink12}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy12}
-						tr
-							td(height="1" cospan="100")
-						tr
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink13}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy13}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink14}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy14}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink15}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy15}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink16}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy16}
-						tr
-							td(height="1" cospan="100")
-						tr
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink17}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy17}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink18}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy18}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink19}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy19}
-							td(width="1px") &nbsp;
-							td.link(style="border: 1px solid #{colorPrimary}; #{center}")
-								a(href="#{optionListLink20}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-									span(style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										| #{optionListCopy20}
 		tr
 			td(align="center"  bgcolor="#{colorBlack}")
 				br
