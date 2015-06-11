@@ -1,5 +1,5 @@
 # responsive-email
 
-..* en link http://localhost:8012/responsive-email/index_en.html
+1. [english version](link http://localhost:8012/responsive-email/index_en.html)
+2. [versione italiana](link http://localhost:8012/responsive-email/index_it.html)
 
-..* it link http://localhost:8012/responsive-email/index_it.html
