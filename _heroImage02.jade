@@ -2,47 +2,61 @@ extends template/heroImg
 block info
 	include config
 
+	//-		 _                      _
+	//-		| |                    (_)
+	//-		| |__   ___ _ __ ___    _ _ __ ___   __ _
+	//-		| '_ \ / _ \ '__/ _ \  | | '_ ` _ \ / _` |
+	//-		| | | |  __/ | | (_) | | | | | | | | (_| |
+	//-		|_| |_|\___|_|  \___/  |_|_| |_| |_|\__, |
+	//-                                      __/ |
+	//-                                     |___/
 	if lang == "en"
-
-		//-		 _                      _
-		//-		| |                    (_)
-		//-		| |__   ___ _ __ ___    _ _ __ ___   __ _
-		//-		| '_ \ / _ \ '__/ _ \  | | '_ ` _ \ / _` |
-		//-		| | | |  __/ | | (_) | | | | | | | | (_| |
-		//-		|_| |_|\___|_|  \___/  |_|_| |_| |_|\__, |
-		//-                                      __/ |
-		//-                                     |___/
 
 		- var heroImage 				= "600.jpg"
 		- var linkCTA					= "http://www.solopx.com"
-
 		- var heroImageheader 			= "#NUOVO SILVER PACK"
 		- var row01						= "Acquista ora le nuove colorazioni di scarpe Nike"
 		- var row02						= false
 		- var row03						= false
 		- var ctaCopy 					= "VEDI TUTTI I MODELLI   &raquo;"
 
-		//-		                         _         _
-		//-		                        | |       | |
-		//-		  ___ _____      ___ __ | |_    __| | _____      ___ __
-		//-		 / __/ _ \ \ /\ / / '_ \| __|  / _` |/ _ \ \ /\ / / '_ \
-		//-		| (_| (_) \ V  V /| | | | |_  | (_| | (_) \ V  V /| | | |
-		//-		 \___\___/ \_/\_/ |_| |_|\__|  \__,_|\___/ \_/\_/ |_| |_|
-		//-
-		//- 	set up Cownt DOWN: year, month, day, our or if you dont want set "cowntdown" to false
+	if lang == "it"
 
+		- var heroImage 				= "600.jpg"
+		- var linkCTA					= "http://www.solopx.com"
+		- var heroImageheader 			= "#NUOVO SILVER PACK"
+		- var row01						= "Acquista ora le nuove colorazioni di scarpe Nike"
+		- var row02						= false
+		- var row03						= false
+		- var ctaCopy 					= "VEDI TUTTI I MODELLI   &raquo;"
+
+	//-		                         _         _
+	//-		                        | |       | |
+	//-		  ___ _____      ___ __ | |_    __| | _____      ___ __
+	//-		 / __/ _ \ \ /\ / / '_ \| __|  / _` |/ _ \ \ /\ / / '_ \
+	//-		| (_| (_) \ V  V /| | | | |_  | (_| | (_) \ V  V /| | | |
+	//-		 \___\___/ \_/\_/ |_| |_|\__|  \__,_|\___/ \_/\_/ |_| |_|
+	//-
+	//- 	set up Cownt DOWN: year, month, day, our or if you dont want set "cowntdown" to false
+
+	if lang == "en"
 		- var cowntdown 				= false
 		- var copyCowntdown 			= "IT Promotion available until midnight of 23.04.2015"
 
-		//-		  _ _       _      _ _     _
-		//-		 | (_)     | |    | (_)   | |
-		//-		 | |_ _ __ | | __ | |_ ___| |_
-		//-		 | | | '_ \| |/ / | | / __| __|
-		//-		 | | | | | |   <  | | \__ \ |_
-		//-		 |_|_|_| |_|_|\_\ |_|_|___/\__|
-		//-
-		//- 	setUp optionList on HeroImage
+	if lang == "it"
+		- var cowntdown 				= "2015-08-09+00:00:01"
+		- var copyCowntdown  			= "PROMOTION AVAILABLE UNTIL MIDNIGHT OF 23.04.2015"
 
+	//-		  _ _       _      _ _     _
+	//-		 | (_)     | |    | (_)   | |
+	//-		 | |_ _ __ | | __ | |_ ___| |_
+	//-		 | | | '_ \| |/ / | | / __| __|
+	//-		 | | | | | |   <  | | \__ \ |_
+	//-		 |_|_|_| |_|_|\_\ |_|_|___/\__|
+	//-
+	//- 	setUp linkList on HeroImage
+
+	if lang == "en"
 		//- size template
 			- var optionRow = "3"
 			- var optionRowCopy = "Scegli il tuo numero"
@@ -55,61 +69,7 @@ block info
 		- var optionRowCopy = "Scegli la fascia di prezzo"
 		- var optionLinks01 = [{"itemName":"5 - 15 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=350&limit=all"},{"itemName":"15 - 25 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=412&limit=all"},{"itemName":"25 - 50 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=459&limit=all"},{"itemName":"oltre 50 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=459&limit=all"}]
 
-
-		//-		   ___ ___  _   _ _ __   ___  _ __
-		//-		  / __/ _ \| | | | '_ \ / _ \| '_ \
-		//-		 | (_| (_) | |_| | |_) | (_) | | | |
-		//-		  \___\___/ \__,_| .__/ \___/|_| |_|
-		//-		                 | |
-		//-		                 |_|
-		//-
-		//- 	COUPON set UP
-
-		- var couponCopyRow01 			= "Use this COUPON to get 20% discount on any product:"
-		- var coupon 					= "#PROUDofJU"
-		- var couponCopyRow02 			= "PROMOTION AVAILABLE UNTIL MIDNIGHT OF 23.04.2015"
-
 	if lang == "it"
-
-		//-		 _                      _
-		//-		| |                    (_)
-		//-		| |__   ___ _ __ ___    _ _ __ ___   __ _
-		//-		| '_ \ / _ \ '__/ _ \  | | '_ ` _ \ / _` |
-		//-		| | | |  __/ | | (_) | | | | | | | | (_| |
-		//-		|_| |_|\___|_|  \___/  |_|_| |_| |_|\__, |
-		//-                                      __/ |
-		//-                                     |___/
-
-		- var heroImage 				= "600.jpg"
-		- var linkCTA					= "http://www.solopx.com"
-
-		- var heroImageheader 			= "#NUOVO SILVER PACK"
-		- var row01						= "Acquista ora le nuove colorazioni di scarpe Nike"
-		- var row02						= false
-		- var row03						= false
-		- var ctaCopy 					= "VEDI TUTTI I MODELLI   &raquo;"
-
-		//-		                         _         _
-		//-		                        | |       | |
-		//-		  ___ _____      ___ __ | |_    __| | _____      ___ __
-		//-		 / __/ _ \ \ /\ / / '_ \| __|  / _` |/ _ \ \ /\ / / '_ \
-		//-		| (_| (_) \ V  V /| | | | |_  | (_| | (_) \ V  V /| | | |
-		//-		 \___\___/ \_/\_/ |_| |_|\__|  \__,_|\___/ \_/\_/ |_| |_|
-		//-
-		//- 	set up Cownt DOWN: year, month, day, our or if you dont want set "cowntdown" to false
-
-		- var cowntdown 				= "2015-08-09+00:00:01"
-		- var copyCowntdown  			= "PROMOTION AVAILABLE UNTIL MIDNIGHT OF 23.04.2015"
-		//- var cowntdown 					= false
-
-		//-		  _ _       _      _ _     _
-		//-		 | (_)     | |    | (_)   | |
-		//-		 | |_ _ __ | | __ | |_ ___| |_
-		//-		 | | | '_ \| |/ / | | / __| __|
-		//-		 | | | | | |   <  | | \__ \ |_
-		//-		 |_|_|_| |_|_|\_\ |_|_|___/\__|
-		//-
-		//- 	setUp optionList on HeroImage
 
 		//- size template
 		- var optionRow = "3"
@@ -124,21 +84,29 @@ block info
 			- var optionLinks01 = [{"itemName":"5 - 15 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=350&limit=all"},{"itemName":"15 - 25 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=412&limit=all"},{"itemName":"25 - 50 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=459&limit=all"},{"itemName":"oltre 50 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=459&limit=all"}]
 
 
-		//-		   ___ ___  _   _ _ __   ___  _ __
-		//-		  / __/ _ \| | | | '_ \ / _ \| '_ \
-		//-		 | (_| (_) | |_| | |_) | (_) | | | |
-		//-		  \___\___/ \__,_| .__/ \___/|_| |_|
-		//-		                 | |
-		//-		                 |_|
-		//-
-		//- 	COUPON set UP
+	//-		   ___ ___  _   _ _ __   ___  _ __
+	//-		  / __/ _ \| | | | '_ \ / _ \| '_ \
+	//-		 | (_| (_) | |_| | |_) | (_) | | | |
+	//-		  \___\___/ \__,_| .__/ \___/|_| |_|
+	//-		                 | |
+	//-		                 |_|
+	//-
+	//- 	COUPON set UP
+
+	if lang == "en"
+
+		- var couponCopyRow01 			= "Use this COUPON to get 20% discount on any product:"
+		- var coupon 					= "#PROUDofJU"
+		- var couponCopyRow02 			= "PROMOTION AVAILABLE UNTIL MIDNIGHT OF 23.04.2015"
+
+	if lang == "it"
 
 		- var couponCopyRow01 			= "Use this COUPON to get 20% discount on any product:"
 		- var coupon 					= "#PROUDofJU"
 		- var couponCopyRow02 			= "PROMOTION AVAILABLE UNTIL MIDNIGHT OF 23.04.2015"
 
 
-	- var trakingSource					= "_b1&ga_medium=DEM&ga_source=NL"
+	- var trakingSource					= "_Hero1&ga_medium=DEM&ga_source=NL"
 	- var bgColorCopy					= "#000000"
 	- var colorHeader					= "#b5ff00"
 	- var colorCopy						= "#777777"
