@@ -42,11 +42,12 @@ html(lang="#{lang}")
 								include template/header
 								include template/nav
 								include _heroImage02
-								include _2banner_a
 								include _3prod_a
-								include _2banner_a
+								if site == "f4u"
+									include _ourBrand
+								if site == "juve"
+									include _2banner_a
 								include _2prod_b
-								include _ourBrand
 								include _2banner_a
 								include _3article_a
 				block footer
