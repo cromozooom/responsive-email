@@ -9,7 +9,7 @@
 block User
 
 	//- option available juve, f4u
-	- var site 				= "f4u"
+	- var site 				= "juve"
 
 	//- used for tracking code
 	- var data = "27-3"
@@ -154,6 +154,23 @@ block PowerUser
 	- var youTube = "https://www.youtube.com/channel/UCzqG3NzsJtmTa4qJ54ssUEg/"
 	- var gPlus = "https://plus.google.com/+Football4uItF4U/"
 	//- var pinterest = ""
+
+	//- footer
+	//- /////////////////////////////////////////////////////////////////
+	if lang == "en"
+		if site == "juve"
+			- var communicationEmail01	= "To ensure you always receive communications from "
+			- var contactMail 			= "noreply@juvestore.com"
+			- var communicationEmail02 	= "to your e-mail address book."
+			- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
+			- var userMail				= "n.razvan@episrl.it"
+	if lang == "it"
+		if site == "juve"
+			- var communicationEmail01	= "To ensure you always receive communications from "
+			- var contactMail 			= "noreply@juvestore.com"
+			- var communicationEmail02 	= "to your e-mail address book."
+			- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
+			- var userMail				= "n.razvan@episrl.it"
 
 	//- LAYOUT
 	//- /////////////////////////////////////////////////////////////////
