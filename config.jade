@@ -164,6 +164,12 @@ block PowerUser
 			- var communicationEmail02 	= "to your e-mail address book."
 			- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
 			- var userMail				= "n.razvan@episrl.it"
+		if site == "f4u"
+			- var communicationEmail01	= "To ensure you always receive communications from "
+			- var contactMail 			= "noreply@juvestore.com"
+			- var communicationEmail02 	= "to your e-mail address book."
+			- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
+			- var userMail				= "n.razvan@episrl.it"
 	if lang == "it"
 		if site == "juve"
 			- var communicationEmail01	= "To ensure you always receive communications from "
@@ -171,7 +177,13 @@ block PowerUser
 			- var communicationEmail02 	= "to your e-mail address book."
 			- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
 			- var userMail				= "n.razvan@episrl.it"
-
+		if site == "f4u"
+			- var communicationEmail01	= "To ensure you always receive communications from "
+			- var contactMail 			= "noreply@juvestore.com"
+			- var communicationEmail02 	= "to your e-mail address book."
+			- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
+			- var userMail				= "n.razvan@episrl.it"
+	
 	//- LAYOUT
 	//- /////////////////////////////////////////////////////////////////
 
@@ -218,7 +230,7 @@ block PowerUser
 		- var colorWhite 		= "#ffffff"
 
 	if site == "juve"
-		- var containerBg 		= "#d3d3d3"
+		- var containerBg 		= "#e8e8e8"
 		- var wrapperCollor 	= "#ffffff"
 
 		- var colorPrimary 		= "#fcc511"
