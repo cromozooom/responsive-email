@@ -1,5 +1,4 @@
 block config
-	include config
 
 doctype html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"
 html(lang="#{lang}")
@@ -42,12 +41,12 @@ html(lang="#{lang}")
 							block content
 								include template/header
 								include template/nav
-								//- include _heroImage01
 								include _heroImage02
 								include _2banner_a
 								include _3prod_a
 								include _2banner_a
 								include _2prod_b
+								include _ourBrand
 								include _2banner_a
 								include _3article_a
 				block footer

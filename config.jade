@@ -9,7 +9,7 @@
 block User
 
 	//- option available juve, f4u
-	- var site 				= "juve"
+	- var site 				= "f4u"
 
 	//- used for tracking code
 	- var data = "27-3"
@@ -17,13 +17,12 @@ block User
 	- var production 		= false
 	- var test 				= false
 
-
 	//- Universal Copy
 	if lang == "en"
 		- var title 			= "Samplte title dem en"
 		- var previewCopy		= "Acquista la nuova maglia home 2015/16"
 
-	else
+	if lang == "it"
 		- var title 			= "Samplte title dem it"
 		- var previewCopy		= "Acquista la nuova maglia home 2015/16"
 
@@ -43,12 +42,12 @@ block PowerUser
 	//- Preheader template
 
 	if lang == "en"
-		- var onlineVersionCopy	= "E-mail non visualizza correttamente?"
+		- var onlineVersionCopy	= "E-mail non visualizza correttamente? en"
 		- var viewOnline		= "view online version"
 		- var viewOnlineLink	= "http://www.solopx.com"
 
 	if lang == "it"
-		- var onlineVersionCopy	= "E-mail non visualizza correttamente?"
+		- var onlineVersionCopy	= "E-mail non visualizza correttamente? it"
 		- var viewOnline		= "view online version"
 		- var viewOnlineLink	= "http://www.solopx.com"
 
@@ -74,6 +73,7 @@ block PowerUser
 	//- nav template
 
 	if lang == "en"
+
 		if site == "f4u"
 			- var LogoStoreTxt 		= "football4u"
 			- var LogoImgLink 		= "http://www.football4u.it/it/"
@@ -109,9 +109,10 @@ block PowerUser
 			- var NavLink06 				= "http://www.football4u.it/en/clearance.html"
 
 	if lang == "it"
+
 		if site == "f4u"
-			- var LogoStoreTxt 		= "football4u"
-			- var LogoImgLink 		= "http://www.football4u.it/it/"
+			- var LogoStoreTxt 				= "football4u"
+			- var LogoImgLink 				= "http://www.football4u.it/it/"
 
 			- var Nav01 					= "SCARPE"
 			- var NavLink01 				= "http://www.football4u.it/it/scarpe-calcio.html"
@@ -127,8 +128,8 @@ block PowerUser
 			- var NavLink06 				= "http://www.football4u.it/it/outlet.html"
 
 		if site == "juve"
-			- var LogoStoreTxt 		= "juve"
-			- var LogoImgLink 		= "http://www.juvestore.com/it/"
+			- var LogoStoreTxt 				= "juve"
+			- var LogoImgLink 				= "http://www.juvestore.com/it/"
 
 			- var Nav01 					= "SCARPE"
 			- var NavLink01 				= "http://www.football4u.it/it/scarpe-calcio.html"
