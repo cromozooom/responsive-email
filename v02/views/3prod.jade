@@ -1,0 +1,32 @@
+//- template for 3 prod in line based on three col template
+//- is imported in "_3prod_a"
+//- -----------------------------------------------------------------
+
+//- has extend threeColumn template and add block info
+//- -----------------------------------------------------------------
+extends col/threeColumn
+block info
+
+//- 1 cols block
+//- -----------------------------------------------------------------
+block contentCol1_3
+	block prodTemplate01
+		- var prod = "01"
+		block 3prod_a
+		include prod.jade
+
+//- 2 cols block
+//- -----------------------------------------------------------------
+block contentCol2_3
+	block prodTemplate02
+		- var prod = "02"
+		block 3prod_a
+		include prod.jade
+
+//- 3 cols block
+//- -----------------------------------------------------------------
+block contentCol3_3
+	block prodTemplate03
+		- var prod = "03"
+		block 3prod_a
+		include prod.jade

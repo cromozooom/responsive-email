@@ -1,110 +1,42 @@
-extends template/heroImg
+extend ../template/linkList
+//-		  _ _       _      _ _     _
+//-		 | (_)     | |    | (_)   | |
+//-		 | |_ _ __ | | __ | |_ ___| |_
+//-		 | | | '_ \| |/ / | | / __| __|
+//-		 | | | | | |   <  | | \__ \ |_
+//-		 |_|_|_| |_|_|\_\ |_|_|___/\__|
+//-
+//- 	setUp linkList on HeroImage
 block info
-	include config
-
-	//-		 _                      _
-	//-		| |                    (_)
-	//-		| |__   ___ _ __ ___    _ _ __ ___   __ _
-	//-		| '_ \ / _ \ '__/ _ \  | | '_ ` _ \ / _` |
-	//-		| | | |  __/ | | (_) | | | | | | | | (_| |
-	//-		|_| |_|\___|_|  \___/  |_|_| |_| |_|\__, |
-	//-                                      __/ |
-	//-                                     |___/
-	if lang == "en"
-
-		- var heroImage 				= "600.jpg"
-		- var linkCTA					= "http://www.solopx.com"
-		- var heroImageheader 			= "#NUOVO SILVER PACK"
-		- var row01						= "Acquista ora le nuove colorazioni di scarpe Nike"
-		- var row02						= false
-		- var row03						= false
-		- var ctaCopy 					= "VEDI TUTTI I MODELLI   &raquo;"
-
-	if lang == "it"
-
-		- var heroImage 				= "600.jpg"
-		- var linkCTA					= "http://www.solopx.com"
-		- var heroImageheader 			= "#NUOVO SILVER PACK"
-		- var row01						= "Acquista ora le nuove colorazioni di scarpe Nike"
-		- var row02						= false
-		- var row03						= false
-		- var ctaCopy 					= "VEDI TUTTI I MODELLI   &raquo;"
-
-	//-		                         _         _
-	//-		                        | |       | |
-	//-		  ___ _____      ___ __ | |_    __| | _____      ___ __
-	//-		 / __/ _ \ \ /\ / / '_ \| __|  / _` |/ _ \ \ /\ / / '_ \
-	//-		| (_| (_) \ V  V /| | | | |_  | (_| | (_) \ V  V /| | | |
-	//-		 \___\___/ \_/\_/ |_| |_|\__|  \__,_|\___/ \_/\_/ |_| |_|
-	//-
-	//- 	set up Cownt DOWN: year, month, day, our or if you dont want set "cowntdown" to false
-
-	if lang == "en"
-		- var cowntdown 				= false
-		- var copyCowntdown 			= "IT Promotion available until midnight of 23.04.2015"
-
-	if lang == "it"
-		- var cowntdown 				= "2015-08-09+00:00:01"
-		- var copyCowntdown  			= "PROMOTION AVAILABLE UNTIL MIDNIGHT OF 23.04.2015"
-
-	//-		  _ _       _      _ _     _
-	//-		 | (_)     | |    | (_)   | |
-	//-		 | |_ _ __ | | __ | |_ ___| |_
-	//-		 | | | '_ \| |/ / | | / __| __|
-	//-		 | | | | | |   <  | | \__ \ |_
-	//-		 |_|_|_| |_|_|\_\ |_|_|___/\__|
-	//-
-	//- 	setUp linkList on HeroImage
-
 	if lang == "en"
 		//- size template
 			- var optionRow = "3"
-			- var optionRowCopy = "Scegli il tuo numero"
+			- var optionRowCopy = "Scegli il tuo numero - en"
 			- var optionLinks01 = [{"itemName":"39","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=350&limit=all"},{"itemName":"43","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=412&limit=all"},{"itemName":"46","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=459&limit=all"},{"itemName":"48","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=460&limit=all"},{"itemName":"38","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=302&limit=all"},{"itemName":"40","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=278&limit=all"}]
 			- var optionLinks02 = [{"itemName":"40","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=276&limit=all"},{"itemName":"41","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=353&limit=all"},{"itemName":"41","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=279&limit=all"},{"itemName":"42","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=277&limit=all"},{"itemName":"42","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=283&limit=all"},{"itemName":"43","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=280&limit=all"}]
 			- var optionLinks03 = [{"itemName":"44","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=275&limit=all"},{"itemName":"44","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=281&limit=all"},{"itemName":"45","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=282&limit=all"},{"itemName":"45","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=303&limit=all"},{"itemName":"46","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=294&limit=all"},{"itemName":"47","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=436&limit=all"}]
 
 		//- price template
 		- var optionRow = "1"
-		- var optionRowCopy = "Scegli la fascia di prezzo"
+		- var optionRowCopy = "Scegli la fascia di prezzo - en"
 		- var optionLinks01 = [{"itemName":"5 - 15 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=350&limit=all"},{"itemName":"15 - 25 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=412&limit=all"},{"itemName":"25 - 50 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=459&limit=all"},{"itemName":"oltre 50 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=459&limit=all"}]
 
 	if lang == "it"
 
 		//- size template
 		- var optionRow = "3"
-		- var optionRowCopy = "Scegli il tuo numero"
+		- var optionRowCopy = "Scegli il tuo numero - it"
 		- var optionLinks01 = [{"itemName":"39","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=350&limit=all"},{"itemName":"43","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=412&limit=all"},{"itemName":"46","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=459&limit=all"},{"itemName":"48","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=460&limit=all"},{"itemName":"38","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=302&limit=all"},{"itemName":"40","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=278&limit=all"}]
 		- var optionLinks02 = [{"itemName":"40","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=276&limit=all"},{"itemName":"41","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=353&limit=all"},{"itemName":"41","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=279&limit=all"},{"itemName":"42","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=277&limit=all"},{"itemName":"42","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=283&limit=all"},{"itemName":"43","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=280&limit=all"}]
 		- var optionLinks03 = [{"itemName":"44","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=275&limit=all"},{"itemName":"44","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=281&limit=all"},{"itemName":"45","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=282&limit=all"},{"itemName":"45","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=303&limit=all"},{"itemName":"46","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=294&limit=all"},{"itemName":"47","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=436&limit=all"}]
 
 		//- price template
 			- var optionRow = "1"
-			- var optionRowCopy = "Scegli la fascia di prezzo"
+			- var optionRowCopy = "Scegli la fascia di prezzo - it"
 			- var optionLinks01 = [{"itemName":"5 - 15 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=350&limit=all"},{"itemName":"15 - 25 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=412&limit=all"},{"itemName":"25 - 50 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=459&limit=all"},{"itemName":"oltre 50 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=459&limit=all"}]
 
-
-	
-
-	//-		      _
-	//-		     | |
-	//-		  ___| |_ __ _
-	//-		 / __| __/ _` |
-	//-		| (__| || (_| |
-	//-		 \___|\__\__,_|
-	//-
-	//- 	CTA setUP
-
-	block ctaCustom
-		//- 01 = simple CTA (buy now or Acquista)
-		//- 02 = CTA with price (buy at {priceProd} or Acquista a {priceProd})
-		- var buttonType 				= "01"
-		- var bgColor					= "#b5ff00"
-		- var txtColor					= "#33333d"
-		- var width						= "200px"
-		- var height 					= "44px"
-		- var arcsize 					= "5%"
-		- var radiusSize 				= "2px"
-		- var lineheight 				= "44px"
-		- var align 					= "center"
-		- var fontSize					= "font-size: 14px; line-height: 11px;"
+block color
+	- var bgColor 			= colorBlack
+	- var copyColor 		= colorPrimary
+	- var borderColor 		= colorPrimary
+	- var valLinkColor 		= colorPrimary

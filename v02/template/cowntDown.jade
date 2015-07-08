@@ -1,0 +1,18 @@
+block info
+block color
+
+block content
+	//- adding cowntDown is simple like this: setUp a cowntdown var in _heroImage.jade
+	if cowntdown
+		tr
+			td.container-padding.content(align="center" bgcolor="#{bgColor}")
+				.hr(style="border-bottom: 1px solid #{borderBottomTop};")
+				br
+				center
+					img(src="http://www.solopx.com/staging/epi/EmailCountdownv01/gif.php?time=#{cowntdown}" border="0" alt="27-03" hspace="0" vspace="0" style="#{bold}#{fontXL}#{fontSans} color: #{imgBgColor}; max-width:100%; ")
+					br
+					br
+					span(style="#{center}#{fontSans}#{fontS} color:#{fontColor};")
+						| #{copyCowntdown}
+				br
+				.hr(style="border-bottom: 1px solid #{borderBottomTop};")

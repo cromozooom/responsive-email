@@ -1,0 +1,37 @@
+block info
+	include ../config
+
+	- var fontColor 	= colorSecondary_
+	- var linkColor		= colorPrimary
+	- var bgcolor 		= containerBg
+tr
+	td(align="center" valign="top" bgcolor="#{bgcolor}")
+		//- 600px container (white background)
+		table.container(border="0" width="600" cellpadding="0" cellspacing="0")
+			//- footer
+			tr
+				td.container-padding.footer-text(align="left" style="#{fontXS} #{fontSans} color: #{fontColor};")
+					br
+					br
+					| Sample Footer text: © 2014 Acme, Inc.
+					br
+					br
+					| You are receiving this email because you opted in on our website. Update your 
+					a(href="#" style="color:#{linkColor}; #{decNone}")
+						span(style="color:#{linkColor}; #{decNone}") email preferences 
+					| or 
+					a(href="#" style="color:#{linkColor}; #{decNone}")
+						span(style="color:#{linkColor}; #{decNone}") unsubscribe
+					|.
+					br
+					br
+					strong
+						| Acme, Inc.
+						br
+					span.ios-footer
+						| 123 Main St.<br>
+						| Springfield, MA 12345<br>
+					a(href="http://www.acme-inc.com"  style="color:#{linkColor}; #{decNone}")
+						span(style="color:#{linkColor}; #{decNone}") www.acme-inc.com<br>
+					br
+					br

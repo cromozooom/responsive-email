@@ -1,0 +1,51 @@
+extends col/oneColumn.jade
+block info
+	include ../config
+	- var trakingSource = "_header&ga_medium=DEM&ga_source=NL"
+	- var padding 		= "padding: 15px 10px 15px 0px;"
+
+	- var linkColor				= colorSecondary_
+	- var borderTop 			= colorPrimary
+	- var bgcolor 				= colorSecondary
+
+	- var linkSpecialColor		= colorSecondary
+	- var linkSpecialBgColor	= colorPrimary
+
+block contentCol1_1
+	//- inspired from http://responsiveemailpatterns.com/patterns/navigation/top-links.html
+	tr
+		td(height="2" width="600" style="background-color: #{borderTop};")
+	tr
+		td.main_nav(width="600" style="padding: 0px 0px 0px 20px; background-color: #{bgcolor};")
+			table(cellpadding="0" cellspacing="0" width="100%" style="background-color: #{bgcolor};")
+				tr
+					if Nav01
+						td(align="center" style="#{padding}")
+							a(href="#{NavLink01}?ga_campaign=#{data}#{lang}#{trakingSource}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+								span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+									span #{Nav01}
+					if Nav02
+						td(align="center" style="#{padding}")
+							a(href="#{NavLink02}?ga_campaign=#{data}#{lang}#{trakingSource}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+								span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+									span #{Nav02}
+					if Nav03
+						td(align="center" style="#{padding}")
+							a(href="#{NavLink03}?ga_campaign=#{data}#{lang}#{trakingSource}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+								span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+									span #{Nav03}
+					if Nav04
+						td(align="center" style="#{padding}")
+							a(href="#{NavLink04}?ga_campaign=#{data}#{lang}#{trakingSource}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+								span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+									span #{Nav04}
+					if Nav05
+						td(align="center" style="#{padding}")
+							a(href="#{NavLink05}?ga_campaign=#{data}#{lang}#{trakingSource}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+								span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+									span #{Nav05}
+					if Nav06
+						td(align="center" style="padding: 15px 20px 15px 20px; #{fontS} #{decNone} #{fontSans} background-color: #{linkSpecialBgColor};")
+							a(href="#{NavLink06}?ga_campaign=#{data}#{lang}#{trakingSource}" style="color: #{linkSpecialColor}; #{fontS} #{decNone} #{fontSans}")
+								strong(style="color: #{linkSpecialColor}; #{fontS} #{decNone} #{fontSans}")
+									| #{Nav06}

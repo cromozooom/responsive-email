@@ -1,0 +1,53 @@
+block info
+block color
+
+block content
+	tr
+		td.container-padding.content(align="center" bgcolor="#{bgColor}")
+			table(cellpadding="5" cellspacing="0" border="0" width="100%")
+				tr
+					td(colspan="100" align="center")
+						span(style="#{center}#{fontSans}#{fontL} color:#{copyColor};")
+							| #{optionRowCopy}
+				if optionRow > 0
+					tr
+						each val in optionLinks01
+							td.link(style="border: 1px solid #{borderColor}; #{center}")
+								a(href="#{val.url}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{valLinkColor};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{valLinkColor};")
+										| #{val.itemName}
+				if optionRow > 1
+					tr
+						each val in optionLinks02
+							td.link(style="border: 1px solid #{borderColor}; #{center}")
+								a(href="#{val.url}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{valLinkColor};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{valLinkColor};")
+										| #{val.itemName}
+				if optionRow > 2
+					tr
+						each val in optionLinks03
+							td.link(style="border: 1px solid #{borderColor}; #{center}")
+								a(href="#{val.url}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{valLinkColor};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{valLinkColor};")
+										| #{val.itemName}
+				if optionRow > 3
+					tr
+						each val in optionLinks04
+							td.link(style="border: 1px solid #{borderColor}; #{center}")
+								a(href="#{val.url}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{valLinkColor};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{valLinkColor};")
+										| #{val.itemName}
+				if optionRow > 4
+					tr
+						each val in optionLinks05
+							td.link(style="border: 1px solid #{borderColor}; #{center}")
+								a(href="#{val.url}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{valLinkColor};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{valLinkColor};")
+										| #{val.itemName}
+				if optionRow > 5
+					tr
+						each val in optionLinks06
+							td.link(style="border: 1px solid #{borderColor}; #{center}")
+								a(href="#{val.url}" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{valLinkColor};")
+									span(style="#{fontM} #{decNone} #{fontSans} color:#{valLinkColor};")
+										| #{val.itemName}

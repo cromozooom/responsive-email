@@ -1,0 +1,33 @@
+extend ../template/coupon
+//-		   ___ ___  _   _ _ __   ___  _ __
+//-		  / __/ _ \| | | | '_ \ / _ \| '_ \
+//-		 | (_| (_) | |_| | |_) | (_) | | | |
+//-		  \___\___/ \__,_| .__/ \___/|_| |_|
+//-		                 | |
+//-		                 |_|
+//-
+//- 	COUPON set UP
+
+block info
+	if lang == "en"
+
+		- var couponCopyRow01 			= "Use this COUPON to get 20% discount on any product:"
+		- var coupon 					= "#PROUDofJU"
+		- var couponCopyRow02 			= "PROMOTION AVAILABLE UNTIL MIDNIGHT OF 23.04.2015"
+
+	if lang == "it"
+
+		- var couponCopyRow01 			= "Use this COUPON to get 20% discount on any product:"
+		- var coupon 					= "#PROUDofJU"
+		- var couponCopyRow02 			= "PROMOTION AVAILABLE UNTIL MIDNIGHT OF 23.04.2015"
+
+
+	- var trakingSource					= "_Hero1&ga_medium=DEM&ga_source=NL"
+
+
+block color
+	- var bgColor 			= colorBlack
+	- var fontColor 		= colorSecondary_
+	- var borderCoupon 		= colorSecondary__
+	- var fontColorCoupon 	= colorPrimary
+	- var colorNote 		= colorSecondary__
