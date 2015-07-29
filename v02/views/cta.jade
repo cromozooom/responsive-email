@@ -2,8 +2,8 @@ block ctaCustom
 	//- 01 = simple CTA (buy now or Acquista)
 	//- 02 = CTA with price (buy at {priceProd} or Acquista a {priceProd})
 	- var buttonType 				= "01"
-	//- var colorPrimary			= "#b5ff00"
-	//- var colorPrimary_			= "#33333d"
+	//- var ctaColor			= "#b5ff00"
+	//- var ctaColor_			= "#33333d"
 	- var width						= "200px"
 	- var height 					= "44px"
 	- var arcsize 					= "5%"
@@ -11,18 +11,25 @@ block ctaCustom
 	- var lineheight 				= "44px"
 	- var align 					= "center"
 	- var fontSize					= "font-size: 14px; line-height: 11px;"
+if site == "fiorentina"
+	- var ctaColor			= "#e41b13"
+	- var ctaColor_			= "#ffffff"
+
+if site == "juve"
+	- var ctaColor			= "#fcc511"
+	- var ctaColor_			= "#1c1c1c"
 
 table(width="100%" border="0" cellspacing="0" cellpadding="0" align="#{align}")
 	tr
 		td(align="#{align}")
 			div
 				//[if mso]
-					<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" style="height:#{height}; v-text-anchor:middle; width:#{width};" arcsize="#{arcsize}" strokecolor="#{colorPrimary}" fillcolor="#{colorPrimary}">
+					<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" style="height:#{height}; v-text-anchor:middle; width:#{width};" arcsize="#{arcsize}" strokecolor="#{ctaColor}" fillcolor="#{ctaColor}">
 					<w:anchorlock/>
-					<center style="color:#{colorPrimary_};#{fontSans}#{fontSize}">#{ctaCopy} &rarr;</center>
+					<center style="color:#{ctaColor_};#{fontSans}#{fontSize}">#{ctaCopy} &rarr;</center>
 					</v:roundrect>
 					<![endif]
-				a(href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" style="background-color:#{colorPrimary}; border:1px solid #{colorPrimary}; border-radius:#{radiusSize}; color:#{colorPrimary_}; display:inline-block;#{fontSans}#{fontSize} line-height:#{lineheight}; text-align:center; text-decoration:none; width:#{width};-webkit-text-size-adjust:none;mso-hide:all;")
+				a(href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" style="background-color:#{ctaColor}; border:1px solid #{ctaColor}; border-radius:#{radiusSize}; color:#{ctaColor_}; display:inline-block;#{fontSans}#{fontSize} line-height:#{lineheight}; text-align:center; text-decoration:none; width:#{width};-webkit-text-size-adjust:none;mso-hide:all;")
 
 					//- simple CTA (buy now or Acquista)
 					//- -----------------------------------------------------------------

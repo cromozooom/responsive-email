@@ -8,8 +8,8 @@
 
 block User
 
-	//- option available juve, f4u
-	- var site 				= "f4u"
+	//- option available juve, f4u, fiorentina
+	- var site 				= "fiorentina"
 
 	//- used for tracking code
 	- var data = "27-3"
@@ -69,13 +69,17 @@ block PowerUser
 		- var logoImgHeight 		= "80px"
 		- var socilaIconWidth 		= "40px"
 
+	if site == "fiorentina"
+		- var logoImgHeight 		= "80px"
+		- var socilaIconWidth 		= "40px"
+
 	//- nav template
 
 	if lang == "en"
 
 		if site == "f4u"
 			- var LogoStoreTxt 		= "football4u"
-			- var LogoImgLink 		= "http://www.football4u.it/it/"
+			- var LogoImgLink 		= "http://www.football4u.it"
 
 			- var Nav01 					= "FOOTBALL BOOTS"
 			- var NavLink01 				= "http://www.football4u.it/en/football-boots.html"
@@ -106,6 +110,21 @@ block PowerUser
 			- var NavLink05 				= "http://www.football4u.it/en/teamsport.html"
 			- var Nav06 					= "CLEARANCE"
 			- var NavLink06 				= "http://www.football4u.it/en/clearance.html"
+
+		if site == "fiorentina"
+			- var LogoStoreTxt 		= "fiorentina"
+			- var LogoImgLink 		= "http://www.fiorentinastore.com/en"
+
+			- var Nav01 					= "MATCH KITS"
+			- var NavLink01 				= "http://www.fiorentinastore.com/en/match-kits.html"
+			- var Nav02 					= "FASHION"
+			- var NavLink02 				= "http://www.fiorentinastore.com/en/fashion.html"
+			- var Nav03 					= "ACCESSORIES"
+			- var NavLink03 				= "http://www.fiorentinastore.com/en/accessories.html"
+			- var Nav04 					= "COVERS"
+			- var NavLink04 				= "http://www.fiorentinastore.com/en/covers.html"
+			- var Nav05 					= "GIFT IDEAS"
+			- var NavLink05 				= "http://www.fiorentinastore.com/en/gift-ideas.html"
 
 	if lang == "it"
 
@@ -143,6 +162,23 @@ block PowerUser
 			- var Nav06 					= "OUTLET"
 			- var NavLink06 				= "http://www.football4u.it/it/outlet.html"
 
+		if site == "fiorentina"
+			- var LogoStoreTxt 				= "fiorentinastore"
+			- var LogoImgLink 				= "http://www.fiorentinastore.com/en/"
+
+			- var Nav01 					= "KIT GARA"
+			- var NavLink01 				= "http://www.fiorentinastore.com/it/kit-gara.html"
+			- var Nav02 					= "ABBIGLIAMENTO"
+			- var NavLink02 				= "http://www.fiorentinastore.com/it/abbigliamento.html"
+			- var Nav03 					= "ACCESSORI"
+			- var NavLink03 				= "http://www.fiorentinastore.com/it/accessori.html"
+			- var Nav04 					= "COVER"
+			- var NavLink04 				= "http://www.fiorentinastore.com/it/cover.html"
+			- var Nav05 					= "IDEE REGALO"
+			- var NavLink05 				= "http://www.fiorentinastore.com/it/idee-regalo.html"
+
+
+
 	//- Social network
 	//- /////////////////////////////////////////////////////////////////
 
@@ -169,6 +205,13 @@ block PowerUser
 			- var communicationEmail02 	= "to your e-mail address book."
 			- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
 			- var userMail				= "n.razvan@episrl.it"
+		if site == "fiorentina"
+			- var communicationEmail01	= "To ensure you always receive communications from "
+			- var contactMail 			= "noreply@juvestore.com"
+			- var communicationEmail02 	= "to your e-mail address book."
+			- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
+			- var userMail				= "n.razvan@episrl.it"
+
 	if lang == "it"
 		if site == "juve"
 			- var communicationEmail01	= "To ensure you always receive communications from "
@@ -177,6 +220,12 @@ block PowerUser
 			- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
 			- var userMail				= "n.razvan@episrl.it"
 		if site == "f4u"
+			- var communicationEmail01	= "To ensure you always receive communications from "
+			- var contactMail 			= "noreply@juvestore.com"
+			- var communicationEmail02 	= "to your e-mail address book."
+			- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
+			- var userMail				= "n.razvan@episrl.it"
+		if site == "fiorentina"
 			- var communicationEmail01	= "To ensure you always receive communications from "
 			- var contactMail 			= "noreply@juvestore.com"
 			- var communicationEmail02 	= "to your e-mail address book."
@@ -246,6 +295,23 @@ block PowerUser
 		- var colorBlack 		= "#000000"
 		- var colorWhite 		= "#ffffff"
 
+	if site == "fiorentina"
+		- var containerBg 		= "#e8e8e8"
+		- var wrapperCollor 	= "#ffffff"
+
+		- var colorPrimary 		= "#ae9a63" // marone
+		- var colorPrimary_ 	= "#e4d7b4" // light marone
+
+		- var colorSecondary	= "#4a2583" // viola
+		- var colorSecondary_	= "#5a5a55"
+		- var colorSecondary__	= "#5a5a55"
+
+		- var colorTertiari 	= "#e41b13"
+		- var colorTertiari_ 	= "#d4d2d6"
+
+		- var colorBlack 		= "#000000"
+		- var colorWhite 		= "#ffffff"
+
 	//- image management
 	//- /////////////////////////////////////////////////////////////////
 	if site == "f4u"
@@ -253,3 +319,6 @@ block PowerUser
 
 	if site == "juve"
 		- var imgLink = "images/juve/"
+
+	if site == "fiorentina"
+		- var imgLink = "images/fiorentina/"

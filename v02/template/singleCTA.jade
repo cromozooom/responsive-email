@@ -1,0 +1,19 @@
+block info
+
+block color
+	- var colorBlack 		= colorBlack
+	- var bgColor 			= colorBlack
+	- var imgBgColor 		= containerBg
+	- var fontColor 		= colorSecondary__
+	- var borderBottomTop 	= colorPrimary_
+	if site == "fiorentina"
+		- var bgColor 			= colorSecondary
+		- var imgBgColor 		= containerBg
+		- var fontColor 		= colorSecondary__
+		- var borderBottomTop 	= colorPrimary_
+
+tr
+	td(align="center"  bgcolor="#{bgColor}")
+		br
+		include ../views/cta.jade
+		br

@@ -4,12 +4,21 @@ block info
 	- var trakingSource = "_header&ga_medium=DEM&ga_source=NL"
 	- var padding 		= "padding: 15px 10px 15px 0px;"
 
-	- var linkColor				= colorSecondary_
-	- var borderTop 			= colorPrimary
-	- var bgcolor 				= colorSecondary
+	if site == "juve"
+		- var linkColor				= colorSecondary_
+		- var borderTop 			= colorPrimary
+		- var bgcolor 				= colorSecondary
 
-	- var linkSpecialColor		= colorSecondary
-	- var linkSpecialBgColor	= colorPrimary
+		- var linkSpecialColor		= colorSecondary
+		- var linkSpecialBgColor	= colorPrimary
+
+	if site == "fiorentina"
+		- var linkColor				= colorSecondary_
+		- var borderTop 			= colorPrimary
+		- var bgcolor 				= colorWhite
+
+		- var linkSpecialColor		= colorSecondary
+		- var linkSpecialBgColor	= colorPrimary
 
 block contentCol1_1
 	//- inspired from http://responsiveemailpatterns.com/patterns/navigation/top-links.html

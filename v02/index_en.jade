@@ -4,19 +4,23 @@ block config
 	- var lang = "en"
 
 block content
-	//- include views/header
-	//- include views/nav
-	//- include include/coupon
-	//- include include/heroImage
-	//- include include/linkList
-	//- include include/cowntDown
+	include views/header
+	include views/nav
+	include include/coupon
+	include include/heroImage
+	include include/singleCTA
+	include include/linkList
+	include include/cowntDown
 	include include/3prod
-//
-	if site == "f4u"
+
+	//if site == "f4u"
 		include _ourBrand
-	if site == "juve"
+	//if site == "juve"
 		include _2banner_a
-	include _2prod_b
-	include _2banner_a
-	include _3article_a
-	include _footerLink
+	//if site == "fiorentina"
+		include _2banner_a
+
+	//include _2prod_b
+	//include _2banner_a
+	//include _3article_a
+	//include _footerLink

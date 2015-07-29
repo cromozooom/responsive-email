@@ -1,6 +1,9 @@
 block config
 	include ../config
 
+if site == "fiorentina"
+	- var titleMailBg 	= colorPrimary
+
 doctype html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"
 html(lang="#{lang}")
 	block head
@@ -23,7 +26,7 @@ html(lang="#{lang}")
 			title= title
 	body(style="margin:0; padding:0;" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#{containerBg}")
 		//- 100% background wrapper (grey background)
-		table(border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#{colorSecondary}")
+		table(border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#{titleMailBg}")
 			tr
 				td
 					block preHeader
@@ -41,17 +44,6 @@ html(lang="#{lang}")
 						//- \___\___/|_| |_|\__\___|_| |_|\__|
 						//-
 						block content
-							//include template/header
-								include template/nav
-								include _heroImage02
-								include _3prod_a
-								if site == "f4u"
-									include _ourBrand
-								if site == "juve"
-									include _2banner_a
-								include _2prod_b
-								include _2banner_a
-								include _3article_a
-								include _footerLink
+
 			block footer
 				include footer

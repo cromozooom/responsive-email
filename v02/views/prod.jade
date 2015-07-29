@@ -1,6 +1,10 @@
 
 - var oldPriceProdColor		= "#b2b2b2"
 
+if site == "fiorentina"
+	- var priceProdColor		= "#4a2583"
+
+
 a(href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" target="_blank")
 	img.image(src="#{imgProd}" border="0" alt="#{titleProd}" width="100%" hspace="0" vspace="0" style="max-width:100%;")
 br
@@ -16,7 +20,7 @@ if oldPriceProd
 					span(style="#{fontL}#{decThrough} color:#{oldPriceProdColor}")
 						| #{oldPriceProd}
 						sup(style="#{fontXS} #{normal} #{decNone} color: #{oldPriceProdColor}") €
-				td(style="#{center} border-left-width: 1px; border-left-style: solid; border-left-color: #{oldPriceProdColor};")
+				td(style="#{center} border-left-width: 1px; border-left-style: solid; border-left-color: #{oldPriceProdColor}; color:#{priceProdColor}")
 					strong(style="#{fontXL}")
 						| #{priceProd}
 						sup(style="#{fontS} #{normal}") €
