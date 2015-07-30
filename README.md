@@ -1,5 +1,7 @@
 # responsive-email
-sample link:
+
+[sample EN link](https://rawgit.com/cromozooom/responsive-email/master/v02/index_en.html "fiorentina")
+
 
 ## tools
 - sublime text
