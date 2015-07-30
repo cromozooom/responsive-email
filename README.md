@@ -12,9 +12,11 @@
 5. Replace the variable inside included file
 
 !!!! go to html file !!!!
+
 6. After you finish to make the replacement go to INLINE TOOL and copy paste your F......html file
 
 !!!! go to css file !!!!
+
 7. Insert responsive component from my file (/assets/css/style_col.css)
 
 
