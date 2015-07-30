@@ -8,9 +8,6 @@
 
 block User
 
-	//- option available juve, f4u, fiorentina
-	- var site 				= "fiorentina"
-
 	//- used for tracking code
 	- var data = "27-3"
 
@@ -42,14 +39,41 @@ block PowerUser
 	//- Preheader template
 
 	if lang == "en"
-		- var onlineVersionCopy	= "E-mail non visualizza correttamente? en"
-		- var viewOnline		= "view online version"
-		- var viewOnlineLink	= "http://www.solopx.com"
+		- var onlineVersionCopy	= "If this e-mail is not being displayed properly, "
+		- var viewOnline		= "please click here"
+		- var viewOnlineLink	= "${online_version_url}$"
 
 	if lang == "it"
 		- var onlineVersionCopy	= "E-mail non visualizza correttamente? it"
 		- var viewOnline		= "view online version"
-		- var viewOnlineLink	= "http://www.solopx.com"
+		- var viewOnlineLink	= "${online_version_url}$"
+
+	if site == "fiorentina"
+		// preheader option
+		if lang == "en"
+			- var onlineVersionCopy	= "If this e-mail is not being displayed properly, "
+			- var viewOnline		= "please click here"
+			- var viewOnlineLink	= "${online_version_url}$"
+
+		if lang == "it"
+			- var onlineVersionCopy	= "E-mail non visualizza correttamente? it"
+			- var viewOnline		= "view online version"
+			- var viewOnlineLink	= "${online_version_url}$"
+		// footer
+		if lang == "en"
+			- var copyContact 				= "Contact Us "
+			- var copyContactMailLink		= "customercare@fiorentinastore.com"
+			- var contactMailLink 			= "mailto:customercare@fiorentinastore.com"
+
+			- var reasonCopy00				= "You are receiving the following communication as your are subscribed to "
+			- var reasonLink 				= "http://www.fiorentinastore.com/en?ga_campaign=10-7it_footer&ga_medium=DEM&ga_source=NL"
+			- var reasonCopy01				= " 's newsletter with the following e-mail: "
+
+			- var unsubscribeCopy 			= "Don't want to receive email Updates? "
+			- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1520014859142/d/${encoded_user_data}$/k/${form_verification_code}$/lang/en/"
+			- var unsubscribeLinkCopy 		= "Unsubscribe here"
+
+
 
 	//- header template
 	if lang == "en"
@@ -182,12 +206,26 @@ block PowerUser
 	//- Social network
 	//- /////////////////////////////////////////////////////////////////
 
-	- var siteName = "football4u"
-	- var instagram = "https://instagram.com/football4uofficial/"
-	- var facebook = "https://www.facebook.com/Football4U.it"
-	- var blog = "http://blog.football4u.it/"
-	- var youTube = "https://www.youtube.com/channel/UCzqG3NzsJtmTa4qJ54ssUEg/"
-	- var gPlus = "https://plus.google.com/+Football4uItF4U/"
+
+	if site == "fiorentina"
+		- var siteName = "fiorentinastore"
+		- var instagram = "https://instagram.com/acffiorentina/"
+		- var facebook = "https://www.facebook.com/ACFFiorentina"
+		- var twitter = "https://twitter.com/acffiorentina"
+		- var blog = false
+		- var youTube = "https://www.youtube.com/user/ViolaChannel"
+		- var gPlus = false
+		- var flikr = "https://www.flickr.com/photos/acffiorentina"
+
+
+	else
+		- var siteName = "football4u"
+		- var instagram = "https://instagram.com/football4uofficial/"
+		- var facebook = "https://www.facebook.com/Football4U.it"
+		- var blog = "http://blog.football4u.it/"
+		- var youTube = "https://www.youtube.com/channel/UCzqG3NzsJtmTa4qJ54ssUEg/"
+		- var gPlus = "https://plus.google.com/+Football4uItF4U/"
+
 	//- var pinterest = ""
 
 	//- footer
@@ -303,7 +341,7 @@ block PowerUser
 		- var colorPrimary_ 	= "#e4d7b4" // light marone
 
 		- var colorSecondary	= "#4a2583" // viola
-		- var colorSecondary_	= "#5a5a55"
+		- var colorSecondary_	= "#5a5a55" //
 		- var colorSecondary__	= "#5a5a55"
 
 		- var colorTertiari 	= "#e41b13"

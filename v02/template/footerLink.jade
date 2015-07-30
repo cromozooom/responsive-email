@@ -1,0 +1,37 @@
+block info
+
+block contentCol1_1
+	block footerLink
+		p #{colorSecondary}, #{sampleVar}
+		tr
+			td(align="center")
+				// footer link
+				table(cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#{sampleVar}")
+					tr
+						td(colspan="100" align="center" height="20" bgcolor="#{sampleVar}")
+					if footerLinksx
+						tr
+							each val in footerLinksx
+								td(width="1px"  bgcolor="#{sampleVar}")
+								td(width="20%" align="center" valign="middle" style="#{center}"  bgcolor="#{sampleVar}")
+									a(href="#{val.footerURL}?ga_campaign=#{data}#{lang}#{trakingSource}" align="center" target="_blank" style="#{center}#{fontSans}#{fontXS}#{decNone}#{bold} color:#{colorPrimary_};")
+										| #{val.footerCopy}
+					tr
+						td(colspan="100" align="center" height="20" bgcolor="#{sampleVar}")
+					//- tr
+						td(colspan="100" align="center" height="20")
+						tr
+							td(align="center" colspan="100")
+								span(style="color:#{colorSecondary_}; #{fontXS}#{fontSans}")
+									| #{communicationEmail01}
+									a(href="#{LogoImgLink}?ga_campaign=#{data}#{lang}#{trakingSource}" style="color:#{colorSecondary_}; #{bold}")
+										| #{LogoStoreTxt}, 
+									| add 
+									a(href="mailto:#{contactMail}?ga_campaign=#{data}#{lang}#{trakingSource}" style="color:#{colorSecondary_}; #{bold}")
+										| #{contactMail} 
+									| #{communicationEmail02}
+									br
+									| #{disclamer}
+									| #{userMail}
+						tr
+							td(colspan="100" align="center" height="20")

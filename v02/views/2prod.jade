@@ -1,0 +1,24 @@
+//- template for 2 prod in line based on two col template
+//- is imported in "_2prod_a"
+//- -----------------------------------------------------------------
+
+//- has extend threeColumn template and add block info
+//- -----------------------------------------------------------------
+extends col/twoColumn
+block info
+
+//- 1 cols block
+//- -----------------------------------------------------------------
+block contentCol1_2
+	block prodTemplate01
+		- var prod = "01"
+		block 2prod_a
+		include prod.jade
+
+//- 2 cols block
+//- -----------------------------------------------------------------
+block contentCol2_2
+	block prodTemplate02
+		- var prod = "02"
+		block 2prod_a
+		include prod.jade

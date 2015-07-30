@@ -1,19 +1,27 @@
 block info
 
 block color
-	- var colorBlack 		= colorBlack
-	- var bgColor 			= colorBlack
-	- var imgBgColor 		= containerBg
-	- var fontColor 		= colorSecondary__
-	- var borderBottomTop 	= colorPrimary_
+
 	if site == "fiorentina"
-		- var bgColor 			= colorSecondary
+		- var bgColor 					= colorSecondary
+		- var imgBgColor 				= containerBg
+		- var fontColor 				= colorPrimary
+		- var borderBottomTop 			= colorSecondary_
+		- var colorheaderCopySingleCTA 	= colorWhite
+	else
+		- var colorBlack 		= colorBlack
+		- var bgColor 			= colorBlack
 		- var imgBgColor 		= containerBg
 		- var fontColor 		= colorSecondary__
 		- var borderBottomTop 	= colorPrimary_
-
 tr
-	td(align="center"  bgcolor="#{bgColor}")
-		br
+	td.container-padding.content(align="center"  bgcolor="#{bgColor}")
+		if headerCopySingleCTA
+			span(style="#{center}#{fontSans}#{fontXXL} color:#{colorheaderCopySingleCTA};")
+				| #{headerCopySingleCTA}
+		if subHeaderCopySingleCTA
+			span(style="#{center}#{fontSans}#{fontM} color:#{fontColor};")
+				br
+				| #{headerCopySingleCTA}
+			hr.hr(style="border-bottom: 1px solid #{borderBottomTop};")
 		include ../views/cta.jade
-		br

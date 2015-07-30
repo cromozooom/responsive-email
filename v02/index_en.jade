@@ -1,26 +1,24 @@
 extend views/index
 block config
+	//- option available juve, f4u, fiorentina
+	- var site 				= "fiorentina"
+	- var lang 				= "en"
+
 	include config
-	- var lang = "en"
+
 
 block content
-	include views/header
-	include views/nav
-	include include/coupon
-	include include/heroImage
-	include include/singleCTA
-	include include/linkList
-	include include/cowntDown
-	include include/3prod
+	//include views/header
+	//include views/nav
+	//include include/singleCTA
+	//include include/heroImage
+	//include include/coupon
+	//include include/linkList
+	//include include/cowntDown
+	//include include/2prod
+	//include include/2banner_a
+	//include include/3prod
 
-	//if site == "f4u"
-		include _ourBrand
-	//if site == "juve"
-		include _2banner_a
-	//if site == "fiorentina"
-		include _2banner_a
+	include include/_footerLink
 
-	//include _2prod_b
-	//include _2banner_a
 	//include _3article_a
-	//include _footerLink
