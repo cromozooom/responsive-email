@@ -13,13 +13,27 @@ block config
 		if lang == "it"
 			- var title 			= "Samplte title dem it"
 			- var previewCopy		= "Acquista la nuova maglia home 2015/16 - it"
-	//- option available fiorentina
-	- var site 				= "fiorentina"
-	- var lang 				= "it"
+
+
+		//- option available fiorentina
+		- var site 				= "fiorentina"
+		- var lang 				= "it"
+
+		//- image management
+		if site == "f4u"
+			- var imgLink = "images/f4u/"
+
+		if site == "juve"
+			- var imgLink = "images/juve/"
+
+		if site == "fiorentina"
+			- var imgLink = "images/fiorentina/"
+
 
 	include config
 
 block content
+
 	include include/singleCTA
 	include include/heroImage
 	include include/coupon

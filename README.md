@@ -5,11 +5,13 @@
 ## workflow
 !!!! modify only jade file!!!!
 
-1. Open PREPRO*
-2. Open folder v02 in SUBLIME TEXT
-3. Create copy of "index.jade" & rename with your f.....jade name :)
-4. Replace the variable inside included file
-5. After you finish to make the replacement go to INLINE TOOL and copy paste your F......html file
+1. Upload images on server!
+2. Open PREPRO*
+3. Open folder v02 in SUBLIME TEXT
+4. Create copy of "index.jade" & rename with your f.....jade name :)
+5. Replace the variable inside included file
+6. After you finish to make the replacement go to INLINE TOOL and copy paste your F......html file
+7. Insert responsive component from my file (/assets/css/style_col.css)
 
 
 ## note
