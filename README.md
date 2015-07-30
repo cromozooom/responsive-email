@@ -3,7 +3,8 @@
 [sample EN link](https://rawgit.com/cromozooom/responsive-email/master/v02/index_en.html "fiorentina")
 
 ## workflow
-! modify only jade file
+! modify only jade file!
+
 1. Open PREPRO*
 2. Open folder v02 in sublime text
 3. Create copy of "index.jade" & rename with your f.....jade name :)
