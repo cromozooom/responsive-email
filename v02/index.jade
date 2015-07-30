@@ -1,0 +1,34 @@
+extend views/index
+
+block config
+	block User
+		//- used for tracking code
+		- var data = "27-3"
+
+		//- Universal Copy
+		if lang == "en"
+			- var title 			= "Samplte title dem en"
+			- var previewCopy		= "Acquista la nuova maglia home 2015/16 - en"
+
+		if lang == "it"
+			- var title 			= "Samplte title dem it"
+			- var previewCopy		= "Acquista la nuova maglia home 2015/16 - it"
+	//- option available fiorentina
+	- var site 				= "fiorentina"
+	- var lang 				= "it"
+
+	include config
+
+block content
+	include include/singleCTA
+	include include/heroImage
+	include include/coupon
+	include include/linkList
+	include include/cowntDown
+	include include/2prod
+	include include/2banner_a
+	include include/3prodA
+	include include/3prodB
+
+	//-include include/_footerLink
+	//-include _3article_a

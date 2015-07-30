@@ -16,12 +16,14 @@ html(lang="#{lang}")
 			//- disable auto telephone linking in iOS -->
 			meta(name="format-detection" content="telephone=no")
 			//- css
-			link(rel="stylesheet" type="text/css" href="assets/css/myStyle.css")
-
-			if local
-				link(rel="stylesheet" type="text/css" href="assets/css/style_col.css")
-			else
-				link(rel="stylesheet" type="text/css" href="assets/css/style_col.css")
+			style
+				//
+				//
+				// include ../assets/css/style_col.css 
+				//
+				//
+			style
+				include ../assets/css/myStyle.css
 			//- title email
 			title= title
 	body(style="margin:0; padding:0;" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#{containerBg}")
@@ -36,6 +38,8 @@ html(lang="#{lang}")
 					br
 					//- 600px container (white background)
 					table.container(border="0" width="600" cellpadding="0" cellspacing="0" bgcolor="#{wrapperCollor}")
+						include header
+						include nav
 						//-                 _             _
 						//-                | |           | |
 						//-  ___ ___  _ __ | |_ ___ _ __ | |_
@@ -44,7 +48,5 @@ html(lang="#{lang}")
 						//- \___\___/|_| |_|\__\___|_| |_|\__|
 						//-
 						block content
-
-
 			block footer
 				include footer

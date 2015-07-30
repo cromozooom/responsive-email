@@ -6,22 +6,7 @@
 //-		 \____/|___/\___|_|
 //-
 
-block User
 
-	//- used for tracking code
-	- var data = "27-3"
-
-	- var production 		= false
-	- var test 				= false
-
-	//- Universal Copy
-	if lang == "en"
-		- var title 			= "Samplte title dem en"
-		- var previewCopy		= "Acquista la nuova maglia home 2015/16 - en"
-
-	if lang == "it"
-		- var title 			= "Samplte title dem it"
-		- var previewCopy		= "Acquista la nuova maglia home 2015/16 - it"
 
 //-  _____                       _    _
 //- |  __ \                     | |  | |
@@ -49,18 +34,13 @@ block PowerUser
 		- var viewOnlineLink	= "${online_version_url}$"
 
 	if site == "fiorentina"
-		// preheader option
+		//- preheader option
+		- var viewOnlineLink	= "${online_version_url}$"
 		if lang == "en"
 			- var onlineVersionCopy	= "If this e-mail is not being displayed properly, "
 			- var viewOnline		= "please click here"
-			- var viewOnlineLink	= "${online_version_url}$"
 
-		if lang == "it"
-			- var onlineVersionCopy	= "E-mail non visualizza correttamente? it"
-			- var viewOnline		= "view online version"
-			- var viewOnlineLink	= "${online_version_url}$"
-		// footer
-		if lang == "en"
+			//- footer
 			- var copyContact 				= "Contact Us "
 			- var copyContactMailLink		= "customercare@fiorentinastore.com"
 			- var contactMailLink 			= "mailto:customercare@fiorentinastore.com"
@@ -72,6 +52,23 @@ block PowerUser
 			- var unsubscribeCopy 			= "Don't want to receive email Updates? "
 			- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1520014859142/d/${encoded_user_data}$/k/${form_verification_code}$/lang/en/"
 			- var unsubscribeLinkCopy 		= "Unsubscribe here"
+
+		if lang == "it"
+			- var onlineVersionCopy	= "Se non riesci a visualizzare questa mail "
+			- var viewOnline		= "clicca qui"
+
+			//- footer
+			- var copyContact 				= "Contattaci "
+			- var copyContactMailLink		= "customercare@fiorentinastore.com"
+			- var contactMailLink 			= "mailto:customercare@fiorentinastore.com"
+
+			- var reasonCopy00				= "Ricevi questa comunicazione in quanto iscritto/a al servizio di informazione periodica di "
+			- var reasonLink 				= "http://www.fiorentinastore.com/it/?ga_campaign=10-7it_footer&ga_medium=DEM&ga_source=NL"
+			- var reasonCopy01				= " con l'indirizzo e-mail "
+
+			- var unsubscribeCopy 			= "Per disiscriverti dalla newsletter "
+			- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1420014859385/d/${encoded_user_data}$/k/${form_verification_code}$/"
+			- var unsubscribeLinkCopy 		= "Clicca qui"
 
 
 
@@ -136,8 +133,8 @@ block PowerUser
 			- var NavLink06 				= "http://www.football4u.it/en/clearance.html"
 
 		if site == "fiorentina"
-			- var LogoStoreTxt 		= "fiorentina"
-			- var LogoImgLink 		= "http://www.fiorentinastore.com/en"
+			- var LogoStoreTxt 				= "fiorentina"
+			- var LogoImgLink 				= "http://www.fiorentinastore.com/en"
 
 			- var Nav01 					= "MATCH KITS"
 			- var NavLink01 				= "http://www.fiorentinastore.com/en/match-kits.html"
@@ -151,6 +148,21 @@ block PowerUser
 			- var NavLink05 				= "http://www.fiorentinastore.com/en/gift-ideas.html"
 
 	if lang == "it"
+
+		if site == "fiorentina"
+			- var LogoStoreTxt 				= "fiorentina"
+			- var LogoImgLink 				= "http://www.fiorentinastore.com/it/"
+
+			- var Nav01 					= "KIT GARA"
+			- var NavLink01 				= "http://www.fiorentinastore.com/it/kit-gara.html"
+			- var Nav02 					= "ABBIGLIAMENTO"
+			- var NavLink02 				= "http://www.fiorentinastore.com/it/abbigliamento.html"
+			- var Nav03 					= "ACCESSORI"
+			- var NavLink03 				= "http://www.fiorentinastore.com/it/accessori.html"
+			- var Nav04 					= "COVER"
+			- var NavLink04 				= "http://www.fiorentinastore.com/it/cover.html"
+			- var Nav05 					= "IDEE REGALO"
+			- var NavLink05 				= "http://www.fiorentinastore.com/it/idee-regalo.html"
 
 		if site == "f4u"
 			- var LogoStoreTxt 				= "football4u"
@@ -185,21 +197,6 @@ block PowerUser
 			- var NavLink05 				= "http://www.football4u.it/it/teamsport.html"
 			- var Nav06 					= "OUTLET"
 			- var NavLink06 				= "http://www.football4u.it/it/outlet.html"
-
-		if site == "fiorentina"
-			- var LogoStoreTxt 				= "fiorentinastore"
-			- var LogoImgLink 				= "http://www.fiorentinastore.com/en/"
-
-			- var Nav01 					= "KIT GARA"
-			- var NavLink01 				= "http://www.fiorentinastore.com/it/kit-gara.html"
-			- var Nav02 					= "ABBIGLIAMENTO"
-			- var NavLink02 				= "http://www.fiorentinastore.com/it/abbigliamento.html"
-			- var Nav03 					= "ACCESSORI"
-			- var NavLink03 				= "http://www.fiorentinastore.com/it/accessori.html"
-			- var Nav04 					= "COVER"
-			- var NavLink04 				= "http://www.fiorentinastore.com/it/cover.html"
-			- var Nav05 					= "IDEE REGALO"
-			- var NavLink05 				= "http://www.fiorentinastore.com/it/idee-regalo.html"
 
 
 

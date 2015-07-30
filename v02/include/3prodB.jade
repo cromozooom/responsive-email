@@ -2,9 +2,7 @@ extends ../views/3prod
 
 block 3prod_a
 	include ../config
-	- var template 						= "3prod_a"
-
-
+	- var template 						= "3prod_b"
 
 	if lang == "en"
 		- var ctaCopy 					= "BUY NOW"
@@ -13,6 +11,7 @@ block 3prod_a
 			- var imgProd				= "http://ffaasstt.football4u.it/media/catalog/product/cache/1/small_image/370x/9df78eab33525d08d6e5fb8d27136e95/c/s/cs15001.jpg"
 			- var titleProd				= "NIKE mercurial superfly fg wolf grey/hyper punch"
 			- var priceProd 			= "247,50"
+			//- this is optional (if you decide to not use put: "false")
 			- var oldPriceProd			= "275,00"
 
 		if prod == "02"
@@ -20,6 +19,7 @@ block 3prod_a
 			- var imgProd				= "http://ffaasstt.football4u.it/media/catalog/product/cache/1/small_image/370x/9df78eab33525d08d6e5fb8d27136e95/c/s/cs15002_2.jpg"
 			- var titleProd				= "NIKE mercurial vapor x fg wolf grey/hyper punch"
 			- var priceProd 			= "180,0"
+			//- this is optional (if you decide to not use put: "false")
 			- var oldPriceProd			= "200,0"
 
 		if prod == "03"
@@ -27,6 +27,7 @@ block 3prod_a
 			- var imgProd				= "http://ffaasstt.football4u.it/media/catalog/product/cache/1/small_image/370x/9df78eab33525d08d6e5fb8d27136e95/c/s/cs15011.jpg"
 			- var titleProd				= "NIKE hypervenom phantom ii fg wolf grey/ total orange"
 			- var priceProd 			= "247,5"
+			//- this is optional (if you decide to not use put: "false")
 			- var oldPriceProd			= "275,0"
 
 	if lang == "it"
@@ -36,13 +37,15 @@ block 3prod_a
 			- var imgProd				= "http://ffaasstt.football4u.it/media/catalog/product/cache/1/small_image/370x/9df78eab33525d08d6e5fb8d27136e95/c/s/cs15001.jpg"
 			- var titleProd				= "NIKE mercurial superfly fg wolf grey/hyper punch"
 			- var priceProd 			= "247,50"
-			- var oldPriceProd			= "275,00"
+			//- this is optional (if you decide to not use put: "false")
+			- var oldPriceProd			= "3,00"
 
 		if prod == "02"
 			- var linkCTA 				= "http://www.football4u.it/it/nike-mercurial-vapor-x-fg-wolf-grey-hyper-punch.html"
 			- var imgProd				= "http://ffaasstt.football4u.it/media/catalog/product/cache/1/small_image/370x/9df78eab33525d08d6e5fb8d27136e95/c/s/cs15002_2.jpg"
 			- var titleProd				= "NIKE mercurial vapor x fg wolf grey/hyper punch"
-			- var priceProd 			= "180,00"
+			- var priceProd 			= "2,00"
+			//- this is optional (if you decide to not use put: "false")
 			- var oldPriceProd			= "200,00"
 
 		if prod == "03"
@@ -50,7 +53,8 @@ block 3prod_a
 			- var imgProd				= "http://ffaasstt.football4u.it/media/catalog/product/cache/1/small_image/370x/9df78eab33525d08d6e5fb8d27136e95/c/s/cs15011.jpg"
 			- var titleProd				= "NIKE hypervenom phantom ii fg wolf grey/ total orange"
 			- var priceProd 			= "247,50"
-			- var oldPriceProd			= "275,00"
+			//- this is optional (if you decide to not use put: "false")
+			- var oldPriceProd			= "1"
 
 
 

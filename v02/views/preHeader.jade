@@ -3,25 +3,18 @@ block info
 	- var trakingSource = "_header&ga_medium=DEM&ga_source=NL"
 	- var PreheaderHeight = "40px"
 	- var PreheaderHPadding = "20px"
-
 	- var fontColor 	= colorSecondary_
 	- var linkColor		= colorPrimary
 	- var bgcolor 		= containerBg
-
 if site == "fiorentina"
 	- var fontColor 	= colorPrimary_
 	- var linkColor		= colorWhite
-
 table(border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" )
-	//p #{fontColor}, #{linkColor}, #{bgcolor}
-
-
 	tr
 		td(align="left" width="#{PreheaderHPadding}")
 		td(align="left" valign="middle" height="#{PreheaderHeight}")
 			small(style="#{fontXS} #{fontSans} color:#{fontColor};")
 				| #{previewCopy}
-
 		td(align="right" valign="middle" height="#{PreheaderHeight}")
 			small(style="#{fontXS} #{fontSans} color:#{fontColor};")
 				| #{onlineVersionCopy} 
