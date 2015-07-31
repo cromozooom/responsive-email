@@ -9,6 +9,7 @@
 2. Open PREPROS*
 3. Download and open V02 folder in SUBLIME TEXT
 4. Create copy of "index.jade" & rename with your f.....jade name :)
+5. select and order your content blocks
 
 ####!!!! make use of [this file](https://goo.gl/ljfWBR) to !!!!
 
