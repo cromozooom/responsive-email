@@ -2,17 +2,20 @@ block info
 block color
 
 block content
-tr
-	td(align="center" bgcolor="#{bgcolor}")
-		br
-		br
-		a(href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" target="_blank")
-			img(src="#{imgLink}#{HeaderImage}" border="0" alt="#{heroImageheader}" hspace="0" vspace="0" style="max-width:100%;")
-tr
-	td(align="center" bgcolor="#{bgcolor}" style="padding: 10px 0;")
-		span(style="#{center}#{fontSans}#{fontM} color:#{colorNote};")
-			| #{row01}
-tr
-	td(align="center" bgcolor="#{bgcolor}" style="padding: 0 0 10px 0;")
-		a(href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" target="_blank")
-			img(src="#{imgLink}#{CTAImage}" border="0" alt="#{heroImageheader}" hspace="0" vspace="0" style="max-width:100%;")
+if HeaderImage
+	tr
+		td(align="center" bgcolor="#{bgcolor}" style="padding: 0 0 10px 0;")
+			br
+			br
+			a(href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" target="_blank")
+				img(src="#{imgLink}#{HeaderImage}" border="0" alt="#{heroImageheader}" hspace="0" vspace="0" style="max-width:100%;")
+if row01
+	tr
+		td(align="center" bgcolor="#{bgcolor}" style="padding: 0 0 10px 0;")
+			span(style="#{center}#{fontSans}#{fontM} color:#{colorNote};")
+				| #{row01}
+if CTAImage
+	tr
+		td(align="center" bgcolor="#{bgcolor}" style="padding: 0 0 10px 0;")
+			a(href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" target="_blank")
+				img(src="#{imgLink}#{CTAImage}" border="0" alt="#{heroImageheader}" hspace="0" vspace="0" style="max-width:100%;")

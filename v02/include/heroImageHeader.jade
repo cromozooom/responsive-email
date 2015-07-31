@@ -10,6 +10,7 @@ extend ../template/heroImageHeader
 //-         	                            |___/
 
 block info
+	//- optional you can put false on the row you dont't need
 	if lang == "en"
 
 		- var HeaderImage				= "header_en.jpg"
@@ -17,19 +18,17 @@ block info
 		- var linkCTA					= "http://www.solopx.com"
 		- var heroImageheader 			= "Torna alla serie A"
 		- var row01						= "Tornando alla serie A, prezzi bloccati e un finanziamento a tasso zero"
-		- var row02						= false
-		- var row03						= false
 
 
 	if lang == "it"
 
 		- var HeaderImage				= "header_it.jpg"
+		- var CTAImage					= false
 		- var CTAImage					= "cta01_it.jpg"
 		- var linkCTA					= "http://www.solopx.com"
 		- var heroImageheader 			= "Torna alla serie A"
+		- var row01						= false
 		- var row01						= "Tornando alla serie A, prezzi bloccati e un finanziamento a tasso zero"
-		- var row02						= false
-		- var row03						= false
 
 block color
 	-var bgcolor = colorWhite
