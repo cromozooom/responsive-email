@@ -9,7 +9,10 @@
 2. Open PREPROS*
 3. Open folder v02 in SUBLIME TEXT
 4. Create copy of "index.jade" & rename with your f.....jade name :)
+
+!!!! make use of [this file](https://goo.gl/ljfWBR) to !!!!
 5. Replace the variable inside included file
+
 
 !!!! go to html file !!!!
 
@@ -22,7 +25,6 @@
 
 ## note
 - PREPROS* aka "big Brother" - compila i file *.jade to *.HTML)
-
 - SUBLIME Text 2
 	- jade plugin
 

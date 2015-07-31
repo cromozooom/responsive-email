@@ -29,10 +29,11 @@ block PowerUser
 
 	if site == "fiorentina"
 		//- preheader option
-		- var viewOnlineLink	= "${online_version_url}$"
+		- var viewOnlineLink				= "${online_version_url}$"
+		- var reasonLink 					= "_footer&ga_medium=DEM&ga_source=NL"
 		if lang == "en"
-			- var onlineVersionCopy	= "If this e-mail is not being displayed properly, "
-			- var viewOnline		= "please click here"
+			- var onlineVersionCopy			= "If this e-mail is not being displayed properly, "
+			- var viewOnline				= "please click here"
 
 			//- footer
 			- var copyContact 				= "Contact Us "
@@ -40,7 +41,6 @@ block PowerUser
 			- var contactMailLink 			= "mailto:customercare@fiorentinastore.com"
 
 			- var reasonCopy00				= "You are receiving the following communication as your are subscribed to "
-			- var reasonLink 				= "http://www.fiorentinastore.com/en?ga_campaign=10-7it_footer&ga_medium=DEM&ga_source=NL"
 			- var reasonCopy01				= " 's newsletter with the following e-mail: "
 
 			- var unsubscribeCopy 			= "Don't want to receive email Updates? "
@@ -57,7 +57,6 @@ block PowerUser
 			- var contactMailLink 			= "mailto:customercare@fiorentinastore.com"
 
 			- var reasonCopy00				= "Ricevi questa comunicazione in quanto iscritto/a al servizio di informazione periodica di "
-			- var reasonLink 				= "http://www.fiorentinastore.com/it/?ga_campaign=10-7it_footer&ga_medium=DEM&ga_source=NL"
 			- var reasonCopy01				= " con l'indirizzo e-mail "
 
 			- var unsubscribeCopy 			= "Per disiscriverti dalla newsletter "
