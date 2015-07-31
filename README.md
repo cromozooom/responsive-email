@@ -6,7 +6,7 @@
 !!!! modify only jade file !!!!
 
 1. Upload images on server!
-2. Open PREPRO*
+2. Open PREPROS*
 3. Open folder v02 in SUBLIME TEXT
 4. Create copy of "index.jade" & rename with your f.....jade name :)
 5. Replace the variable inside included file
@@ -21,7 +21,7 @@
 
 
 ## note
-- PREPRO* - compila i file jade to HTML)
+- PREPROS* aka "big Brother" - compila i file *.jade to *.HTML)
 
 - SUBLIME Text 2
 	- jade plugin
