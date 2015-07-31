@@ -10,21 +10,21 @@
 3. Open folder v02 in SUBLIME TEXT
 4. Create copy of "index.jade" & rename with your f.....jade name :)
 
-###!!!! make use of [this file](https://goo.gl/ljfWBR) to !!!!
+####!!!! make use of [this file](https://goo.gl/ljfWBR) to !!!!
 
 - Replace the variable inside included file
 
 
-###!!!! go to html file !!!!
+####!!!! go to html file !!!!
 
 - After you finish to make the replacement go to INLINE TOOL and copy paste your F......html file
 
-###!!!! go to css file !!!!
+####!!!! go to css file !!!!
 
 - Insert responsive component from my file (/assets/css/style_col.css)
 
 
-## note
+###### note
 - PREPROS* aka "big Brother" - compila i file *.jade to *.HTML)
 - SUBLIME Text 2
 	- jade plugin
