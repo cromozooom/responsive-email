@@ -1,6 +1,6 @@
 # Responsive-email
 
-[sample EN link](https://rawgit.com/cromozooom/responsive-email/master/v02/index_en.html "fiorentina")
+[sample link](https://rawgit.com/cromozooom/responsive-email/master/v02/index.html "fiorentina")
 
 ## workflow
 ###!!!! modify only jade file !!!!
