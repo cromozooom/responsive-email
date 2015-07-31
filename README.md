@@ -9,7 +9,7 @@
 2. Open PREPROS*
 3. Download and open V02 folder in SUBLIME TEXT
 4. Create copy of "index.jade" & rename with your f.....jade name :)
-5. select and order your content blocks
+5. select and order your content blocks (see the section: "include some F..... blocks" )
 
 ####!!!! make use of [this file](https://goo.gl/ljfWBR) to !!!!
 
@@ -25,9 +25,10 @@
 - Insert responsive component from my file (/assets/css/style_col.css)
 
 
-#include
+#include some F..... blocks
 
 ##include_heroImageHeader
+you can use only one from this 3 elements
 ![include_heroImageHeader](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_heroImageHeader.jpg "include_heroImageHeader")
 
 ##include_singleCTA
