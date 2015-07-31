@@ -3,25 +3,25 @@
 [sample EN link](https://rawgit.com/cromozooom/responsive-email/master/v02/index_en.html "fiorentina")
 
 ## workflow
-!!!! modify only jade file !!!!
+###!!!! modify only jade file !!!!
 
 1. Upload images on server!
 2. Open PREPROS*
 3. Open folder v02 in SUBLIME TEXT
 4. Create copy of "index.jade" & rename with your f.....jade name :)
 
-!!!! make use of [this file](https://goo.gl/ljfWBR) to !!!!
+###!!!! make use of [this file](https://goo.gl/ljfWBR) to !!!!
 
-5. Replace the variable inside included file
+- Replace the variable inside included file
 
 
-!!!! go to html file !!!!
+###!!!! go to html file !!!!
 
-6. After you finish to make the replacement go to INLINE TOOL and copy paste your F......html file
+- After you finish to make the replacement go to INLINE TOOL and copy paste your F......html file
 
-!!!! go to css file !!!!
+###!!!! go to css file !!!!
 
-7. Insert responsive component from my file (/assets/css/style_col.css)
+- Insert responsive component from my file (/assets/css/style_col.css)
 
 
 ## note
