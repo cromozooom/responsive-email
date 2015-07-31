@@ -24,6 +24,40 @@
 
 - Insert responsive component from my file (/assets/css/style_col.css)
 
+
+#include
+
+##include_heroImageHeader
+![include_heroImageHeader](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_heroImageHeader.jpg "include_heroImageHeader")
+
+##include_singleCTA
+![include_singleCTA](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_singleCTA.jpg.jpg "include_singleCTA")
+
+##include_heroImage
+![include_heroImage](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_heroImage.jpg "include_heroImage")
+
+##include_coupon
+![include_coupon](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_coupon.jpg "include_coupon")
+
+##include_linkListA
+![##include_linkListBinclude_linkListA](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_linkListA.jpg "include_linkListA")
+
+![include_linkListB](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_linkListB.jpg "include_linkListB")
+
+##include_cowntDown
+![include_cowntDown](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_cowntDown.jpg "include_cowntDown")
+
+##include_2prod
+![include_2prod](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_2prod.jpg "include_2prod")
+
+##include_2banner_a
+![include_2banner_a](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_2banner_a.jpg "include_2banner_a")
+
+##include_3prodA
+![include_3prodA](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_3prodA.jpg "include_3prodA")
+
+
+
 ###### note
 - PREPROS* aka "big Brother" - compila i file *.jade to *.HTML)
 - SUBLIME Text 2
