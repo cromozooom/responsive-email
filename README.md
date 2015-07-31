@@ -31,7 +31,7 @@
 ![include_heroImageHeader](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_heroImageHeader.jpg "include_heroImageHeader")
 
 ##include_singleCTA
-![include_singleCTA](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_singleCTA.jpg.jpg "include_singleCTA")
+![include_singleCTA](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_singleCTA.jpg "include_singleCTA")
 
 ##include_heroImage
 ![include_heroImage](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_heroImage.jpg "include_heroImage")
