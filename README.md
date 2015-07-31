@@ -19,10 +19,9 @@
 
 - After you finish to make the replacement go to INLINE TOOL and copy paste your F......html file
 
-####!!!! go to css file !!!!
+####!!!! go to css file to... [inline CSS](http://templates.mailchimp.com/resources/inline-css/) !!!!
 
 - Insert responsive component from my file (/assets/css/style_col.css)
-
 
 ###### note
 - PREPROS* aka "big Brother" - compila i file *.jade to *.HTML)
