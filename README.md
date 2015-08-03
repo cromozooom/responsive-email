@@ -25,7 +25,9 @@
 - Insert responsive component from my file (/assets/css/style_col.css)
 
 
-#include some F..... blocks (remember to make content for IT / EN)
+#include some F..... blocks
+
+(remember to make content for IT / EN)
 
 ##include_heroImageHeader
 
