@@ -31,14 +31,17 @@
 
 ![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/mixt_green.jpg "simple for photoshop user")
 you can use only one from this 3 elements:
-* title
-* subtitle
-* call to action
+* title (img, txt)
+* subtitle (txt)
+* call to action (img)
 
 ![include_heroImageHeader](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_heroImageHeader.jpg "include_heroImageHeader")
 
 ##include_singleCTA
 ![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_green.jpg "simple sublime user")
+* title (txt)
+* subtitle (txt)
+* call to action (txt)
 ![include_singleCTA](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_singleCTA.jpg "include_singleCTA")
 
 ##include_heroImage
