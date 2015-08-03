@@ -28,12 +28,14 @@
 #include some F..... blocks
 
 ##include_heroImageHeader
-![hard stuf](https://rawgit.com/cromozooom/responsive-email/master/icons/mixt_green.jpg "simple for photoshop user")
 
+![hard stuf](https://rawgit.com/cromozooom/responsive-email/master/icons/mixt_green.jpg "simple for photoshop user")
 you can use only one from this 3 elements
+
 ![include_heroImageHeader](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_heroImageHeader.jpg "include_heroImageHeader")
 
 ##include_singleCTA
+![hard stuf](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_green.jpg "simple sublime user")
 ![include_singleCTA](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_singleCTA.jpg "include_singleCTA")
 
 ##include_heroImage
