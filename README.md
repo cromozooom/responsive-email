@@ -25,7 +25,7 @@
 - Insert responsive component from my file (/assets/css/style_col.css)
 
 
-#include some F..... blocks
+#include some F..... blocks (remember to make content for IT / EN)
 
 ##include_heroImageHeader
 
@@ -39,6 +39,7 @@ you can use only one from this 3 elements:
 
 ##include_singleCTA
 ![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_green.jpg "simple sublime user")
+you can use only one from this 3 elements:
 * title (txt)
 * subtitle (txt)
 * call to action (txt)
@@ -46,10 +47,15 @@ you can use only one from this 3 elements:
 
 ##include_heroImage
 ![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/mixt_green.jpg "simple for photoshop user")
+* header (txt)
+* call to action (txt)
+* image (img)
+
 ![include_heroImage](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_heroImage.jpg "include_heroImage")
 
 ##include_coupon
 ![hard stuf](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_green.jpg "simple sublime user")
+
 ![include_coupon](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_coupon.jpg "include_coupon")
 
 ##include_linkListA
