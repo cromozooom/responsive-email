@@ -29,37 +29,49 @@
 
 ##include_heroImageHeader
 
-![hard stuf](https://rawgit.com/cromozooom/responsive-email/master/icons/mixt_green.jpg "simple for photoshop user")
-you can use only one from this 3 elements
+![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/mixt_green.jpg "simple for photoshop user")
+you can use only one from this 3 elements:
+* title
+* subtitle
+* call to action
 
 ![include_heroImageHeader](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_heroImageHeader.jpg "include_heroImageHeader")
 
 ##include_singleCTA
-![hard stuf](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_green.jpg "simple sublime user")
+![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_green.jpg "simple sublime user")
 ![include_singleCTA](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_singleCTA.jpg "include_singleCTA")
 
 ##include_heroImage
+![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/mixt_green.jpg "simple for photoshop user")
 ![include_heroImage](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_heroImage.jpg "include_heroImage")
 
 ##include_coupon
+![hard stuf](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_green.jpg "simple sublime user")
 ![include_coupon](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_coupon.jpg "include_coupon")
 
 ##include_linkListA
+![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_red.jpg "dificult for sublime user")
 ![##include_linkListBinclude_linkListA](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_linkListA.jpg "include_linkListA")
 
+![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_red.jpg "dificult for sublime user")
 ![include_linkListB](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_linkListB.jpg "include_linkListB")
 
 ##include_cowntDown
+is in progress - wee need some files up to php server (now are available only on solopx server)
 ![include_cowntDown](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_cowntDown.jpg "include_cowntDown")
 
 ##include_2prod
+![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_green.jpg "simple sublime user")
 ![include_2prod](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_2prod.jpg "include_2prod")
 
+##include_3prodA
+![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_green.jpg "simple sublime user")
+![include_3prodA](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_3prodA.jpg "include_3prodA")
+
 ##include_2banner_a
+![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/mixt_green.jpg "simple for photoshop user")
 ![include_2banner_a](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_2banner_a.jpg "include_2banner_a")
 
-##include_3prodA
-![include_3prodA](https://rawgit.com/cromozooom/responsive-email/master/v02/images/fiorentina/include_3prodA.jpg "include_3prodA")
 
 
 
