@@ -23,11 +23,11 @@ if oldPriceProd
 				td(style="#{center} border-top: solid 10px white; border-bottom: solid 10px white;")
 					span(style="#{fontL}#{decThrough} color:#{oldPriceProdColor}")
 						| #{oldPriceProd}
-						sup(style="#{fontXS} #{normal} #{decNone} color: #{oldPriceProdColor}") €
+						sup(style="#{fontXS} #{normal} #{decNone} color: #{oldPriceProdColor}") &euro;
 				td(style="#{center} border-left-width: 1px; border-left-style: solid; border-left-color: #{oldPriceProdColor}; color:#{priceProdColor}")
 					strong(style="#{fontXL}")
 						| #{priceProd}
-						sup(style="#{fontS} #{normal}") €
+						sup(style="#{fontS} #{normal}") &euro;
 			tr
 				td(colspan="2")
 					include cta
@@ -39,7 +39,7 @@ else
 				td(style="#{center}  border-top: solid 10px white; border-bottom: solid 10px white; border-left-width: 0px; border-left-style: solid; border-left-color: #{oldPriceProdColor}; color:#{priceProdColor}")
 					strong(style="#{fontXL}")
 						| #{priceProd}
-						sup(style="#{fontS} #{normal}") €
+						sup(style="#{fontS} #{normal}") &euro;
 			tr
 				td
 					include cta
