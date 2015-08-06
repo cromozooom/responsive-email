@@ -2,14 +2,18 @@
 - var oldPriceProdColor		= "#b2b2b2"
 
 if site == "fiorentina"
-	- var priceProdColor		= "#4a2583"
+	- var priceProdColor		= colorSecondary
+
+if site == "lazio"
+	- var priceProdColor		= colorPrimary
+	- var titleProdColor 		= colorSecondary
 
 
 a(href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" target="_blank")
 	img.image(src="#{imgProd}" border="0" alt="#{titleProd}" width="100%" hspace="0" vspace="0" style="max-width:100%;")
 br
 br
-.titleProd(style="#{fontS}")
+.titleProd(style="#{fontS}color:#{titleProdColor}")
 	strong
 		| #{titleProd}
 if oldPriceProd

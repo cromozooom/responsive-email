@@ -63,6 +63,42 @@ block PowerUser
 			- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1420014859385/d/${encoded_user_data}$/k/${form_verification_code}$/"
 			- var unsubscribeLinkCopy 		= "Clicca qui"
 
+	if site == "lazio"
+		//- preheader option
+		- var viewOnlineLink				= "${online_version_url}$"
+		- var reasonLink 					= "_footer&ga_medium=DEM&ga_source=NL"
+		if lang == "en"
+			- var onlineVersionCopy			= "If this e-mail is not being displayed properly, "
+			- var viewOnline				= "please click here"
+
+			//- footer
+			- var copyContact 				= "Contact Us "
+			- var copyContactMailLink		= "customercare@fiorentinastore.com"
+			- var contactMailLink 			= "mailto:customercare@fiorentinastore.com"
+
+			- var reasonCopy00				= "You are receiving the following communication as your are subscribed to "
+			- var reasonCopy01				= " 's newsletter with the following e-mail: "
+
+			- var unsubscribeCopy 			= "Don't want to receive email Updates? "
+			- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1520014859142/d/${encoded_user_data}$/k/${form_verification_code}$/lang/en/"
+			- var unsubscribeLinkCopy 		= "Unsubscribe here"
+
+		if lang == "it"
+			- var onlineVersionCopy	= "Se non riesci a visualizzare questa mail "
+			- var viewOnline		= "clicca qui"
+
+			//- footer
+			- var copyContact 				= "Contattaci "
+			- var copyContactMailLink		= "customercare@fiorentinastore.com"
+			- var contactMailLink 			= "mailto:customercare@fiorentinastore.com"
+
+			- var reasonCopy00				= "Ricevi questa comunicazione in quanto iscritto/a al servizio di informazione periodica di "
+			- var reasonCopy01				= " con l'indirizzo e-mail "
+
+			- var unsubscribeCopy 			= "Per disiscriverti dalla newsletter "
+			- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1420014859385/d/${encoded_user_data}$/k/${form_verification_code}$/"
+			- var unsubscribeLinkCopy 		= "Clicca qui"
+
 
 	//- header template
 	if lang == "en"
@@ -83,6 +119,10 @@ block PowerUser
 		- var socilaIconWidth 		= "40px"
 
 	if site == "fiorentina"
+		- var logoImgHeight 		= "80px"
+		- var socilaIconWidth 		= "40px"
+
+	if site == "lazio"
 		- var logoImgHeight 		= "80px"
 		- var socilaIconWidth 		= "40px"
 
@@ -139,12 +179,39 @@ block PowerUser
 			- var Nav05 					= "GIFT IDEAS"
 			- var NavLink05 				= "http://www.fiorentinastore.com/en/gift-ideas.html"
 
+		if site == "lazio"
+			- var LogoStoreTxt 				= "fiorentina"
+			- var LogoImgLink 				= "http://www.fiorentinastore.com/en"
+			- var Nav01 					= "MATCH KITS"
+			- var NavLink01 				= "http://www.fiorentinastore.com/en/match-kits.html"
+			- var Nav02 					= "FASHION"
+			- var NavLink02 				= "http://www.fiorentinastore.com/en/fashion.html"
+			- var Nav03 					= "ACCESSORIES"
+			- var NavLink03 				= "http://www.fiorentinastore.com/en/accessories.html"
+			- var Nav04 					= "COVERS"
+			- var NavLink04 				= "http://www.fiorentinastore.com/en/covers.html"
+			- var Nav05 					= "GIFT IDEAS"
+			- var NavLink05 				= "http://www.fiorentinastore.com/en/gift-ideas.html"
+
 	if lang == "it"
 
 		if site == "fiorentina"
 			- var LogoStoreTxt 				= "fiorentina"
 			- var LogoImgLink 				= "http://www.fiorentinastore.com/it/"
+			- var Nav01 					= "KIT GARA"
+			- var NavLink01 				= "http://www.fiorentinastore.com/it/kit-gara.html"
+			- var Nav02 					= "ABBIGLIAMENTO"
+			- var NavLink02 				= "http://www.fiorentinastore.com/it/abbigliamento.html"
+			- var Nav03 					= "ACCESSORI"
+			- var NavLink03 				= "http://www.fiorentinastore.com/it/accessori.html"
+			- var Nav04 					= "COVER"
+			- var NavLink04 				= "http://www.fiorentinastore.com/it/cover.html"
+			- var Nav05 					= "IDEE REGALO"
+			- var NavLink05 				= "http://www.fiorentinastore.com/it/idee-regalo.html"
 
+		if site == "lazio"
+			- var LogoStoreTxt 				= "fiorentina"
+			- var LogoImgLink 				= "http://www.fiorentinastore.com/it/"
 			- var Nav01 					= "KIT GARA"
 			- var NavLink01 				= "http://www.fiorentinastore.com/it/kit-gara.html"
 			- var Nav02 					= "ABBIGLIAMENTO"
@@ -198,6 +265,16 @@ block PowerUser
 
 	if site == "fiorentina"
 		- var siteName = "fiorentinastore"
+		- var instagram = "https://instagram.com/acffiorentina/"
+		- var facebook = "https://www.facebook.com/ACFFiorentina"
+		- var twitter = "https://twitter.com/acffiorentina"
+		- var blog = false
+		- var youTube = "https://www.youtube.com/user/ViolaChannel"
+		- var gPlus = false
+		- var flikr = "https://www.flickr.com/photos/acffiorentina"
+
+	if site == "lazio"
+		- var siteName = "laziostore"
 		- var instagram = "https://instagram.com/acffiorentina/"
 		- var facebook = "https://www.facebook.com/ACFFiorentina"
 		- var twitter = "https://twitter.com/acffiorentina"
@@ -305,23 +382,6 @@ block PowerUser
 		- var colorBlack 		= "#000000"
 		- var colorWhite 		= "#ffffff"
 
-	if site == "juve"
-		- var containerBg 		= "#e8e8e8"
-		- var wrapperCollor 	= "#ffffff"
-
-		- var colorPrimary 		= "#fcc511"
-		- var colorPrimary_ 	= "#1c1c1c"
-
-		- var colorSecondary	= "#ffffff"
-		- var colorSecondary_	= "#5a5a55"
-		- var colorSecondary__	= "#5a5a55"
-
-		- var colorTertiari 	= "#2b2d29"
-		- var colorTertiari_ 	= "#d4d2d6"
-
-		- var colorBlack 		= "#000000"
-		- var colorWhite 		= "#ffffff"
-
 	if site == "fiorentina"
 		- var containerBg 		= "#e8e8e8"
 		- var wrapperCollor 	= "#ffffff"
@@ -332,6 +392,23 @@ block PowerUser
 		- var colorSecondary	= "#4a2583" // viola
 		- var colorSecondary_	= "#5a5a55" //
 		- var colorSecondary__	= "#5a5a55"
+
+		- var colorTertiari 	= "#e41b13"
+		- var colorTertiari_ 	= "#d4d2d6"
+
+		- var colorBlack 		= "#000000"
+		- var colorWhite 		= "#ffffff"
+
+	if site == "lazio"
+		- var containerBg 		= "#e8e8e8"
+		- var wrapperCollor 	= "#ffffff"
+
+		- var colorPrimary 		= "#d4a504" // marone
+		- var colorPrimary_ 	= "#ffd135" // light marone
+
+		- var colorSecondary	= "#003671" // dark blue
+		- var colorSecondary_	= "#8cd3f6" // midle blue
+		- var colorSecondary__	= "#c5e8fb" // light Blue
 
 		- var colorTertiari 	= "#e41b13"
 		- var colorTertiari_ 	= "#d4d2d6"

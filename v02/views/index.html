@@ -106,11 +106,41 @@
       
       <tr>
         <td align="center" valign="top" bgcolor="undefined">
-          <table border="0" width="600" cellpadding="0" cellspacing="0" class="container">
-            <tr>
-              <td align="left" style="font-size: 10px; line-height: 14px; font-family: Helvetica, Arial, sans-serif; color: undefined;" class="container-padding footer-text"><br/><br/>xSample Footer text: © 2014 Acme, Inc.<br/><br/>You are receiving this email because you opted in on our website. Update your <a href="#" style="color:undefined; text-decoration: none;"><span style="color:undefined; text-decoration: none;">email preferences </span></a>or <a href="#" style="color:undefined; text-decoration: none;"><span style="color:undefined; text-decoration: none;">unsubscribe</span></a>.<br/><br/><strong>Acme, Inc.<br/></strong><span class="ios-footer">123 Main St.<br/>Springfield, MA 12345<br/><a href="undefined" style="color:undefined; text-decoration: none;"><span style="color:undefined; text-decoration: none;"></span></a></span><br/><br/><br/></td>
-            </tr>
-          </table>
+          <!--
+          - 600px container (white background)
+          table.container(border="0" width="600" cellpadding="0" cellspacing="0")
+          	//- footer
+          	tr
+          		td.container-padding.footer-text(align="left" style="font-size: 10px; line-height: 14px; font-family: Helvetica, Arial, sans-serif; color: ;")
+          			br
+          			br
+          			| xSample Footer text: © 2014 Acme, Inc.
+          			br
+          			br
+          			| You are receiving this email because you opted in on our website. Update your 
+          			a(href="#" style="color:; text-decoration: none;")
+          				span(style="color:; text-decoration: none;") email preferences 
+          			| or 
+          			a(href="#" style="color:; text-decoration: none;")
+          				span(style="color:; text-decoration: none;") unsubscribe
+          			|.
+          			br
+          			br
+          			strong
+          				| Acme, Inc.
+          				br
+          			span.ios-footer
+          				| 123 Main St.
+          				br
+          				| Springfield, MA 12345
+          				br
+          				| 
+          				a(href=""  style="color:; text-decoration: none;")
+          					span(style="color:; text-decoration: none;") 
+          			br
+          			br
+          			br
+          -->
         </td>
       </tr>
     </table>

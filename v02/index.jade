@@ -15,8 +15,9 @@ block config
 			- var previewCopy		= "Acquista la nuova maglia home 2015/16 - it"
 
 
-		//- option available fiorentina
-		- var site 				= "fiorentina"
+		//- option available fiorentina, lazio
+		- var site 				= "lazio"
+		//- var site 				= "lazio"
 		- var lang 				= "it"
 
 		//- image management
@@ -28,6 +29,9 @@ block config
 
 		if site == "fiorentina"
 			- var imgLink = "images/fiorentina/"
+
+		if site == "lazio"
+			- var imgLink = "images/lazio/"
 
 
 	include config
