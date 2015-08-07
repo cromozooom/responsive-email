@@ -14,14 +14,14 @@ block 2prod_a
 			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15004.jpg"
 			- var titleProd				= "Fiorentina Authentic Home Jersey 2015/16"
 			- var priceProd 			= "120.00"
-			- var oldPriceProd			= false
+			- var oldPriceProd			= "200"
 
 		if prod == "02"
 			- var linkCTA 				= "http://www.fiorentinastore.com/en/fiorentina-goalkeeper-green-jersey-2015-16.html"
 			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15006.jpg"
 			- var titleProd				= "Fiorentina Goalkeeper Green Jersey 2015/16"
 			- var priceProd 			= "80.00"
-			- var oldPriceProd			= false
+			- var oldPriceProd			= "200"
 
 	if lang == "it"
 		- var ctaCopy 					= "Acquista"
@@ -30,21 +30,21 @@ block 2prod_a
 			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15004.jpg"
 			- var titleProd				= "Fiorentina Maglia Gara Home Authentic 2015/16"
 			- var priceProd 			= "120,00"
-			- var oldPriceProd			= false
+			- var oldPriceProd			= "200"
 
 		if prod == "02"
 			- var linkCTA 				= "http://www.fiorentinastore.com/it/fiorentina-maglia-gara-portiere-verde-2015-16.html"
 			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15006.jpg"
 			- var titleProd				= "Fiorentina Maglia Gara Portiere Verde 2015/16"
 			- var priceProd 			= "80,00"
-			- var oldPriceProd			= false
+			- var oldPriceProd			= "200"
 
 
 	//- customize button variable optional
 	block ctaCustom
 		//- 01 = simple CTA (buy now or Acquista)
 		//- 02 = CTA with price (buy at {priceProd} or Acquista a {priceProd})
-		- var buttonType 	= "01"
+		- var buttonType 	= "02"
 		- var bgColor		= "#b5ff00"
 		- var txtColor		= "#33333d"
 		//- can be 160 max
