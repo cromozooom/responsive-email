@@ -31,6 +31,8 @@
 
 (remember to make content for IT / EN)
 
+___
+
 ##include_heroImageHeader
 
 ![Hero Image](https://rawgit.com/cromozooom/responsive-email/master/icons/heroImage.jpg "Hero Image")
@@ -38,6 +40,9 @@ you can use only one from this 3 elements:
 * title (img, txt)
 * subtitle (txt)
 * call to action (img)
+
+___
+
 
 ![include_heroImageHeader](https://rawgit.com/cromozooom/responsive-email/master/files/images/fiorentina/include_heroImageHeader.jpg "include_heroImageHeader")
 
