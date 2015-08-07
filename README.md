@@ -9,15 +9,17 @@
 
 ###!!!! modify only jade file - and use **default** template !!!!
 
-1. Upload images on server!
+1. **Upload images on server!**
 2. Open **PREPROS**
 3. Download and open "files" folder in **SUBLIME TEXT**
-4. Create copy of "index.jade" & rename with your f.....jade name :)
-5. select and order your content blocks (see the section: "include some F..... blocks")
+4. Create copy of **"index.jade"** & rename with your f....dotjade name :)
+5. **select and order** your content blocks (see the section: "include some F..... blocks")
+
+___
 
 ####!!!! make use of [this file](https://goo.gl/ljfWBR) to !!!!
 
-- Replace the variable inside included file
+- Replace the **variable** inside included file
 
 **Pay attention to Traking code**
 ![tracking code](https://rawgit.com/cromozooom/responsive-email/master/icons/traking.jpg "skils you need")
