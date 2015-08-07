@@ -1,6 +1,8 @@
 # Responsive-email
 
-[sample link](https://rawgit.com/cromozooom/responsive-email/master/files/index.html "actual template")
+**[sample fiore](https://rawgit.com/cromozooom/responsive-email/master/files/index_fiorentina.html "fiorentina")**
+
+**[sample lazio](https://rawgit.com/cromozooom/responsive-email/master/files/index_lazio.html "lazio")**
 
 ## workflow
 
