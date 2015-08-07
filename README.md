@@ -3,6 +3,7 @@
 [sample link](https://rawgit.com/cromozooom/responsive-email/master/files/index.html "actual template")
 
 ## workflow
+
 ###!!!! modify only jade file !!!!
 
 1. Upload images on server!
@@ -26,6 +27,7 @@
 
 
 #include some F..... blocks
+![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/legenda.jpg "simple for photoshop user")
 
 (remember to make content for IT / EN)
 
