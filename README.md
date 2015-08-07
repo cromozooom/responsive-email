@@ -76,7 +76,7 @@ ___
 
 ##include_cowntDown
 
-*is in progress - wee need some files up to php server (now are available only on solopx server)*
+**is in progress - wee need some files up to php server (now are available only on solopx server)**
 
 ![Cownt Down](https://rawgit.com/cromozooom/responsive-email/master/icons/cowntDown.jpg "Cownt Down")
 
