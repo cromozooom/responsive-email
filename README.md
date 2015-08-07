@@ -27,13 +27,13 @@
 
 
 #include some F..... blocks
-![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/legenda.jpg "simple for photoshop user")
+![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/legenda.jpg "skils you need")
 
 (remember to make content for IT / EN)
 
 ##include_heroImageHeader
 
-![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/mixt_green.jpg "simple for photoshop user")
+![Hero Image](https://rawgit.com/cromozooom/responsive-email/master/icons/heroImage.jpg "Hero Image")
 you can use only one from this 3 elements:
 * title (img, txt)
 * subtitle (txt)
