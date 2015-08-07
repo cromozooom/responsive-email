@@ -99,25 +99,22 @@ ___
 
 **!!!!! make use of [this file](https://goo.gl/ljfWBR) to !!!!!**
 
+___
+
+##include_2banner_a
+
+![2banner_a](https://rawgit.com/cromozooom/responsive-email/master/icons/2banner_a.jpg "2banner_a")
+
+___
 
 ##include_linkListA
+
 ![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_red.jpg "dificult for sublime user")
 ![##include_linkListBinclude_linkListA](https://rawgit.com/cromozooom/responsive-email/master/files/images/fiorentina/include_linkListA.jpg "include_linkListA")
 
 ![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_red.jpg "dificult for sublime user")
 ![include_linkListB](https://rawgit.com/cromozooom/responsive-email/master/files/images/fiorentina/include_linkListB.jpg "include_linkListB")
-
-
-##include_3prodA
-![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_green.jpg "simple sublime user")
-![include_3prodA](https://rawgit.com/cromozooom/responsive-email/master/files/images/fiorentina/include_3prodA.jpg "include_3prodA")
-
-##include_2banner_a
-![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/mixt_green.jpg "simple for photoshop user")
-![include_2banner_a](https://rawgit.com/cromozooom/responsive-email/master/files/images/fiorentina/include_2banner_a.jpg "include_2banner_a")
-
-
-
+___
 
 ###### note
 - PREPROS* aka "big Brother" - compila i file *.jade to *.HTML)
