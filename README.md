@@ -43,20 +43,23 @@ you can use only one from this 3 elements:
 
 ___
 
-
-![include_heroImageHeader](https://rawgit.com/cromozooom/responsive-email/master/files/images/fiorentina/include_heroImageHeader.jpg "include_heroImageHeader")
-
 ##include_singleCTA
-![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_green.jpg "simple sublime user")
+
+![Single CTA](https://rawgit.com/cromozooom/responsive-email/master/icons/singleCTA.jpg "Single CTA")
+
 you can use only one from this 3 elements:
 * title (txt)
 * subtitle (txt)
 * call to action (txt)
-![include_singleCTA](https://rawgit.com/cromozooom/responsive-email/master/files/images/fiorentina/include_singleCTA.jpg "include_singleCTA")
 
-##include_heroImage
-![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/mixt_green.jpg "simple for photoshop user")
-* header (txt)
+___
+
+##include_singleCTA
+
+![Hero Image Header](https://rawgit.com/cromozooom/responsive-email/master/icons/heroImageHeader.jpg "Hero Image Header")
+
+you can use only one from this 3 elements:
+* header (img)
 * call to action (txt)
 * image (img)
 
