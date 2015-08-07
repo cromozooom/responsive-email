@@ -1,0 +1,54 @@
+extend views/index
+
+block config
+	//- option available fiorentina, lazio
+	- var site 				= "fiorentina"
+	- var lang 				= "it"
+	- var siteNew 			= "fiorentina"
+
+	//- used for tracking code
+	- var data = "27-3"
+
+	//- Universal Copy
+	if lang == "en"
+		- var title 			= "Fiorentina Samplte title dem en"
+		- var previewCopy		= "Acquista la nuova maglia home 2015/16 - en"
+
+	if lang == "it"
+		- var title 			= "Fiorentina Samplte title dem it"
+		- var previewCopy		= "Acquista la nuova maglia home 2015/16 - it"
+
+	//- image management
+	if site == "f4u"
+		- var imgLink = "images/f4u/"
+
+	if site == "juve"
+		- var imgLink = "images/juve/"
+
+	if site == "fiorentina"
+		- var imgLink = "images/fiorentina/"
+
+	if site == "lazio"
+		- var imgLink = "images/lazio/"
+
+	if site == "default"
+		- var imgLink = "images/default/"
+
+	include config
+
+
+block contentMail
+	include views/nav
+	include include/fiorentina/heroImageHeader
+	include include/fiorentina/singleCTA
+	include include/fiorentina/heroImage
+	include include/fiorentina/coupon
+	include include/fiorentina/linkList
+	include include/fiorentina/cowntDown
+	include include/fiorentina/2prod
+	include include/fiorentina/2banner_a
+	include include/fiorentina/3prodA
+
+	//include include/fiorentina/3prodB
+	//-include include/_footerLink
+	//-include _3article_a

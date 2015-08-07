@@ -1,7 +1,6 @@
 block info
-
-block color
-
+block colorInfoSingleCTA
+	include ../config
 	if site == "fiorentina"
 		- var bgColor 					= colorSecondary
 		- var imgBgColor 				= containerBg
@@ -16,20 +15,28 @@ block color
 		- var borderBottomTop 			= colorSecondary__
 		- var colorheaderCopySingleCTA 	= colorSecondary
 
-	else
-		- var colorBlack 		= colorBlack
-		- var bgColor 			= colorBlack
-		- var imgBgColor 		= containerBg
-		- var fontColor 		= colorSecondary__
-		- var borderBottomTop 	= colorPrimary_
-tr
-	td.container-padding.content(align="center"  bgcolor="#{bgColor}")
-		if headerCopySingleCTA
-			span(style="#{center}#{fontSans}#{fontXXL} color:#{colorheaderCopySingleCTA};")
-				| #{headerCopySingleCTA}
-		if subHeaderCopySingleCTA
-			span(style="#{center}#{fontSans}#{fontM} color:#{fontColor};")
-				br
-				| #{headerCopySingleCTA}
-			hr.hr(style="border-bottom: 1px solid #{borderBottomTop};")
-		include ../views/cta.jade
+	if site == "default"
+		- var colorBlack 				= colorBlack
+		- var bgColor 					= colorBlack
+		- var imgBgColor 				= containerBg
+		- var fontColor 				= colorSecondary__
+		- var borderBottomTop 			= colorPrimary_
+
+
+block contentSingleCTA
+	//-
+		tr
+			td
+				p borderColor = #{borderColor}
+	tr
+		td.container-padding.content(align="center"  bgcolor="#{bgColor}")
+			if headerCopySingleCTA
+				span(style="#{center}#{fontSans}#{fontXXL} color:#{colorheaderCopySingleCTA};")
+					| #{headerCopySingleCTA}
+			if subHeaderCopySingleCTA
+				span(style="#{center}#{fontSans}#{fontM} color:#{fontColor};")
+					br
+					| #{headerCopySingleCTA}
+				hr.hr(style="border-bottom: 1px solid #{borderBottomTop};")
+			include ../views/cta.jade
+

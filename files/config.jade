@@ -1,429 +1,366 @@
-block User
-
-
-
-//-  _____                       _    _
-//- |  __ \                     | |  | |
-//- | |__) |____      _____ _ __| |  | |___  ___ _ __
-//- |  ___/ _ \ \ /\ / / _ \ '__| |  | / __|/ _ \ '__|
-//- | |  | (_) \ V  V /  __/ |  | |__| \__ \  __/ |
-//- |_|   \___/ \_/\_/ \___|_|   \____/|___/\___|_|
-//-
-
-block PowerUser
-	//- General INFO
-	//- /////////////////////////////////////////////////////////////////
-
-
-	//- Preheader template
-
+if site == "fiorentina"
+	//- preheader option
+	- var viewOnlineLink				= "${online_version_url}$"
+	- var reasonLink 					= "_footer&ga_medium=DEM&ga_source=NL"
 	if lang == "en"
-		- var onlineVersionCopy	= "If this e-mail is not being displayed properly, "
-		- var viewOnline		= "please click here"
-		- var viewOnlineLink	= "${online_version_url}$"
+		- var onlineVersionCopy			= "If this e-mail is not being displayed properly, "
+		- var viewOnline				= "please click here"
+
+		//- footer
+		- var copyContact 				= "Contact Us "
+		- var copyContactMailLink		= "customercare@fiorentinastore.com"
+		- var contactMailLink 			= "mailto:customercare@fiorentinastore.com"
+
+		- var reasonCopy00				= "You are receiving the following communication as your are subscribed to "
+		- var reasonCopy01				= " 's newsletter with the following e-mail: "
+
+		- var unsubscribeCopy 			= "Don't want to receive email Updates? "
+		- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1520014859142/d/${encoded_user_data}$/k/${form_verification_code}$/lang/en/"
+		- var unsubscribeLinkCopy 		= "Unsubscribe here"
 
 	if lang == "it"
-		- var onlineVersionCopy	= "E-mail non visualizza correttamente? it"
-		- var viewOnline		= "view online version"
-		- var viewOnlineLink	= "${online_version_url}$"
+		- var onlineVersionCopy	= "Se non riesci a visualizzare questa mail "
+		- var viewOnline		= "clicca qui"
 
-	if site == "fiorentina"
-		//- preheader option
-		- var viewOnlineLink				= "${online_version_url}$"
-		- var reasonLink 					= "_footer&ga_medium=DEM&ga_source=NL"
-		if lang == "en"
-			- var onlineVersionCopy			= "If this e-mail is not being displayed properly, "
-			- var viewOnline				= "please click here"
+		//- footer
+		- var copyContact 				= "Contattaci "
+		- var copyContactMailLink		= "customercare@fiorentinastore.com"
+		- var contactMailLink 			= "mailto:customercare@fiorentinastore.com"
 
-			//- footer
-			- var copyContact 				= "Contact Us "
-			- var copyContactMailLink		= "customercare@fiorentinastore.com"
-			- var contactMailLink 			= "mailto:customercare@fiorentinastore.com"
+		- var reasonCopy00				= "Ricevi questa comunicazione in quanto iscritto/a al servizio di informazione periodica di "
+		- var reasonCopy01				= " con l'indirizzo e-mail "
 
-			- var reasonCopy00				= "You are receiving the following communication as your are subscribed to "
-			- var reasonCopy01				= " 's newsletter with the following e-mail: "
+		- var unsubscribeCopy 			= "Per disiscriverti dalla newsletter "
+		- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1420014859385/d/${encoded_user_data}$/k/${form_verification_code}$/"
+		- var unsubscribeLinkCopy 		= "Clicca qui"
 
-			- var unsubscribeCopy 			= "Don't want to receive email Updates? "
-			- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1520014859142/d/${encoded_user_data}$/k/${form_verification_code}$/lang/en/"
-			- var unsubscribeLinkCopy 		= "Unsubscribe here"
-
-		if lang == "it"
-			- var onlineVersionCopy	= "Se non riesci a visualizzare questa mail "
-			- var viewOnline		= "clicca qui"
-
-			//- footer
-			- var copyContact 				= "Contattaci "
-			- var copyContactMailLink		= "customercare@fiorentinastore.com"
-			- var contactMailLink 			= "mailto:customercare@fiorentinastore.com"
-
-			- var reasonCopy00				= "Ricevi questa comunicazione in quanto iscritto/a al servizio di informazione periodica di "
-			- var reasonCopy01				= " con l'indirizzo e-mail "
-
-			- var unsubscribeCopy 			= "Per disiscriverti dalla newsletter "
-			- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1420014859385/d/${encoded_user_data}$/k/${form_verification_code}$/"
-			- var unsubscribeLinkCopy 		= "Clicca qui"
-
-	if site == "lazio"
-		//- preheader option
-		- var viewOnlineLink				= "${online_version_url}$"
-		- var reasonLink 					= "_footer&ga_medium=DEM&ga_source=NL"
-		if lang == "en"
-			- var onlineVersionCopy			= "If this e-mail is not being displayed properly, "
-			- var viewOnline				= "please click here"
-
-			//- footer
-			- var copyContact 				= "Contact Us "
-			- var copyContactMailLink		= "customercare@fiorentinastore.com"
-			- var contactMailLink 			= "mailto:customercare@fiorentinastore.com"
-
-			- var reasonCopy00				= "You are receiving the following communication as your are subscribed to "
-			- var reasonCopy01				= " 's newsletter with the following e-mail: "
-
-			- var unsubscribeCopy 			= "Don't want to receive email Updates? "
-			- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1520014859142/d/${encoded_user_data}$/k/${form_verification_code}$/lang/en/"
-			- var unsubscribeLinkCopy 		= "Unsubscribe here"
-
-		if lang == "it"
-			- var onlineVersionCopy	= "Se non riesci a visualizzare questa mail "
-			- var viewOnline		= "clicca qui"
-
-			//- footer
-			- var copyContact 				= "Contattaci "
-			- var copyContactMailLink		= "customercare@fiorentinastore.com"
-			- var contactMailLink 			= "mailto:customercare@fiorentinastore.com"
-
-			- var reasonCopy00				= "Ricevi questa comunicazione in quanto iscritto/a al servizio di informazione periodica di "
-			- var reasonCopy01				= " con l'indirizzo e-mail "
-
-			- var unsubscribeCopy 			= "Per disiscriverti dalla newsletter "
-			- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1420014859385/d/${encoded_user_data}$/k/${form_verification_code}$/"
-			- var unsubscribeLinkCopy 		= "Clicca qui"
-
-
-	//- header template
+if site == "lazio"
+	//- preheader option
+	- var viewOnlineLink				= "${online_version_url}$"
+	- var reasonLink 					= "_footer&ga_medium=DEM&ga_source=NL"
 	if lang == "en"
-		- var LogoImg 			= "_logo.jpg"
-		- var folowUscopy 		= "follow us on"
+		- var onlineVersionCopy			= "If this e-mail is not being displayed properly, "
+		- var viewOnline				= "please click here"
+
+		//- footer
+		- var copyContact 				= "Contact Us "
+		- var copyContactMailLink		= "customercare@fiorentinastore.com"
+		- var contactMailLink 			= "mailto:customercare@fiorentinastore.com"
+
+		- var reasonCopy00				= "You are receiving the following communication as your are subscribed to "
+		- var reasonCopy01				= " 's newsletter with the following e-mail: "
+
+		- var unsubscribeCopy 			= "Don't want to receive email Updates? "
+		- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1520014859142/d/${encoded_user_data}$/k/${form_verification_code}$/lang/en/"
+		- var unsubscribeLinkCopy 		= "Unsubscribe here"
 
 	if lang == "it"
-		- var LogoImg 			= "_logo.jpg"
-		- var folowUscopy 		= "seguici su"
+		- var onlineVersionCopy	= "Se non riesci a visualizzare questa mail "
+		- var viewOnline		= "clicca qui"
+
+		//- footer
+		- var copyContact 				= "Contattaci "
+		- var copyContactMailLink		= "customercare@fiorentinastore.com"
+		- var contactMailLink 			= "mailto:customercare@fiorentinastore.com"
+
+		- var reasonCopy00				= "Ricevi questa comunicazione in quanto iscritto/a al servizio di informazione periodica di "
+		- var reasonCopy01				= " con l'indirizzo e-mail "
+
+		- var unsubscribeCopy 			= "Per disiscriverti dalla newsletter "
+		- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1420014859385/d/${encoded_user_data}$/k/${form_verification_code}$/"
+		- var unsubscribeLinkCopy 		= "Clicca qui"
+
+
+//- header template
+if lang == "en"
+	- var LogoImg 			= "_logo.jpg"
+	- var folowUscopy 		= "follow us on"
+
+if lang == "it"
+	- var LogoImg 			= "_logo.jpg"
+	- var folowUscopy 		= "seguici su"
+
+if site == "f4u"
+	- var logoImgHeight 		= "50px"
+	- var socilaIconWidth 		= "40px"
+
+
+if site == "juve"
+	- var logoImgHeight 		= "80px"
+	- var socilaIconWidth 		= "40px"
+
+if site == "fiorentina"
+	- var logoImgHeight 		= "80px"
+	- var socilaIconWidth 		= "40px"
+
+if site == "lazio"
+	- var logoImgHeight 		= "80px"
+	- var socilaIconWidth 		= "40px"
+
+//- nav template
+
+if lang == "en"
 
 	if site == "f4u"
-		- var logoImgHeight 		= "50px"
-		- var socilaIconWidth 		= "40px"
+		- var LogoStoreTxt 		= "football4u"
+		- var LogoImgLink 		= "http://www.football4u.it"
+
+		- var Nav01 					= "FOOTBALL BOOTS"
+		- var NavLink01 				= "http://www.football4u.it/en/football-boots.html"
+		- var Nav02 					= "CLOTHING"
+		- var NavLink02 				= "http://www.football4u.it/en/clothing.html"
+		- var Nav03 					= "EQUIPMENT"
+		- var NavLink03 				= "http://www.football4u.it/en/equipment.html"
+		- var Nav04 					= "GOALKEEPER"
+		- var NavLink04 				= "http://www.football4u.it/en/goalkeeper/goalkeeper.html"
+		- var Nav05 					= "TEAMSPORT"
+		- var NavLink05 				= "http://www.football4u.it/en/teamsport.html"
+		- var Nav06 					= "CLEARANCE"
+		- var NavLink06 				= "http://www.football4u.it/en/clearance.html"
+
+	if site == "fiorentina"
+		- var LogoStoreTxt 				= "fiorentina"
+		- var LogoImgLink 				= "http://www.fiorentinastore.com/en"
+
+		- var Nav01 					= "MATCH KITS"
+		- var NavLink01 				= "http://www.fiorentinastore.com/en/match-kits.html"
+		- var Nav02 					= "FASHION"
+		- var NavLink02 				= "http://www.fiorentinastore.com/en/fashion.html"
+		- var Nav03 					= "ACCESSORIES"
+		- var NavLink03 				= "http://www.fiorentinastore.com/en/accessories.html"
+		- var Nav04 					= "COVERS"
+		- var NavLink04 				= "http://www.fiorentinastore.com/en/covers.html"
+		- var Nav05 					= "GIFT IDEAS"
+		- var NavLink05 				= "http://www.fiorentinastore.com/en/gift-ideas.html"
+
+	if site == "lazio"
+		- var LogoStoreTxt 				= "lazio"
+		- var LogoImgLink 				= "http://www.laziostylestore.com/en"
+		- var Nav01 					= "115"
+		- var NavLink01 				= "http://www.laziostylestore.com/en/115-years.html"
+		- var Nav02 					= "MATCH KITS"
+		- var NavLink01 				= "http://www.laziostylestore.com/en/match-kits.html"
+		- var Nav03 					= "FASHION"
+		- var NavLink02 				= "http://www.laziostylestore.com/en/fashion.html"
+		- var Nav04 					= "ACCESSORIES"
+		- var NavLink03 				= "http://www.laziostylestore.com/en/accessories.html"
+		- var Nav05 					= "COVERS"
+		- var NavLink04 				= "http://www.laziostylestore.com/en/covers.html"
+		- var Nav06 					= "GIFT IDEAS"
+		- var NavLink05 				= "http://www.laziostylestore.com/en/gift-ideas.html"
+		- var Nav07 					= "CLEARANCE"
+		- var NavLink05 				= "http://www.laziostylestore.com/en/clearance.html"
 
 
+if lang == "it"
+
+	if site == "fiorentina"
+		- var LogoStoreTxt 				= "fiorentina"
+		- var LogoImgLink 				= "http://www.fiorentinastore.com/it/"
+		- var Nav01 					= "KIT GARA"
+		- var NavLink01 				= "http://www.fiorentinastore.com/it/kit-gara.html"
+		- var Nav02 					= "ABBIGLIAMENTO"
+		- var NavLink02 				= "http://www.fiorentinastore.com/it/abbigliamento.html"
+		- var Nav03 					= "ACCESSORI"
+		- var NavLink03 				= "http://www.fiorentinastore.com/it/accessori.html"
+		- var Nav04 					= "COVER"
+		- var NavLink04 				= "http://www.fiorentinastore.com/it/cover.html"
+		- var Nav05 					= "IDEE REGALO"
+		- var NavLink05 				= "http://www.fiorentinastore.com/it/idee-regalo.html"
+
+	if site == "lazio"
+		- var LogoStoreTxt 				= "lazio"
+		- var LogoImgLink 				= "http://www.laziostylestore.com/it/"
+		- var Nav01 					= "115 ANNI"
+		- var NavLink01 				= "http://www.laziostylestore.com/it/115-anni.html"
+		- var Nav02 					= "KIT GARA"
+		- var NavLink01 				= "http://www.laziostylestore.com/it/kit-gara.html"
+		- var Nav03 					= "ABBIGLIAMENTO"
+		- var NavLink02 				= "http://www.laziostylestore.com/it/abbigliamento.html"
+		- var Nav04 					= "ACCESSORI"
+		- var NavLink03 				= "http://www.laziostylestore.com/it/accessori.html"
+		- var Nav05 					= "COVER"
+		- var NavLink04 				= "http://www.laziostylestore.com/it/cover.html"
+		- var Nav06 					= "IDEE REGALO"
+		- var NavLink05 				= "http://www.laziostylestore.com/it/idee-regalo.html"
+		- var Nav07 					= "OUTLET"
+		- var NavLink05 				= "http://www.laziostylestore.com/it/outlet.html"
+
+	if site == "f4u"
+		- var LogoStoreTxt 				= "football4u"
+		- var LogoImgLink 				= "http://www.football4u.it/it/"
+
+		- var Nav01 					= "SCARPE"
+		- var NavLink01 				= "http://www.football4u.it/it/scarpe-calcio.html"
+		- var Nav02 					= "ABBIGLIAMENTO"
+		- var NavLink02 				= "http://www.football4u.it/it/abbigliamento.html"
+		- var Nav03 					= "ATTREZATURE"
+		- var NavLink03 				= "http://www.football4u.it/it/accessori.html"
+		- var Nav04 					= "PORTIERE"
+		- var NavLink04 				= "http://www.football4u.it/it/portiere.html"
+		- var Nav05 					= "TEAMSPORT"
+		- var NavLink05 				= "http://www.football4u.it/it/teamsport.html"
+		- var Nav06 					= "OUTLET"
+		- var NavLink06 				= "http://www.football4u.it/it/outlet.html"
+
+
+
+//- Social network
+//- /////////////////////////////////////////////////////////////////
+//- available: facebook, twitter, youTube, flikr, instagram, gPlus, blog, pinterest, forSquare
+
+
+if site == "fiorentina"
+	- var siteName = "fiorentinastore"
+	- var instagram = "https://instagram.com/acffiorentina/"
+	- var facebook = "https://www.facebook.com/ACFFiorentina"
+	- var twitter = "https://twitter.com/acffiorentina"
+	- var blog = false
+	- var youTube = "https://www.youtube.com/user/ViolaChannel"
+	- var gPlus = false
+	- var flikr = "https://www.flickr.com/photos/acffiorentina"
+
+if site == "lazio"
+	- var siteName = "laziostore"
+	- var instagram = "http://instagram.com/official_sslazio"
+	- var facebook = "http://www.facebook.com/SSLazioOfficialPage?sk=app_218693601539727"
+	- var twitter = "https://twitter.com/officialsslazio"
+	- var blog = false
+	- var youTube = "https://www.youtube.com/user/Officialsslazio"
+	- var gPlus = false
+	- var flikr = false
+	- var forSquare = "https://it.foursquare.com/officialsslazio"
+
+
+if site == "f4u"
+	- var siteName = "football4u"
+	- var instagram = "https://instagram.com/football4uofficial/"
+	- var facebook = "https://www.facebook.com/Football4U.it"
+	- var blog = "http://blog.football4u.it/"
+	- var youTube = "https://www.youtube.com/channel/UCzqG3NzsJtmTa4qJ54ssUEg/"
+	- var gPlus = "https://plus.google.com/+Football4uItF4U/"
+
+//- var pinterest = ""
+
+//- footer
+//- /////////////////////////////////////////////////////////////////
+if lang == "en"
 	if site == "juve"
-		- var logoImgHeight 		= "80px"
-		- var socilaIconWidth 		= "40px"
-
-	if site == "fiorentina"
-		- var logoImgHeight 		= "80px"
-		- var socilaIconWidth 		= "40px"
-
-	if site == "lazio"
-		- var logoImgHeight 		= "80px"
-		- var socilaIconWidth 		= "40px"
-
-	//- nav template
-
-	if lang == "en"
-
-		if site == "f4u"
-			- var LogoStoreTxt 		= "football4u"
-			- var LogoImgLink 		= "http://www.football4u.it"
-
-			- var Nav01 					= "FOOTBALL BOOTS"
-			- var NavLink01 				= "http://www.football4u.it/en/football-boots.html"
-			- var Nav02 					= "CLOTHING"
-			- var NavLink02 				= "http://www.football4u.it/en/clothing.html"
-			- var Nav03 					= "EQUIPMENT"
-			- var NavLink03 				= "http://www.football4u.it/en/equipment.html"
-			- var Nav04 					= "GOALKEEPER"
-			- var NavLink04 				= "http://www.football4u.it/en/goalkeeper/goalkeeper.html"
-			- var Nav05 					= "TEAMSPORT"
-			- var NavLink05 				= "http://www.football4u.it/en/teamsport.html"
-			- var Nav06 					= "CLEARANCE"
-			- var NavLink06 				= "http://www.football4u.it/en/clearance.html"
-
-		if site == "juve"
-			- var LogoStoreTxt 		= "juve"
-			- var LogoImgLink 		= "http://www.juvestore.com/en/"
-
-			- var Nav01 					= "FOOTBALL BOOTS"
-			- var NavLink01 				= "http://www.football4u.it/en/football-boots.html"
-			- var Nav02 					= "CLOTHING"
-			- var NavLink02 				= "http://www.football4u.it/en/clothing.html"
-			- var Nav03 					= "EQUIPMENT"
-			- var NavLink03 				= "http://www.football4u.it/en/equipment.html"
-			- var Nav04 					= "GOALKEEPER"
-			- var NavLink04 				= "http://www.football4u.it/en/goalkeeper/goalkeeper.html"
-			- var Nav05 					= "TEAMSPORT"
-			- var NavLink05 				= "http://www.football4u.it/en/teamsport.html"
-			- var Nav06 					= "CLEARANCE"
-			- var NavLink06 				= "http://www.football4u.it/en/clearance.html"
-
-		if site == "fiorentina"
-			- var LogoStoreTxt 				= "fiorentina"
-			- var LogoImgLink 				= "http://www.fiorentinastore.com/en"
-
-			- var Nav01 					= "MATCH KITS"
-			- var NavLink01 				= "http://www.fiorentinastore.com/en/match-kits.html"
-			- var Nav02 					= "FASHION"
-			- var NavLink02 				= "http://www.fiorentinastore.com/en/fashion.html"
-			- var Nav03 					= "ACCESSORIES"
-			- var NavLink03 				= "http://www.fiorentinastore.com/en/accessories.html"
-			- var Nav04 					= "COVERS"
-			- var NavLink04 				= "http://www.fiorentinastore.com/en/covers.html"
-			- var Nav05 					= "GIFT IDEAS"
-			- var NavLink05 				= "http://www.fiorentinastore.com/en/gift-ideas.html"
-
-		if site == "lazio"
-			- var LogoStoreTxt 				= "lazio"
-			- var LogoImgLink 				= "http://www.laziostylestore.com/en"
-			- var Nav01 					= "115"
-			- var NavLink01 				= "http://www.laziostylestore.com/en/115-years.html"
-			- var Nav02 					= "MATCH KITS"
-			- var NavLink01 				= "http://www.laziostylestore.com/en/match-kits.html"
-			- var Nav03 					= "FASHION"
-			- var NavLink02 				= "http://www.laziostylestore.com/en/fashion.html"
-			- var Nav04 					= "ACCESSORIES"
-			- var NavLink03 				= "http://www.laziostylestore.com/en/accessories.html"
-			- var Nav05 					= "COVERS"
-			- var NavLink04 				= "http://www.laziostylestore.com/en/covers.html"
-			- var Nav06 					= "GIFT IDEAS"
-			- var NavLink05 				= "http://www.laziostylestore.com/en/gift-ideas.html"
-			- var Nav07 					= "CLEARANCE"
-			- var NavLink05 				= "http://www.laziostylestore.com/en/clearance.html"
-
-
-	if lang == "it"
-
-		if site == "fiorentina"
-			- var LogoStoreTxt 				= "fiorentina"
-			- var LogoImgLink 				= "http://www.fiorentinastore.com/it/"
-			- var Nav01 					= "KIT GARA"
-			- var NavLink01 				= "http://www.fiorentinastore.com/it/kit-gara.html"
-			- var Nav02 					= "ABBIGLIAMENTO"
-			- var NavLink02 				= "http://www.fiorentinastore.com/it/abbigliamento.html"
-			- var Nav03 					= "ACCESSORI"
-			- var NavLink03 				= "http://www.fiorentinastore.com/it/accessori.html"
-			- var Nav04 					= "COVER"
-			- var NavLink04 				= "http://www.fiorentinastore.com/it/cover.html"
-			- var Nav05 					= "IDEE REGALO"
-			- var NavLink05 				= "http://www.fiorentinastore.com/it/idee-regalo.html"
-
-		if site == "lazio"
-			- var LogoStoreTxt 				= "lazio"
-			- var LogoImgLink 				= "http://www.laziostylestore.com/it/"
-			- var Nav01 					= "115 ANNI"
-			- var NavLink01 				= "http://www.laziostylestore.com/it/115-anni.html"
-			- var Nav02 					= "KIT GARA"
-			- var NavLink01 				= "http://www.laziostylestore.com/it/kit-gara.html"
-			- var Nav03 					= "ABBIGLIAMENTO"
-			- var NavLink02 				= "http://www.laziostylestore.com/it/abbigliamento.html"
-			- var Nav04 					= "ACCESSORI"
-			- var NavLink03 				= "http://www.laziostylestore.com/it/accessori.html"
-			- var Nav05 					= "COVER"
-			- var NavLink04 				= "http://www.laziostylestore.com/it/cover.html"
-			- var Nav06 					= "IDEE REGALO"
-			- var NavLink05 				= "http://www.laziostylestore.com/it/idee-regalo.html"
-			- var Nav07 					= "OUTLET"
-			- var NavLink05 				= "http://www.laziostylestore.com/it/outlet.html"
-
-		if site == "f4u"
-			- var LogoStoreTxt 				= "football4u"
-			- var LogoImgLink 				= "http://www.football4u.it/it/"
-
-			- var Nav01 					= "SCARPE"
-			- var NavLink01 				= "http://www.football4u.it/it/scarpe-calcio.html"
-			- var Nav02 					= "ABBIGLIAMENTO"
-			- var NavLink02 				= "http://www.football4u.it/it/abbigliamento.html"
-			- var Nav03 					= "ATTREZATURE"
-			- var NavLink03 				= "http://www.football4u.it/it/accessori.html"
-			- var Nav04 					= "PORTIERE"
-			- var NavLink04 				= "http://www.football4u.it/it/portiere.html"
-			- var Nav05 					= "TEAMSPORT"
-			- var NavLink05 				= "http://www.football4u.it/it/teamsport.html"
-			- var Nav06 					= "OUTLET"
-			- var NavLink06 				= "http://www.football4u.it/it/outlet.html"
-
-		if site == "juve"
-			- var LogoStoreTxt 				= "juve"
-			- var LogoImgLink 				= "http://www.juvestore.com/it/"
-
-			- var Nav01 					= "SCARPE"
-			- var NavLink01 				= "http://www.football4u.it/it/scarpe-calcio.html"
-			- var Nav02 					= "ABBIGLIAMENTO"
-			- var NavLink02 				= "http://www.football4u.it/it/abbigliamento.html"
-			- var Nav03 					= "ATTREZATURE"
-			- var NavLink03 				= "http://www.football4u.it/it/accessori.html"
-			- var Nav04 					= "PORTIERE"
-			- var NavLink04 				= "http://www.football4u.it/it/portiere.html"
-			- var Nav05 					= "TEAMSPORT"
-			- var NavLink05 				= "http://www.football4u.it/it/teamsport.html"
-			- var Nav06 					= "OUTLET"
-			- var NavLink06 				= "http://www.football4u.it/it/outlet.html"
-
-
-
-	//- Social network
-	//- /////////////////////////////////////////////////////////////////
-	// - available: facebook, twitter, youTube, flikr, instagram, gPlus, blog, pinterest, forSquare
-
-
-	if site == "fiorentina"
-		- var siteName = "fiorentinastore"
-		- var instagram = "https://instagram.com/acffiorentina/"
-		- var facebook = "https://www.facebook.com/ACFFiorentina"
-		- var twitter = "https://twitter.com/acffiorentina"
-		- var blog = false
-		- var youTube = "https://www.youtube.com/user/ViolaChannel"
-		- var gPlus = false
-		- var flikr = "https://www.flickr.com/photos/acffiorentina"
-
-	if site == "lazio"
-		- var siteName = "laziostore"
-		- var instagram = "http://instagram.com/official_sslazio"
-		- var facebook = "http://www.facebook.com/SSLazioOfficialPage?sk=app_218693601539727"
-		- var twitter = "https://twitter.com/officialsslazio"
-		- var blog = false
-		- var youTube = "https://www.youtube.com/user/Officialsslazio"
-		- var gPlus = false
-		- var flikr = false
-		- var forSquare = "https://it.foursquare.com/officialsslazio"
-
-
-	else
-		- var siteName = "football4u"
-		- var instagram = "https://instagram.com/football4uofficial/"
-		- var facebook = "https://www.facebook.com/Football4U.it"
-		- var blog = "http://blog.football4u.it/"
-		- var youTube = "https://www.youtube.com/channel/UCzqG3NzsJtmTa4qJ54ssUEg/"
-		- var gPlus = "https://plus.google.com/+Football4uItF4U/"
-
-	//- var pinterest = ""
-
-	//- footer
-	//- /////////////////////////////////////////////////////////////////
-	if lang == "en"
-		if site == "juve"
-			- var communicationEmail01	= "To ensure you always receive communications from "
-			- var contactMail 			= "noreply@juvestore.com"
-			- var communicationEmail02 	= "to your e-mail address book."
-			- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
-			- var userMail				= "n.razvan@episrl.it"
-		if site == "f4u"
-			- var communicationEmail01	= "To ensure you always receive communications from "
-			- var contactMail 			= "noreply@juvestore.com"
-			- var communicationEmail02 	= "to your e-mail address book."
-			- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
-			- var userMail				= "n.razvan@episrl.it"
-		if site == "fiorentina"
-			- var communicationEmail01	= "To ensure you always receive communications from "
-			- var contactMail 			= "noreply@juvestore.com"
-			- var communicationEmail02 	= "to your e-mail address book."
-			- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
-			- var userMail				= "n.razvan@episrl.it"
-
-	if lang == "it"
-		if site == "juve"
-			- var communicationEmail01	= "To ensure you always receive communications from "
-			- var contactMail 			= "noreply@juvestore.com"
-			- var communicationEmail02 	= "to your e-mail address book."
-			- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
-			- var userMail				= "n.razvan@episrl.it"
-		if site == "f4u"
-			- var communicationEmail01	= "To ensure you always receive communications from "
-			- var contactMail 			= "noreply@juvestore.com"
-			- var communicationEmail02 	= "to your e-mail address book."
-			- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
-			- var userMail				= "n.razvan@episrl.it"
-		if site == "fiorentina"
-			- var communicationEmail01	= "To ensure you always receive communications from "
-			- var contactMail 			= "noreply@juvestore.com"
-			- var communicationEmail02 	= "to your e-mail address book."
-			- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
-			- var userMail				= "n.razvan@episrl.it"
-
-	//- LAYOUT
-	//- /////////////////////////////////////////////////////////////////
-
-	//- font
-	- var fontSans = "font-family: Helvetica, Arial, sans-serif;"
-	- var fontSerif = "font-family: Georgia, sans-serif;"
-
-	- var fontXXS		= "font-size: 8px; line-height: 10px;"
-	- var fontXS		= "font-size: 10px; line-height: 14px;"
-	- var fontS			= "font-size: 11px; line-height: 11px;"
-	- var fontM			= "font-size: 13px; line-height: 20px;"
-	- var fontL			= "font-size: 16px; line-height: 20px;"
-	- var fontXL		= "font-size: 20px; line-height: 22px;"
-	- var fontXXL		= "font-size: 28px; line-height: 30px;"
-	- var fontXXXL		= "font-size: 34px; line-height: 30px;"
-
-	- var decNone 		= "text-decoration: none;"
-	- var decThrough 	= "text-decoration: line-through;"
-	- var left 			= "text-align: left;"
-	- var right 		= "text-align: right;"
-	- var center 		= "text-align: center;"
-	- var normal 		= "font-weight: normal;"
-	- var bold 			= "font-weight: bold;"
-	- var italic 		= "font-style: italic;"
-
-
-	//- color Management
-	//- /////////////////////////////////////////////////////////////////
+		- var communicationEmail01	= "To ensure you always receive communications from "
+		- var contactMail 			= "noreply@juvestore.com"
+		- var communicationEmail02 	= "to your e-mail address book."
+		- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
+		- var userMail				= "n.razvan@episrl.it"
 	if site == "f4u"
-
-		- var containerBg 		= "#2b2d29"
-		- var wrapperCollor 	= "#ffffff"
-
-		- var colorPrimary 		= "#b5ff00"
-		- var colorPrimary_ 	= "#092439"
-
-		- var colorSecondary	= "#33333d"
-		- var colorSecondary_	= "#ccccc2"
-		- var colorSecondary__	= "#5a5a55"
-
-		- var colorTertiari 	= "#2b2d29"
-		- var colorTertiari_ 	= "#d4d2d6"
-
-		- var colorBlack 		= "#000000"
-		- var colorWhite 		= "#ffffff"
-
+		- var communicationEmail01	= "To ensure you always receive communications from "
+		- var contactMail 			= "noreply@juvestore.com"
+		- var communicationEmail02 	= "to your e-mail address book."
+		- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
+		- var userMail				= "n.razvan@episrl.it"
 	if site == "fiorentina"
-		- var containerBg 		= "#e8e8e8"
-		- var wrapperCollor 	= "#ffffff"
+		- var communicationEmail01	= "To ensure you always receive communications from "
+		- var contactMail 			= "noreply@juvestore.com"
+		- var communicationEmail02 	= "to your e-mail address book."
+		- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
+		- var userMail				= "n.razvan@episrl.it"
 
-		- var colorPrimary 		= "#ae9a63" // marone
-		- var colorPrimary_ 	= "#e4d7b4" // light marone
+if lang == "it"
+	if site == "juve"
+		- var communicationEmail01	= "To ensure you always receive communications from "
+		- var contactMail 			= "noreply@juvestore.com"
+		- var communicationEmail02 	= "to your e-mail address book."
+		- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
+		- var userMail				= "n.razvan@episrl.it"
+	if site == "f4u"
+		- var communicationEmail01	= "To ensure you always receive communications from "
+		- var contactMail 			= "noreply@juvestore.com"
+		- var communicationEmail02 	= "to your e-mail address book."
+		- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
+		- var userMail				= "n.razvan@episrl.it"
+	if site == "fiorentina"
+		- var communicationEmail01	= "To ensure you always receive communications from "
+		- var contactMail 			= "noreply@juvestore.com"
+		- var communicationEmail02 	= "to your e-mail address book."
+		- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
+		- var userMail				= "n.razvan@episrl.it"
 
-		- var colorSecondary	= "#4a2583" // viola
-		- var colorSecondary_	= "#5a5a55" //
-		- var colorSecondary__	= "#5a5a55"
+//- LAYOUT
+//- /////////////////////////////////////////////////////////////////
 
-		- var colorTertiari 	= "#e41b13"
-		- var colorTertiari_ 	= "#d4d2d6"
+//- font
+- var fontSans = "font-family: Helvetica, Arial, sans-serif;"
+- var fontSerif = "font-family: Georgia, sans-serif;"
 
-		- var colorBlack 		= "#000000"
-		- var colorWhite 		= "#ffffff"
+- var fontXXS		= "font-size: 8px; line-height: 10px;"
+- var fontXS		= "font-size: 10px; line-height: 14px;"
+- var fontS			= "font-size: 11px; line-height: 11px;"
+- var fontM			= "font-size: 13px; line-height: 20px;"
+- var fontL			= "font-size: 16px; line-height: 20px;"
+- var fontXL		= "font-size: 20px; line-height: 22px;"
+- var fontXXL		= "font-size: 28px; line-height: 30px;"
+- var fontXXXL		= "font-size: 34px; line-height: 30px;"
 
-	if site == "lazio"
-		- var containerBg 		= "#e8e8e8"
-		- var wrapperCollor 	= "#ffffff"
+- var decNone 		= "text-decoration: none;"
+- var decThrough 	= "text-decoration: line-through;"
+- var left 			= "text-align: left;"
+- var right 		= "text-align: right;"
+- var center 		= "text-align: center;"
+- var normal 		= "font-weight: normal;"
+- var bold 			= "font-weight: bold;"
+- var italic 		= "font-style: italic;"
 
-		- var colorPrimary 		= "#d4a504" // marone
-		- var colorPrimary_ 	= "#ffd135" // light marone
 
-		- var colorSecondary	= "#003671" // dark blue
-		- var colorSecondary_	= "#8cd3f6" // midle blue
-		- var colorSecondary__	= "#c5e8fb" // light Blue
+//- color Management
+//- /////////////////////////////////////////////////////////////////
+if site == "f4u"
 
-		- var colorTertiari 	= "#e41b13"
-		- var colorTertiari_ 	= "#d4d2d6"
+	- var containerBg 		= "#2b2d29"
+	- var wrapperCollor 	= "#ffffff"
 
-		- var colorBlack 		= "#000000"
-		- var colorBlack50 		= "#8c8c8c"
-		- var colorWhite 		= "#ffffff"
+	- var colorPrimary 		= "#b5ff00"
+	- var colorPrimary_ 	= "#092439"
+
+	- var colorSecondary	= "#33333d"
+	- var colorSecondary_	= "#ccccc2"
+	- var colorSecondary__	= "#5a5a55"
+
+	- var colorTertiari 	= "#2b2d29"
+	- var colorTertiari_ 	= "#d4d2d6"
+
+	- var colorBlack 		= "#000000"
+	- var colorWhite 		= "#ffffff"
+
+if site == "fiorentina"
+	- var containerBg 		= "#e8e8e8"
+	- var wrapperCollor 	= "#ffffff"
+
+	- var colorPrimary 		= "#ae9a63" // marone
+	- var colorPrimary_ 	= "#e4d7b4" // light marone
+
+	- var colorSecondary	= "#4a2583" // viola
+	- var colorSecondary_	= "#5a5a55" //
+	- var colorSecondary__	= "#5a5a55"
+
+	- var colorTertiari 	= "#e41b13"
+	- var colorTertiari_ 	= "#d4d2d6"
+
+	- var colorBlack 		= "#000000"
+	- var colorWhite 		= "#ffffff"
+
+if site == "lazio"
+	- var containerBg 		= "#e8e8e8"
+	- var wrapperCollor 	= "#ffffff"
+
+	- var colorPrimary 		= "#d4a504" // marone
+	- var colorPrimary_ 	= "#ffd135" // light marone
+
+	- var colorSecondary	= "#003671" // dark blue
+	- var colorSecondary_	= "#8cd3f6" // midle blue
+	- var colorSecondary__	= "#c5e8fb" // light Blue
+
+	- var colorTertiari 	= "#e41b13"
+	- var colorTertiari_ 	= "#d4d2d6"
+
+	- var colorBlack 		= "#000000"
+	- var colorBlack50 		= "#8c8c8c"
+	- var colorWhite 		= "#ffffff"

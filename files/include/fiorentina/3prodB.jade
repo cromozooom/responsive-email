@@ -1,0 +1,114 @@
+extends ../../views/3prod
+
+block 3prod_a
+	include ../../config
+	- var template 						= "3prod_b"
+
+	if lang == "en"
+		- var ctaCopy 					= "BUY NOW"
+		if prod == "01"
+			- var linkCTA 				= "http://www.fiorentinastore.com/en/fiorentina-violet-training-jersey-2015-16.html"
+			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15043.jpg"
+			- var titleProd				= "Fiorentina Violet Training Jersey 2015/16"
+			- var priceProd 			= "35.00"
+			//- this is optional (if you decide to not use put: "false")
+			- var oldPriceProd			= false
+
+		if prod == "02"
+			- var linkCTA 				= "http://www.fiorentinastore.com/en/fiorentina-blue-training-jersey-2015-16.html"
+			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15044.jpg"
+			- var titleProd				= "Fiorentina Blue Training Jersey 2015/16"
+			- var priceProd 			= "35.00"
+			//- this is optional (if you decide to not use put: "false")
+			- var oldPriceProd			= false
+
+		if prod == "03"
+			- var linkCTA 				= "http://www.fiorentinastore.com/en/fiorentina-marshmallow-graphic-t-shirt-2015-16.html"
+			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15089.jpg"
+			- var titleProd				= "Fiorentina Marshmallow Graphic T-Shirt 2015/16"
+			- var priceProd 			= "25.00"
+			//- this is optional (if you decide to not use put: "false")
+			- var oldPriceProd			= false
+
+	if lang == "it"
+		- var ctaCopy 					= "Acquista"
+		if prod == "01"
+			- var linkCTA 				= "http://www.laziostylestore.com/it/lazio-polo-ufficiale-celeste-2015-16.html"
+			- var imgProd				= "https://lazio-dunebuggysrl.netdna-ssl.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/l/z/lz15116.jpg"
+			- var titleProd				= "Lazio Polo Ufficiale Celeste 2015/16"
+			- var priceProd 			= "45,00"
+			//- this is optional (if you decide to not use put: "false")
+			- var oldPriceProd			= false
+
+		if prod == "02"
+			- var linkCTA 				= "http://www.laziostylestore.com/it/lazio-polo-ufficiale-tabacco-2015-16.html"
+			- var imgProd				= "https://lazio-dunebuggysrl.netdna-ssl.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/l/z/lz15117.jpg"
+			- var titleProd				= "Lazio Polo Ufficiale Tabacco 2015/16"
+			- var priceProd 			= "45,00"
+			//- this is optional (if you decide to not use put: "false")
+			- var oldPriceProd			= false
+
+		if prod == "03"
+			- var linkCTA 				= "http://www.laziostylestore.com/it/lazio-polo-ufficiale-manica-lunga-celeste-2015-16.html"
+			- var imgProd				= "https://lazio-dunebuggysrl.netdna-ssl.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/l/z/lz15118.jpg"
+			- var titleProd				= "Lazio Polo Ufficiale Manica Lunga Celeste 2015/16"
+			- var priceProd 			= "50,00"
+			//- this is optional (if you decide to not use put: "false")
+			- var oldPriceProd			= false
+
+it
+
+= "http://www.fiorentinastore.com/it/fiorentina-maglia-allenamento-viola-2015-16.html"
+= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15043.jpg"
+= "Fiorentina Maglia Allenamento Viola 2015/16"
+= "35,00"
+= false
+
+= "http://www.fiorentinastore.com/it/fiorentina-maglia-allenamento-blu-2015-16.html"
+= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15044.jpg"
+= "Fiorentina Maglia Allenamento Blu 2015/16"
+= "35,00"
+= false
+
+= "http://www.fiorentinastore.com/it/fiorentina-t-shirt-graphic-marshmallow-2015-16.html"
+= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15089.jpg"
+= "Fiorentina T-Shirt Graphic Marshmallow 2015/16"
+= "25,00"
+= false
+
+en
+
+= "http://www.fiorentinastore.com/en/fiorentina-violet-training-jersey-2015-16.html"
+= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15043.jpg"
+= "Fiorentina Violet Training Jersey 2015/16"
+= "35.00"
+= false
+
+= "http://www.fiorentinastore.com/en/fiorentina-blue-training-jersey-2015-16.html"
+= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15044.jpg"
+= "Fiorentina Blue Training Jersey 2015/16"
+= "35.00"
+= false
+
+= "http://www.fiorentinastore.com/en/fiorentina-marshmallow-graphic-t-shirt-2015-16.html"
+= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15089.jpg"
+= "Fiorentina Marshmallow Graphic T-Shirt 2015/16"
+= "25.00"
+= false
+
+
+	//- customize button variable optional
+	block ctaCustom
+		//- 01 = simple CTA (buy now or Acquista)
+		//- 02 = CTA with price (buy at {priceProd} or Acquista a {priceProd})
+		- var buttonType 	= "01"
+		- var bgColor		= "#b5ff00"
+		- var txtColor		= "#33333d"
+		//- can be 160 max
+		- var width			= "160px"
+		- var height 		= "36px"
+		- var arcsize 		= "5%"
+		- var radiusSize 	= "3px"
+		- var lineheight 	= "30px"
+		- var align 		= "left"
+		- var fontSize		= "font-size: 14px; line-height: 11px;"

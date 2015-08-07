@@ -1,9 +1,29 @@
-block info
-block color
+block infoLinkList
 
-block content
+block colorLinkList
+	include ../config
+	if site == "fiorentina"
+		- var bgColorLinkList 	= colorSecondary
+		- var copyColor 		= colorPrimary
+		- var borderColor 		= colorPrimary
+		- var valLinkColor 		= colorPrimary
+
+	if site == "lazio"
+		- var bgColorLinkList 	= colorSecondary
+		- var copyColor 		= colorPrimary
+		- var borderColor 		= colorPrimary
+		- var valLinkColor 		= colorPrimary
+
+block contentLinkList
+	//-
+		tr
+		td
+			p site #{site}
+			p bgColorLinkList #{bgColorLinkList}
+			p borderColor #{borderColor}
+
 	tr
-		td.container-padding.content(align="center" bgcolor="#{bgColor}")
+		td.container-padding.content(align="center" bgcolor="#{bgColorLinkList}")
 			table(cellpadding="5" cellspacing="0" border="0" width="100%")
 				tr
 					td(colspan="100" align="center")

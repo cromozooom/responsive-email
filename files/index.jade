@@ -2,6 +2,10 @@ extend views/index
 
 block config
 	block User
+		//- option available fiorentina, lazio
+		- var site 				= "fiorentina"
+		//- var site 			= "lazio"
+		- var lang 				= "it"
 		//- used for tracking code
 		- var data = "27-3"
 
@@ -15,36 +19,33 @@ block config
 			- var previewCopy		= "Acquista la nuova maglia home 2015/16 - it"
 
 
-		//- option available fiorentina, lazio
-		- var site 				= "lazio"
-		//- var site 			= "lazio"
-		- var lang 				= "it"
 
 		//- image management
 		if site == "f4u"
 			- var imgLink = "images/f4u/"
-
-		if site == "juve"
-			- var imgLink = "images/juve/"
 
 		if site == "fiorentina"
 			- var imgLink = "images/fiorentina/"
 
 		if site == "lazio"
 			- var imgLink = "images/lazio/"
+
+		if site == "default"
+			- var imgLink = "images/default/"
+	
 	include config
 
 block content
-	include include/heroImageHeader
-	include include/singleCTA
-	include include/heroImage
-	include include/coupon
-	include include/linkList
-	include include/cowntDown
-	include include/2prod
-	include include/2banner_a
-	include include/3prodA
-	include include/3prodB
+	include include/default/heroImageHeader
+	include include/default/singleCTA
+	include include/default/heroImage
+	include include/default/coupon
+	include include/default/linkList
+	include include/default/cowntDown
+	include include/default/2prod
+	include include/default/2banner_a
+	include include/default/3prodA
+	include include/default/3prodB
 
 	//-include include/_footerLink
 	//-include _3article_a

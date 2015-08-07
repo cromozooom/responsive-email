@@ -1,12 +1,6 @@
 block config
 	include ../config
 
-if site == "fiorentina"
-	- var titleMailBg 	= colorPrimary
-
-if site == "lazio"
-	- var titleMailBg 	= colorPrimary
-
 doctype html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"
 html(lang="#{lang}")
 	block head
@@ -28,18 +22,16 @@ html(lang="#{lang}")
 			title= title
 	body(style="margin:0; padding:0;" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#{containerBg}")
 		//- 100% background wrapper (grey background)
-		table(border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#{titleMailBg}")
+		table(border="0" width="100%" height="100%" cellpadding="0" cellspacing="0")
 			tr
 				td
-					block preHeader
-						include preHeader
+					include preHeader
 			tr
 				td(align="center" valign="top" bgcolor="#{containerBg}")
 					br
 					//- 600px container (white background)
 					table.container(border="0" width="600" cellpadding="0" cellspacing="0" bgcolor="#{wrapperCollor}")
 						include header
-						include nav
 						//-                 _             _
 						//-                | |           | |
 						//-  ___ ___  _ __ | |_ ___ _ __ | |_
@@ -47,6 +39,6 @@ html(lang="#{lang}")
 						//-| (_| (_) | | | | ||  __/ | | | |_
 						//- \___\___/|_| |_|\__\___|_| |_|\__|
 						//-
-						block content
+						block contentMail
 			block footer
 				include footer

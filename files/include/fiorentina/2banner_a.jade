@@ -1,0 +1,23 @@
+extends ../../template/2banner
+
+block 2banner
+	include ../../config
+	- var template = "2 banner"
+	- var trakingSource				= "_smallB&ga_medium=DEM&ga_source=NL"
+	if lang == "en"
+		- var imgBanner01 			= "background-section-ace.jpg"
+		- var linkBanner01 			= "http://www.solopx.com"
+		- var copyBanner01 			= "banner 1 copy EN"
+
+		- var imgBanner02			= "background-section-x.jpg"
+		- var linkBanner02 			= "http://www.solopx.com"
+		- var copyBanner02 			= "banner 2 copy EN"
+
+	if lang == "it"
+		- var imgBanner01 			= "background-section-ace.jpg"
+		- var linkBanner01 			= "http://www.solopx.com"
+		- var copyBanner01 			= "banner 1 copy IT"
+
+		- var imgBanner02			= "background-section-x.jpg"
+		- var linkBanner02 			= "http://www.solopx.com"
+		- var copyBanner02 			= "banner 2 copy IT"

@@ -1,0 +1,27 @@
+extend ../../template/heroImage
+
+//-		 _                      _
+//-		| |                    (_)
+//-		| |__   ___ _ __ ___    _ _ __ ___   __ _
+//-		| '_ \ / _ \ '__/ _ \  | | '_ ` _ \ / _` |
+//-		| | | |  __/ | | (_) | | | | | | | | (_| |
+//-		|_| |_|\___|_|  \___/  |_|_| |_| |_|\__, |
+//-     	                                 __/ |
+//-         	                            |___/
+
+block info
+	if lang == "en"
+
+		- var heroImage					= "800-serie-a.jpg"
+		- var linkCTA					= "http://www.solopx.com"
+		- var heroImageheader 			= "#NUOVO SILVER PACK"
+
+
+	if lang == "it"
+
+		- var heroImage 				= "800-serie-a.jpg"
+		- var linkCTA					= "http://www.solopx.com"
+		- var heroImageheader 			= "#NUOVO SILVER PACK"
+
+block color
+	-var bgcolor = colorBlack
