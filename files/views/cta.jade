@@ -1,23 +1,25 @@
 block ctaCustom
-	//- 01 = simple CTA (buy now or Acquista)
-	//- 02 = CTA with price (buy at {priceProd} or Acquista a {priceProd})
-	- var buttonType 				= "01"
-	//- var ctaColor			= "#b5ff00"
-	//- var ctaColor_			= "#33333d"
-	- var width						= "200px"
-	- var height 					= "44px"
-	- var arcsize 					= "5%"
-	- var radiusSize 				= "2px"
-	- var lineheight 				= "44px"
-	- var align 					= "center"
-	- var fontSize					= "font-size: 14px; line-height: 11px;"
-if site == "fiorentina"
-	- var ctaColor			= "#e41b13"
-	- var ctaColor_			= "#ffffff"
+	block ctaOptions
+		//- 01 = simple CTA (buy now or Acquista)
+		//- 02 = CTA with price (buy at {priceProd} or Acquista a {priceProd})
+		- var buttonType 				= "01"
+		- var width						= "200px"
+		- var height 					= "44px"
+		- var arcsize 					= "5%"
+		- var radiusSize 				= "2px"
+		- var lineheight 				= "44px"
+		- var align 					= "center"
+		- var fontSize					= "font-size: 14px; line-height: 11px;"
 
-if site == "lazio"
-	- var ctaColor			= "#b28b06"
-	- var ctaColor_			= "#ffffff"
+block ctaColor
+
+	if site == "fiorentina"
+		- var ctaColor			= colorSecondary
+		- var ctaColor_			= colorPrimary
+
+	if site == "lazio"
+		- var ctaColor			= colorPrimary
+		- var ctaColor_			= colorWhite
 
 table(width="100%" border="0" cellspacing="0" cellpadding="0" align="#{align}")
 	tr

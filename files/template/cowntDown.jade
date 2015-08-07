@@ -1,10 +1,15 @@
 block info
 block color
-	if site = "fiorentina"
+	if site == "fiorentina"
 		- var bgColor 			= colorBlack
 		- var imgBgColor 		= containerBg
 		- var fontColor 		= colorSecondary__
 		- var borderBottomTop 	= colorSecondary__
+	if site == "lazio"
+		- var bgColor 			= colorBlack
+		- var imgBgColor 		= containerBg
+		- var fontColor 		= colorSecondary_
+		- var borderBottomTop 	= colorSecondary
 
 block content
 	//- adding cowntDown is simple like this: setUp a cowntdown var in _heroImage.jade
