@@ -1,9 +1,9 @@
 # Responsive-email
 
-
 **[sample fiore](https://rawgit.com/cromozooom/responsive-email/master/files/index_fiorentina.html "fiorentina")**
 
 **[sample lazio](https://rawgit.com/cromozooom/responsive-email/master/files/index_lazio.html "lazio")**
+___
 
 ## workflow
 
@@ -12,7 +12,7 @@
 1. **Upload images on server!**
 2. Open **PREPROS**
 3. Download and open "files" folder in **SUBLIME TEXT**
-4. Create copy of **"index.jade"** & rename with your f....dotjade name :)
+4. Create copy of **"index.jade"** & rename with your f....dot jade name :)
 5. **select and order** your content blocks (see the section: "include some F..... blocks")
 
 ___
