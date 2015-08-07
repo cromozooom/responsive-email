@@ -63,12 +63,16 @@ you can use only one from this 3 elements:
 * call to action (txt)
 * image (img)
 
-![include_heroImage](https://rawgit.com/cromozooom/responsive-email/master/files/images/fiorentina/include_heroImage.jpg "include_heroImage")
+___
 
 ##include_coupon
-![hard stuf](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_green.jpg "simple sublime user")
 
-![include_coupon](https://rawgit.com/cromozooom/responsive-email/master/files/images/fiorentina/include_coupon.jpg "include_coupon")
+![coupon](https://rawgit.com/cromozooom/responsive-email/master/icons/coupon.jpg "Coupon")
+
+* couponCopy (txt)
+* Coupon (txt)
+
+__
 
 ##include_linkListA
 ![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_red.jpg "dificult for sublime user")
