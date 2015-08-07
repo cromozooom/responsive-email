@@ -1,4 +1,4 @@
-extend ../template/heroImage
+extend ../../template/heroImage
 
 //-		 _                      _
 //-		| |                    (_)
@@ -8,8 +8,8 @@ extend ../template/heroImage
 //-		|_| |_|\___|_|  \___/  |_|_| |_| |_|\__, |
 //-     	                                 __/ |
 //-         	                            |___/
-
 block info
+	- var trakingSource = "xxxHeroImage"
 	if lang == "en"
 
 		- var heroImage					= "800_patch_en.jpg"

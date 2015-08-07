@@ -1,13 +1,6 @@
-extend ../template/linkList
-//-		  _ _       _      _ _     _
-//-		 | (_)     | |    | (_)   | |
-//-		 | |_ _ __ | | __ | |_ ___| |_
-//-		 | | | '_ \| |/ / | | / __| __|
-//-		 | | | | | |   <  | | \__ \ |_
-//-		 |_|_|_| |_|_|\_\ |_|_|___/\__|
-//-
-//- 	setUp linkList on HeroImage
-block info
+extend ../../template/linkList
+block infoLinkList
+	- var trakingSource = "xxxLinkList"
 	if lang == "en"
 		//- size template
 			- var optionRow = "3"
@@ -35,8 +28,3 @@ block info
 			- var optionRowCopy = "Scegli la fascia di prezzo - it"
 			- var optionLinks01 = [{"itemName":"5 - 15 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=350&limit=all"},{"itemName":"15 - 25 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=412&limit=all"},{"itemName":"25 - 50 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=459&limit=all"},{"itemName":"oltre 50 EUR","url":"http://www.football4u.it/it/scarpe-calcio/uomo.html?epi_size=459&limit=all"}]
 
-block color
-	- var bgColor 			= colorBlack
-	- var copyColor 		= colorPrimary
-	- var borderColor 		= colorPrimary
-	- var valLinkColor 		= colorPrimary
