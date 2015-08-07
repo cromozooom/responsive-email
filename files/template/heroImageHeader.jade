@@ -7,7 +7,7 @@ block content
 			td(align="center" bgcolor="#{bgcolor}" style="padding: 0 0 10px 0;")
 				br
 				br
-				a(href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" target="_blank")
+				a(href="#{linkCTA}?ga_campaign=#{data}#{lang}_#{trakingSource}#{lastPartTraking}" target="_blank")
 					img(src="#{imgLink}#{HeaderImage}" border="0" alt="#{heroImageheader}" hspace="0" vspace="0" style="max-width:100%;")
 	if row01
 		tr
@@ -17,5 +17,5 @@ block content
 	if CTAImage
 		tr
 			td(align="center" bgcolor="#{bgcolor}" style="padding: 0 0 10px 0;")
-				a(href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" target="_blank")
+				a(href="#{linkCTA}?ga_campaign=#{data}#{lang}_#{trakingSource}#{lastPartTraking}" target="_blank")
 					img(src="#{imgLink}#{CTAImage}" border="0" alt="#{heroImageheader}" hspace="0" vspace="0" style="max-width:100%;")

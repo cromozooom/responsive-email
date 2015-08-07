@@ -2,42 +2,40 @@ extends ../../views/2prod
 
 block 2prod_a
 	include ../../config
-	- var template 						= "2prod_a"
+	
+	block info
+		- var trakingSource = "_header&ga_medium=DEM&ga_source=NL"
+		if lang == "en"
+			- var ctaCopy 					= "BUY NOW"
+			if prod == "01"
+				- var linkCTA 				= "http://www.fiorentinastore.com/en/fiorentina-authentic-home-jersey-2015-16.html"
+				- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15004.jpg"
+				- var titleProd				= "Fiorentina Authentic Home Jersey 2015/16"
+				- var priceProd 			= "120.00"
+				- var oldPriceProd			= "200"
 
+			if prod == "02"
+				- var linkCTA 				= "http://www.fiorentinastore.com/en/fiorentina-goalkeeper-green-jersey-2015-16.html"
+				- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15006.jpg"
+				- var titleProd				= "Fiorentina Goalkeeper Green Jersey 2015/16"
+				- var priceProd 			= "80.00"
+				- var oldPriceProd			= "200"
 
+		if lang == "it"
+			- var ctaCopy 					= "Acquista"
+			if prod == "01"
+				- var linkCTA 				= "http://www.fiorentinastore.com/it/fiorentina-maglia-gara-home-authentic-2015-16.html"
+				- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15004.jpg"
+				- var titleProd				= "Fiorentina Maglia Gara Home Authentic 2015/16"
+				- var priceProd 			= "120,00"
+				- var oldPriceProd			= "200"
 
-
-	if lang == "en"
-		- var ctaCopy 					= "BUY NOW"
-		if prod == "01"
-			- var linkCTA 				= "http://www.fiorentinastore.com/en/fiorentina-authentic-home-jersey-2015-16.html"
-			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15004.jpg"
-			- var titleProd				= "Fiorentina Authentic Home Jersey 2015/16"
-			- var priceProd 			= "120.00"
-			- var oldPriceProd			= "200"
-
-		if prod == "02"
-			- var linkCTA 				= "http://www.fiorentinastore.com/en/fiorentina-goalkeeper-green-jersey-2015-16.html"
-			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15006.jpg"
-			- var titleProd				= "Fiorentina Goalkeeper Green Jersey 2015/16"
-			- var priceProd 			= "80.00"
-			- var oldPriceProd			= "200"
-
-	if lang == "it"
-		- var ctaCopy 					= "Acquista"
-		if prod == "01"
-			- var linkCTA 				= "http://www.fiorentinastore.com/it/fiorentina-maglia-gara-home-authentic-2015-16.html"
-			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15004.jpg"
-			- var titleProd				= "Fiorentina Maglia Gara Home Authentic 2015/16"
-			- var priceProd 			= "120,00"
-			- var oldPriceProd			= "200"
-
-		if prod == "02"
-			- var linkCTA 				= "http://www.fiorentinastore.com/it/fiorentina-maglia-gara-portiere-verde-2015-16.html"
-			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15006.jpg"
-			- var titleProd				= "Fiorentina Maglia Gara Portiere Verde 2015/16"
-			- var priceProd 			= "80,00"
-			- var oldPriceProd			= "200"
+			if prod == "02"
+				- var linkCTA 				= "http://www.fiorentinastore.com/it/fiorentina-maglia-gara-portiere-verde-2015-16.html"
+				- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15006.jpg"
+				- var titleProd				= "Fiorentina Maglia Gara Portiere Verde 2015/16"
+				- var priceProd 			= "80,00"
+				- var oldPriceProd			= "200"
 
 
 	//- customize button variable optional

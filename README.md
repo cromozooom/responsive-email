@@ -19,6 +19,9 @@
 
 - Replace the variable inside included file
 
+**Pay attention to Traking code**
+![tracking code](https://rawgit.com/cromozooom/responsive-email/master/icons/traking.jpg "skils you need")
+
 
 ####!!!! go to html file !!!!
 

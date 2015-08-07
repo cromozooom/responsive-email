@@ -26,12 +26,12 @@ table(width="100%" border="0" cellspacing="0" cellpadding="0" align="#{align}")
 		td(align="#{align}")
 			div
 				//[if mso]
-					<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" style="height:#{height}; v-text-anchor:middle; width:#{width};" arcsize="#{arcsize}" strokecolor="#{ctaColor}" fillcolor="#{ctaColor}">
+					<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#{linkCTA}?ga_campaign=#{data}#{lang}_#{trakingSource}#{lastPartTraking}" style="height:#{height}; v-text-anchor:middle; width:#{width};" arcsize="#{arcsize}" strokecolor="#{ctaColor}" fillcolor="#{ctaColor}">
 					<w:anchorlock/>
 					<center style="color:#{ctaColor_};#{fontSans}#{fontSize}">#{ctaCopy} &rarr;</center>
 					</v:roundrect>
 					<![endif]
-				a(href="#{linkCTA}?ga_campaign=#{data}#{lang}#{trakingSource}" style="background-color:#{ctaColor}; border:1px solid #{ctaColor}; border-radius:#{radiusSize}; color:#{ctaColor_}; display:inline-block;#{fontSans}#{fontSize} line-height:#{lineheight}; text-align:center; text-decoration:none; width:#{width};-webkit-text-size-adjust:none;mso-hide:all;")
+				a(href="#{linkCTA}?ga_campaign=#{data}#{lang}_#{trakingSource}#{lastPartTraking}" style="background-color:#{ctaColor}; border:1px solid #{ctaColor}; border-radius:#{radiusSize}; color:#{ctaColor_}; display:inline-block;#{fontSans}#{fontSize} line-height:#{lineheight}; text-align:center; text-decoration:none; width:#{width};-webkit-text-size-adjust:none;mso-hide:all;")
 
 					//- simple CTA (buy now or Acquista)
 					//- -----------------------------------------------------------------
