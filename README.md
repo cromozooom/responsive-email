@@ -85,6 +85,14 @@ ___
 
 ___
 
+##include_2prod
+
+![2 prod](https://rawgit.com/cromozooom/responsive-email/master/icons/2prod.jpg "2 prod")
+
+**!!!!! make use of [this file](https://goo.gl/ljfWBR) to !!!!!**
+
+___
+
 ##include_linkListA
 ![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_red.jpg "dificult for sublime user")
 ![##include_linkListBinclude_linkListA](https://rawgit.com/cromozooom/responsive-email/master/files/images/fiorentina/include_linkListA.jpg "include_linkListA")
@@ -92,13 +100,6 @@ ___
 ![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_red.jpg "dificult for sublime user")
 ![include_linkListB](https://rawgit.com/cromozooom/responsive-email/master/files/images/fiorentina/include_linkListB.jpg "include_linkListB")
 
-##include_cowntDown
-
-![include_cowntDown](https://rawgit.com/cromozooom/responsive-email/master/files/images/fiorentina/include_cowntDown.jpg "include_cowntDown")
-
-##include_2prod
-![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_green.jpg "simple sublime user")
-![include_2prod](https://rawgit.com/cromozooom/responsive-email/master/files/images/fiorentina/include_2prod.jpg "include_2prod")
 
 ##include_3prodA
 ![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_green.jpg "simple sublime user")
