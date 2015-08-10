@@ -1,4 +1,6 @@
-- var lastPartTraking = "&ga_medium=DEM&ga_source=NL"
+- var sufixTraking = "&ga_medium=DEM&ga_source=NL"
+- var prefixTraking = "?ga_campaign="
+
 
 if site == "fiorentina"
 	//- preheader option
@@ -37,6 +39,42 @@ if site == "fiorentina"
 		- var unsubscribeLinkCopy 		= "Clicca qui"
 
 if site == "lazio"
+	//- preheader option
+	- var viewOnlineLink				= "${online_version_url}$"
+	- var reasonLink 					= "_footer&ga_medium=DEM&ga_source=NL"
+	if lang == "en"
+		- var onlineVersionCopy			= "If this e-mail is not being displayed properly, "
+		- var viewOnline				= "please click here"
+
+		//- footer
+		- var copyContact 				= "Contact Us "
+		- var copyContactMailLink		= "customercare@fiorentinastore.com"
+		- var contactMailLink 			= "mailto:customercare@fiorentinastore.com"
+
+		- var reasonCopy00				= "You are receiving the following communication as your are subscribed to "
+		- var reasonCopy01				= " 's newsletter with the following e-mail: "
+
+		- var unsubscribeCopy 			= "Don't want to receive email Updates? "
+		- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1520014859142/d/${encoded_user_data}$/k/${form_verification_code}$/lang/en/"
+		- var unsubscribeLinkCopy 		= "Unsubscribe here"
+
+	if lang == "it"
+		- var onlineVersionCopy	= "Se non riesci a visualizzare questa mail "
+		- var viewOnline		= "clicca qui"
+
+		//- footer
+		- var copyContact 				= "Contattaci "
+		- var copyContactMailLink		= "customercare@fiorentinastore.com"
+		- var contactMailLink 			= "mailto:customercare@fiorentinastore.com"
+
+		- var reasonCopy00				= "Ricevi questa comunicazione in quanto iscritto/a al servizio di informazione periodica di "
+		- var reasonCopy01				= " con l'indirizzo e-mail "
+
+		- var unsubscribeCopy 			= "Per disiscriverti dalla newsletter "
+		- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1420014859385/d/${encoded_user_data}$/k/${form_verification_code}$/"
+		- var unsubscribeLinkCopy 		= "Clicca qui"
+
+if site == "f4u"
 	//- preheader option
 	- var viewOnlineLink				= "${online_version_url}$"
 	- var reasonLink 					= "_footer&ga_medium=DEM&ga_source=NL"
@@ -316,15 +354,15 @@ if lang == "it"
 //- /////////////////////////////////////////////////////////////////
 if site == "f4u"
 
-	- var containerBg 		= "#2b2d29"
-	- var wrapperCollor 	= "#ffffff"
+	- var containerBg 		= "#2b2d29" // dark green
+	- var wrapperCollor 	= "#ffffff" // white
 
-	- var colorPrimary 		= "#b5ff00"
-	- var colorPrimary_ 	= "#092439"
+	- var colorPrimary 		= "#b5ff00" // verde fluo
+	- var colorPrimary_ 	= "#092439" // dark blue
 
-	- var colorSecondary	= "#33333d"
-	- var colorSecondary_	= "#ccccc2"
-	- var colorSecondary__	= "#5a5a55"
+	- var colorSecondary	= "#33333d" // light dark
+	- var colorSecondary_	= "#ccccc2" // creme
+	- var colorSecondary__	= "#5a5a55" // dark creme
 
 	- var colorTertiari 	= "#2b2d29"
 	- var colorTertiari_ 	= "#d4d2d6"

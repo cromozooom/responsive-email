@@ -1,8 +1,9 @@
-extends ../view/columns/oneColumn
+extends ../views/col/oneColumn
 block info
 	block ctaCustom
 	append
 		- var padding 		= "padding: 0px 0px 0px 0px;"
+		- var trakingSource = "xxx"
 
 block contentCol1_1
 	block ourBrand
@@ -18,14 +19,14 @@ block contentCol1_1
 									| !{brandRowCopy}
 							each val in brandLinks01
 								td(width="20%" align="center" valign="middle" style="#{center}")
-									a(href="#{val.brandURL}#{prefixTraking}#{data}#{lang}#{trakingSource}" align="center" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										img(src="#{imgLink}#{val.brandImage}" border="0" alt="#{val.itemName}" width="#{widthImageBrand}" hspace="0" vspace="0" style="max-width:100%;")
+									a(href="#{val.brandURL}#{prefixTraking}#{data}#{lang}#{trakingSource}#{sufixTraking}" align="center" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										img(src="#{imgLink}#{val.brandImage}" border="0" alt="#{val.brandName}" width="#{widthImageBrand}" hspace="0" vspace="0" style="max-width:100%;")
 					if brandLinks02
 						tr
 							each val in brandLinks02
 								td(width="20%" align="center" valign="middle" style="#{center}")
-									a(href="#{val.brandURL}#{prefixTraking}#{data}#{lang}#{trakingSource}" align="center" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
-										img(src="#{imgLink}#{val.brandImage}" border="0" alt="#{val.itemName}" width="#{widthImageBrand}" hspace="0" vspace="0" style="max-width:100%;")
+									a(href="#{val.brandURL}#{prefixTraking}#{data}#{lang}#{trakingSource}#{sufixTraking}" align="center" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										img(src="#{imgLink}#{val.brandImage}" border="0" alt="#{val.brandName}" width="#{widthImageBrand}" hspace="0" vspace="0" style="max-width:100%;")
 					tr
 						td(colspan="100" align="center" height="10")
 

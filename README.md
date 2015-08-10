@@ -112,6 +112,11 @@ ___
 ##include_2banner_a
 
 ![2banner_a](https://rawgit.com/cromozooom/responsive-email/master/icons/2banner_a.jpg "2banner_a")
+___
+
+##include_ourBrand
+
+![ourBrand](https://rawgit.com/cromozooom/responsive-email/master/icons/ourBrand.jpg "ourBrand")
 
 ___
 

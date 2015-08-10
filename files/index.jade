@@ -1,8 +1,8 @@
 extend views/index
 
 block config
-	//- option available fiorentina, lazio
-	- var site 				= "lazio"
+	//- option available default, fiorentina, lazio, f4u
+	- var site 				= "f4u"
 	- var lang 				= "it"
 
 
@@ -11,11 +11,11 @@ block config
 
 	//- Universal Copy
 	if lang == "en"
-		- var title 			= "Lazio Samplte title dem en"
+		- var title 			= "f4u Samplte title dem en"
 		- var previewCopy		= "Acquista la nuova maglia home 2015/16 - en"
 
 	if lang == "it"
-		- var title 			= "Lazio Samplte title dem it"
+		- var title 			= "f4u Samplte title dem it"
 		- var previewCopy		= "Acquista la nuova maglia home 2015/16 - it"
 
 	//- image management
@@ -35,15 +35,17 @@ block config
 
 block contentMail
 	include views/nav
-	include include/lazio/heroImageHeader
-	include include/lazio/singleCTA
-	include include/lazio/heroImage
-	include include/lazio/coupon
-	include include/lazio/linkList
-	include include/lazio/cowntDown
-	include include/lazio/2prod
-	include include/lazio/2banner_a
-	include include/lazio/3prodA
-	include include/lazio/3prodB
+	include include/default/heroImageHeader
+	include include/default/singleCTA
+	include include/default/heroImage
+	include include/default/coupon
+	include include/default/linkList
+	include include/default/cowntDown
+	include include/default/2prod
+	include include/default/2banner_a
+	//-include include/default/3prodA
+	//-include include/default/3prodB
+	include include/default/ourBrand
+
 	//-include include/_footerLink
 	//-include _3article_a

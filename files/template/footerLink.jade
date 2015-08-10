@@ -14,7 +14,7 @@ block contentCol1_1
 							each val in footerLinksx
 								td(width="1px"  bgcolor="#{sampleVar}")
 								td(width="20%" align="center" valign="middle" style="#{center}"  bgcolor="#{sampleVar}")
-									a(href="#{val.footerURL}?ga_campaign=#{data}#{lang}#{trakingSource}" align="center" target="_blank" style="#{center}#{fontSans}#{fontXS}#{decNone}#{bold} color:#{colorPrimary_};")
+									a(href="#{val.footerURL}#{prefixTraking}#{data}#{lang}#{trakingSource}" align="center" target="_blank" style="#{center}#{fontSans}#{fontXS}#{decNone}#{bold} color:#{colorPrimary_};")
 										| #{val.footerCopy}
 					tr
 						td(colspan="100" align="center" height="20" bgcolor="#{sampleVar}")
@@ -24,10 +24,10 @@ block contentCol1_1
 							td(align="center" colspan="100")
 								span(style="color:#{colorSecondary_}; #{fontXS}#{fontSans}")
 									| #{communicationEmail01}
-									a(href="#{LogoImgLink}?ga_campaign=#{data}#{lang}#{trakingSource}" style="color:#{colorSecondary_}; #{bold}")
+									a(href="#{LogoImgLink}#{prefixTraking}#{data}#{lang}#{trakingSource}" style="color:#{colorSecondary_}; #{bold}")
 										| #{LogoStoreTxt}, 
 									| add 
-									a(href="mailto:#{contactMail}?ga_campaign=#{data}#{lang}#{trakingSource}" style="color:#{colorSecondary_}; #{bold}")
+									a(href="mailto:#{contactMail}#{prefixTraking}#{data}#{lang}#{trakingSource}" style="color:#{colorSecondary_}; #{bold}")
 										| #{contactMail} 
 									| #{communicationEmail02}
 									br
