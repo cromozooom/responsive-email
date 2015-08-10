@@ -7,6 +7,7 @@ ___
 
 ## workflow
 
+![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/legenda.jpg "skils you need")
 ###!!!! modify only jade file - and use **default** template !!!!
 
 1. **Upload images on server!**
@@ -35,7 +36,6 @@ ___
 
 
 #include some F..... blocks
-![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/legenda.jpg "skils you need")
 
 (remember to make content for IT / EN)
 
