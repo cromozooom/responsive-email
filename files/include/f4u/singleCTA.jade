@@ -1,0 +1,15 @@
+extend ../../template/singleCTA
+block info
+	- var trakingSource = "xxxSingleCTA"
+	if lang == "en"
+		- var linkCTA 					= "http://www.solopx.com/en"
+		- var ctaCopy 					= "BUY NOW"
+		//- optional available: put some text inside the quote / false if you dont need this
+		- var headerCopySingleCTA 		= "Promotion available - en"
+		- var subHeaderCopySingleCTA 	= "Promotion available - en"
+
+	if lang == "it"
+		- var linkCTA 					= "http://www.solopx.com/it"
+		- var ctaCopy  					= "ACQUISTA ORA"
+		- var headerCopySingleCTA 		= "Promotion available - it"
+		- var subHeaderCopySingleCTA 	= "Promotion available - it"
