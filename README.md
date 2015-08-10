@@ -28,7 +28,7 @@ ___
 ** Pay attention to Traking code **
 ![tracking code](https://rawgit.com/cromozooom/responsive-email/master/icons/traking.jpg "skils you need")
 
-** & CTA **
+** CTA explain **
 
 Two type of cta with or without **Price**
 
