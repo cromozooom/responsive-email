@@ -9,13 +9,18 @@ block content
 				br
 				a(href="#{linkCTA}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{sufixTraking}" target="_blank")
 					img(src="#{imgLink}#{HeaderImage}" border="0" alt="#{heroImageheader}" hspace="0" vspace="0" style="max-width:100%;")
+	else
+
 	if row01
 		tr
 			td(align="center" bgcolor="#{bgcolor}" style="padding: 0 0 10px 0;")
 				span(style="#{center}#{fontSans}#{fontM} color:#{colorNote};")
 					| #{row01}
+	else
+
 	if CTAImage
 		tr
 			td(align="center" bgcolor="#{bgcolor}" style="padding: 0 0 10px 0;")
 				a(href="#{linkCTA}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{sufixTraking}" target="_blank")
 					img(src="#{imgLink}#{CTAImage}" border="0" alt="#{heroImageheader}" hspace="0" vspace="0")
+	else
