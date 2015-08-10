@@ -5,16 +5,6 @@
 **[sample lazio](https://rawgit.com/cromozooom/responsive-email/master/files/index_lazio.html "lazio")**
 
 **[sample f4u](https://rawgit.com/cromozooom/responsive-email/master/files/index_f4u.html "f4u")**
-___
-
-## CTA explain
-
-Two type of cta with or without **Price**
-
-1. without price (- var buttonType 	= "01")
-2. with price (- var buttonType 	= "02")
-
-![CTA](https://rawgit.com/cromozooom/responsive-email/master/icons/cta_explain.jpg "CTA")
 
 ___
 
@@ -103,6 +93,17 @@ ___
 
 * Cownt Down Copy (txt)
 * Cownt Down Data (txt)
+
+___
+
+## CTA explain
+
+Two type of cta with or without **Price**
+
+1. without price (- var buttonType 	= "01")
+2. with price (- var buttonType 	= "02")
+
+![CTA](https://rawgit.com/cromozooom/responsive-email/master/icons/cta_explain.jpg "CTA")
 
 ___
 
