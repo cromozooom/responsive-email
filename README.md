@@ -25,10 +25,10 @@ ___
 
 - Replace the **variable** inside included file
 
-**Pay attention to Traking code**
+** Pay attention to Traking code **
 ![tracking code](https://rawgit.com/cromozooom/responsive-email/master/icons/traking.jpg "skils you need")
 
-**& CTA
+** & CTA **
 
 Two type of cta with or without **Price**
 
