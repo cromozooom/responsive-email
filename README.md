@@ -7,12 +7,12 @@ ___
 
 ## CTA explain
 
-![CTA](https://rawgit.com/cromozooom/responsive-email/master/icons/cta_explain.jpg "CTA")
-
-### Two type of cta with or without !!!!Price!!!!
+Two type of cta with or without !!!!Price!!!!
 
 1. without price (- var buttonType 	= "01")
 2. with price (- var buttonType 	= "02")
+
+![CTA](https://rawgit.com/cromozooom/responsive-email/master/icons/cta_explain.jpg "CTA")
 
 ___
 
