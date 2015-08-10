@@ -25,6 +25,8 @@ ___
 
 - Replace the **variable** inside included file
 
+___
+
 **Pay attention to Traking code**
 ![tracking code](https://rawgit.com/cromozooom/responsive-email/master/icons/traking.jpg "skils you need")
 
