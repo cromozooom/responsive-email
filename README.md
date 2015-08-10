@@ -5,6 +5,17 @@
 **[sample lazio](https://rawgit.com/cromozooom/responsive-email/master/files/index_lazio.html "lazio")**
 ___
 
+## CTA explain
+
+![CTA](https://rawgit.com/cromozooom/responsive-email/master/icons/cta_explain.jpg "CTA")
+
+### Two type of cta with or without !!!!Price!!!!
+
+1. without price (- var buttonType 	= "01")
+2. with price (- var buttonType 	= "02")
+
+___
+
 ## workflow
 
 ![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/legenda.jpg "skils you need")
