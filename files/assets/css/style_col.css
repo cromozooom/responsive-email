@@ -1,1 +1,107 @@
-body{margin:0;padding:0;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}table{border-spacing:0;border-collapse:collapse}.ExternalClass{width:100%;line-height:100%}.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div{line-height:100%}.ReadMsgBody{width:100%;background-color:#ebebeb}table{mso-table-lspace:0pt;mso-table-rspace:0pt}img{-ms-interpolation-mode:bicubic}.yshortcuts a{border-bottom:none !important}@media screen and (max-width: 599px){table[class="force-row"],table[class="container"]{width:100% !important;max-width:100% !important}}@media screen and (max-width: 400px){td[class*="container-padding"]{padding-left:12px !important;padding-right:12px !important}}.ios-footer a{color:#aaaaaa !important;text-decoration:underline}@media screen and (max-width: 599px){td[class="col"]{width:100% !important}td[class="cols-wrapper"]{padding-top:18px}img[class="image"]{float:right;max-width:40% !important;height:auto !important;margin-left:12px}div[class="subtitle"]{margin-top:0 !important}}@media screen and (max-width: 400px){td[class="cols-wrapper"]{padding-left:0 !important;padding-right:0 !important}td[class="content-wrapper"]{padding-left:12px !important;padding-right:12px !important}}
+/* line 1, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+body {
+  margin: 0;
+  padding: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 6, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+table {
+  border-spacing: 0;
+  border-collapse: collapse; }
+
+/* line 11, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+.ExternalClass {
+  width: 100%;
+  line-height: 100%; }
+  /* line 14, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+  .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+    line-height: 100%; }
+
+/* line 16, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+.ReadMsgBody {
+  width: 100%;
+  background-color: #ebebeb; }
+
+/* line 20, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+table {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt; }
+
+/* line 24, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+img {
+  -ms-interpolation-mode: bicubic; }
+
+/* line 27, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+.yshortcuts a {
+  border-bottom: none !important; }
+
+@media screen and (max-width: 599px) {
+  /* line 32, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+  table[class="force-row"], table[class="container"] {
+    width: 100% !important;
+    max-width: 100% !important; }
+ }
+
+@media screen and (max-width: 400px) {
+  /* line 37, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+  td[class*="container-padding"] {
+    padding-left: 12px !important;
+    padding-right: 12px !important; }
+
+  /* line 40, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+  img[class="responsive"] {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important; }
+ }
+
+/* line 45, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+.ios-footer a {
+  color: #aaaaaa !important;
+  text-decoration: underline; }
+
+@media screen and (max-width: 599px) {
+  /* line 50, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+  td[class="col"] {
+    width: 100% !important; }
+
+  /* line 53, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+  td[class="cols-wrapper"] {
+    padding-top: 18px; }
+
+  /* line 56, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+  img[class="image"] {
+    float: right;
+    max-width: 40% !important;
+    height: auto !important;
+    margin-left: 12px; }
+
+  /* line 62, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+  div[class="subtitle"] {
+    margin-top: 0 !important; }
+
+  /* line 65, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+  img[class="responsive"] {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important; }
+ }
+
+@media screen and (max-width: 400px) {
+  /* line 71, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+  td[class="cols-wrapper"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+
+  /* line 75, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+  td[class="content-wrapper"] {
+    padding-left: 12px !important;
+    padding-right: 12px !important; }
+
+  /* line 79, /Users/nicur/Documents/dev/git/responsive-email/files/assets/sass/style_col.sass */
+  img[class="responsive"] {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important; }
+ }
