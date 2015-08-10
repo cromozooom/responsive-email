@@ -7,7 +7,7 @@ ___
 
 ## CTA explain
 
-Two type of cta with or without !!!!Price!!!!
+Two type of cta with or without *Price*
 
 1. without price (- var buttonType 	= "01")
 2. with price (- var buttonType 	= "02")
