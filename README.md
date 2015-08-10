@@ -28,6 +28,17 @@ ___
 **Pay attention to Traking code**
 ![tracking code](https://rawgit.com/cromozooom/responsive-email/master/icons/traking.jpg "skils you need")
 
+**& CTA
+
+Two type of cta with or without **Price**
+
+1. without price (- var buttonType 	= "01")
+2. with price (- var buttonType 	= "02")
+
+![CTA](https://rawgit.com/cromozooom/responsive-email/master/icons/cta_explain.jpg "CTA")
+
+___
+
 
 ####!!!! go to html file !!!!
 
@@ -93,17 +104,6 @@ ___
 
 * Cownt Down Copy (txt)
 * Cownt Down Data (txt)
-
-___
-
-## CTA explain
-
-Two type of cta with or without **Price**
-
-1. without price (- var buttonType 	= "01")
-2. with price (- var buttonType 	= "02")
-
-![CTA](https://rawgit.com/cromozooom/responsive-email/master/icons/cta_explain.jpg "CTA")
 
 ___
 
