@@ -3,8 +3,9 @@ extends ../../views/3prod
 
 block 3prod_a
 	include ../../config
+	- var product 						= true
 	- var template 						= "3prod_a"
-	- var trakingSource = "xxx3Prod"
+	- var trakingSource 				= "xxx3Prod"
 	if lang == "en"
 		- var ctaCopy 					= "BUY NOW"
 		if prod == "01"

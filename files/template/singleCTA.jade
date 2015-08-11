@@ -41,13 +41,19 @@ block contentSingleCTA
 				span(style="#{center}#{fontSans}#{fontXXL} color:#{colorheaderCopySingleCTA};")
 					| #{headerCopySingleCTA}
 			else
-				span
+				.empty
+
 			if subHeaderCopySingleCTA
 				span(style="#{center}#{fontSans}#{fontM} color:#{fontColor};")
 					br
 					| #{subHeaderCopySingleCTA}
-				hr.hr(style="border-bottom: 1px solid #{borderBottomTop};")
 			else
-				span
-			include ../views/cta.jade
+				.empty
+
+			if ctaCopy
+				hr.hr(style="border-bottom: 1px solid #{borderBottomTop};")
+				include ../views/cta.jade
+
+			else
+				.empty
 
