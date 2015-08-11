@@ -40,10 +40,14 @@ block contentSingleCTA
 			if headerCopySingleCTA
 				span(style="#{center}#{fontSans}#{fontXXL} color:#{colorheaderCopySingleCTA};")
 					| #{headerCopySingleCTA}
+			else
+				span
 			if subHeaderCopySingleCTA
 				span(style="#{center}#{fontSans}#{fontM} color:#{fontColor};")
 					br
-					| #{headerCopySingleCTA}
+					| #{subHeaderCopySingleCTA}
 				hr.hr(style="border-bottom: 1px solid #{borderBottomTop};")
+			else
+				span
 			include ../views/cta.jade
 

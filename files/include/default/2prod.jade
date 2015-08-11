@@ -2,42 +2,44 @@ extends ../../views/2prod
 
 block 2prod_a
 	- var template 						= "2prod_a"
-	- var trakingSource = "xxx2Prod"
+	- var trakingSource = "2prodLine_"
 	if lang == "en"
-		- var ctaCopy 					= "BUY NOW"
+		- var ctaCopy 					= "Shop now"
+
 		if prod == "01"
-			- var linkCTA 				= "http://www.laziostylestore.com/it/lazio-polo-ufficiale-celeste-2015-16.html"
-			- var imgProd				= "https://lazio-dunebuggysrl.netdna-ssl.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/l/z/lz15116.jpg"
-			- var titleProd				= "Lazio Polo Ufficiale Celeste 2015/16"
-			- var priceProd 			= "45,00"
-			- var oldPriceProd			= "200"
-			- var idProd				= "LZ01"
+			- var linkCTA 				= "http://www.fiorentinastore.com/en/fiorentina-violet-presentation-polo-2015-16.html"
+			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15117.jpg"
+			- var titleProd				= "Fiorentina Violet Presentation Polo 2015/16"
+			- var priceProd 			= "50.00"
+			- var oldPriceProd			= false
+			- var idProd				= "fi15117"
 
 		if prod == "02"
-			- var linkCTA 				= "http://www.laziostylestore.com/it/lazio-polo-ufficiale-tabacco-2015-16.html"
-			- var imgProd				= "https://lazio-dunebuggysrl.netdna-ssl.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/l/z/lz15117.jpg"
-			- var titleProd				= "Lazio Polo Ufficiale Tabacco 2015/16"
-			- var priceProd 			= "45,00"
-			- var oldPriceProd			= "200"
-			- var idProd				= "LZ02"
+			- var linkCTA 				= "http://www.fiorentinastore.com/en/fiorentina-white-presentation-polo-2015-16.html"
+			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15116.jpg"
+			- var titleProd				= "Fiorentina White Presentation Polo 2015/16"
+			- var priceProd 			= "50.00"
+			- var oldPriceProd			= false
+			- var idProd				= "fi15116"
 
 	if lang == "it"
-		- var ctaCopy 					= "Acquista"
+		- var ctaCopy 					= "Acquista ora"
+
 		if prod == "01"
-			- var linkCTA 				= "http://www.laziostylestore.com/it/lazio-polo-ufficiale-celeste-2015-16.html"
-			- var imgProd				= "https://lazio-dunebuggysrl.netdna-ssl.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/l/z/lz15116.jpg"
-			- var titleProd				= "Lazio Polo Ufficiale Celeste 2015/16"
-			- var priceProd 			= "45,00"
-			- var oldPriceProd			= "200"
-			- var idProd				= "LZ01"
+			- var linkCTA 				= "http://www.fiorentinastore.com/it/fiorentina-polo-rappresentanza-viola-2015-16.html"
+			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15117.jpg"
+			- var titleProd				= "Fiorentina Polo Rappresentanza Viola 2015/16"
+			- var priceProd 			= "50,00"
+			- var oldPriceProd			= false
+			- var idProd				= "fi15117"
 
 		if prod == "02"
-			- var linkCTA 				= "http://www.laziostylestore.com/it/lazio-polo-ufficiale-tabacco-2015-16.html"
-			- var imgProd				= "https://lazio-dunebuggysrl.netdna-ssl.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/l/z/lz15117.jpg"
-			- var titleProd				= "Lazio Polo Ufficiale Tabacco 2015/16"
-			- var priceProd 			= "45,00"
-			- var oldPriceProd			= "200"
-			- var idProd				= "LZ02"
+			- var linkCTA 				= "http://www.fiorentinastore.com/it/fiorentina-polo-rappresentanza-bianca-2015-16.html"
+			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15116.jpg"
+			- var titleProd				= "Fiorentina Polo Rappresentanza Bianca 2015/16"
+			- var priceProd 			= "50,00"
+			- var oldPriceProd			= false
+			- var idProd				= "fi15116"
 
 	//- customize button variable optional
 	block ctaOptions

@@ -1,0 +1,52 @@
+extend views/index
+
+block config
+	//- option available fiorentina, lazio
+	- var site 				= "fiorentina"
+	- var lang 				= "it"
+
+
+	//- used for tracking code
+	- var data = "11-8"
+
+	//- Universal Copy
+	if lang == "en"
+		- var title 			= "New Presentation Polos By Le Coq Sportif"
+		- var previewCopy		= "Now available in all violet and white sizes"
+
+	if lang == "it"
+		- var title 			= "Nuove polo rappresentanza 2015/16 di Le Coq Sportif"
+		- var previewCopy		= "Ora disponibili in tutte le taglie"
+
+	//- image management
+	if site == "f4u"
+		- var imgLink = "images/f4u/"
+
+	if site == "fiorentina"
+		- var imgLink = "http://static.contactlab.it/milanshop/fiore/2015/11-08/"
+
+	if site == "lazio"
+		- var imgLink = "images/lazio/"
+
+	if site == "default"
+		- var imgLink = "images/default/"
+
+	include config
+
+block contentMail
+	include views/nav
+	include include/default/heroImage
+	include include/default/singleCTA
+	include include/default/2prod
+	include include/default/singleCTA01
+	include include/default/3prodA
+	//include include/default/heroImageHeader
+	//include include/default/coupon
+	//include include/default/linkList
+	//include include/default/cowntDown
+	//include include/default/2banner_a
+
+
+	//include include/fiorentina/3prodB
+	//-include include/_footerLink
+	//-include _3article_a
