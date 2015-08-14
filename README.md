@@ -1,5 +1,4 @@
-# Responsive-email
-
+# SoloPX - Responsive-email
 [![sample Fiorentina](https://img.shields.io/badge/Fiorentina-v0.0-yellow.svg)](https://rawgit.com/cromozooom/responsive-email/master/dev/index_fiorentina.html)
 [![sample Lazio](https://img.shields.io/badge/Lazio-v0.0-yellow.svg)](https://rawgit.com/cromozooom/responsive-email/master/dev/index_lazio.html)
 [![sample f4u](https://img.shields.io/badge/f4U-v0.0-yellow.svg)](https://rawgit.com/cromozooom/responsive-email/master/dev/index_f4u.html)
@@ -13,6 +12,8 @@ ___
 1. Upload **images** on server!
 
 2. Download the **ZIP** and Unzip on your computer & you will find this:
+[![Download solopX Responsive Email](https://img.shields.io/badge/download%20soloPX%20responsive%20email-v0.0-brightgreen.svg)](https://github.com/cromozooom/responsive-email/archive/master.zip)
+
 	* "dev" - developement folder
 	* "files" - use need to **use this folder**
 	* "icons" - here are my stuff
