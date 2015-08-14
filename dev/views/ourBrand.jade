@@ -1,0 +1,31 @@
+extends ../view/columns/oneColumn
+block info
+	block ctaCustom
+	append
+		- var padding 		= "padding: 0px 0px 0px 0px;"
+
+block contentCol1_1
+	block ourBrand
+		tr
+			td(align="center" bgcolor="#{colorSecondary}")
+				table(cellpadding="5" cellspacing="0" border="0" width="100%")
+					tr
+						td(colspan="100" align="center" height="10")
+					if brandLinks01
+						tr
+							td(width="20%" align="center" valign="middle" style="#{center}")
+								span(style="#{center}#{fontSans}#{fontXS} color:#{colorSecondary_};")
+									| !{brandRowCopy}
+							each val in brandLinks01
+								td(width="20%" align="center" valign="middle" style="#{center}")
+									a(href="#{val.brandURL}#{prefixTraking}#{data}#{lang}#{trakingSource}" align="center" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										img(src="#{imgLink}#{val.brandImage}" border="0" alt="#{val.itemName}" width="#{widthImageBrand}" hspace="0" vspace="0" style="max-width:100%;")
+					if brandLinks02
+						tr
+							each val in brandLinks02
+								td(width="20%" align="center" valign="middle" style="#{center}")
+									a(href="#{val.brandURL}#{prefixTraking}#{data}#{lang}#{trakingSource}" align="center" target="_blank" style="#{fontM} #{decNone} #{fontSans} color:#{colorPrimary};")
+										img(src="#{imgLink}#{val.brandImage}" border="0" alt="#{val.itemName}" width="#{widthImageBrand}" hspace="0" vspace="0" style="max-width:100%;")
+					tr
+						td(colspan="100" align="center" height="10")
+

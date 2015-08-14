@@ -1,0 +1,18 @@
+extends col/twoColumn
+
+block info
+//- 1 cols block
+//- -----------------------------------------------------------------
+block contentCol1_2
+	block prodTemplate01
+		- var prod = "01"
+		block 2prod_a
+		include prod.jade
+
+//- 2 cols block
+//- -----------------------------------------------------------------
+block contentCol2_2
+	block prodTemplate02
+		- var prod = "02"
+		block 2prod_a
+		include prod.jade

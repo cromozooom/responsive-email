@@ -1,0 +1,107 @@
+extends col/oneColumn.jade
+
+include ../config
+block info
+	- var trakingSource = "navHeader"
+	- var padding 		= "padding: 15px 10px 15px 0px;"
+
+	if site == "fiorentina"
+		- var linkColor				= colorSecondary_
+		- var borderTop 			= colorPrimary
+		- var bgcolor 				= colorWhite
+
+		- var linkSpecialColor		= colorSecondary
+		- var linkSpecialBgColor	= colorPrimary
+
+	if site == "lazio"
+		- var linkColor				= colorSecondary_
+		- var borderTop 			= colorSecondary_
+		- var bgcolor 				= colorSecondary
+
+		- var linkSpecialColor		= colorSecondary
+		- var linkSpecialBgColor	= colorPrimary
+
+	if site == "f4u"
+		- var linkColor				= colorSecondary_
+		- var borderTop 			= colorPrimary
+		- var bgcolor 				= colorSecondary
+
+		- var linkSpecialColor		= colorSecondary
+		- var linkSpecialBgColor	= colorPrimary
+
+block contentCol1_1
+	//- inspired from http://responsiveemailpatterns.com/patterns/navigation/top-links.html
+	tr
+		td(height="2" width="600" style="background-color: #{borderTop};")
+	tr
+		td.main_nav(width="600" style="padding: 0px 0px 0px 20px; background-color: #{bgcolor};")
+			table(cellpadding="0" cellspacing="0" width="100%" style="background-color: #{bgcolor};")
+				if site == "f4u"
+					tr
+						if Nav01
+							td(align="center" style="#{padding}")
+								a(href="#{NavLink01}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav01}#{sufixTraking}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+									span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+										span #{Nav01}
+						if Nav02
+							td(align="center" style="#{padding}")
+								a(href="#{NavLink02}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav02}#{sufixTraking}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+									span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+										span #{Nav02}
+						if Nav03
+							td(align="center" style="#{padding}")
+								a(href="#{NavLink03}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav03}#{sufixTraking}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+									span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+										span #{Nav03}
+						if Nav04
+							td(align="center" style="#{padding}")
+								a(href="#{NavLink04}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav04}#{sufixTraking}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+									span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+										span #{Nav04}
+						if Nav05
+							td(align="center" style="#{padding}")
+								a(href="#{NavLink05}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav05}#{sufixTraking}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+									span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+										span #{Nav05}
+						if Nav06
+							td(align="center" style="padding: 15px 20px 15px 20px; #{fontS} #{decNone} #{fontSans} background-color: #{linkSpecialBgColor};")
+								a(href="#{NavLink06}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav06}#{sufixTraking}" style="color: #{linkSpecialColor}; #{fontS} #{decNone} #{fontSans}")
+									strong(style="color: #{linkSpecialColor}; #{fontS} #{decNone} #{fontSans}")
+										| #{Nav06}
+				else
+					tr
+						if Nav01
+							td(align="center" style="#{padding}")
+								a(href="#{NavLink01}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav01}#{sufixTraking}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+									span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+										span #{Nav01}
+						if Nav02
+							td(align="center" style="#{padding}")
+								a(href="#{NavLink02}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav02}#{sufixTraking}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+									span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+										span #{Nav02}
+						if Nav03
+							td(align="center" style="#{padding}")
+								a(href="#{NavLink03}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav03}#{sufixTraking}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+									span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+										span #{Nav03}
+						if Nav04
+							td(align="center" style="#{padding}")
+								a(href="#{NavLink04}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav04}#{sufixTraking}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+									span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+										span #{Nav04}
+						if Nav05
+							td(align="center" style="#{padding}")
+								a(href="#{NavLink05}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav05}#{sufixTraking}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+									span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+										span #{Nav05}
+						if Nav06
+							td(align="center" style="#{padding}")
+								a(href="#{NavLink06}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav06}#{sufixTraking}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+									span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+										span #{Nav06}
+						if Nav07
+							td(align="center" style="padding: 15px 20px 15px 20px; #{fontS} #{decNone} #{fontSans} background-color: #{linkSpecialBgColor};")
+								a(href="#{NavLink07}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav07}#{sufixTraking}" style="color: #{linkSpecialColor}; #{fontS} #{decNone} #{fontSans}")
+									strong(style="color: #{linkSpecialColor}; #{fontS} #{decNone} #{fontSans}")
+										| #{Nav07}

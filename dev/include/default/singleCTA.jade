@@ -1,0 +1,17 @@
+extend ../../template/singleCTA
+block info
+	- var product 						= false
+	- var trakingSource 				= "SingleCTA_Polo"
+	if lang == "en"
+		//- optional available: put some text inside the quote / false if you dont need this
+		- var linkCTA 					= "http://www.fiorentinastore.com/en/fashion/mens/polos.html"
+		- var ctaCopy 					= "SHOP NOW"
+		- var headerCopySingleCTA 		= "New Presentation Polos by Le Coq Sportif"
+		- var subHeaderCopySingleCTA 	= "All sizes now available!"
+
+	if lang == "it"
+		//- optional available: put some text inside the quote / false if you dont need this
+		- var linkCTA 					= "http://www.fiorentinastore.com/it/abbigliamento/uomo/polo.html"
+		- var ctaCopy  					= "ACQUISTA ORA"
+		- var headerCopySingleCTA 		= "Nuove polo rappresentanza Le Coq Sportif"
+		- var subHeaderCopySingleCTA 	= "Tutte le taglie ora disponibili!"

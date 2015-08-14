@@ -1,0 +1,49 @@
+block info
+block color
+	if site == "default"
+		- var bgColor 			= colorBlack
+		- var fontColor 		= colorSecondary_
+		- var borderCoupon 		= colorSecondary__
+		- var fontColorCoupon 	= colorPrimary
+		- var colorNote 		= colorSecondary__
+
+	if site == "fiorentina"
+		- var bgColor 			= colorSecondary
+		- var fontColor 		= colorPrimary
+		- var borderCoupon 		= colorPrimary
+		- var fontColorCoupon 	= colorWhite
+		- var colorNote 		= colorPrimary
+
+	if site == "lazio"
+		- var bgColor 			= colorSecondary
+		- var fontColor 		= colorPrimary
+		- var borderCoupon 		= colorPrimary
+		- var fontColorCoupon 	= colorWhite
+		- var colorNote 		= colorPrimary
+
+	if site == "f4u"
+		- var bgColor 			= colorSecondary
+		- var fontColor 		= colorWhite
+		- var borderCoupon 		= colorPrimary
+		- var fontColorCoupon 	= colorWhite
+		- var colorNote 		= colorSecondary_
+
+
+block content
+	tr
+		td(align="center" bgcolor="#{bgColor}")
+			span(style="#{center}#{fontSans} color:#{fontColor};")
+				br
+				| #{couponCopyRow01}
+				center
+					br
+					table(cellpadding="10" cellspacing="0" border="0" bgcolor="#{bgColor}")
+						tr
+							td(style="border: 3px solid #{borderCoupon};")
+								span(style="#{fontXXXL} #{fontSans} color:#{fontColorCoupon};")
+									| #{coupon}
+				br
+				span(style="#{center}#{fontSans}#{fontS} color:#{colorNote};")
+					| #{couponCopyRow02}
+				br
+				br

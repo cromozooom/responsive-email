@@ -1,0 +1,81 @@
+extends ../../views/3prod
+
+
+block 3prod_a
+	include ../../config
+	- var product 						= true
+	- var template 						= "3prod_a"
+	- var trakingSource 				= "3ProdKitGara"
+	if lang == "en"
+		- var ctaCopy 					= "BUY NOW"
+
+		if prod == "01"
+			- var linkCTA 				= "http://www.fiorentinastore.com/en/fiorentina-home-jersey-2015-16.html"
+			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15001.jpg"
+			- var titleProd				= "Fiorentina Home Jersey 2015/16"
+			- var priceProd 			= "75.00"
+			- var oldPriceProd			= false
+			- var idProd				= "fi15001"
+
+		if prod == "02"
+			- var linkCTA 				= "http://www.fiorentinastore.com/en/fiorentina-away-jersey-2015-16.html"
+			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15002.jpg"
+			- var titleProd				= "Fiorentina Away Jersey 2015/16"
+			- var priceProd 			= "75.00"
+			- var oldPriceProd			= false
+			- var idProd				= "fi15002"
+
+		if prod == "03"
+			- var linkCTA 				= "http://www.fiorentinastore.com/en/fiorentina-third-jersey-2015-16.html"
+			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15003.jpg"
+			- var titleProd				= "Fiorentina Third Jersey 2015/16"
+			- var priceProd 			= "75.00"
+			- var oldPriceProd			= false
+			- var idProd				= "fi15003"
+
+	if lang == "it"
+		- var ctaCopy 					= "Acquista"
+
+		if prod == "01"
+			- var linkCTA 				= "http://www.fiorentinastore.com/it/fiorentina-maglia-gara-home-2015-16.html"
+			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15001.jpg"
+			- var titleProd				= "Fiorentina Maglia Gara Home 2015/16"
+			- var priceProd 			= "75,00"
+			- var oldPriceProd			= false
+			- var idProd				= "fi15001"
+
+		if prod == "02"
+			- var linkCTA 				= "http://www.fiorentinastore.com/it/fiorentina-maglia-gara-away-2015-16.html"
+			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15002.jpg"
+			- var titleProd				= "Fiorentina Maglia Gara Away 2015/16"
+			- var priceProd 			= "75,00"
+			- var oldPriceProd			= false
+			- var idProd				= "fi15002"
+
+		if prod == "03"
+			- var linkCTA 				= "http://www.fiorentinastore.com/it/fiorentina-maglia-gara-third-2015-16.html"
+			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15003.jpg"
+			- var titleProd				= "Fiorentina Maglia Gara Third 2015/16"
+			- var priceProd 			= "75,00"
+			- var oldPriceProd			= false
+			- var idProd				= "fi15003"
+
+	//- customize button variable optional
+	block ctaCustom
+		//- ////////////////////////////////////////////
+		//-
+		//-		01 = simple CTA (buy now or Acquista)
+		//-		02 = CTA with price (buy at {priceProd} or Acquista a {priceProd})
+		//-
+		//- ////////////////////////////////////////////
+		- var buttonType 	= "01"
+		- var bgColor		= "#b5ff00"
+		- var txtColor		= "#33333d"
+		//- can be 160 max
+		- var width			= "160px"
+		- var height 		= "36px"
+		- var arcsize 		= "5%"
+		- var radiusSize 	= "3px"
+		- var lineheight 	= "30px"
+		- var align 		= "left"
+		- var fontSize		= "font-size: 14px; line-height: 11px;"

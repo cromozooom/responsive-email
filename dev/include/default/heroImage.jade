@@ -1,0 +1,28 @@
+extend ../../template/heroImage
+
+//-		 _                      _
+//-		| |                    (_)
+//-		| |__   ___ _ __ ___    _ _ __ ___   __ _
+//-		| '_ \ / _ \ '__/ _ \  | | '_ ` _ \ / _` |
+//-		| | | |  __/ | | (_) | | | | | | | | (_| |
+//-		|_| |_|\___|_|  \___/  |_|_| |_| |_|\__, |
+//-     	                                 __/ |
+//-         	                            |___/
+block info
+	- var product 						= false
+	- var trakingSource 				= "HeroImage_polo"
+	if lang == "en"
+
+		- var heroImage					= "banner1-en.jpg"
+		- var linkCTA					= "http://www.fiorentinastore.com/en/fashion/mens/polos.html"
+		- var heroImageheader 			= "2015/16 Polos"
+
+
+	if lang == "it"
+
+		- var heroImage 				= "banner1-it.jpg"
+		- var linkCTA					= "http://www.fiorentinastore.com/it/abbigliamento/uomo/polo.html"
+		- var heroImageheader 			= "Polo 2015/16"
+
+block color
+	-var bgcolor = colorBlack
