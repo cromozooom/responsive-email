@@ -1,5 +1,9 @@
 # Responsive-email
 
+[![sample fiore](https://img.shields.io/travis/jadejs/jade-parser/master.svg)](https://rawgit.com/cromozooom/responsive-email/master/dev/index_fiorentina.html)
+
+[![sample fiore](https://img.shields.io/jenkins/t/https/jenkins.qa.ubuntu.com/precise-desktop-amd64_default.svg?style=flat-square)](https://rawgit.com/cromozooom/responsive-email/master/dev/index_fiorentina.html)
+
 **[sample fiore](https://rawgit.com/cromozooom/responsive-email/master/dev/index_fiorentina.html "fiorentina")**
 
 **[sample lazio](https://rawgit.com/cromozooom/responsive-email/master/dev/index_lazio.html "lazio")**
