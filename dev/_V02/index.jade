@@ -1,0 +1,19 @@
+extend views/index
+
+block infoIndex
+	include config/config
+	//- option available: default
+	- var site = "default"
+
+	//- option available: it, en
+	- var lang = "it"
+
+	- var data = "11-8"
+
+	if lang == "en"
+		- var titleNewsletter = "title page"
+		- var titlePrevueNewsletter = "prevue title page"
+
+	if lang == "it"
+		- var titleNewsletter = "titolo dalla pagina"
+		- var titlePrevueNewsletter = "preview titolo dalla pagina"

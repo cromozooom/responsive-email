@@ -1,0 +1,30 @@
+- var setTemplate = "preHeader"
+
+block info
+	- var trakingSource = "_preHeader"
+
+block colorPreheader
+	include ../config/config
+
+	if site == "default"
+		- var PreheaderHeight = "30px"
+		- var PreheaderHPadding = "10px"
+
+		- var titleMailBg 		= colorPrimaryLightB
+		- var fontColor 		= colorPrimaryDarkB
+		- var linkColor			= colorPrimaryDarkC
+
+table(border="0" width="100%" height="100%" cellpadding="0" cellspacing="0"  bgcolor="#{titleMailBg}")
+	tr
+		td(align="left" width="#{PreheaderHPadding}")
+		td(align="left" valign="middle" height="#{PreheaderHeight}")
+			small(style="#{fontXS} #{fontSans} color:#{fontColor};")
+				| #{titlePrevueNewsletter}
+		td(align="right" valign="middle" height="#{PreheaderHeight}")
+			small(style="#{fontXS} #{fontSans} color:#{fontColor};")
+				| #{onlineVersionCopy} 
+				nobr
+					a(st-content="viewonline" href="#{viewOnlineLink}#{prefixTraking}#{data}#{lang}#{trakingSource}#{sufixTraking}" style="color:#{linkColor};" target="_blank" )
+						span(style="color:#{linkColor};")
+							| #{viewOnline}
+		td(align="left" width="#{PreheaderHPadding}")

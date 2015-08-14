@@ -1,0 +1,58 @@
+extends col/twoColumnFull.jade
+
+block colorTwoColumn
+	include ../config/config
+	- var backgroundColor = colorWhite
+
+block info
+	- var setTemplate = "header"
+
+	include ../config/config
+	- var trakingSource 		= "headerLogo"
+
+
+	//-
+		#{trakingSource}
+
+		#{viewImagesPath}
+		#{LogoStoreTxt}
+		#{LogoImg}
+		#{folowUscopy}
+
+
+	if site == "default"
+		- var txtColor 			= colorWhiteD
+		- var backgroundColor 	= colorWhite
+
+		- var logoImgHeight 		= "70px"
+		- var socialIconWidth 		= "40px"
+		- var socialIconTopPadding 	= "10px"
+
+
+block contentCol1_2
+	table(cellpadding="0" cellspacing="0" width="200" align="center")
+		tr
+			td(height="10px")
+		tr
+			td(align="center" valign="top")
+				a(href="#{LogoLink}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{sufixTraking}" height="#{logoImgHeight}")
+					img(src="#{viewImagesPath}#{LogoStoreTxt}_logo.jpg" alt="#{LogoStoreTxt}" style="display: block; border: 0; height: #{logoImgHeight} !important;")
+		tr
+			td(height="10px")
+
+block contentCol2_2
+	table(cellpadding="0" cellspacing="0" width="200" align="center" valign="top")
+		tr
+			td(height="#{socialIconTopPadding}" colspan="10")
+		tr
+			td(align="center" colspan="10")
+				span(style="#{fontS}color: #{txtColor};") #{folowUscopy}
+		tr
+			td(height="10px" colspan="10")
+		tr
+			each val in socialIconList
+				td(align="center" width="#{socialIconWidth}" valign="top")
+					a(href="#{val.socialURL}" target="_blank")
+						img(src="#{viewImagesPath}#{val.socialName}.jpg" alt="#{val.socialName} - #{siteName}" style="display: block; border: 0; height: auto !important;")
+		tr
+			td(height="10px" colspan="10")

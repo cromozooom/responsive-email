@@ -1,0 +1,21 @@
+block info
+tr
+	td.cols-wrapper(align="left")
+		//- p #{template} #{lang}
+
+		// [if mso]><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td width="50%" valign="top"><![endif]
+		table.force-row(width="284" border="0" cellpadding="0" cellspacing="0" align="left")
+			tr
+				td.col(valign="top" style="width:100%")
+					block contentCol1_2
+					br
+
+
+		// [if mso]></td><td width="50%" valign="top"><![endif]
+		table.force-row(width="284" border="0" cellpadding="0" cellspacing="0" align="right")
+			tr
+				td.col(valign="top" style="width:100%")
+					block contentCol2_2
+					br
+
+		// [if mso]></td></tr></table><![endif]
