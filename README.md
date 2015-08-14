@@ -10,6 +10,7 @@ ___
 
 ## WORKFLOW
 
+0. (optional) - drink a cup of tea...
 
 1. Upload **images** on server!
 
@@ -53,7 +54,7 @@ Two type of cta **with or without Price**
 
 ___
 
-**dificulty level legend**
+**Dificulty level legend**
 
 ![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/legenda.jpg "skils you need")
 
