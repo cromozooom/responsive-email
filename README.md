@@ -1,8 +1,11 @@
 # Responsive-email
 
+[![Build Status](https://img.shields.io/travis/jadejs/jade-parser/master.svg)](https://travis-ci.org/jadejs/jade-parser)
 
 [![sample Fiorentina](https://img.shields.io/badge/Fiorentina-v0.0-yellow.svg](https://rawgit.com/cromozooom/responsive-email/master/dev/index_fiorentina.html)
+
 [![sample Lazio](https://img.shields.io/badge/Lazio-v0.0-yellow.svg](https://rawgit.com/cromozooom/responsive-email/master/dev/index_lazio.html)
+
 [![sample f4u](https://img.shields.io/badge/f4U-v0.0-yellow.svg](https://rawgit.com/cromozooom/responsive-email/master/dev/index_f4u.html)
 
 ___
