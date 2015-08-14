@@ -1,16 +1,16 @@
 # Responsive-email
 
-**[sample fiore](https://rawgit.com/cromozooom/responsive-email/master/files/index_fiorentina.html "fiorentina")**
 
-**[sample lazio](https://rawgit.com/cromozooom/responsive-email/master/files/index_lazio.html "lazio")**
+**[sample fiore](https://rawgit.com/cromozooom/responsive-email/master/dev/index_fiorentina.html "fiorentina")**
 
-**[sample f4u](https://rawgit.com/cromozooom/responsive-email/master/files/index_f4u.html "f4u")**
+**[sample lazio](https://rawgit.com/cromozooom/responsive-email/master/dev/index_lazio.html "lazio")**
+
+**[sample f4u](https://rawgit.com/cromozooom/responsive-email/master/dev/index_f4u.html "f4u")**
 
 ___
 
 ## workflow
 
-![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/legenda.jpg "skils you need")
 ###!!!! modify only jade file - and use **default** template !!!!
 
 1. **Upload images on server!**
@@ -56,6 +56,9 @@ ___
 (remember to make content for IT / EN)
 
 ___
+
+##dificulty level legend
+![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/legenda.jpg "skils you need")
 
 ##include_heroImageHeader
 
@@ -139,10 +142,10 @@ ___
 ##include_linkListA
 
 ![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_red.jpg "dificult for sublime user")
-![##include_linkListBinclude_linkListA](https://rawgit.com/cromozooom/responsive-email/master/files/images/fiorentina/include_linkListA.jpg "include_linkListA")
+![##include_linkListBinclude_linkListA](https://rawgit.com/cromozooom/responsive-email/master/dev/images/fiorentina/include_linkListA.jpg "include_linkListA")
 
 ![hard stuff](https://rawgit.com/cromozooom/responsive-email/master/icons/sublime_red.jpg "dificult for sublime user")
-![include_linkListB](https://rawgit.com/cromozooom/responsive-email/master/files/images/fiorentina/include_linkListB.jpg "include_linkListB")
+![include_linkListB](https://rawgit.com/cromozooom/responsive-email/master/dev/images/fiorentina/include_linkListB.jpg "include_linkListB")
 ___
 
 ###### note
