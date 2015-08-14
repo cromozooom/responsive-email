@@ -12,10 +12,15 @@ html(lang="#{lang}")
 			meta(http-equiv="X-UA-Compatible" content="IE=edge")
 			//- disable auto telephone linking in iOS -->
 			meta(name="format-detection" content="telephone=no")
-			// css responsive
+
+			// 1. RESPONSIVE PART
+			// it will be the only CSS part, contained in the final HTML
+			// cut and paste in other file temporary
 			style
 				include ../assets/css/style_col.css
-			// css inline this
+			// 2. CUSTOM PART
+			// let this part of css for inline tools
+			// use this tool for inline css: (http://templates.mailchimp.com/resources/inline-css/)
 			style
 				include ../assets/css/myStyle.css
 			//- title email
@@ -32,13 +37,6 @@ html(lang="#{lang}")
 					//- 600px container (white background)
 					table.container(border="0" width="600" cellpadding="0" cellspacing="0" bgcolor="#{wrapperCollor}")
 						include header
-						//-                 _             _
-						//-                | |           | |
-						//-  ___ ___  _ __ | |_ ___ _ __ | |_
-						//- / __/ _ \| '_ \| __/ _ \ '_ \| __|
-						//-| (_| (_) | | | | ||  __/ | | | |_
-						//- \___\___/|_| |_|\__\___|_| |_|\__|
-						//-
 						block contentMail
 			block footer
 				include footer
