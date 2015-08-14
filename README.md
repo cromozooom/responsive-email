@@ -11,8 +11,7 @@ ___
 
 1. Upload **images** on server!
 
-2. Download the **ZIP** and Unzip on your computer & you will find this:
-[![Download solopX Responsive Email](https://img.shields.io/badge/download%20soloPX%20responsive%20email-v0.0-brightgreen.svg)](https://github.com/cromozooom/responsive-email/archive/master.zip)
+2. [![Download solopX Responsive Email](https://img.shields.io/badge/download%20soloPX%20responsive%20email-v0.0-brightgreen.svg)](https://github.com/cromozooom/responsive-email/archive/master.zip) and Unzip on your computer. You will find this:
 
 	* "dev" - developement folder
 	* "files" - use need to **use this folder**
