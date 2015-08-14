@@ -1,14 +1,9 @@
 # Responsive-email
 
-[![sample fiore](https://img.shields.io/travis/jadejs/jade-parser/master.svg)](https://rawgit.com/cromozooom/responsive-email/master/dev/index_fiorentina.html)
 
-[![sample fiore](https://img.shields.io/jenkins/t/https/jenkins.qa.ubuntu.com/precise-desktop-amd64_default.svg?style=flat-square)](https://rawgit.com/cromozooom/responsive-email/master/dev/index_fiorentina.html)
-
-**[sample fiore](https://rawgit.com/cromozooom/responsive-email/master/dev/index_fiorentina.html "fiorentina")**
-
-**[sample lazio](https://rawgit.com/cromozooom/responsive-email/master/dev/index_lazio.html "lazio")**
-
-**[sample f4u](https://rawgit.com/cromozooom/responsive-email/master/dev/index_f4u.html "f4u")**
+[![sample Fiorentina](https://img.shields.io/badge/Fiorentina-v0.0-yellow.svg](https://rawgit.com/cromozooom/responsive-email/master/dev/index_fiorentina.html)
+[![sample Lazio](https://img.shields.io/badge/Lazio-v0.0-yellow.svg](https://rawgit.com/cromozooom/responsive-email/master/dev/index_lazio.html)
+[![sample f4u](https://img.shields.io/badge/f4U-v0.0-yellow.svg](https://rawgit.com/cromozooom/responsive-email/master/dev/index_f4u.html)
 
 ___
 
