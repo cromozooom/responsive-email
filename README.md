@@ -28,10 +28,10 @@ ___
 (remember to make content for IT / EN)
 
 7. Replace the **variable** inside included file
-####!!!! make use of [this file](https://goo.gl/ljfWBR) to !!!!
+####!!!! use [this file](https://goo.gl/ljfWBR) to !!!!
 
 8. next part is **inline css** read and delete my comment from HTML files
-####!!!! make use of: [inline CSS](http://templates.mailchimp.com/resources/inline-css/) !!!!
+####!!!! go to: [inline CSS](http://templates.mailchimp.com/resources/inline-css/) !!!!
 
 ___
 
