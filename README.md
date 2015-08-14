@@ -10,7 +10,7 @@ ___
 
 ## WORKFLOW
 
-0. (optional) - drink a cup of tea...
+0. drink a cup of tea - *optional*
 
 1. Upload **images** on server!
 
@@ -29,10 +29,10 @@ ___
 (remember to make content for IT / EN)
 
 7. Replace the **variable** inside included file
-####!!!! use [this file](https://goo.gl/ljfWBR) to !!!!
+	- ####!!!! for product, use [this file](https://goo.gl/ljfWBR) to !!!!
 
-8. next part is **inline css** read and delete my comment from HTML files
-####!!!! go to: [inline CSS](http://templates.mailchimp.com/resources/inline-css/) !!!!
+8. next part is **inline css** read and delete my comment from the head of HTML files
+	- ####!!!! go to: [inline CSS](http://templates.mailchimp.com/resources/inline-css/) !!!!
 
 ___
 
