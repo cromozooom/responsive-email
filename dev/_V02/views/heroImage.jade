@@ -1,0 +1,20 @@
+extend ../template/heroImage
+
+block info
+	- var product 						= false
+	- var trakingSource 				= "HeroImage_polo"
+	
+	- var heroImage 				= "heroImage"
+	if lang == "en"
+
+		- var linkCTA					= "http://www.solopx.com/en"
+		- var heroImageheader 			= "2015/16 Polos"
+
+
+	if lang == "it"
+
+		- var linkCTA					= "http://www.solopx.com/it"
+		- var heroImageheader 			= "Polo 2015/16"
+
+block color
+	-var bgcolor = colorBlack
