@@ -1,35 +1,37 @@
 extend ../template/rowHeader/rowHeader
 block info
-
 	- var trakingSource 					= "xxxHeroImageHeader"
+	- var colorScheme 						= "dark"
 
-	//- iages optional
 	//- this is the first row (image row)
-	- var HeaderImage						= "header"
+	- var HeaderImage						= "headerDark"
 	- var HeaderImage						= false
 
 	// this is the CTA image (image)
-	- var CTAImage							= "cta01"
+	- var CTAImage							= "cta01Dark"
 	- var CTAImage							= false
 
 	//- optional you can put false on the row you dont't need
 	if lang == "en"
-
-		- var linkCTA						= "http://www.solopx.com"
-		- var heroImageheader 				= "Serie A is back"
+		//- this is the first row (image row)
+		- var rowHeaderTitle 				= "Serie A is back"
 
 		// this is the second row (txt)
 		- var row01							= "Tornando alla serie A, prezzi bloccati e un finanziamento a tasso zero"
+		//- !!! this is the link for all the block !!!
+		- var linkCTA						= "http://www.solopx.com"
 		- var ctaCopy 						= "BUY NOW"
 
 
-	if lang == "it"
 
-		- var linkCTA						= "http://www.solopx.com"
-		- var heroImageheader 				= "Serie A is back"
+	if lang == "it"
+		//- var HeaderImage					= false
+		- var rowHeaderTitle 				= "Serie A is back"
 
 		// this is the second row (txt)
 		- var row01							= false
 		- var row01							= "Tornando alla serie A, prezzi bloccati e un finanziamento a tasso zero"
 
+		//- !!! this is the link for all the block !!!
+		- var linkCTA						= "http://www.solopx.com"
 		- var ctaCopy  						= "ACQUISTA ORA"

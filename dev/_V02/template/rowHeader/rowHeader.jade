@@ -1,38 +1,74 @@
 block info
 block color
-	if site == "default"
-		- var rowHeaderBgColor 				= colorWhite
-		- var rowHeaderColorHeader 			= colorPrimary
-		- var rowHeaderColorNote 			= colorWhite
-
-	if site == "fiorentina"
-		- var rowHeaderBgColor 				= colorPrimary
-		- var rowHeaderColorHeader 			= colorWhite
-		- var rowHeaderColorNote 			= colorSecondary
-
-	block ctaColor
-		//- ////////////////////////////////////////////
-		//-
-		//-		01 = simple CTA (buy now or Acquista)
-		//-		02 = CTA with price (buy at {priceProd} or Acquista a {priceProd})
-		//-
-		//- ////////////////////////////////////////////
-		- var buttonType 					= "01"
-		- var width							= "200px"
-		- var height 						= "44px"
-		- var arcsize 						= "5%"
-		- var radiusSize 					= "4px"
-		- var lineheight 					= "44px"
-		- var align 						= "center"
-		- var fontSize						= "font-size: 14px; line-height: 11px;"
+	if colorScheme == "dark"
 		if site == "default"
-			// cta color
-			- var ctaColor					= colorPrimary
-			- var ctaColor_					= colorWhite
+			- var rowHeaderBgColor 				= colorPrimaryDarkC
+			- var rowHeaderColorHeader 			= colorPrimary
+			- var rowHeaderColorNote 			= colorWhite
+
 		if site == "fiorentina"
-			// cta color
-			- var ctaColor					= colorTertiary
-			- var ctaColor_					= colorWhite
+			- var rowHeaderBgColor 				= colorPrimary
+			- var rowHeaderColorHeader 			= colorWhite
+			- var rowHeaderColorNote 			= colorSecondary
+
+		block ctaColor
+			//- ////////////////////////////////////////////
+			//-
+			//-		01 = simple CTA (buy now or Acquista)
+			//-		02 = CTA with price (buy at {priceProd} or Acquista a {priceProd})
+			//-
+			//- ////////////////////////////////////////////
+			- var buttonType 					= "01"
+			- var width							= "200px"
+			- var height 						= "44px"
+			- var arcsize 						= "5%"
+			- var radiusSize 					= "4px"
+			- var lineheight 					= "44px"
+			- var align 						= "center"
+			- var fontSize						= "font-size: 14px; line-height: 11px;"
+			if site == "default"
+				// cta color
+				- var ctaColor					= colorPrimary
+				- var ctaColor_					= colorWhite
+			if site == "fiorentina"
+				// cta color
+				- var ctaColor					= colorTertiary
+				- var ctaColor_					= colorWhite
+
+	if colorScheme == "light"
+		if site == "default"
+			- var rowHeaderBgColor 				= colorWhite
+			- var rowHeaderColorHeader 			= colorPrimary
+			- var rowHeaderColorNote 			= colorPrimary
+
+		if site == "fiorentina"
+			- var rowHeaderBgColor 				= colorWhite
+			- var rowHeaderColorHeader 			= colorWhite
+			- var rowHeaderColorNote 			= colorSecondary
+
+		block ctaColor
+			//- ////////////////////////////////////////////
+			//-
+			//-		01 = simple CTA (buy now or Acquista)
+			//-		02 = CTA with price (buy at {priceProd} or Acquista a {priceProd})
+			//-
+			//- ////////////////////////////////////////////
+			- var buttonType 					= "01"
+			- var width							= "200px"
+			- var height 						= "44px"
+			- var arcsize 						= "5%"
+			- var radiusSize 					= "4px"
+			- var lineheight 					= "44px"
+			- var align 						= "center"
+			- var fontSize						= "font-size: 14px; line-height: 11px;"
+			if site == "default"
+				// cta color
+				- var ctaColor					= colorPrimary
+				- var ctaColor_					= colorWhite
+			if site == "fiorentina"
+				// cta color
+				- var ctaColor					= colorTertiary
+				- var ctaColor_					= colorWhite
 
 
 block content
@@ -66,4 +102,4 @@ block content
 		tr
 			td(align="center" bgcolor="#{rowHeaderBgColor}" style="padding: 0 0 10px 0;")
 				//-hr.hr(style="border-bottom: 1px solid #{borderBottomTop};")
-				include ../views/cta.jade
+				include ../../views/cta.jade
