@@ -1,8 +1,8 @@
 #heroImage template
 
-###contains 3 elements:
+###contains 1 elements:
 
-1. one big image
+1. one big image (the size must be 800px x 800px)
 
 Can be more than one if you make a copy and rename the file
 
