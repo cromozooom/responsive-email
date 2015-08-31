@@ -1,5 +1,5 @@
 1. set the *trakingSource* inside the **trakingSource** variable
-2. *images* are optional for header and for CTA (call to action). If you set the images to false it will display only text
+2. *images* are optional for header and for CTA (call to action). If you set the images to false it will display only the text inside **rowHeaderTitle** variable
 	images format name is:
 		**name_en.jpg** (you must put only the **"name"**)
 		ex: if the image name is **promo_02_en.jpg**, you must put only **"promo_02"**
