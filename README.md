@@ -7,7 +7,7 @@ ___
 
 ## WORKFLOW
 
-1. Try to drink a coffee, while the pictures are uploading to the server, *coffee is optional :)*
+1. Drink a coffee, while the pictures are uploading to the server, *coffee is optional :)*
 
 2. [![Download solopX Responsive Email](https://img.shields.io/badge/download%20soloPX%20responsive%20email-v0.0-brightgreen.svg)](https://github.com/cromozooom/responsive-email/archive/master.zip) and Unzip on your computer. You will find this:
 
