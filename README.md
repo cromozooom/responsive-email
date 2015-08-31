@@ -7,14 +7,12 @@ ___
 
 ## WORKFLOW
 
-0. drink a cup of tea - *optional*
-
-1. Upload **images** on server!
+1. Try to drink a coffee, while the pictures are uploading to the server, *coffee is optional :)*
 
 2. [![Download solopX Responsive Email](https://img.shields.io/badge/download%20soloPX%20responsive%20email-v0.0-brightgreen.svg)](https://github.com/cromozooom/responsive-email/archive/master.zip) and Unzip on your computer. You will find this:
 
 	* "dev" - developement folder
-	* "files" - use need to **use this folder**
+	* "files" - you need to **use this folder**
 	* "icons" - here are my stuff
 
 3. Open **PREPROS** and delete the last project
