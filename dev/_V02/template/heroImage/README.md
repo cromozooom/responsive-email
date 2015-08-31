@@ -1,3 +1,11 @@
+#heroImage template
+
+###contains 3 elements:
+
+1. one big image
+
+Can be more than one if you make a copy and rename the file
+
 1. set the *trakingSource* inside the **trakingSource** variable
 2. set the *heroImage*. Image format name is:
 		**name_en.jpg** (you must put only the **"name"**)

@@ -1,10 +1,12 @@
 #rowHeader template
 
-###block witch contains 3 elements:
+###contains 3 elements:
 
 1. Header (txt or images - optional)
 2. One line of copy
 3. Call to action
+
+All this element are optional (you must set to false if you want to not be display)
 
 ###variables:
 
