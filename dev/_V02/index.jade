@@ -3,8 +3,8 @@ extend views/index
 block infoIndex
 	include config/config
 
-	//- option available: default
-	- var site = "default"
+	//- option available: default, fiorentina
+	- var site = "fiorentina"
 
 	//- option available: it, en
 	- var lang = "en"
@@ -20,5 +20,8 @@ block infoIndex
 		- var titlePrevueNewsletter = "preview titolo dalla pagina"
 
 block contentMail
+	include views/header
 	include views/nav
+	include views/rowHeader
 	include views/heroImage
+	include views/rowHeader_01

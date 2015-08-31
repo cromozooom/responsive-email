@@ -6,73 +6,81 @@ block info
 	- var padding 		= "padding: 15px 10px 15px 0px;"
 
 	if site == "default"
-		- var linkColor				= colorSecondary
-		- var borderTop 			= colorPrimary
-		- var bgcolor 				= colorWhite
+		- var navLinkColor				= colorSecondary
+		- var navBorderTop 				= colorPrimary
+		- var navBgcolor 				= colorWhite
 
-		- var linkSpecialColor		= colorWhite
-		- var linkSpecialBgColor	= colorPrimary
+		- var navLinkSpecialColor		= colorWhite
+		- var navLinkSpecialBgColor		= colorPrimary
+
+	if site == "fiorentina"
+		- var navLinkColor				= colorSecondary
+		- var navBorderTop 				= colorPrimaryLightA
+		- var navBgcolor 				= colorPrimaryDarkA
+
+		- var navLinkSpecialColor		= colorWhite
+		- var navLinkSpecialBgColor		= colorTertiary
 
 block contentCol1_1
 	//- inspired from http://responsiveemailpatterns.com/patterns/navigation/top-links.html
 	tr
-		td(height="2" width="600" style="background-color: #{borderTop};")
+		td(height="4" width="600" style="background-color: #{navBorderTop};")
 	tr
-		td.main_nav(width="600" style="padding: 0px 0px 0px 20px; background-color: #{bgcolor};")
-			table(cellpadding="0" cellspacing="0" width="100%" style="background-color: #{bgcolor};")
+		td.main_nav(width="600" style="padding: 0px 0px 0px 20px; background-color: #{navBgcolor};")
+			table(cellpadding="0" cellspacing="0" width="100%" style="background-color: #{navBgcolor};")
 				tr
 					each val in navListLink
 						if val.lastItemNav
-							td(align="center" style="padding: 15px 20px 15px 20px; #{fontS} #{decNone} #{fontSans} background-color: #{linkSpecialBgColor};")
-								a(href="#{val.navItemLink}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{val.navItem}#{sufixTraking}" style="color: #{linkSpecialColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
-									strong(style="color: #{linkSpecialColor}; #{fontS} #{decNone} #{fontSans}")
+							td(align="center" style="padding: 15px 20px 15px 20px; #{fontS} #{decNone} #{fontSans} background-color: #{navLinkSpecialBgColor};")
+								a(href="#{val.navItemLink}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{val.navItem}#{sufixTraking}" style="color: #{navLinkSpecialColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
+									strong(style="color: #{navLinkSpecialColor}; #{fontS} #{decNone} #{fontSans}")
 										| #{val.navItem}
 						else
 							td(align="center" style="#{padding}")
-								a(href="#{val.navItemLink}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{val.navItem}#{sufixTraking}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
-									span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+								a(href="#{val.navItemLink}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{val.navItem}#{sufixTraking}" style="color: #{navLinkColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
+									span(style="color: #{navLinkColor}; #{fontS} #{decNone} #{fontSans}")
 										span #{val.navItem}
 
 						//-
 							td(align="center" style="#{padding}")
-								a(href="#{val.navItemLink}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{val.navItem}#{sufixTraking}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
-									span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+								a(href="#{val.navItemLink}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{val.navItem}#{sufixTraking}" style="color: #{navLinkColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
+									span(style="color: #{navLinkColor}; #{fontS} #{decNone} #{fontSans}")
 										span
 											| #{val.navItem} #{val.lastNavitem}
 				//
 					tr
 					if Nav01
 						td(align="center" style="#{padding}")
-							a(href="#{NavLink01}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav01}#{sufixTraking}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
-								span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+							a(href="#{NavLink01}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav01}#{sufixTraking}" style="color: #{navLinkColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
+								span(style="color: #{navLinkColor}; #{fontS} #{decNone} #{fontSans}")
 									span #{Nav01}
 					if Nav02
 						td(align="center" style="#{padding}")
-							a(href="#{NavLink02}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav02}#{sufixTraking}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
-								span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+							a(href="#{NavLink02}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav02}#{sufixTraking}" style="color: #{navLinkColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
+								span(style="color: #{navLinkColor}; #{fontS} #{decNone} #{fontSans}")
 									span #{Nav02}
 					if Nav03
 						td(align="center" style="#{padding}")
-							a(href="#{NavLink03}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav03}#{sufixTraking}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
-								span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+							a(href="#{NavLink03}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav03}#{sufixTraking}" style="color: #{navLinkColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
+								span(style="color: #{navLinkColor}; #{fontS} #{decNone} #{fontSans}")
 									span #{Nav03}
 					if Nav04
 						td(align="center" style="#{padding}")
-							a(href="#{NavLink04}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav04}#{sufixTraking}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
-								span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+							a(href="#{NavLink04}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav04}#{sufixTraking}" style="color: #{navLinkColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
+								span(style="color: #{navLinkColor}; #{fontS} #{decNone} #{fontSans}")
 									span #{Nav04}
 					if Nav05
 						td(align="center" style="#{padding}")
-							a(href="#{NavLink05}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav05}#{sufixTraking}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
-								span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+							a(href="#{NavLink05}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav05}#{sufixTraking}" style="color: #{navLinkColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
+								span(style="color: #{navLinkColor}; #{fontS} #{decNone} #{fontSans}")
 									span #{Nav05}
 					if Nav06
 						td(align="center" style="#{padding}")
-							a(href="#{NavLink06}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav06}#{sufixTraking}" style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
-								span(style="color: #{linkColor}; #{fontS} #{decNone} #{fontSans}")
+							a(href="#{NavLink06}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav06}#{sufixTraking}" style="color: #{navLinkColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
+								span(style="color: #{navLinkColor}; #{fontS} #{decNone} #{fontSans}")
 									span #{Nav06}
 					if Nav07
-						td(align="center" style="padding: 15px 20px 15px 20px; #{fontS} #{decNone} #{fontSans} background-color: #{linkSpecialBgColor};")
-							a(href="#{NavLink07}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav07}#{sufixTraking}" style="color: #{linkSpecialColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
-								strong(style="color: #{linkSpecialColor}; #{fontS} #{decNone} #{fontSans}")
+						td(align="center" style="padding: 15px 20px 15px 20px; #{fontS} #{decNone} #{fontSans} background-color: #{navLinkSpecialBgColor};")
+							a(href="#{NavLink07}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{Nav07}#{sufixTraking}" style="color: #{navLinkSpecialColor}; #{fontS} #{decNone} #{fontSans}" target="_blank")
+								strong(style="color: #{navLinkSpecialColor}; #{fontS} #{decNone} #{fontSans}")
 									| #{Nav07}

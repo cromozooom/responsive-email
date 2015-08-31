@@ -1,0 +1,67 @@
+block info
+block color
+	if site == "default"
+		- var rowHeaderBgColor 				= colorWhite
+		- var rowHeaderColorHeader 			= colorPrimary
+		- var rowHeaderColorNote 			= colorWhite
+
+	if site == "fiorentina"
+		- var rowHeaderBgColor 				= colorPrimary
+		- var rowHeaderColorHeader 			= colorWhite
+		- var rowHeaderColorNote 			= colorSecondary
+
+	block ctaColor
+		//- ////////////////////////////////////////////
+		//-
+		//-		01 = simple CTA (buy now or Acquista)
+		//-		02 = CTA with price (buy at {priceProd} or Acquista a {priceProd})
+		//-
+		//- ////////////////////////////////////////////
+		- var buttonType 					= "01"
+		- var width							= "200px"
+		- var height 						= "44px"
+		- var arcsize 						= "5%"
+		- var radiusSize 					= "4px"
+		- var lineheight 					= "44px"
+		- var align 						= "center"
+		- var fontSize						= "font-size: 14px; line-height: 11px;"
+		if site == "default"
+			// cta color
+			- var ctaColor					= colorPrimary
+			- var ctaColor_					= colorWhite
+		if site == "fiorentina"
+			// cta color
+			- var ctaColor					= colorTertiary
+			- var ctaColor_					= colorWhite
+
+
+block content
+	if HeaderImage
+		tr
+			td(align="center" bgcolor="#{rowHeaderBgColor}" style="padding: 0 0 10px 0;")
+				br
+				br
+				a(href="#{linkCTA}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{sufixTraking}" target="_blank")
+					img(src="#{templateImagesPath}#{HeaderImage}_#{lang}.jpg" border="0" alt="#{rowHeaderTitle}" hspace="0" vspace="0" style="max-width:100%;")
+	else
+		tr
+			td.container-padding.content(align="center"  bgcolor="#{rowHeaderBgColor}")
+				span(style="#{center}#{fontSans}#{fontXXL} color:#{rowHeaderColorHeader};")
+					| #{rowHeaderTitle}
+	if row01
+		tr
+			td(align="center" bgcolor="#{rowHeaderBgColor}" style="padding: 0 0 10px 0;")
+				span(style="#{center}#{fontSans}#{fontM} color:#{rowHeaderColorNote};")
+					| #{row01}
+	else
+
+	if CTAImage
+		tr
+			td(align="center" bgcolor="#{rowHeaderBgColor}" style="padding: 0 0 10px 0;")
+				a(href="#{linkCTA}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{sufixTraking}" target="_blank")
+					img(src="#{templateImagesPath}#{CTAImage}_#{lang}.jpg" border="0" alt="#{rowHeaderTitle}" hspace="0" vspace="0")
+	else
+		tr
+			td(align="center" bgcolor="#{rowHeaderBgColor}" style="padding: 0 0 10px 0;")
+				//-hr.hr(style="border-bottom: 1px solid #{borderBottomTop};")
+				include ../views/cta.jade
