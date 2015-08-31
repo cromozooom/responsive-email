@@ -6,9 +6,9 @@
 2. One line of copy
 3. Call to action
 
-###in two version (you can set this in **colorScheme variable**)
-1. dark scheme
-2. light scheme
+###in two version (you can set this in *colorScheme* variable)
+1. **dark** scheme
+2. **light** scheme
 
 All this element are optional (you must set to false if you want to not be display)
 
