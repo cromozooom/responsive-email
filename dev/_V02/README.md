@@ -1,31 +1,6 @@
-# SoloPX - Responsive-email
+# SoloPX - GENE-Responsive-email
 [![sample](https://img.shields.io/badge/geneResponsiveEmail-v02-red.svg)](https://rawgit.com/cromozooom/responsive-email/master/dev/_V02/index.html)
 ___
-
-## WORKFLOW
-
-1. Drink a coffee, while the pictures are uploading to the server, *coffee is optional :)*
-
-2. [![Download solopX Responsive Email](https://img.shields.io/badge/download%20soloPX%20responsive%20email-v0.0-brightgreen.svg)](https://github.com/cromozooom/responsive-email/archive/master.zip) and Unzip on your computer. You will find this:
-
-	* "dev" - developement folder
-	* "files" - you need to **use this folder**
-	* "icons" - here are my stuff
-
-3. Open **PREPROS** and delete the last project
-
-4. Open "files" folder in **SUBLIME TEXT** and add this folder to **PREPROS** project.
-
-5. Create copy of **"index.jade"** & rename with your f....dot jade name :)
-
-6. **select and order** your content blocks (see the section: "include some F..... blocks")
-(remember to make content for IT / EN)
-
-7. Replace the **variable** inside included file
-	- ####!!!! for product, use [this file](https://goo.gl/ljfWBR) to !!!!
-
-8. next part is **inline css** read and delete my comment from the head of HTML files
-	- ####!!!! go to: [inline CSS](http://templates.mailchimp.com/resources/inline-css/) !!!!
 
 ___
 
@@ -62,6 +37,7 @@ ___
 ___
 
 ##heroImageHeader
+[sample](https://github.com/cromozooom/responsive-email/tree/master/dev/_V02/template)
 
 ![Hero Image Header](https://rawgit.com/cromozooom/responsive-email/master/icons/heroImageHeader.jpg "Hero Image Header")
 
