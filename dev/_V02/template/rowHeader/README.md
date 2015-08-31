@@ -1,3 +1,13 @@
+#rowHeader template
+
+###block witch contains 3 elements:
+
+1. Header (txt or images - optional)
+2. One line of copy
+3. Call to action
+
+###variables:
+
 1. set the *trakingSource* inside the **trakingSource** variable
 2. *images* are optional for header and for CTA (call to action). If you set the images to false it will display only the text inside **rowHeaderTitle** variable
 	images format name is:
