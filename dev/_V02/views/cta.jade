@@ -12,7 +12,7 @@ block ctaCustom
 		- var arcsize 					= "5%"
 		- var radiusSize 				= "2px"
 		- var lineheight 				= "44px"
-		- var align 					= "center"
+		- var ctaAlign 					= "center"
 		- var fontSize					= "font-size: 14px; line-height: 11px;"
 
 block ctaColor
@@ -24,9 +24,9 @@ block ctaColor
 		- var ctaColor			= colorTertiary
 		- var ctaColor_			= colorWhite
 
-table(width="100%" border="0" cellspacing="0" cellpadding="0" align="#{align}")
+table(width="100%" border="0" cellspacing="0" cellpadding="0" align="#{ctaAlign}")
 	tr
-		td(align="#{align}")
+		td(align="#{ctaAlign}")
 			if product
 				div
 					//[if mso]

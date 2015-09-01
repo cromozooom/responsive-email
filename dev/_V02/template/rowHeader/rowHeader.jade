@@ -2,6 +2,7 @@ block info
 	//- set false by default the image replacement
 	- var rowHeaderTitleImage				= false
 	- var rowHeaderCTAImage					= false
+	- var rowHeaderTitleSize 				= fontXXXL
 block color
 	if colorScheme == "dark"
 		if site == "default"
@@ -85,7 +86,7 @@ block content
 	else
 		tr
 			td.container-padding.content(align="center"  bgcolor="#{rowHeaderBgColor}" style="padding: 10px 0 5px 0;")
-				span(style="#{center}#{fontSans}#{fontXXL} color:#{rowHeaderColorHeader};")
+				span(style="#{center}#{fontSans}#{rowHeaderTitleSize}#{bold} color:#{rowHeaderColorHeader};")
 					| #{rowHeaderTitle}
 
 	if rowHeaderRow

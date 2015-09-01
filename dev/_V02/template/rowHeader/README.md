@@ -1,5 +1,5 @@
 #rowHeader template
----
+
 ###Contains 3 elements:
 
 1. Title (txt or images - optional)

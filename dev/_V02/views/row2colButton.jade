@@ -1,0 +1,28 @@
+extend ../template/row2colButton/row2colButton
+
+block append info
+
+block append colOneCtainfo
+	if lang == "en"
+		// Copy for CTA (txt)
+		- var ctaCopy 						= "Man"
+		//- this is the link for all the block !!!
+		- var linkCTA						= "http://www.solopx.com"
+	if lang == "it"
+		- var ctaCopy 						= "Uomo"
+		- var linkCTA						= "http://www.solopx.com"
+
+block append colTwoCtainfo
+	if lang == "en"
+		// Copy for CTA (txt)
+		- var ctaCopy 						= "Uoman"
+		//- this is the link for all the block !!!
+		- var linkCTA						= "http://www.solopx.com"
+	if lang == "it"
+		- var ctaCopy 						= "Donna"
+		- var linkCTA						= "http://www.solopx.com"
+
+
+	//- column align
+	- var col1align = "right"
+	- var col2align = "left"

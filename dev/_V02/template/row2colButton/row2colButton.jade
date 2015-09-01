@@ -1,0 +1,37 @@
+extends ../../views/col/twoColumn
+
+block append info
+	block ctaColor
+		//- ////////////////////////////////////////////
+		//-
+		//-		01 = simple CTA (buy now or Acquista)
+		//-		02 = CTA with price (buy at {priceProd} or Acquista a {priceProd})
+		//-
+		//- ////////////////////////////////////////////
+		- var buttonType 					= "01"
+		- var width							= "150px"
+		- var height 						= "30px"
+		- var arcsize 						= "5%"
+		- var radiusSize 					= "4px"
+		- var lineheight 					= "30px"
+		- var fontSize						= "font-size: 12px; line-height: 11px;"
+
+		if site == "default"
+			// cta color
+			- var ctaColor					= colorPrimary
+			- var ctaColor_					= colorWhite
+		if site == "fiorentina"
+			// cta color
+			- var ctaColor					= colorTertiary
+			- var ctaColor_					= colorWhite
+
+block contentCol1_2
+	block colOneCtainfo
+		block append ctaOptions
+			- var ctaAlign 						= "right"
+	include ../../views/cta.jade
+block contentCol2_2
+	block colTwoCtainfo
+		block append ctaOptions
+			- var ctaAlign 						= "left"
+	include ../../views/cta.jade
