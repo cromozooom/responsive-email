@@ -2,31 +2,23 @@ extend ../template/rowHeader/rowHeader
 block info
 
 	- var trakingSource 					= "xxxHeroImageHeader"
-	- var colorScheme 						= "light"
 
-	//- this is the first row (image row)
-	- var HeaderImage						= "header"
-	//- var HeaderImage						= false
 
-	// this is the CTA image (image)
-	- var CTAImage							= "cta01"
-	//- var CTAImage							= false
-
-	//- optional you can put false on the row you dont't need
 	if lang == "en"
-		//- this is the first row (image row)
+		//- Copy for the first row (txt)
 		- var rowHeaderTitle 				= "Serie A is back"
 
-		// this is the second row (txt)
+		// Copy for the second row (txt)
 		- var row01							= "Tornando alla serie A, prezzi bloccati e un finanziamento a tasso zero"
-		//- !!! this is the link for all the block !!!
-		- var linkCTA						= "http://www.solopx.com"
+		// Copy for CTA (txt)
 		- var ctaCopy 						= "BUY NOW"
+		//- this is the link for all the block !!!
+		- var linkCTA						= "http://www.solopx.com"
 
 
 
 	if lang == "it"
-		//- var HeaderImage					= false
+		//- Copy for the first row (txt)
 		- var rowHeaderTitle 				= "Serie A is back"
 
 		// this is the second row (txt)
@@ -36,3 +28,20 @@ block info
 		//- !!! this is the link for all the block !!!
 		- var linkCTA						= "http://www.solopx.com"
 		- var ctaCopy  						= "ACQUISTA ORA"
+
+
+	//- ADITIONAL OPTION:
+
+	//- 1. Image to replace the header and CTA (call to action)
+
+		//- this is the first row (image row) - set to "false" if you don't want to use image
+		//- optional you can put false if you dont't need to use images
+	- var HeaderImage						= "header"
+
+		// this is the CTA image (image) - set to "false" if you don't want to use image
+	- var CTAImage							= "cta01"
+
+	//- 2. colorScheme
+
+		//- available: dark and light
+	- var colorScheme 						= "light"
