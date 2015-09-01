@@ -1,15 +1,15 @@
 extend ../template/rowHeader/rowHeader
-block info
+block append info
 
 	- var trakingSource 					= "xxxHeroImageHeader"
 
 
 	if lang == "en"
 		//- Copy for the first row (txt)
-		- var rowHeaderTitle 				= "Serie A is back"
+		- var rowHeaderTitle 				= "SERIE A IS BACK"
 
-		// Copy for the second row (txt)
-		- var row01							= "Tornando alla serie A, prezzi bloccati e un finanziamento a tasso zero"
+		// Copy for the second row (txt) - this is optional if you dont want to use it put False instead
+		- var rowHeaderRow					= "Tornando alla serie A, prezzi bloccati e un finanziamento a tasso zero"
 		// Copy for CTA (txt)
 		- var ctaCopy 						= "BUY NOW"
 		//- this is the link for all the block !!!
@@ -18,30 +18,24 @@ block info
 
 
 	if lang == "it"
-		//- Copy for the first row (txt)
-		- var rowHeaderTitle 				= "Serie A is back"
-
-		// this is the second row (txt)
-		- var row01							= false
-		- var row01							= "Tornando alla serie A, prezzi bloccati e un finanziamento a tasso zero"
-
-		//- !!! this is the link for all the block !!!
+		- var rowHeaderTitle 				= "SERIE A IS BACK"
+		- var rowHeaderRow					= "Tornando alla serie A, prezzi bloccati e un finanziamento a tasso zero"
 		- var linkCTA						= "http://www.solopx.com"
 		- var ctaCopy  						= "ACQUISTA ORA"
 
 
-	//- ADITIONAL OPTION:
+	//- 	ADITIONAL OPTION:
+	//-
+	//- 	1. Image to replace the header and CTA (call to action)
+	//-
+	//- 	The first row (image row) - set to "false" if you don't want to use image
+	//- 	optional you can put false if you dont't need to use images
+	- var rowHeaderTitleImage				= "header"
 
-	//- 1. Image to replace the header and CTA (call to action)
-
-		//- this is the first row (image row) - set to "false" if you don't want to use image
-		//- optional you can put false if you dont't need to use images
-	- var HeaderImage						= "header"
-
-		// this is the CTA image (image) - set to "false" if you don't want to use image
-	- var CTAImage							= "cta01"
+	// this is the CTA image (image) - set to "false" if you don't want to use image
+	- var rowHeaderCTAImage					= "cta01"
 
 	//- 2. colorScheme
-
-		//- available: dark and light
+	//-
+	//- available: dark and light
 	- var colorScheme 						= "light"

@@ -1,4 +1,7 @@
 block info
+	//- set false by default the image replacement
+	- var rowHeaderTitleImage				= false
+	- var rowHeaderCTAImage					= false
 block color
 	if colorScheme == "dark"
 		if site == "default"
@@ -72,32 +75,35 @@ block color
 
 
 block content
-	if HeaderImage
+	if rowHeaderTitleImage
 		tr
-			td(align="center" bgcolor="#{rowHeaderBgColor}" style="padding: 0 0 10px 0;")
+			td.container-padding.content(align="center" bgcolor="#{rowHeaderBgColor}")
 				br
 				br
 				a(href="#{linkCTA}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{sufixTraking}" target="_blank")
-					img(src="#{templateImagesPath}#{HeaderImage}_#{lang}.jpg" border="0" alt="#{rowHeaderTitle}" hspace="0" vspace="0" style="max-width:100%;")
+					img(src="#{templateImagesPath}#{rowHeaderTitleImage}_#{lang}.jpg" border="0" alt="#{rowHeaderTitle}" hspace="0" vspace="0" style="max-width:100%;")
 	else
 		tr
-			td.container-padding.content(align="center"  bgcolor="#{rowHeaderBgColor}")
+			td.container-padding.content(align="center"  bgcolor="#{rowHeaderBgColor}" style="padding: 10px 0 5px 0;")
 				span(style="#{center}#{fontSans}#{fontXXL} color:#{rowHeaderColorHeader};")
 					| #{rowHeaderTitle}
 
-	if row01
+	if rowHeaderRow
 		tr
 			td(align="center" bgcolor="#{rowHeaderBgColor}" style="padding: 0 0 10px 0;")
 				span(style="#{center}#{fontSans}#{fontM} color:#{rowHeaderColorNote};")
-					| #{row01}
+					| #{rowHeaderRow}
 	else
+		tr
+			td.container-padding(align="center" bgcolor="#{rowHeaderBgColor}")
+				hr.hr(style="border-bottom: 1px solid #5a5a55;")
 
 
-	if CTAImage
+	if rowHeaderCTAImage
 		tr
 			td(align="center" bgcolor="#{rowHeaderBgColor}" style="padding: 0 0 10px 0;")
 				a(href="#{linkCTA}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{sufixTraking}" target="_blank")
-					img(src="#{templateImagesPath}#{CTAImage}_#{lang}.jpg" border="0" alt="#{rowHeaderTitle}" hspace="0" vspace="0")
+					img(src="#{templateImagesPath}#{rowHeaderCTAImage}_#{lang}.jpg" border="0" alt="#{rowHeaderTitle}" hspace="0" vspace="0")
 	else
 		tr
 			td(align="center" bgcolor="#{rowHeaderBgColor}" style="padding: 0 0 10px 0;")

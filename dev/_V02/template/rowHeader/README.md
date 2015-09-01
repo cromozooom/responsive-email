@@ -2,14 +2,9 @@
 
 ###Contains 3 elements:
 
-1. Header (txt or images - optional)
-2. One line of copy
-3. and CTA (call to action)
-
-###In two version (you can set this in *colorScheme* variable)
-1. **dark** scheme
-2. **light** scheme
-
+1. Title (txt or images - optional)
+2. row - line of text
+3. and CTA - call to action (txt or images - optional)
 All this element are optional (you must set to false if you want to not be display)
 
 ####note variables:
@@ -21,5 +16,10 @@ All this element are optional (you must set to false if you want to not be displ
 		ex: if the image name is **promo_02_en.jpg**, you must put only **"promo_02"**
 3. you must put the link for any language version inside **linkCTA** variable
 4. the text from header is inside **rowHeaderTitle** variable
-5. the line of text is inside **row01** variable
+5. the line of text is inside **rowHeaderRow** variable
 6. and copy of CTA is inside **ctaCopy**
+
+###In two version (you can set this in *colorScheme* variable)
+
+1. **dark** scheme
+2. **light** scheme
