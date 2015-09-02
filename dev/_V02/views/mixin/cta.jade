@@ -1,0 +1,26 @@
+block ctaColor
+	if site == "default"
+		- var ctaColor			= colorPrimary
+		- var ctaColor_			= colorWhite
+
+	if site == "fiorentina"
+		- var ctaColor			= colorTertiary
+		- var ctaColor_			= colorWhite
+
+block info
+
+mixin buttonTable(ctaClass, ctaAlign, ctaWidth, ctaHeight, ctaArcsize, ctaFontSize, ctaLineHeight)
+	table(width="100%" border="0" cellspacing="0" cellpadding="0" align="#{ctaAlign}" class="#{ctaClass}")
+		tr
+			td(align="#{ctaAlign}")
+				div
+					//[if mso]
+						<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#{ctaLink}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{idProd}#{sufixTraking}" style="height:#{ctaHeight}; v-text-anchor:middle; width:#{ctaWidth};" arcsize="#{ctaArcsize}" strokecolor="#{ctaColor}" fillcolor="#{ctaColor}">
+						<w:anchorlock/>
+						<center style="color:#{ctaColor_};#{fontSans}#{ctaFontSize}">!{ctaCopy} &rarr;</center>
+						</v:roundrect>
+						<![endif]
+					a(href="#{ctaLink}#{prefixTraking}#{data}#{lang}_#{trakingSource}#{idProd}_Button#{sufixTraking}" style="background-color:#{ctaColor}; border:1px solid #{ctaColor}; border-radius: #{ctaArcsize}; color: #{ctaColor_}; display: inline-block; #{fontSans} font-size: #{ctaFontSize}; line-height:#{ctaLineHeight}; text-align:center; text-decoration:none; width: #{ctaWidth}; -webkit-text-size-adjust:none;mso-hide:all;")
+						strong
+							//- see arrow on this page http://character-code.com/arrows-html-codes.php
+							| !{ctaCopy} &raquo;

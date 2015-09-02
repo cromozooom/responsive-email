@@ -1,0 +1,61 @@
+include ../../config/config
+block shippingColor
+	- var shippingColorLink = "red"
+
+block shippingCopy
+	if lang == "en"
+		- var shippingHeader	= "FREE SHIPPING"
+		- var shippingMessage 	= "Apply to minimum order of € 50. Returns are always free."
+		- var shippingCTAcopy 	= "Scopri i dettagli"
+		- var shippingCTALink 	= "www.solopx.com"
+
+	if lang == "it"
+		- var shippingHeader 	= "CONSEGNA GRATUITA"
+		- var shippingMessage 	= "Applicabile agli ordini di almeno €50. I resi sono sempre gratuiti."
+		- var shippingCTAcopy 	= "Scopri i dettagli"
+		- var shippingCTALink 	= "www.solopx.com"
+
+
+mixin table(tableClass, tableWidth, tableBorder, tableAlign)
+	table(class="#{tableClass}" width="#{tableWidth}" border="#{tableBorder}" cellpadding="0" cellspacing="0" align="#{tableAlign}" bgcolor="#ffffff")
+		if block
+			block
+		else
+			p put some content please
+
+
+block shipping
+	tr
+		td(align="center" style="padding-top: 20px; padding-bottom: 20px")
+			//- desktop
+			+table("hide-sm", "80%", "0", "center")
+				tr
+					td(width="10px")
+					td(valign="middle" align="center")
+						img(src="#{viewImagesPath}freeShipping.jpg" alt="#{LogoStoreTxt}" style="display: block; border: 0; height: 48px !important;")
+					td(valign="middle" style="width:20px" align="center")
+					td(valign="middle" align="left" style="padding-top: 10px; padding-bottom: 10px" class="hide-sm")
+						strong(style="#{fontL}#{fontSans}")
+							| #{shippingHeader}
+						br
+						span(style="#{fontM}#{fontSans}")
+							| #{shippingMessage}
+						br
+						a(href="http://www.google.com" style="#{fontXS}#{fontSans} color:#{shippingColorLink};")
+							span(style="color:#{shippingColorLink};") #{shippingCTAcopy} 
+							img(src="#{viewImagesPath}arrow.gif" alt="" width="5" height="9" border="0" style="outline: none; text-decoration: none; border: none;")
+			//- mobile
+			+table("hide-lg", "100%", "0", "center")
+				//- td(valign="middle" align="center" style="padding-top: 20px;")
+					img(src="#{viewImagesPath}freeShipping.jpg" alt="#{LogoStoreTxt}" style="display: block; border: 0; height: 48px !important;")
+				tr
+					td(valign="middle" align="center" style="padding-top: 10px; padding-bottom: 10px" class="hide-sm")
+						strong(style="#{fontL}#{fontSans}")
+							| #{shippingHeader}
+						br
+						span(style="#{fontM}#{fontSans}")
+							| #{shippingMessage}
+						br
+						a(href="#{shippingCTALink}" style="#{fontXS}#{fontSans} color:#{shippingColorLink};")
+							span(style="color:#{shippingColorLink};") #{shippingCTAcopy} 
+							img(src="#{viewImagesPath}arrow.gif" alt="" width="5" height="9" border="0" style="outline: none; text-decoration: none; border: none;")

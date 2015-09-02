@@ -1,0 +1,28 @@
+block info
+	//- column align
+	- var col1align 			= "center"
+	- var col2align 			= "center"
+	- var twoColumnBgCol 		= "colorPrimary"
+	- var indexWrapperCollor 	= "colorPrimary"
+
+//- Option:
+//-	twoColumnWidth to 284px with padding
+//- or set twoColumnWidth to 300px for full column
+mixin twoColumn(twoColumnFirstAlign, twoColumnSecondAlign, twoColumnWidth )
+	tr
+		td.cols-wrapper(align="left" bgcolor="#{indexWrapperCollor}")
+			//- p #{template} #{lang}
+
+			// [if mso]><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td width="50%" valign="top"><![endif]
+			table.force-row(width="#{twoColumnWidth}" border="0" cellpadding="0" cellspacing="0" align="left")
+				tr
+					td.col(valign="top" style="width:100%" align="#{col1align}")
+						block contentCol1_2
+
+			// [if mso]></td><td width="50%" valign="top"><![endif]
+			table.force-row(width="#{twoColumnWidth}" border="0" cellpadding="0" cellspacing="0" align="right")
+				tr
+					td.col(valign="top" style="width:100%" align="#{col2align}")
+						block contentCol2_2
+
+			// [if mso]></td></tr></table><![endif]
