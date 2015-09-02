@@ -1,0 +1,54 @@
+block append info
+	if site == "default"
+		//- cta color
+		- var ctaColor					= colorPrimary
+		- var ctaColor_					= colorWhite
+	if site == "fiorentina"
+		//- cta color
+		- var ctaColor					= colorTertiary
+		- var ctaColor_					= colorWhite
+
+include ../../views/mixin.jade
+
+
++twoColumn("center", "center", "284px")
+	+colOneFromTwo("center", "center", "284px")
+		block contentCol1_2
+			block colOneCtainfo
+			block append ctaOptions
+			//- 		ctaClass, ctaAlign, ctaWidth, ctaHeight, ctaArcsize, ctaFontSize, ctaLineHeight
+			// button desktop
+			+buttonTable("hide-sm", "right", "110px", "30px", "5px", "14px", "30px")
+			// button mobile
+			+buttonTable("hide-lg", "center", "120px", "40px", "5px", "16px", "40px")
+
+	+colTwoFromTwo("center", "center", "284px")
+		block contentCol2_2
+			block colTwoCtainfo
+			block append ctaOptions
+			//- 		ctaClass, ctaAlign, ctaWidth, ctaHeight, ctaArcsize, ctaFontSize, ctaLineHeight
+			// button desktop
+			+buttonTable("hide-sm", "left", "110px", "30px", "5px", "14px", "30px")
+			// button mobile
+			+buttonTable("hide-lg", "center", "120px", "40px", "5px", "16px", "40px")
+
+comment
+	block contentCol1_2
+		block colOneCtainfo
+			block append ctaOptions
+			//- 		ctaClass, ctaAlign, ctaWidth, ctaHeight, ctaArcsize, ctaFontSize, ctaLineHeight
+			// button desktop
+			+buttonTable("hide-sm", "right", "110px", "30px", "5px", "14px", "30px")
+			// button mobile
+			+buttonTable("hide-lg", "center", "120px", "40px", "5px", "16px", "40px")
+
+	block contentCol2_2
+		block colTwoCtainfo
+			block append ctaOptions
+		//- 		ctaClass, ctaAlign, ctaWidth, ctaHeight, ctaArcsize, ctaFontSize, ctaLineHeight
+		// button desktop
+		+buttonTable("hide-sm", "left", "110px", "30px", "5px", "14px", "30px")
+		// button mobile
+		+buttonTable("hide-lg", "center", "120px", "40px", "5px", "16px", "40px")
+
+

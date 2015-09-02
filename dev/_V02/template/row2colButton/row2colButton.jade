@@ -27,22 +27,20 @@ block append info
 
 include ../../views/mixin.jade
 
-mixin twoColumn(twoColumnFirstAlign, twoColumnSecondAlign, twoColumnWidth )
-
 block contentCol1_2
 	block colOneCtainfo
 		block append ctaOptions
 	//- 		ctaClass, ctaAlign, ctaWidth, ctaHeight, ctaArcsize, ctaFontSize, ctaLineHeight
 	// button desktop
-	+buttonTable("hide-sm", "right", "130px", "30px", "5px", "14px", "30px")
+	+buttonTable("hide-sm", "right", "110px", "30px", "5px", "14px", "30px")
 	// button mobile
-	+buttonTable("hide-lg", "center", "130px", "30px", "5px", "14px", "30px")
+	+buttonTable("hide-lg", "center", "120px", "40px", "5px", "16px", "40px")
 
 block contentCol2_2
 	block colTwoCtainfo
 		block append ctaOptions
 	//- 		ctaClass, ctaAlign, ctaWidth, ctaHeight, ctaArcsize, ctaFontSize, ctaLineHeight
 	// button desktop
-	+buttonTable("hide-sm", "left", "130px", "30px", "5px", "14px", "30px")
+	+buttonTable("hide-sm", "left", "110px", "30px", "5px", "14px", "30px")
 	// button mobile
-	+buttonTable("hide-lg", "center", "130px", "30px", "5px", "14px", "30px")
+	+buttonTable("hide-lg", "center", "120px", "40px", "5px", "16px", "40px")
