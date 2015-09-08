@@ -1,0 +1,16 @@
+extend ../../template/singleCTA
+block info
+	- var product 						= false
+	- var trakingSource 				= "SingleCTA_KitGara"
+	if lang == "en"
+		- var linkCTA 					= "http://www.fiorentinastore.com/en/match-kits.html	"
+		- var ctaCopy 					= "SHOP NOW"
+		//- optional available: put some text inside the quote / false if you dont need this
+		- var headerCopySingleCTA 		= "New 2015/16 kits"
+		- var subHeaderCopySingleCTA 	= "Get ready for a new season wearing the new game jerseys"
+
+	if lang == "it"
+		- var linkCTA 					= "http://www.fiorentinastore.com/it/kit-gara.html"
+		- var ctaCopy  					= "ACQUISTA ORA"
+		- var headerCopySingleCTA 		= "Nuove maglie gara 2015/16"
+		- var subHeaderCopySingleCTA 	= "Preparati alla nuova stagione indossando la tua maglia dei tuoi campioni"

@@ -9,6 +9,12 @@ if site == "lazio"
 	- var fontColor 	= colorBlack50
 	- var linkColor		= colorSecondary
 	- var bgcolor 		= containerBg
+
+if site == "fir"
+	- var fontColor 	= colorBlack50
+	- var linkColor		= colorSecondary
+	- var bgcolor 		= containerBg
+
 if site == "f4u"
 	- var fontColor 	= colorSecondary_
 	- var linkColor		= colorPrimary
@@ -44,6 +50,34 @@ tr
 								|.
 								br
 								br
+		if site == "fir"
+			table.container(border="0" width="600" cellpadding="0" cellspacing="0")
+					//- footer
+					tr
+						td.container-padding.footer-text(align="left" style="#{fontXS} #{fontSans} color: #{fontColor};")
+							center
+								br
+								span.ios-footer
+									//- contact
+									| #{copyContact} 
+									a(href="#{contactMailLink}"  style="color:#{linkColor}; #{decNone}")
+										span(style="color:#{linkColor}; #{decNone}") #{copyContactMailLink}
+								br
+								br
+								| #{reasonCopy00}
+								a(href="http://www.laziostyle.com/#{lang}#{prefixTraking}#{data}#{lang}#{reasonLink}" style="color:#{linkColor}; #{decNone}")
+									span(style="color:#{linkColor}; #{decNone}") #{LogoStoreTxt}store.com
+								| #{reasonCopy01}
+								a(href="mailto:${email}$" style="color:#{linkColor}; #{decNone}")
+									span(style="color:#{linkColor}; #{decNone}") ${email}$
+								br
+								| #{unsubscribeCopy}
+								a(href="#{unsubscribeLink}" style="color:#{linkColor}; #{decNone}")
+									span(style="color:#{linkColor}; #{decNone}") #{unsubscribeLinkCopy}
+								|.
+								br
+								br
+
 		if site == "lazio"
 			table.container(border="0" width="600" cellpadding="0" cellspacing="0")
 					//- footer
@@ -59,7 +93,7 @@ tr
 								br
 								br
 								| #{reasonCopy00}
-								a(href="http://www.fiorentinastore.com/#{lang}#{prefixTraking}#{data}#{lang}#{reasonLink}" style="color:#{linkColor}; #{decNone}")
+								a(href="http://www.laziostyle.com/#{lang}#{prefixTraking}#{data}#{lang}#{reasonLink}" style="color:#{linkColor}; #{decNone}")
 									span(style="color:#{linkColor}; #{decNone}") #{LogoStoreTxt}store.com
 								| #{reasonCopy01}
 								a(href="mailto:${email}$" style="color:#{linkColor}; #{decNone}")
@@ -86,7 +120,7 @@ tr
 								br
 								br
 								| #{reasonCopy00}
-								a(href="http://www.fiorentinastore.com/#{lang}#{prefixTraking}#{data}#{lang}#{reasonLink}" style="color:#{linkColor}; #{decNone}")
+								a(href="http://www.footbal4u.com/#{lang}#{prefixTraking}#{data}#{lang}#{reasonLink}" style="color:#{linkColor}; #{decNone}")
 									span(style="color:#{linkColor}; #{decNone}") #{LogoStoreTxt}.it
 								| #{reasonCopy01}
 								a(href="mailto:${email}$" style="color:#{linkColor}; #{decNone}")

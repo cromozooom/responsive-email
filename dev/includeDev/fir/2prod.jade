@@ -1,0 +1,54 @@
+extends ../../views/2prod
+
+block 2prod_a
+	- var template 						= "2prod_a"
+	- var trakingSource = "xxx2Prod"
+	if lang == "en"
+		- var ctaCopy 					= "BUY NOW"
+		if prod == "01"
+			- var linkCTA 				= "http://www.firstore.it/en/fir-rwc-home-jersey-2015.html"
+			- var imgProd				= "http://www.firstore.it/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/r/i/ri15001.jpg"
+			- var titleProd				= "Fir Rwc Home Jersey 2015"
+			- var priceProd 			= "85.00"
+			- var oldPriceProd			= false
+			- var idProd				= "ri15001"
+
+		if prod == "02"
+			- var linkCTA 				= "http://www.firstore.it/en/fir-performance-training-jersey.html"
+			- var imgProd				= "http://www.firstore.it/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/r/i/ri15041.jpg"
+			- var titleProd				= "Fir Performance Training Jersey"
+			- var priceProd 			= "45.00"
+			- var oldPriceProd			= false
+			- var idProd				= "ri15041"
+
+	if lang == "it"
+		- var ctaCopy 					= "Acquista"
+		if prod == "01"
+			- var linkCTA 				= "http://www.firstore.it/it/fir-maglia-gara-home-mondiali-2015.html"
+			- var imgProd				= "http://www.firstore.it/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/r/i/ri15001.jpg"
+			- var titleProd				= "Fir Maglia Gara Home Mondiali 2015"
+			- var priceProd 			= "85,00"
+			- var oldPriceProd			= false
+			- var idProd				= "ri15001"
+
+		if prod == "02"
+			- var linkCTA 				= "http://www.firstore.it/it/fir-maglia-allenamento-performance.html"
+			- var imgProd				= "http://www.firstore.it/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/r/i/ri15041.jpg"
+			- var titleProd				= "Fir Maglia Allenamento Performance"
+			- var priceProd 			= "45,00"
+			- var oldPriceProd			= false
+			- var idProd				= "ri15041"
+
+	//- customize button variable optional
+	block ctaOptions
+		//- 01 = simple CTA (buy now or Acquista)
+		//-	02 = CTA with price (buy at {priceProd} or Acquista a {priceProd})
+		- var buttonType 	= "02"
+		//- can be 160 max
+		- var width			= "160px"
+		- var height 		= "40px"
+		- var arcsize 		= "5%"
+		- var radiusSize 	= "3px"
+		- var lineheight 	= "40px"
+		- var align 		= "left"
+		- var fontSize		= "font-size: 14px; line-height: 11px;"

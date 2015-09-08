@@ -11,6 +11,10 @@ block info
 		- var txtColor 			= colorWhite
 		- var backgroundColor 	= colorWhite
 
+	if site == "fir"
+		- var txtColor 			= colorPrimary
+		- var backgroundColor 	= colorWhite
+
 	if site == "f4u"
 		- var txtColor 			= colorSecondary_
 		- var backgroundColor 	= colorSecondary
@@ -72,5 +76,13 @@ block contentCol2_2
 				td(align="center" width="#{socilaIconWidth}" valign="top")
 					a(href="#{forSquare}")
 						img(src="#{imgLink}forSquare.jpg" alt="forSquare - #{siteName}" style="display: block; border: 0; height: auto !important;")
+			if rugby2015
+				td(align="center" width="#{socilaIconWidth}" valign="top")
+					a(href="#{rugby2015}")
+						img(src="#{imgLink}rugby2015.jpg" alt="rugby2015 - #{siteName}" style="display: block; border: 0; height: auto !important;")
+			if trustPilot
+				td(align="center" width="#{socilaIconWidth}" valign="top")
+					a(href="#{trustPilot}")
+						img(src="#{imgLink}trustPilot.jpg" alt="trustPilot - #{siteName}" style="display: block; border: 0; height: auto !important;")
 		tr
 			td(height="10px" colspan="10")

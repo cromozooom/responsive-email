@@ -2,6 +2,42 @@
 - var prefixTraking = "?ga_campaign="
 
 
+if site == "fir"
+	//- preheader option
+	- var viewOnlineLink				= "${online_version_url}$"
+	- var reasonLink 					= "_footer&ga_medium=DEM&ga_source=NL"
+	if lang == "en"
+		- var onlineVersionCopy			= "If this e-mail is not being displayed properly, "
+		- var viewOnline				= "please click here"
+
+		//- footer
+		- var copyContact 				= "Contact us "
+		- var copyContactMailLink		= "customercare@firstore.it"
+		- var contactMailLink 			= "mailto:customercare@firstore.it"
+
+		- var reasonCopy00				= "You are receiving the following communication as your are subscribed to "
+		- var reasonCopy01				= " 's newsletter with the following e-mail: "
+
+		- var unsubscribeCopy 			= "Don't want to receive email Updates? "
+		- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1520014859142/d/${encoded_user_data}$/k/${form_verification_code}$/lang/en/"
+		- var unsubscribeLinkCopy 		= "Unsubscribe here"
+
+	if lang == "it"
+		- var onlineVersionCopy	= "Se non riesci a visualizzare questa mail "
+		- var viewOnline		= "clicca qui"
+
+		//- footer
+		- var copyContact 				= "Contattaci "
+		- var copyContactMailLink		= "customercare@firstore.it"
+		- var contactMailLink 			= "mailto:customercare@firstore.it"
+
+		- var reasonCopy00				= "Ricevi questa comunicazione in quanto iscritto/a al servizio di informazione periodica di "
+		- var reasonCopy01				= " con l'indirizzo e-mail "
+
+		- var unsubscribeCopy 			= "Per disiscriverti dalla newsletter "
+		- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1420014859385/d/${encoded_user_data}$/k/${form_verification_code}$/"
+		- var unsubscribeLinkCopy 		= "Clicca qui"
+
 if site == "fiorentina"
 	//- preheader option
 	- var viewOnlineLink				= "${online_version_url}$"
@@ -137,9 +173,34 @@ if site == "lazio"
 	- var logoImgHeight 		= "80px"
 	- var socilaIconWidth 		= "40px"
 
+if site == "fir"
+	if lang == "en"
+		- var folowUscopy 		= ""
+	if lang == "it"
+		- var folowUscopy 		= ""
+	- var logoImgHeight 		= "70px"
+	- var socilaIconWidth 		= "40px"
+
 //- nav template
 
 if lang == "en"
+
+	if site == "fir"
+		- var LogoStoreTxt 		= "fir"
+		- var LogoImgLink 		= "http://www.firstore.it/it"
+
+		- var Nav01 					= "KIT GARA"
+		- var NavLink01 				= "http://www.firstore.it/it/kit-gara.html"
+		- var Nav02 					= "ABBIGLIAMENTO"
+		- var NavLink02 				= "http://www.firstore.it/it/abbigliamento.html"
+		- var Nav03 					= "ACCESSORI"
+		- var NavLink03 				= "http://www.firstore.it/it/accessori.html"
+		- var Nav04 					= "COVER"
+		- var NavLink04 				= "http://www.firstore.it/it/cover.html"
+		- var Nav05 					= "IDEE REGALO"
+		- var NavLink05 				= "http://www.firstore.it/it/idee-regalo.html"
+		- var Nav06 					= "OUTLET"
+		- var NavLink06 				= "http://www.firstore.it/it/outlet.html"
 
 	if site == "f4u"
 		- var LogoStoreTxt 		= "football4u"
@@ -179,22 +240,41 @@ if lang == "en"
 		- var Nav01 					= "115"
 		- var NavLink01 				= "http://www.laziostylestore.com/en/115-years.html"
 		- var Nav02 					= "MATCH KITS"
-		- var NavLink01 				= "http://www.laziostylestore.com/en/match-kits.html"
+		- var NavLink02 				= "http://www.laziostylestore.com/en/match-kits.html"
 		- var Nav03 					= "FASHION"
-		- var NavLink02 				= "http://www.laziostylestore.com/en/fashion.html"
+		- var NavLink03 				= "http://www.laziostylestore.com/en/fashion.html"
 		- var Nav04 					= "ACCESSORIES"
-		- var NavLink03 				= "http://www.laziostylestore.com/en/accessories.html"
+		- var NavLink04 				= "http://www.laziostylestore.com/en/accessories.html"
 		- var Nav05 					= "COVERS"
-		- var NavLink04 				= "http://www.laziostylestore.com/en/covers.html"
+		- var NavLink05 				= "http://www.laziostylestore.com/en/covers.html"
 		- var Nav06 					= "GIFT IDEAS"
-		- var NavLink05 				= "http://www.laziostylestore.com/en/gift-ideas.html"
+		- var NavLink06 				= "http://www.laziostylestore.com/en/gift-ideas.html"
 		- var Nav07 					= "CLEARANCE"
-		- var NavLink05 				= "http://www.laziostylestore.com/en/clearance.html"
+		- var NavLink07 				= "http://www.laziostylestore.com/en/clearance.html"
 
 
 if lang == "it"
+	if site == "fir"
+		- var LogoStoreTxt 		= "fir"
+		- var LogoImgLink 		= "http://www.firstore.it/en"
+
+		- var Nav01 					= "KITS"
+		- var NavLink01 				= "http://www.firstore.it/it/kit-gara.html"
+		- var Nav02 					= "APPAREL"
+		- var NavLink02 				= "http://www.firstore.it/it/abbigliamento.html"
+		- var Nav03 					= "ACCESSORIES"
+		- var NavLink03 				= "http://www.firstore.it/it/accessori.html"
+		- var Nav04 					= "COVER"
+		- var NavLink04 				= "http://www.firstore.it/it/cover.html"
+		- var Nav05 					= "GIFT IDEAS"
+		- var NavLink05 				= "http://www.firstore.it/it/idee-regalo.html"
+		- var Nav06 					= "CLEARANCE"
+		- var NavLink06 				= "http://www.firstore.it/it/outlet.html"
 
 	if site == "fiorentina"
+		- var LogoStoreTxt 				= "fiorentina"
+		- var LogoImgLink 				= "http://www.fiorentinastore.com/it"
+
 		- var LogoStoreTxt 				= "fiorentina"
 		- var LogoImgLink 				= "http://www.fiorentinastore.com/it/"
 		- var Nav01 					= "KIT GARA"
@@ -214,17 +294,17 @@ if lang == "it"
 		- var Nav01 					= "115 ANNI"
 		- var NavLink01 				= "http://www.laziostylestore.com/it/115-anni.html"
 		- var Nav02 					= "KIT GARA"
-		- var NavLink01 				= "http://www.laziostylestore.com/it/kit-gara.html"
+		- var NavLink02 				= "http://www.laziostylestore.com/it/kit-gara.html"
 		- var Nav03 					= "ABBIGLIAMENTO"
-		- var NavLink02 				= "http://www.laziostylestore.com/it/abbigliamento.html"
+		- var NavLink03 				= "http://www.laziostylestore.com/it/abbigliamento.html"
 		- var Nav04 					= "ACCESSORI"
-		- var NavLink03 				= "http://www.laziostylestore.com/it/accessori.html"
+		- var NavLink04 				= "http://www.laziostylestore.com/it/accessori.html"
 		- var Nav05 					= "COVER"
-		- var NavLink04 				= "http://www.laziostylestore.com/it/cover.html"
+		- var NavLink05 				= "http://www.laziostylestore.com/it/cover.html"
 		- var Nav06 					= "IDEE REGALO"
-		- var NavLink05 				= "http://www.laziostylestore.com/it/idee-regalo.html"
+		- var NavLink06 				= "http://www.laziostylestore.com/it/idee-regalo.html"
 		- var Nav07 					= "OUTLET"
-		- var NavLink05 				= "http://www.laziostylestore.com/it/outlet.html"
+		- var NavLink07 				= "http://www.laziostylestore.com/it/outlet.html"
 
 	if site == "f4u"
 		- var LogoStoreTxt 				= "football4u"
@@ -249,6 +329,19 @@ if lang == "it"
 //- /////////////////////////////////////////////////////////////////
 //- available: facebook, twitter, youTube, flikr, instagram, gPlus, blog, pinterest, forSquare
 
+
+if site == "fir"
+	- var siteName = "fir"
+	- var instagram = false
+	- var facebook = false
+	- var twitter = false
+	- var blog = false
+	- var youTube = false
+	- var gPlus = false
+	- var flikr = false
+	- var forSquare = false
+	- var trustPilot = "https://it.trustpilot.com/review/firstore.it"
+	- var rugby2015 = "http://www.federugby.it/"
 
 if site == "fiorentina"
 	- var siteName = "fiorentinastore"
@@ -285,6 +378,14 @@ if site == "f4u"
 //- footer
 //- /////////////////////////////////////////////////////////////////
 if lang == "en"
+
+	if site == "fir"
+		- var communicationEmail01	= "To ensure you always receive communications from "
+		- var contactMail 			= "noreply@juvestore.com"
+		- var communicationEmail02 	= "to your e-mail address book."
+		- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
+		- var userMail				= "n.razvan@episrl.it"
+
 	if site == "juve"
 		- var communicationEmail01	= "To ensure you always receive communications from "
 		- var contactMail 			= "noreply@juvestore.com"
@@ -305,6 +406,20 @@ if lang == "en"
 		- var userMail				= "n.razvan@episrl.it"
 
 if lang == "it"
+
+	if site == "fir"
+		- var communicationEmail01	= "To ensure you always receive communications from "
+		- var contactMail 			= "noreply@juvestore.com"
+		- var communicationEmail02 	= "to your e-mail address book."
+		- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
+		- var userMail				= "n.razvan@episrl.it"
+
+	if site == "lazio"
+		- var communicationEmail01	= "To ensure you always receive communications from "
+		- var contactMail 			= "noreply@juvestore.com"
+		- var communicationEmail02 	= "to your e-mail address book."
+		- var disclamer 			= "You are receiving the following communication as your are subscribed to juvestore.com's newsletter with the following e-mail "
+		- var userMail				= "n.razvan@episrl.it"
 	if site == "juve"
 		- var communicationEmail01	= "To ensure you always receive communications from "
 		- var contactMail 			= "noreply@juvestore.com"
@@ -397,6 +512,24 @@ if site == "lazio"
 	- var colorSecondary	= "#003671" // dark blue
 	- var colorSecondary_	= "#8cd3f6" // midle blue
 	- var colorSecondary__	= "#c5e8fb" // light Blue
+
+	- var colorTertiari 	= "#e41b13"
+	- var colorTertiari_ 	= "#d4d2d6"
+
+	- var colorBlack 		= "#000000"
+	- var colorBlack50 		= "#8c8c8c"
+	- var colorWhite 		= "#ffffff"
+
+if site == "fir"
+	- var containerBg 		= "#e8e8e8"
+	- var wrapperCollor 	= "#ffffff"
+
+	- var colorPrimary 		= "#002f56" // blue
+	- var colorPrimary_ 	= "#024a86" // light blue
+
+	- var colorSecondary	= "#948655" // dark oro
+	- var colorSecondary_	= "#c3b78c" // midle oro
+	- var colorSecondary__	= "#c5e8fb" // light oro
 
 	- var colorTertiari 	= "#e41b13"
 	- var colorTertiari_ 	= "#d4d2d6"

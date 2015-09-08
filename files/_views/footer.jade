@@ -1,0 +1,135 @@
+block info
+	include ../config
+
+if site == "fiorentina"
+	- var fontColor 	= colorSecondary_
+	- var linkColor		= colorPrimary
+	- var bgcolor 		= containerBg
+if site == "lazio"
+	- var fontColor 	= colorBlack50
+	- var linkColor		= colorSecondary
+	- var bgcolor 		= containerBg
+if site == "f4u"
+	- var fontColor 	= colorSecondary_
+	- var linkColor		= colorPrimary
+	- var bgcolor 		= containerBg
+
+tr
+	td(align="center" valign="top" bgcolor="#{bgcolor}")
+
+		if site == "fiorentina"
+			table.container(border="0" width="600" cellpadding="0" cellspacing="0")
+					//- footer
+					tr
+						td.container-padding.footer-text(align="left" style="#{fontXS} #{fontSans} color: #{fontColor};")
+							center
+								br
+								span.ios-footer
+									//- contact
+									| #{copyContact} 
+									a(href="#{contactMailLink}"  style="color:#{linkColor}; #{decNone}")
+										span(style="color:#{linkColor}; #{decNone}") #{copyContactMailLink}
+								br
+								br
+								| #{reasonCopy00}
+								a(href="http://www.fiorentinastore.com/#{lang}#{prefixTraking}#{data}#{lang}#{reasonLink}" style="color:#{linkColor}; #{decNone}")
+									span(style="color:#{linkColor}; #{decNone}") #{LogoStoreTxt}store.com
+								| #{reasonCopy01}
+								a(href="mailto:${email}$" style="color:#{linkColor}; #{decNone}")
+									span(style="color:#{linkColor}; #{decNone}") ${email}$
+								br
+								| #{unsubscribeCopy}
+								a(href="#{unsubscribeLink}" style="color:#{linkColor}; #{decNone}")
+									span(style="color:#{linkColor}; #{decNone}") #{unsubscribeLinkCopy}
+								|.
+								br
+								br
+		if site == "lazio"
+			table.container(border="0" width="600" cellpadding="0" cellspacing="0")
+					//- footer
+					tr
+						td.container-padding.footer-text(align="left" style="#{fontXS} #{fontSans} color: #{fontColor};")
+							center
+								br
+								span.ios-footer
+									//- contact
+									| #{copyContact} 
+									a(href="#{contactMailLink}"  style="color:#{linkColor}; #{decNone}")
+										span(style="color:#{linkColor}; #{decNone}") #{copyContactMailLink}
+								br
+								br
+								| #{reasonCopy00}
+								a(href="http://www.laziostyle.com/#{lang}#{prefixTraking}#{data}#{lang}#{reasonLink}" style="color:#{linkColor}; #{decNone}")
+									span(style="color:#{linkColor}; #{decNone}") #{LogoStoreTxt}store.com
+								| #{reasonCopy01}
+								a(href="mailto:${email}$" style="color:#{linkColor}; #{decNone}")
+									span(style="color:#{linkColor}; #{decNone}") ${email}$
+								br
+								| #{unsubscribeCopy}
+								a(href="#{unsubscribeLink}" style="color:#{linkColor}; #{decNone}")
+									span(style="color:#{linkColor}; #{decNone}") #{unsubscribeLinkCopy}
+								|.
+								br
+								br
+		if site == "f4u"
+			table.container(border="0" width="600" cellpadding="0" cellspacing="0")
+					//- footer
+					tr
+						td.container-padding.footer-text(align="left" style="#{fontXS} #{fontSans} color: #{fontColor};")
+							center
+								br
+								span.ios-footer
+									//- contact
+									| #{copyContact} 
+									a(href="#{contactMailLink}"  style="color:#{linkColor}; #{decNone}")
+										span(style="color:#{linkColor}; #{decNone}") #{copyContactMailLink}
+								br
+								br
+								| #{reasonCopy00}
+								a(href="http://www.footbal4u.com/#{lang}#{prefixTraking}#{data}#{lang}#{reasonLink}" style="color:#{linkColor}; #{decNone}")
+									span(style="color:#{linkColor}; #{decNone}") #{LogoStoreTxt}.it
+								| #{reasonCopy01}
+								a(href="mailto:${email}$" style="color:#{linkColor}; #{decNone}")
+									span(style="color:#{linkColor}; #{decNone}") ${email}$
+								br
+								| #{unsubscribeCopy}
+								a(href="#{unsubscribeLink}" style="color:#{linkColor}; #{decNone}")
+									span(style="color:#{linkColor}; #{decNone}") #{unsubscribeLinkCopy}
+								|.
+								br
+								br
+		
+		//-
+			- 600px container (white background)
+			table.container(border="0" width="600" cellpadding="0" cellspacing="0")
+				//- footer
+				tr
+					td.container-padding.footer-text(align="left" style="#{fontXS} #{fontSans} color: #{fontColor};")
+						br
+						br
+						| xSample Footer text: © 2014 Acme, Inc.
+						br
+						br
+						| You are receiving this email because you opted in on our website. Update your 
+						a(href="#" style="color:#{linkColor}; #{decNone}")
+							span(style="color:#{linkColor}; #{decNone}") email preferences 
+						| or 
+						a(href="#" style="color:#{linkColor}; #{decNone}")
+							span(style="color:#{linkColor}; #{decNone}") unsubscribe
+						|.
+						br
+						br
+						strong
+							| Acme, Inc.
+							br
+						span.ios-footer
+							| 123 Main St.
+							br
+							| Springfield, MA 12345
+							br
+							| #{copyContact}
+							a(href="#{contactMailLink}"  style="color:#{linkColor}; #{decNone}")
+								span(style="color:#{linkColor}; #{decNone}") #{copyContactMailLink}
+						br
+						br
+						br

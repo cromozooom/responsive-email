@@ -1,0 +1,61 @@
+extends ../../views/2prod
+
+block 2prod_a
+	- var template 						= "2prod_a"
+	- var trakingSource 				= "2prodLine_"
+	- var product 						= true
+	if lang == "en"
+		- var ctaCopy 					= "Shop now"
+
+		if prod == "01"
+			- var linkCTA 				= "http://www.fiorentinastore.com/en/fiorentina-violet-presentation-polo-2015-16.html"
+			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15117.jpg"
+			- var titleProd				= "Fiorentina Violet Presentation Polo 2015/16"
+			- var priceProd 			= "50.00"
+			- var oldPriceProd			= false
+			- var idProd				= "fi15117"
+
+		if prod == "02"
+			- var linkCTA 				= "http://www.fiorentinastore.com/en/fiorentina-white-presentation-polo-2015-16.html"
+			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/2/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15116.jpg"
+			- var titleProd				= "Fiorentina White Presentation Polo 2015/16"
+			- var priceProd 			= "50.00"
+			- var oldPriceProd			= false
+			- var idProd				= "fi15116"
+
+	if lang == "it"
+		- var ctaCopy 					= "Acquista ora"
+
+		if prod == "01"
+			- var linkCTA 				= "http://www.fiorentinastore.com/it/fiorentina-polo-rappresentanza-viola-2015-16.html"
+			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15117.jpg"
+			- var titleProd				= "Fiorentina Polo Rappresentanza Viola 2015/16"
+			- var priceProd 			= "50,00"
+			- var oldPriceProd			= false
+			- var idProd				= "fi15117"
+
+		if prod == "02"
+			- var linkCTA 				= "http://www.fiorentinastore.com/it/fiorentina-polo-rappresentanza-bianca-2015-16.html"
+			- var imgProd				= "http://fiorentina.dunebuggysrl.netdna-cdn.com/media/catalog/product/cache/1/small_image/350x/17f82f742ffe127f42dca9de82fb58b1/f/i/fi15116.jpg"
+			- var titleProd				= "Fiorentina Polo Rappresentanza Bianca 2015/16"
+			- var priceProd 			= "50,00"
+			- var oldPriceProd			= false
+			- var idProd				= "fi15116"
+
+	//- customize button variable optional
+	block ctaOptions
+		//- ////////////////////////////////////////////
+		//-
+		//-		01 = simple CTA (buy now or Acquista)
+		//-		02 = CTA with price (buy at {priceProd} or Acquista a {priceProd})
+		//-
+		//- ////////////////////////////////////////////
+		- var buttonType 	= "02"
+		//- can be 160 max
+		- var width			= "180px"
+		- var height 		= "40px"
+		- var arcsize 		= "5%"
+		- var radiusSize 	= "3px"
+		- var lineheight 	= "40px"
+		- var align 		= "left"
+		- var fontSize		= "font-size: 14px; line-height: 11px;"

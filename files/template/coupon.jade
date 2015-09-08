@@ -1,11 +1,5 @@
 block info
 block color
-	if site == "default"
-		- var bgColor 			= colorBlack
-		- var fontColor 		= colorSecondary_
-		- var borderCoupon 		= colorSecondary__
-		- var fontColorCoupon 	= colorPrimary
-		- var colorNote 		= colorSecondary__
 
 	if site == "fiorentina"
 		- var bgColor 			= colorSecondary
@@ -21,6 +15,13 @@ block color
 		- var fontColorCoupon 	= colorWhite
 		- var colorNote 		= colorPrimary
 
+	if site == "fir"
+		- var bgColor 			= colorSecondary
+		- var fontColor 		= colorPrimary
+		- var borderCoupon 		= colorPrimary
+		- var fontColorCoupon 	= colorWhite
+		- var colorNote 		= colorPrimary
+
 	if site == "f4u"
 		- var bgColor 			= colorSecondary
 		- var fontColor 		= colorWhite
@@ -28,6 +29,12 @@ block color
 		- var fontColorCoupon 	= colorWhite
 		- var colorNote 		= colorSecondary_
 
+	if site == "default"
+		- var bgColor 			= colorBlack
+		- var fontColor 		= colorSecondary_
+		- var borderCoupon 		= colorSecondary__
+		- var fontColorCoupon 	= colorPrimary
+		- var colorNote 		= colorSecondary__
 
 block content
 	tr
