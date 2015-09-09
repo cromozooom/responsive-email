@@ -1,0 +1,56 @@
+extend views/index
+
+block config
+	//- option available fiorentina, lazio, fir
+	- var site 				= "fir"
+	- var lang 				= "it"
+
+
+	//- used for tracking code
+	- var data = "27-3"
+
+	//- Universal Copy
+	if lang == "en"
+		- var title 			= "FIR Samplte title dem en"
+		- var previewCopy		= "Acquista la nuova maglia home 2015/16 - en"
+
+	if lang == "it"
+		- var title 			= "FIR Samplte title dem it"
+		- var previewCopy		= "Acquista la nuova maglia home 2015/16 - it"
+
+	//- image management
+	//- image management
+	if site == "fir"
+		- var imgLink = "images/fir/"
+
+	if site == "f4u"
+		- var imgLink = "images/f4u/"
+
+	if site == "fiorentina"
+		- var imgLink = "images/fiorentina/"
+
+	if site == "lazio"
+		- var imgLink = "images/lazio/"
+
+	if site == "default"
+		- var imgLink = "images/default/"
+
+	include config
+
+block contentMail
+	include views/nav
+	include includeDev/fir/heroImageHeader
+	include includeDev/fir/singleCTA
+	include includeDev/fir/heroImage
+	include includeDev/fir/coupon
+	include includeDev/fir/linkList
+	include includeDev/fir/cowntDown
+	include includeDev/fir/2prod
+	include includeDev/fir/2banner_a
+	include includeDev/fir/3prodA
+	include includeDev/fir/3prodB
+
+
+	//include includeDev/fiorentina/3prodB
+	//-include include/_footerLink
+	//-include _3article_a
