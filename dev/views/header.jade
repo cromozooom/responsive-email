@@ -3,6 +3,11 @@ block info
 	include ../config
 	- var trakingSource 		= "headerLogo"
 
+	if site == "verona"
+		- var txtColor 			= colorWhite
+		- var backgroundColor 	= "#353f5b"
+		- var linkColor 		= colorSecondary
+
 	if site == "fiorentina"
 		- var txtColor 			= colorWhite
 		- var backgroundColor 	= colorWhite
@@ -19,6 +24,9 @@ block info
 		- var txtColor 			= colorSecondary_
 		- var backgroundColor 	= colorSecondary
 
+	mixin tdSpace(x, y, colspan, visible)
+		td(width="#{x}px" height="#{y}px" class="#{visible}" colspan="#{colspan}" style="font-size: 1px;") &nbsp;
+
 block contentCol1_2
 	table(cellpadding="0" cellspacing="0" width="200" align="center")
 		tr
@@ -31,58 +39,78 @@ block contentCol1_2
 			td(height="10px")
 
 block contentCol2_2
-	table(cellpadding="0" cellspacing="0" width="200" align="center" valign="top")
-		tr
-			td(height="10px" colspan="10")
-		tr
-			td(align="center" colspan="10")
-				span(style="#{fontS} color: #{txtColor};") #{folowUscopy}
-		tr
-			td(height="10px" colspan="10")
-		tr
-			if facebook
-				td(align="center" width="#{socilaIconWidth}" valign="top")
-					a(href="#{facebook}")
-						img(src="#{imgLink}facebook.jpg" alt="facebook - #{siteName}" style="display: block; border: 0; height: auto !important;")
-			if twitter
-				td(align="center" width="#{socilaIconWidth}" valign="top")
-					a(href="#{twitter}")
-						img(src="#{imgLink}twitter.jpg" alt="twitter - #{siteName}" style="display: block; border: 0; height: auto !important;")
-			if youTube
-				td(align="center" width="#{socilaIconWidth}" valign="top")
-					a(href="#{youTube}")
-						img(src="#{imgLink}youtube.jpg" alt="youtube - #{siteName}" style="display: block; border: 0; height: auto !important;")
-			if flikr
-				td(align="center" width="#{socilaIconWidth}" valign="top")
-					a(href="#{flikr}")
-						img(src="#{imgLink}flikr.jpg" alt="flikr - #{siteName}" style="display: block; border: 0; height: auto !important;")
-			if instagram
-				td(align="center" width="#{socilaIconWidth}" valign="top")
-					a(href="#{instagram}")
-						img(src="#{imgLink}instagram.jpg" alt="instagram - #{siteName}" style="display: block; border: 0; height: auto !important;")
-			if gPlus
-				td(align="center" width="#{socilaIconWidth}" valign="top")
-					a(href="#{gPlus}")
-						img(src="#{imgLink}gPlus.jpg" alt="gooogle Plus - #{siteName}" style="display: block; border: 0; height: auto !important;")
-			if blog
-				td(align="center" width="#{socilaIconWidth}" valign="top")
-					a(href="#{blog}")
-						img(src="#{imgLink}blog.jpg" alt="blog - #{siteName}" style="display: block; border: 0; height: auto !important;")
-			if pinterest
-				td(align="center" width="#{socilaIconWidth}" valign="top")
-					a(href="#{pinterest}")
-						img(src="#{imgLink}pinterest.jpg" alt="pinterest - #{siteName}" style="display: block; border: 0; height: auto !important;")
-			if forSquare
-				td(align="center" width="#{socilaIconWidth}" valign="top")
-					a(href="#{forSquare}")
-						img(src="#{imgLink}forSquare.jpg" alt="forSquare - #{siteName}" style="display: block; border: 0; height: auto !important;")
-			if rugby2015
-				td(align="center" width="#{socilaIconWidth}" valign="top")
-					a(href="#{rugby2015}")
-						img(src="#{imgLink}rugby2015.jpg" alt="rugby2015 - #{siteName}" style="display: block; border: 0; height: auto !important;")
-			if trustPilot
-				td(align="center" width="#{socilaIconWidth}" valign="top")
-					a(href="#{trustPilot}")
-						img(src="#{imgLink}trustPilot.jpg" alt="trustPilot - #{siteName}" style="display: block; border: 0; height: auto !important;")
-		tr
-			td(height="10px" colspan="10")
+	if site == "verona"
+		table(cellpadding="0" cellspacing="0" width="100%" align="center" valign="top")
+			tr
+				+tdSpace("", 10, 7, "mobile-hidden")
+
+			tr
+				+tdSpace(5, 60, 1, "")
+				td(align="center" width="" valign="middle")
+					a(href="#{NavLinkTop01}" style="#{fontM}#{decNone} color: #{linkColor};")
+						span(style="#{fontM}#{decNone} color: #{linkColor};")= NavTop01
+				+tdSpace(10, 60, 1, "")
+				td(align="center" width="" valign="middle")
+					a(href="#{NavLinkTop02}" style="#{fontM}#{decNone} color: #{linkColor};")
+						span(style="#{fontM}#{decNone} color: #{linkColor};")= NavTop02
+				+tdSpace(10, 60, 1, "")
+				td(align="center" width="" valign="middle")
+					a(href="#{NavLinkTop03}" style="#{fontM}#{decNone} color: #{linkColor};")
+						span(style="#{fontM}#{decNone} color: #{linkColor};")= NavTop03
+				+tdSpace(5, 60, 1, "")
+	else
+		table(cellpadding="0" cellspacing="0" width="200" align="center" valign="top")
+			tr
+				td(height="10px" colspan="10")
+			tr
+				td(align="center" colspan="10")
+					span(style="#{fontS} color: #{txtColor};") #{folowUscopy}
+			tr
+				td(height="10px" colspan="10")
+			tr
+				if facebook
+					td(align="center" width="#{socilaIconWidth}" valign="top")
+						a(href="#{facebook}")
+							img(src="#{imgLink}facebook.jpg" alt="facebook - #{siteName}" style="display: block; border: 0; height: auto !important;")
+				if twitter
+					td(align="center" width="#{socilaIconWidth}" valign="top")
+						a(href="#{twitter}")
+							img(src="#{imgLink}twitter.jpg" alt="twitter - #{siteName}" style="display: block; border: 0; height: auto !important;")
+				if youTube
+					td(align="center" width="#{socilaIconWidth}" valign="top")
+						a(href="#{youTube}")
+							img(src="#{imgLink}youtube.jpg" alt="youtube - #{siteName}" style="display: block; border: 0; height: auto !important;")
+				if flikr
+					td(align="center" width="#{socilaIconWidth}" valign="top")
+						a(href="#{flikr}")
+							img(src="#{imgLink}flikr.jpg" alt="flikr - #{siteName}" style="display: block; border: 0; height: auto !important;")
+				if instagram
+					td(align="center" width="#{socilaIconWidth}" valign="top")
+						a(href="#{instagram}")
+							img(src="#{imgLink}instagram.jpg" alt="instagram - #{siteName}" style="display: block; border: 0; height: auto !important;")
+				if gPlus
+					td(align="center" width="#{socilaIconWidth}" valign="top")
+						a(href="#{gPlus}")
+							img(src="#{imgLink}gPlus.jpg" alt="gooogle Plus - #{siteName}" style="display: block; border: 0; height: auto !important;")
+				if blog
+					td(align="center" width="#{socilaIconWidth}" valign="top")
+						a(href="#{blog}")
+							img(src="#{imgLink}blog.jpg" alt="blog - #{siteName}" style="display: block; border: 0; height: auto !important;")
+				if pinterest
+					td(align="center" width="#{socilaIconWidth}" valign="top")
+						a(href="#{pinterest}")
+							img(src="#{imgLink}pinterest.jpg" alt="pinterest - #{siteName}" style="display: block; border: 0; height: auto !important;")
+				if forSquare
+					td(align="center" width="#{socilaIconWidth}" valign="top")
+						a(href="#{forSquare}")
+							img(src="#{imgLink}forSquare.jpg" alt="forSquare - #{siteName}" style="display: block; border: 0; height: auto !important;")
+				if rugby2015
+					td(align="center" width="#{socilaIconWidth}" valign="top")
+						a(href="#{rugby2015}")
+							img(src="#{imgLink}rugby2015.jpg" alt="rugby2015 - #{siteName}" style="display: block; border: 0; height: auto !important;")
+				if trustPilot
+					td(align="center" width="#{socilaIconWidth}" valign="top")
+						a(href="#{trustPilot}")
+							img(src="#{imgLink}trustPilot.jpg" alt="trustPilot - #{siteName}" style="display: block; border: 0; height: auto !important;")
+			tr
+				td(height="10px" colspan="10")

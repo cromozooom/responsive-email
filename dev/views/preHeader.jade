@@ -5,6 +5,12 @@ block info
 
 block colorPreheader
 	include ../config
+	if site == "verona"
+		- var fontColor 		= colorSecondary
+		- var linkColor			= colorWhite
+		- var titleMailBg 		= colorPrimary
+		//- var bgcolor 		= containerBg
+
 	if site == "fiorentina"
 		- var fontColor 		= colorPrimary_
 		- var linkColor			= colorWhite

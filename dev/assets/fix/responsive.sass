@@ -1,0 +1,69 @@
+// variable
+$mobileWrapper: 338px
+$minTabletWrapper: 568px
+
+// mobile mac 480px
+//-------------------------------------------------------------------------------- mobile mac 480px
+
+@media only screen and (max-width: 480px)
+
+	// this is the backgroundTable (general backgroundTable)
+	table[id="backgroundTable-fix-g"]
+		padding: 20px 0 !important
+
+	// this is the wrapperTable
+	table[class="wrapper"]
+		width: $mobileWrapper !important
+	// mobile hidden
+	table[class="mobile-hidden"],
+	div[class="mobile-hidden"],
+	td[class="mobile-hidden"],
+	br[class="mobile-hidden"]
+		display: none !important
+
+	table[class="mobile-hidden-tablet"],
+	tr[class="mobile-hidden-tablet"],
+	td[class="mobile-hidden-tablet"],
+	span[class="mobile-hidden-tablet"],
+	br[class="mobile-hidden-tablet"],
+	img[class="mobile-hidden-tablet"]
+		display: none
+	div[class~="showtablet"]
+		display: block !important
+		margin:0 !important
+		padding:0 !important
+		overflow: visible !important
+		visibility: visible !important
+		width: auto !important
+		max-height:inherit !important
+
+	td[class~="block"]
+		width: $mobileWrapper !important
+		display:block !important
+	div[class~="show"]
+		display: block !important
+		margin:0 !important
+		overflow: visible !important
+		visibility: visible !important
+		width: auto !important
+		max-height:inherit !important
+
+// tablet desktop
+//-------------------------------------------------------------------------------- tablet desktop
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1)
+	// table[class="mobile-hidden-tablet"],
+	// tr[class="mobile-hidden-tablet"],
+	// td[class="mobile-hidden-tablet"],
+	// span[class="mobile-hidden-tablet"],
+	// br[class="mobile-hidden-tablet"],
+	// img[class="mobile-hidden-tablet"]
+	// 	display: none
+	div[class~="showtablet"]
+		display: block !important
+		margin:0 !important
+		padding:0 !important
+		overflow: visible !important
+		visibility: visible !important
+		width: auto !important
+		max-height:inherit !important

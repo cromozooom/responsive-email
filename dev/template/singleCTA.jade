@@ -1,6 +1,14 @@
 block info
 block colorInfoSingleCTA
 	include ../config
+
+	if site == "verona"
+		- var bgColor 					= "#20283e"
+		- var imgBgColor 				= containerBg
+		- var fontColor 				= colorSecondary
+		- var borderBottomTop 			= colorPrimary_
+		- var colorheaderCopySingleCTA 	= colorWhite
+
 	if site == "fiorentina"
 		- var bgColor 					= colorSecondary
 		- var imgBgColor 				= containerBg
@@ -39,10 +47,10 @@ block colorInfoSingleCTA
 
 
 block contentSingleCTA
-	//-
+	if debug
 		tr
 			td
-				p borderColor = #{borderColor}
+				p= bgColor
 	tr
 		td.container-padding.content(align="center"  bgcolor="#{bgColor}")
 			if headerCopySingleCTA

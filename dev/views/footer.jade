@@ -1,10 +1,16 @@
 block info
 	include ../config
 
+if site == "verona"
+	- var fontColor 	= colorSecondary
+	- var linkColor		= colorWhite
+	- var bgcolor 		= containerBg
+
 if site == "fiorentina"
 	- var fontColor 	= colorSecondary_
 	- var linkColor		= colorPrimary
 	- var bgcolor 		= containerBg
+
 if site == "lazio"
 	- var fontColor 	= colorBlack50
 	- var linkColor		= colorSecondary
@@ -22,6 +28,37 @@ if site == "f4u"
 
 tr
 	td(align="center" valign="top" bgcolor="#{bgcolor}")
+
+		if site == "verona"
+			table.container(border="0" width="600" cellpadding="0" cellspacing="0")
+					//- footer
+					tr
+						td.container-padding.footer-text(align="left" style="#{fontXS} #{fontSans} color: #{fontColor};")
+							center
+								br
+								span.ios-footer
+									//- contact
+									| #{copyContact} 
+									a(href="#{contactMailLink}"  style="color:#{linkColor}; #{decNone}")
+										span(style="color:#{linkColor}; #{decNone}") #{copyContactMailLink}
+								br
+								br
+								| #{reasonCopy00}
+								a(href="http://www.hvstore.it/#{lang}#{prefixTraking}#{data}#{lang}#{reasonLink}" style="color:#{linkColor}; #{decNone}")
+									span(style="color:#{linkColor}; #{decNone}") #{LogoStoreTxt}store.com
+								| #{reasonCopy01}
+								a(href="mailto:${email}$" style="color:#{linkColor}; #{decNone}")
+									span(style="color:#{linkColor}; #{decNone}") ${email}$
+								br
+								| #{unsubscribeCopy}
+								if unsubscribeLink
+									a(href="#{unsubscribeLink}" style="color:#{linkColor}; #{decNone}")
+										span(style="color:#{linkColor}; #{decNone}") #{unsubscribeLinkCopy}
+									|.
+								else
+									p(style="font-size 30px; color: red") unsubscribe link?
+								br
+								br
 
 		if site == "fiorentina"
 			table.container(border="0" width="600" cellpadding="0" cellspacing="0")
@@ -45,11 +82,14 @@ tr
 									span(style="color:#{linkColor}; #{decNone}") ${email}$
 								br
 								| #{unsubscribeCopy}
+								//- if unsubscribeLink
 								a(href="#{unsubscribeLink}" style="color:#{linkColor}; #{decNone}")
 									span(style="color:#{linkColor}; #{decNone}") #{unsubscribeLinkCopy}
 								|.
 								br
 								br
+								//- else
+									p(style="font-size 30px; color: red") unsubscribe link?
 		if site == "fir"
 			table.container(border="0" width="600" cellpadding="0" cellspacing="0")
 					//- footer
@@ -65,7 +105,7 @@ tr
 								br
 								br
 								| #{reasonCopy00}
-								a(href="http://www.laziostyle.com/#{lang}#{prefixTraking}#{data}#{lang}#{reasonLink}" style="color:#{linkColor}; #{decNone}")
+								a(href="http://www.firstore.it/#{lang}#{prefixTraking}#{data}#{lang}#{reasonLink}" style="color:#{linkColor}; #{decNone}")
 									span(style="color:#{linkColor}; #{decNone}") #{LogoStoreTxt}store.com
 								| #{reasonCopy01}
 								a(href="mailto:${email}$" style="color:#{linkColor}; #{decNone}")

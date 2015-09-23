@@ -1,9 +1,10 @@
 extend views/index
 
 block config
-	//- var debug = true
-	//- option available fiorentina, lazio, fir
-	- var site 				= "fir"
+	//- debug = true
+	//- debug = false
+	//- option available f4u, fiorentina, lazio, fir, verona
+	- var site 				= "verona"
 	- var lang 				= "it"
 
 
@@ -20,6 +21,9 @@ block config
 		- var previewCopy		= "Ora disponibili in tutte le taglie"
 
 	//- image management
+	if site == "verona"
+		- var imgLink = "images/verona/"
+
 	if site == "fir"
 		- var imgLink = "images/fir/"
 
@@ -39,16 +43,16 @@ block config
 
 block contentMail
 	include views/nav
-	include includeDev/fir/heroImage
-	include includeDev/fir/linkList
-	include includeDev/fir/singleCTA
-	include includeDev/fir/2prod
-	include includeDev/fir/singleCTA01
-	include includeDev/fir/3prodA
-	include includeDev/fir/heroImageHeader
-	include includeDev/fir/coupon
-	include includeDev/fir/cowntDown
-	include includeDev/fir/2banner_a
+	include include/default/heroImage
+	include include/default/linkList
+	include include/default/singleCTA
+	include include/default/2prod
+	include include/default/singleCTA01
+	include include/default/3prodA
+	include include/default/heroImageHeader
+	include include/default/coupon
+	include include/default/cowntDown
+	include include/default/2banner_a
 
 
 	//-include include/fiorentina/3prodB
