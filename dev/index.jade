@@ -1,11 +1,11 @@
 extend views/index
 
 block config
-	debug = true
-	debug = false
+	- var debug = true
+	- var debug = false
 	//- option available f4u, fiorentina, lazio, fir, verona
-	- var site 				= "verona"
-	- var lang 				= "it"
+	- var site 				= "dj"
+	- var lang 				= "en"
 
 
 	//- used for tracking code
@@ -26,6 +26,9 @@ block config
 
 	if site == "fir"
 		- var imgLink = "images/fir/"
+
+	if site == "dj"
+		- var imgLink = "images/dj/"
 
 	if site == "f4u"
 		- var imgLink = "images/f4u/"

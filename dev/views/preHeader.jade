@@ -29,29 +29,35 @@ block colorPreheader
 		- var titleMailBg 		= colorPrimary
 		//- var bgcolor 		= colorPrimary_
 
+	if site == "dj"
+		- var fontColor 		= colorPrimary
+		- var linkColor			= colorWhite
+		- var titleMailBg 		= colorPrimary_
+
 	if site == "default"
 		- var fontColor 		= colorSecondary_
 		- var linkColor			= colorPrimary
-		- var bgcolor 			= containerBg
+		- var titleMailBg 			= containerBg
 
 	if site == "f4u"
 		- var fontColor 		= colorSecondary_
 		- var linkColor			= colorPrimary
 		- var titleMailBg 		= colorSecondary__
 
+
 table(border="0" width="100%" height="100%" cellpadding="0" cellspacing="0"  bgcolor="#{titleMailBg}")
 	if debug
 		tr
 			td
-				p titleMailBg #{titleMailBg}
+				p titleMailBg = #{titleMailBg}
 	tr
 		td(align="left" width="#{PreheaderHPadding}")
 		td(align="left" valign="middle" height="#{PreheaderHeight}")
 			small(style="#{fontXS} #{fontSans} color:#{fontColor};")
-				| #{previewCopy}
+				| #{previewCopy} #{titleMailBg}
 		td(align="right" valign="middle" height="#{PreheaderHeight}")
 			small(style="#{fontXS} #{fontSans} color:#{fontColor};")
-				| #{onlineVersionCopy} 
+				| #{onlineVersionCopy}
 				nobr
 					a(st-content="viewonline" href="#{viewOnlineLink}#{prefixTraking}#{data}#{lang}#{trakingSource}" style="#{decNone} color:#{linkColor};" target="_blank" )
 						span(style="#{decNone} color:#{linkColor};")

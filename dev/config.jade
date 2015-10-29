@@ -73,6 +73,42 @@ if site == "fir"
 		- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1820014856755/d/${encoded_user_data}$/k/${form_verification_code}$/"
 		- var unsubscribeLinkCopy 		= "Clicca qui"
 
+if site == "dj"
+	//- preheader option
+	- var viewOnlineLink				= "${online_version_url}$"
+	- var reasonLink 					= "_footer&ga_medium=DEM&ga_source=NL"
+	if lang == "en"
+		- var onlineVersionCopy			= "If this e-mail is not being displayed properly, "
+		- var viewOnline				= "please click here"
+
+		//- footer
+		- var copyContact 				= "Contact us "
+		- var copyContactMailLink		= "customercare@firstore.it"
+		- var contactMailLink 			= "mailto:customercare@firstore.it"
+
+		- var reasonCopy00				= "You are receiving the following communication as your are subscribed to "
+		- var reasonCopy01				= " 's newsletter with the following e-mail: "
+
+		- var unsubscribeCopy 			= "Don't want to receive email Updates? "
+		- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1820014856755/d/${encoded_user_data}$/k/${form_verification_code}$/"
+		- var unsubscribeLinkCopy 		= "Unsubscribe here"
+
+	if lang == "it"
+		- var onlineVersionCopy	= "Se non riesci a visualizzare questa mail "
+		- var viewOnline		= "clicca qui"
+
+		//- footer
+		- var copyContact 				= "Contattaci "
+		- var copyContactMailLink		= "customercare@firstore.it"
+		- var contactMailLink 			= "mailto:customercare@firstore.it"
+
+		- var reasonCopy00				= "Ricevi questa comunicazione in quanto iscritto/a al servizio di informazione periodica di "
+		- var reasonCopy01				= " con l'indirizzo e-mail "
+
+		- var unsubscribeCopy 			= "Per disiscriverti dalla newsletter "
+		- var unsubscribeLink 			= "http://clientsection.contactlab.it/service/unsubscribe/wfc/1820014856755/d/${encoded_user_data}$/k/${form_verification_code}$/"
+		- var unsubscribeLinkCopy 		= "Clicca qui"
+
 if site == "fiorentina"
 	//- preheader option
 	- var viewOnlineLink				= "${online_version_url}$"
@@ -220,50 +256,73 @@ if site == "fir"
 	- var logoImgHeight 		= "70px"
 	- var socilaIconWidth 		= "40px"
 
+if site == "dj"
+	- var logoImgHeight 		= "50px"
+	- var socilaIconWidth 		= "40px"
+
 //- nav template
 
 if lang == "en"
 	if site == "verona"
-		- var LogoStoreTxt 		= "verona"
-		- var LogoImgLink 		= "http://www.hvstore.it/en/"
+		- var LogoStoreTxt 				= "verona"
+		- var LogoImgLink 				= "http://www.hvstore.it/en/"
 
-		- var NavTop01					= "MATCH KITS"
+		- var NavTop01				= "MATCH KITS"
 		- var NavLinkTop01				= "http://www.hvstore.it/en/match-kits.html"
-		- var NavTop02					= "TRAINING"
+		- var NavTop02				= "TRAINING"
 		- var NavLinkTop02				= "http://www.hvstore.it/en/training.html"
-		- var NavTop03					= "FASHION"
+		- var NavTop03				= "FASHION"
 		- var NavLinkTop03				= "http://www.hvstore.it/en/fashion.html"
 
-		- var Nav01						= "30 ANNIVERSARY"
-		- var NavLink01					= "http://www.hvstore.it/en/30-anniversary.html"
-		- var Nav02						= "GIFT IDEAS"
-		- var NavLink02					= "http://www.hvstore.it/en/gift-ideas.html"
-		- var Nav03						= "COVERS"
-		- var NavLink03					= "http://www.hvstore.it/en/covers.html"
-		- var Nav04						= "CLEARANCE"
-		- var NavLink04					= "http://www.hvstore.it/en/clearance.html"
+		- var Nav01					= "30 ANNIVERSARY"
+		- var NavLink01				= "http://www.hvstore.it/en/30-anniversary.html"
+		- var Nav02					= "GIFT IDEAS"
+		- var NavLink02				= "http://www.hvstore.it/en/gift-ideas.html"
+		- var Nav03					= "COVERS"
+		- var NavLink03				= "http://www.hvstore.it/en/covers.html"
+		- var Nav04					= "CLEARANCE"
+		- var NavLink04				= "http://www.hvstore.it/en/clearance.html"
 
 
 	if site == "fir"
-		- var LogoStoreTxt 		= "fir"
-		- var LogoImgLink 		= "http://www.firstore.it/en"
+		- var LogoStoreTxt 				= "fir"
+		- var LogoImgLink 				= "http://www.firstore.it/en"
 
-		- var Nav01						= "KITS"
-		- var NavLink01					= "http://www.firstore.it/en/kits.html"
-		- var Nav02						= "APPAREL"
-		- var NavLink02					= "http://www.firstore.it/en/apparel.html"
-		- var Nav03						= "ACCESSORIES"
-		- var NavLink03					= "http://www.firstore.it/en/accessories.html"
-		- var Nav04						= "COVER"
-		- var NavLink04					= "http://www.firstore.it/en/cover.html"
-		- var Nav05						= "GIFT IDEAS"
-		- var NavLink05					= "http://www.firstore.it/en/gift-ideas.html"
-		- var Nav06						= "CLEARANCE"
-		- var NavLink06					= "http://www.firstore.it/en/clearance.html"
+		- var Nav01					= "KITS"
+		- var NavLink01				= "http://www.firstore.it/en/kits.html"
+		- var Nav02					= "APPAREL"
+		- var NavLink02				= "http://www.firstore.it/en/apparel.html"
+		- var Nav03					= "ACCESSORIES"
+		- var NavLink03				= "http://www.firstore.it/en/accessories.html"
+		- var Nav04					= "COVER"
+		- var NavLink04				= "http://www.firstore.it/en/cover.html"
+		- var Nav05					= "GIFT IDEAS"
+		- var NavLink05				= "http://www.firstore.it/en/gift-ideas.html"
+		- var Nav06					= "CLEARANCE"
+		- var NavLink06				= "http://www.firstore.it/en/clearance.html"
+
+	if site == "dj"
+		- var LogoStoreTxt 				= "store_novakdjokovic"
+		- var LogoImgLink 				= "http://store.novakdjokovic.com/"
+
+		- var Nav01 					= "UNIQLO"
+		- var NavLink01 				= "http://store.novakdjokovic.com/en/uniqlo.html"
+		- var Nav02 					= "FOOTWEAR"
+		- var NavLink02 				= "http://store.novakdjokovic.com/en/footwear.html"
+		- var Nav03 					= "HEAD"
+		- var NavLink03 				= "http://store.novakdjokovic.com/en/head.html"
+		- var Nav04 					= "APPAREL"
+		- var NavLink04 				= "http://store.novakdjokovic.com/en/apparel.html"
+		- var Nav05 					= "COVERS"
+		- var NavLink05 				= "http://store.novakdjokovic.com/en/covers.html"
+		- var Nav06 					= "MUGS"
+		- var NavLink06 				= "http://store.novakdjokovic.com/en/mugs.html"
+		- var Nav07 					= "WATCHES"
+		- var NavLink07 				= "http://store.novakdjokovic.com/en/watches.html"
 
 	if site == "f4u"
-		- var LogoStoreTxt 		= "football4u"
-		- var LogoImgLink 		= "http://www.football4u.it"
+		- var LogoStoreTxt 				= "football4u"
+		- var LogoImgLink 				= "http://www.football4u.it"
 
 		- var Nav01 					= "FOOTBALL BOOTS"
 		- var NavLink01 				= "http://www.football4u.it/en/football-boots.html"
@@ -314,28 +373,28 @@ if lang == "en"
 
 if lang == "it"
 	if site == "verona"
-		- var LogoStoreTxt 		= "verona"
-		- var LogoImgLink 		= "http://www.hvstore.it/it/"
+		- var LogoStoreTxt 				= "verona"
+		- var LogoImgLink 				= "http://www.hvstore.it/it/"
 
-		- var NavTop01					= "KIT GARA"
+		- var NavTop01				= "KIT GARA"
 		- var NavLinkTop01				= "http://www.hvstore.it/it/kit-gara.html"
-		- var NavTop02					= "ALLENAMENTO"
+		- var NavTop02				= "ALLENAMENTO"
 		- var NavLinkTop02				= "http://www.hvstore.it/it/allenamento.html"
-		- var NavTop03					= "ABBIGLIAMENTO"
+		- var NavTop03				= "ABBIGLIAMENTO"
 		- var NavLinkTop03				= "http://www.hvstore.it/it/abbigliamento.html"
 
-		- var Nav01						= "30 ANNIVERSARIO"
-		- var NavLink01					= "http://www.hvstore.it/it/30-anniversario.html"
-		- var Nav02						= "IDEE REGALO"
-		- var NavLink02					= "http://www.hvstore.it/it/idee-regalo.html"
-		- var Nav03						= "COVER"
-		- var NavLink03					= "http://www.hvstore.it/it/cover.html"
-		- var Nav04						= "OUTLET"
-		- var NavLink04					= "http://www.hvstore.it/it/outlet.html"
+		- var Nav01					= "30 ANNIVERSARIO"
+		- var NavLink01				= "http://www.hvstore.it/it/30-anniversario.html"
+		- var Nav02					= "IDEE REGALO"
+		- var NavLink02				= "http://www.hvstore.it/it/idee-regalo.html"
+		- var Nav03					= "COVER"
+		- var NavLink03				= "http://www.hvstore.it/it/cover.html"
+		- var Nav04					= "OUTLET"
+		- var NavLink04				= "http://www.hvstore.it/it/outlet.html"
 
 	if site == "fir"
-		- var LogoStoreTxt 		= "fir"
-		- var LogoImgLink 		= "http://www.firstore.it/en"
+		- var LogoStoreTxt 				= "fir"
+		- var LogoImgLink 				= "http://www.firstore.it/en"
 
 		- var Nav01 					= "KIT GARA"
 		- var NavLink01 				= "http://www.firstore.it/it/kit-gara.html"
@@ -349,6 +408,26 @@ if lang == "it"
 		- var NavLink05 				= "http://www.firstore.it/it/idee-regalo.html"
 		- var Nav06 					= "OUTLET"
 		- var NavLink06 				= "http://www.firstore.it/it/outlet.html"
+
+	if site == "dj"
+		- var LogoStoreTxt 				= "store_novakdjokovic"
+		- var LogoImgLink 				= "http://store.novakdjokovic.com/"
+
+		- var Nav01 					= "UNIQLO"
+		- var NavLink01 				= "http://store.novakdjokovic.com/en/uniqlo.html"
+		- var Nav02 					= "FOOTWEAR"
+		- var NavLink02 				= "http://store.novakdjokovic.com/en/footwear.html"
+		- var Nav03 					= "HEAD"
+		- var NavLink03 				= "http://store.novakdjokovic.com/en/head.html"
+		- var Nav04 					= "APPAREL"
+		- var NavLink04 				= "http://store.novakdjokovic.com/en/apparel.html"
+		- var Nav05 					= "COVERS"
+		- var NavLink05 				= "http://store.novakdjokovic.com/en/covers.html"
+		- var Nav06 					= "MUGS"
+		- var NavLink06 				= "http://store.novakdjokovic.com/en/mugs.html"
+		- var Nav07 					= "WATCHES"
+		- var NavLink07 				= "http://store.novakdjokovic.com/en/watches.html"
+
 
 	if site == "fiorentina"
 		- var LogoStoreTxt 				= "fiorentina"
@@ -435,6 +514,19 @@ if site == "fir"
 	- var trustPilot = false
 	- var rugby2015 = "http://www.federugby.it/"
 	- var rugby2015 = false
+
+if site == "dj"
+	- var siteName = "store_novakdjokovic"
+	- var facebook = "https://www.facebook.com/djokovic.official"
+	- var twitter = "https://twitter.com/DjokerNole"
+	- var youTube = "https://www.youtube.com/user/DjokovicOFFICIAL"
+	- var gPlus = "https://plus.google.com/u/0/118305497373879718882/posts"
+	- var instagram = false
+	- var blog = false
+	- var flikr = false
+	- var forSquare = false
+	- var trustPilot = false
+	- var trustPilot = false
 
 if site == "fiorentina"
 	- var siteName = "fiorentinastore"
@@ -596,34 +688,34 @@ if site == "f4u"
 
 if site == "fiorentina"
 	- var containerBg 		= "#e8e8e8"
-	- var wrapperCollor 	= "#ffffff"
+	- var wrapperCollor 		= "#ffffff"
 
 	- var colorPrimary 		= "#ae9a63" // marone
-	- var colorPrimary_ 	= "#e4d7b4" // light marone
+	- var colorPrimary_ 		= "#e4d7b4" // light marone
 
-	- var colorSecondary	= "#4a2583" // viola
-	- var colorSecondary_	= "#5a5a55" //
-	- var colorSecondary__	= "#5a5a55"
+	- var colorSecondary		= "#4a2583" // viola
+	- var colorSecondary_		= "#5a5a55" //
+	- var colorSecondary__		= "#5a5a55"
 
-	- var colorTertiari 	= "#e41b13" // red
-	- var colorTertiari_ 	= "#d4d2d6"
+	- var colorTertiari 		= "#e41b13" // red
+	- var colorTertiari_ 		= "#d4d2d6"
 
 	- var colorBlack 		= "#000000"
 	- var colorWhite 		= "#ffffff"
 
 if site == "lazio"
 	- var containerBg 		= "#e8e8e8"
-	- var wrapperCollor 	= "#ffffff"
+	- var wrapperCollor 		= "#ffffff"
 
 	- var colorPrimary 		= "#d4a504" // marone
-	- var colorPrimary_ 	= "#ffd135" // light marone
+	- var colorPrimary_ 		= "#ffd135" // light marone
 
-	- var colorSecondary	= "#003671" // dark blue
-	- var colorSecondary_	= "#8cd3f6" // midle blue
-	- var colorSecondary__	= "#c5e8fb" // light Blue
+	- var colorSecondary		= "#003671" // dark blue
+	- var colorSecondary_		= "#8cd3f6" // midle blue
+	- var colorSecondary__		= "#c5e8fb" // light Blue
 
-	- var colorTertiari 	= "#e41b13"
-	- var colorTertiari_ 	= "#d4d2d6"
+	- var colorTertiari 		= "#e41b13"
+	- var colorTertiari_ 		= "#d4d2d6"
 
 	- var colorBlack 		= "#000000"
 	- var colorBlack50 		= "#8c8c8c"
@@ -631,17 +723,35 @@ if site == "lazio"
 
 if site == "fir"
 	- var containerBg 		= "#e8e8e8"
-	- var wrapperCollor 	= "#ffffff"
+	- var wrapperCollor 		= "#ffffff"
 
 	- var colorPrimary 		= "#002f56" // blue
-	- var colorPrimary_ 	= "#024a86" // light blue
+	- var colorPrimary_ 		= "#024a86" // light blue
 
-	- var colorSecondary	= "#948655" // dark oro
-	- var colorSecondary_	= "#c3b78c" // midle oro
-	- var colorSecondary__	= "#c5e8fb" // light oro
+	- var colorSecondary		= "#948655" // dark oro
+	- var colorSecondary_		= "#c3b78c" // midle oro
+	- var colorSecondary__		= "#c5e8fb" // light oro
 
-	- var colorTertiari 	= "#e41b13"
-	- var colorTertiari_ 	= "#d4d2d6"
+	- var colorTertiari 		= "#e41b13"
+	- var colorTertiari_ 		= "#d4d2d6"
+
+	- var colorBlack 		= "#000000"
+	- var colorBlack50 		= "#8c8c8c"
+	- var colorWhite 		= "#ffffff"
+
+if site == "dj"
+	- var containerBg 		= "#e8e8e8"
+	- var wrapperCollor 		= "#ffffff"
+
+	- var colorPrimary 		= "#1968b3" // blue
+	- var colorPrimary_ 		= "#0f447a" // dark blue
+
+	- var colorSecondary		= "#b00f1f" // red
+	- var colorSecondary_		= "#c3b78c" // midle oro
+	- var colorSecondary__		= "#c5e8fb" // light oro
+
+	- var colorTertiari 		= "#e41b13"
+	- var colorTertiari_ 		= "#d4d2d6"
 
 	- var colorBlack 		= "#000000"
 	- var colorBlack50 		= "#8c8c8c"
