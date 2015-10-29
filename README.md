@@ -6,19 +6,22 @@
 [![sample f4u](https://img.shields.io/badge/FIR-v0.0-yellow.svg)](https://rawgit.com/cromozooom/responsive-email/master/dev/index_fir.html
 )
 
-___
+
+### First of all: download [prepros](https://prepros.io/) & [sublime](http://www.sublimetext.com/)
 
 ## WORKFLOW
+
 
 1. Drink a coffee, while the pictures are uploading to the server, *coffee is optional :)*
 
 2. [![Download solopX Responsive Email](https://img.shields.io/badge/download%20soloPX%20responsive%20email-v0.0-brightgreen.svg)](https://github.com/cromozooom/responsive-email/archive/master.zip) and Unzip on your computer. You will find this:
 
-	* "dev" - developement folder
-	* "files" - you need to **use this folder**
-	* "icons" - here are my stuff
+    * "dev" - developement folder
+    * "files" - you need to **use this folder**
+    * "icons" - here are my stuff
 
 3. Open **PREPROS** and delete the last project
+
 
 4. Open "files" folder in **SUBLIME TEXT** and add this folder to **PREPROS** project.
 
