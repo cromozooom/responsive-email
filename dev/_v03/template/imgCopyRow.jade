@@ -1,0 +1,28 @@
+block config
+	- var imgCopyRow 			= "SMANICATO NIKE AEROLOFT FLASH"
+	- var imgCopyRowLink 		= "www.solopx.com"
+	- var imgName 			= "imgCopyRow"
+
+	- var imgCopyRowPaddingDesk 	= "10px 10px 0px 10px"
+	- var imgCopyRowPaddingMobile 	= "10px 0px 0px 0px"
+
+	- var imgCopyRowBg 			= colorPrimary
+	- var imgCopyRowColor 		= colorSecondary
+	- var imgCopyRowFontSize 		= font15
+	- var imgCopyRowFontFamily 		= sans
+	- var imgCopyRowAlign 		= "center"
+
+
+block template
+	tr
+		td.mobile-hidden(align="#{imgCopyRowAlign}" valign="top" bgcolor="#{imgCopyRowBg}" style="padding: #{imgCopyRowPaddingDesk}; background-color: #{imgCopyRowBg};")
+			img(alt="#{imgCopyRow}" src="../assets/images/#{imgName}_d.jpg" style="display: block; outline: none; text-decoration:none; color: #{imgCopyRowColor}; #{imgCopyRowFontSize}#{imgCopyRowFontFamily}" border="0")
+	<!--[if !mso]><!-->
+	tr
+		td(align="#{imgCopyRowAlign}" bgcolor="#{imgCopyRowBg}" valign="top" style="font-size: 1px; line-height: 1px; padding: #{imgCopyRowPaddingMobile}; background-color: #{imgCopyRowBg};")
+			.show(style="display:block; width:0px; max-height:0px; overflow:hidden;")
+				table(cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;")
+					tr
+						td(align="#{imgCopyRowAlign}" valign="top" style="padding: 0px 10px 0px 10px;")
+							img(alt="#{imgCopyRow}" src="../assets/images/#{imgName}_m.jpg" style="display: block; outline: none; text-decoration:none; color: #{imgCopyRowColor}; #{imgCopyRowFontSize}#{imgCopyRowFontFamily}" border="0")
+	<!--<![endif]-->

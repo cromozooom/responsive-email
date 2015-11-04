@@ -1,0 +1,147 @@
+//- tihs is the block column
+block columnResponsiveConfig
+	- var tableWidth 		= 100								//- this is the column width in percent
+	- var emailWidth 		= 600								//- this is width in px of the email
+	- var colNumber 		= 2								//- col number
+	- var gapSpace			= 0
+
+	- var columnPaddingL 		= gapSpace 							//- this is padding left and right in px
+	- var columnPaddingR 		= gapSpace 							//- this is padding Right and right in px
+
+	- var gapNumber
+
+	- var colMaxWidth 		= (emailWidth - (colNumber+1)*gapSpace)/colNumber	//- this is max-width in px
+
+block columnResponsiveHtml
+	<!--[if mso]><table width="#{emailWidth}" border="0" cellpadding="0" cellspacing="0"><tr><td valign="top" width="#{colMaxWidth}"><![endif]-->
+	//- col 2
+	if colNumber == 2
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-1-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-1-content
+						p col 01
+		<!--[if mso]></td><td valign="top" width="#{colMaxWidth}"><![endif]-->
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-2-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-2-content
+						p col 02
+
+	//- col 3
+	if colNumber == 3
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-1-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-1-content
+						p col 01
+		<!--[if mso]></td><td valign="top" width="#{colMaxWidth}"><![endif]-->
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-2-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-2-content
+						p col 02
+		<!--[if mso]></td><td valign="top" width="#{colMaxWidth}"><![endif]-->
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-3-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-3-content
+						p col 03
+
+	//- col 4
+	if colNumber == 4
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-1-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-1-content
+						p col 01
+		<!--[if mso]></td><td valign="top" width="#{colMaxWidth}"><![endif]-->
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-2-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-2-content
+						p col 02
+		<!--[if mso]></td><td valign="top" width="#{colMaxWidth}"><![endif]-->
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-3-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-3-content
+						p col 03
+		<!--[if mso]></td><td valign="top" width="#{colMaxWidth}"><![endif]-->
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-4-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-4-content
+						p col 04
+	//- col  5
+	if colNumber == 5
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-1-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-1-content
+						p col 01
+		<!--[if mso]></td><td valign="top" width="#{colMaxWidth}"><![endif]-->
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-2-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-2-content
+						p col 02
+		<!--[if mso]></td><td valign="top" width="#{colMaxWidth}"><![endif]-->
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-3-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-3-content
+						p col 03
+		<!--[if mso]></td><td valign="top" width="#{colMaxWidth}"><![endif]-->
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-4-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-4-content
+						p col 04
+		<!--[if mso]></td><td valign="top" width="#{colMaxWidth}"><![endif]-->
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-5-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-5-content
+						p col 05
+	//- col  6
+	if colNumber == 6
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-1-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-1-content
+						p col 01
+		<!--[if mso]></td><td valign="top" width="#{colMaxWidth}"><![endif]-->
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-2-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-2-content
+						p col 02
+		<!--[if mso]></td><td valign="top" width="#{colMaxWidth}"><![endif]-->
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-3-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-3-content
+						p col 03
+		<!--[if mso]></td><td valign="top" width="#{colMaxWidth}"><![endif]-->
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-4-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-4-content
+						p col 04
+		<!--[if mso]></td><td valign="top" width="#{colMaxWidth}"><![endif]-->
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-5-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-5-content
+						p col 05
+		<!--[if mso]></td><td valign="top" width="#{colMaxWidth}"><![endif]-->
+		table.col(width="#{tableWidth}%" align="left" style="width:#{tableWidth}%; max-width: #{colMaxWidth}px")
+			tr
+				td( class="col-6-td" style="padding-left:#{columnPaddingL}px; padding-right:#{columnPaddingR}px;")
+					block col-6-content
+						p col 06
+
+
+	block endMSO
+		<!--[if mso]></td></tr></table><![endif]-->

@@ -1,0 +1,12 @@
+mixin spacer(width, height)
+	td(align="left" valign="top" style="font-size:0%;line-height:100%")
+		img(alt="" src="../assets/images/spacer.gif" width="#{width}" height="#{height}" style="display:block;outline:none;text-decoration:none;border:none")
+
+//- double CTA
+mixin CTA( CTA, link, bg, color, fontSize, fontFamily, paddingT, paddingB, paddingX, alighn  )
+	td(align="center")
+		table(bgcolor="#{bg}" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse")
+			tr
+				td(align="#{alighn}" valign="middle" style="padding: #{paddingT}px #{paddingX}px #{paddingB}px #{paddingX}px; #{fontSize} #{fontFamily}")
+					a(href="cta" align="center" target="_blank" style="color: #{color}; text-decoration: none")
+						span( align="center" style="color: #{color}; text-decoration: none") #{CTA}

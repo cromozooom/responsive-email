@@ -1,0 +1,82 @@
+/* line 1, /Users/nicur/Documents/dev/git/responsive-email/dev/_v03/assets/css/responsive.sass */
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* line 7, /Users/nicur/Documents/dev/git/responsive-email/dev/_v03/assets/css/responsive.sass */
+table {
+  border-spacing: 0; }
+
+/* line 10, /Users/nicur/Documents/dev/git/responsive-email/dev/_v03/assets/css/responsive.sass */
+table td {
+  border-collapse: collapse; }
+
+/* line 14, /Users/nicur/Documents/dev/git/responsive-email/dev/_v03/assets/css/responsive.sass */
+.ExternalClass {
+  width: 100%; }
+
+/* line 22, /Users/nicur/Documents/dev/git/responsive-email/dev/_v03/assets/css/responsive.sass */
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+  line-height: 100%; }
+
+/* line 24, /Users/nicur/Documents/dev/git/responsive-email/dev/_v03/assets/css/responsive.sass */
+h2 {
+  color: #0066CC !important; }
+
+/* line 27, /Users/nicur/Documents/dev/git/responsive-email/dev/_v03/assets/css/responsive.sass */
+#outlook a {
+  padding: 0; }
+
+/* line 29, /Users/nicur/Documents/dev/git/responsive-email/dev/_v03/assets/css/responsive.sass */
+table {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt; }
+
+/* line 33, /Users/nicur/Documents/dev/git/responsive-email/dev/_v03/assets/css/responsive.sass */
+img {
+  -ms-interpolation-mode: bicubic; }
+
+/* line 36, /Users/nicur/Documents/dev/git/responsive-email/dev/_v03/assets/css/responsive.sass */
+.ReadMsgBody {
+  width: 100%;
+  background-color: #ebebeb; }
+
+/* line 40, /Users/nicur/Documents/dev/git/responsive-email/dev/_v03/assets/css/responsive.sass */
+.yshortcuts a {
+  border-bottom: none !important; }
+
+@media screen and (max-width: 599px) {
+  /* line 45, /Users/nicur/Documents/dev/git/responsive-email/dev/_v03/assets/css/responsive.sass */
+  .container {
+    width: 100% !important;
+    max-width: 100% !important; }
+ }
+
+@media screen and (max-width: 599px) {
+  /* line 50, /Users/nicur/Documents/dev/git/responsive-email/dev/_v03/assets/css/responsive.sass */
+  .container {
+    width: 100%;
+    max-width: 100%; }
+
+  /* line 54, /Users/nicur/Documents/dev/git/responsive-email/dev/_v03/assets/css/responsive.sass */
+  .col {
+    width: 50% !important;
+    max-width: 50% !important; }
+ }
+
+@media screen and (max-width: 480px) {
+  /* line 59, /Users/nicur/Documents/dev/git/responsive-email/dev/_v03/assets/css/responsive.sass */
+  .col {
+    width: 100% !important;
+    max-width: 100% !important; }
+
+  /* line 66, /Users/nicur/Documents/dev/git/responsive-email/dev/_v03/assets/css/responsive.sass */
+  .banner, .intro, .image img {
+    width: 100% !important; }
+
+  /* line 69, /Users/nicur/Documents/dev/git/responsive-email/dev/_v03/assets/css/responsive.sass */
+  .title {
+    padding-top: 10px; }
+ }

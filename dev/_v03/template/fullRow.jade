@@ -1,0 +1,15 @@
+block config
+	- var fullRowFontSize 		= font15
+	- var fullRowFontFamily 	= sans
+	- var fullRowAlign 		= center
+	- var fullRowColor 		= colorPrimaryDarkC
+	- var fullRowBG 		= colorPrimary
+	- var fullRowPadding 		= "15px 40px 15px 40px"
+block template
+	tr
+		td(bgcolor="#{fullRowBG}" align="center" style=" display: block; outline: none; text-decoration: none; border: none;background-color: #{fullRowBG}; color: #{fullRowColor}; padding:#{fullRowPadding}; #{fullRowFontSize} #{fullRowFontFamily}")
+			block content
+				strong
+					| Indossale. Provale
+				br
+				| Gli articoli possono essere restituiti per qualsiasi motivo entro 30 giorni dalla data di spedizione.

@@ -2,6 +2,7 @@ extend views/index
 
 block infoIndex
 	include config/config
+	- var debug = true
 
 	//- option available: default, fiorentina
 	- var site = "fiorentina"
@@ -20,11 +21,27 @@ block infoIndex
 		- var titlePrevueNewsletter = "preview titolo dalla pagina"
 
 block contentMail
-	//-include views/row2colButtonV02mixin
+	if debug
+		p preheader row2colButtonV02mixin
+	include views/row2colButtonV02mixin
+	if debug
+		p preheader header
 	include views/header
+	if debug
+		p preheader nav
 	include views/nav
+	if debug
+		p preheader row2colButton
 	include views/row2colButton
+	if debug
+		p preheader heroImage
 	include views/heroImage
+	if debug
+		p preheader rowHeader
 	include views/rowHeader
+	if debug
+		p preheader rowHeader_01
 	include views/rowHeader_01
+	if debug
+		p preheader shipping
 	include template/shipping/shipping

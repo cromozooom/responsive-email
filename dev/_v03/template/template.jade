@@ -1,0 +1,43 @@
+include ../config/config
+include mixin/mixin
+
+block confing
+	- var bodyBg = colorPrimary
+	- var rowColor = colorTertiary
+	- var wrapperBg = colorWhite
+block template
+	<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	html(lang="en")
+		head
+			meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+			//- So that mobile will display zoomed in
+			meta(name="viewport" content="width=device-width, initial-scale=1")
+			//- enable media queries for windows phone 8
+			meta(http-equiv="X-UA-Compatible" content="IE=edge")
+			//- disable auto telephone linking in iOS
+			meta(name="format-detection" content="telephone=no")
+			title
+				| Email Layout Calculator
+			style(type="text/css")
+				include ../assets/css/responsive.css
+				include ../assets/css/adaptiveWay.css
+		body(bgcolor="#{bodyBg}" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0")
+			//- a(href="tel:1-800-555-5555") 1-808-555-5555
+			//- 100% wrapper (grey background)
+			table(border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#{wrapperBg}")
+				tr
+					td(align="center" valign="top" bgcolor="#{rowColor}" style="background-color: #{rowColor};")
+						//- Level One CSS (inlined): the mobile gmail first (but still works in Outlook) markup
+						table(border="0" width="600" cellpadding="0" cellspacing="0" class="container" align="center" style="background-color:#{wrapperBg};margin-left:auto;margin-right:auto")
+							include menu
+
+							include hero
+							include imgCopyRow
+							include fullRow
+							include ctaLine
+							include separator
+							//- include doubleCTAsmall
+							tr
+								td(class="posts")
+									include responsive_column
+			br

@@ -1,0 +1,81 @@
+body
+	margin: 0
+	padding: 0
+	// OSX / iOS
+	-webkit-text-size-adjust: 100%
+	// Windows Mobile
+	-ms-text-size-adjust: 100%
+
+table
+	border-spacing: 0
+
+table td
+	border-collapse: collapse
+
+
+// http://templates.mailchimp.com/development/css/client-specific-styles/
+// Outlook.com / Hotmail
+.ExternalClass
+	width: 100%
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div
+	line-height: 100%
+// add color to all head element lower
+h2
+    color: #0066CC !important
+// end Outlook.com / Hotmail
+
+// Outlook 2007 / 2010 / 2013
+#outlook a
+    padding: 0
+table
+    mso-table-lspace: 0pt
+    mso-table-rspace: 0pt
+
+img
+        -ms-interpolation-mode: bicubic
+
+.ReadMsgBody
+	width: 100%
+	background-color: #ebebeb
+
+// yahoo
+.yshortcuts a
+	border-bottom: none !important
+
+
+// MAX - WIDTH 599px
+@media screen and (max-width: 599px)
+	.container
+		width: 100% !important
+		max-width: 100% !important
+
+// MAX - WIDTH 599px
+@media screen and (max-width: 599px)
+	.container
+		width: 100%
+		max-width: 100%
+
+	.col
+		width: 50% !important
+		max-width: 50% !important
+
+// MAX - WIDTH 500px
+@media screen and (max-width: 480px)
+	.col
+		width: 100% !important
+		max-width: 100% !important
+
+	.banner,
+	.intro,
+
+	.image img
+		width: 100% !important
+
+	.title
+		padding-top: 10px

@@ -1,0 +1,21 @@
+block config
+	- var firstCtaLink 				= "www.solopx.com"
+	- var firstCtaCopy 				= "for KIDS"
+
+	- var secondCtaLink 				= "www.solopx.com"
+	- var secondCtaCopy 				= "for GIRLS"
+
+	//- cta color
+	- var doubleCtaColorCta 			= colorPrimary
+	- var doubleCtaBgColorCta 			= colorBlack
+
+	- var doubleCtaBg 				= colorSecondary
+
+block template
+	tr
+		td(align="center" bgcolor="#{doubleCtaBg}" style="background-color: #{doubleCtaBg};")
+			table(cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse")
+				tr
+					+CTA(firstCtaCopy, firstCtaLink, doubleCtaColorCta, doubleCtaBgColorCta,  font16, sans, 9,8,20, left)
+					+spacer (15, 60)
+					+CTA(secondCtaCopy, secondCtaLink, doubleCtaColorCta, doubleCtaBgColorCta,  font16, sans, 9,8,20, right)

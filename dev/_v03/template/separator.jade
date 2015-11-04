@@ -1,0 +1,15 @@
+block config
+	- var separatorImagename = "separator"
+block template
+	tr
+		td(align="center" valign="top" class="mobile-hidden")
+			img(src="../assets/images/#{separatorImagename}_d.jpg" alt="" border="0" style="display: block; outline: none; text-decoration:none; color: #333333; font: bold 12px Helvetica, Arial, sans-serif;")
+	<!--[if !mso]><!-->
+	tr
+		td(align="center" valign="top" style="font-size: 1px; line-height: 1px; padding:0;")
+			.show(style="display:none; width:0px; max-height:0px; overflow:hidden;")
+				table(cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;")
+					tr
+						td(align="center" valign="top")
+							img(src="../assets/images/#{separatorImagename}_m.jpg" alt="" border="0" style="display: block; outline: none; text-decoration:none; color: #333333; font: bold 12px Helvetica, Arial, sans-serif;")
+	<!--<![endif]-->

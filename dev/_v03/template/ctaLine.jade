@@ -1,0 +1,39 @@
+block config
+
+	- var ctaLineLink01 					= "www.solopx.com"
+	- var ctaLineCopy01 					= "FOR MAN"
+
+	- var ctaLineLink02 				= "www.solopx.com"
+	- var ctaLineCopy02 				= "FOR KIDS"
+
+	- var ctaLineLink03 				= "www.solopx.com"
+	- var ctaLineCopy03 				= "SEE MORE"
+
+	//- cta color
+	- var ctaLineColorCta 			= colorPrimaryDarkD
+	- var ctaLineBgColorCta 		= colorWhite
+
+	- var doubleCtaBg 					= colorPrimary
+	- var doubleCtaHeight 				= 80
+	- var doubleCtaDsitance 			= 10
+
+
+block template
+	tr
+		td(align="center" bgcolor="#{doubleCtaBg}" style="background-color: #{doubleCtaBg};")
+			table(cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse")
+				tr
+					if ctaLineLink01
+						+CTA(ctaLineCopy01, ctaLineLink01, ctaLineColorCta, ctaLineBgColorCta,  font16, sans, 12,8,20, left)
+					if ctaLineLink02
+						+spacer (doubleCtaDsitance, doubleCtaHeight)
+						+CTA(ctaLineCopy02, ctaLineLink02, ctaLineColorCta, ctaLineBgColorCta,  font16, sans, 12,8,20, right)
+					if ctaLineLink03
+						+spacer (doubleCtaDsitance, doubleCtaHeight)
+						+CTA(ctaLineCopy03, ctaLineLink03, ctaLineColorCta, ctaLineBgColorCta,  font16, sans, 12,8,20, right)
+
+
+				// tr
+					+CTA(ctaLineCopy01, ctaLineLink01, ctaLineColorCta, ctaLineBgColorCta,  font16, sans, 9,8,20, left)
+					+spacer (15, 60)
+					+CTA(ctaLineCopy02, ctaLineLink02, ctaLineColorCta, ctaLineBgColorCta,  font16, sans, 9,8,20, right)
