@@ -1,34 +1,46 @@
 block config
 	include config
 
-	//- available Link01
-	- var ctaLineLink01 				= "www.solopx.com"
-	- var ctaLineCopy01 				= "FOR MAN"
+	block editor
+		- var ctaLinetraking = "ctaLineTraking01"
+		//- available Link01
+		- var ctaLineLink01 				= "www.solopx.com/01/"
+		- var ctaLineCopy01 				= "FOR MAN"
 
-	//- available also Link02
-	- var ctaLineLink02 				= "www.solopx.com"
-	- var ctaLineCopy02 				= "FOR KIDS"
+		//- available also Link02
+		- var ctaLineLink02 				= "www.solopx.com/02/"
+		- var ctaLineCopy02 				= "FOR KIDS"
 
-	//- available also Link03
-		- var ctaLineLink03 				= "www.solopx.com"
-		- var ctaLineCopy03 				= "SEE MORE"
+		//- available also Link03
+			- var ctaLineLink03 				= "www.solopx.com"
+			- var ctaLineCopy03 				= "SEE MORE"
 
-	//- available also Link04
-		- var ctaLineLink04 				= "www.solopx.com"
-		- var ctaLineCopy04 				= "SEE MORE"
+		//- available also Link04
+			- var ctaLineLink04 				= "www.solopx.com"
+			- var ctaLineCopy04 				= "SEE MORE"
 
-	//- cta color
-	- var ctaLineColorCta 				= colorPrimaryDarkD
-	- var ctaLineBgColorCta 			= colorWhite
-	- var ctaLineFontSize 				= font14
-	- var ctaLineFontWeight 			= normal
-	- var ctaLineFontFamily 			= serifItalic
+		//- cta color
+		- var ctaLineColorCta 				= colorPrimaryDarkD
+		- var ctaLineBgColorCta 			= colorWhite
+		- var ctaLineFontSize 				= font14
+		- var ctaLineFontWeight 			= normal
+		- var ctaLineFontFamily 			= serifItalic
 
-	- var ctaLineCtaBg 				= colorPrimary
-	- var ctaLineHeight 				= 80
-	//- spacer
-	- var ctaLineDsitance 				= 10
+		- var ctaLineCtaBg 				= colorPrimary
+		- var ctaLineHeight 				= 80
+		//- spacer
+		- var ctaLineDsitance 				= 10
 
+	//- creeate traking
+	//- link, trakingInit, data, lang, templateName, trakingEnd
+	if ctaLineLink01
+		- var ctaLineLink01 = ctaLineLink01.concat(trakingInit, data, "/", lang, "/", ctaLinetraking, "/", trakingEnd)
+	if ctaLineLink02
+		- var ctaLineLink02 = ctaLineLink02.concat(trakingInit, data, "/", lang, "/", ctaLinetraking, "/", trakingEnd)
+	if ctaLineLink03
+		- var ctaLineLink03 = ctaLineLink03.concat(trakingInit, data, "/", lang, "/", ctaLinetraking, "/", trakingEnd)
+	if ctaLineLink04
+		- var ctaLineLink04 = ctaLineLink04.concat(trakingInit, data, "/", lang, "/", ctaLinetraking, "/", trakingEnd)
 
 block template
 	tr
@@ -36,16 +48,17 @@ block template
 			table(cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse")
 				tr
 					if ctaLineLink01
-						+CTA(ctaLineCopy01, ctaLineLink01, ctaLineColorCta, ctaLineBgColorCta,  ctaLineFontSize, ctaLineFontFamily, ctaLineFontWeight, 12,8,20, left)
+						//-p= ctaLineLink0
+						+CTA(ctaLineCopy01, ctaLineLink01, ctaLineColorCta, ctaLineBgColorCta,  ctaLineFontSize, ctaLineFontFamily, ctaLineFontWeight, 12,10,20, left)
 					if ctaLineLink02
 						+spacer (ctaLineDsitance, ctaLineHeight)
-						+CTA(ctaLineCopy02, ctaLineLink02, ctaLineColorCta, ctaLineBgColorCta,  ctaLineFontSize, ctaLineFontFamily, ctaLineFontWeight, 12,8,20, right)
+						+CTA(ctaLineCopy02, ctaLineLink02, ctaLineColorCta, ctaLineBgColorCta,  ctaLineFontSize, ctaLineFontFamily, ctaLineFontWeight, 12,10,20, right)
 					if ctaLineLink03
 						+spacer (ctaLineDsitance, ctaLineHeight)
-						+CTA(ctaLineCopy03, ctaLineLink03, ctaLineColorCta, ctaLineBgColorCta,  ctaLineFontSize, ctaLineFontFamily, ctaLineFontWeight, 12,8,20, right)
+						+CTA(ctaLineCopy03, ctaLineLink03, ctaLineColorCta, ctaLineBgColorCta,  ctaLineFontSize, ctaLineFontFamily, ctaLineFontWeight, 12,10,20, right)
 					if ctaLineLink04
 						+spacer (ctaLineDsitance, ctaLineHeight)
-						+CTA(ctaLineCopy04, ctaLineLink04, ctaLineColorCta, ctaLineBgColorCta,  ctaLineFontSize, ctaLineFontFamily, ctaLineFontWeight, 12,8,20, right)
+						+CTA(ctaLineCopy04, ctaLineLink04, ctaLineColorCta, ctaLineBgColorCta,  ctaLineFontSize, ctaLineFontFamily, ctaLineFontWeight, 12,10,20, right)
 
 
 				// tr

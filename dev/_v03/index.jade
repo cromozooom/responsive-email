@@ -1,0 +1,22 @@
+extend template/template
+block append config
+
+		- var assets = "assets/"
+		//- chuse the language
+		- var lang 			= "en"
+		//- data : DD-MM-YY
+		- var data			= "23-05-15"
+		- var title			= "index Sample template mail"
+
+
+block content
+	table(border="0" width="600" cellpadding="0" cellspacing="0" class="container" align="center" style="background-color:#{wrapperBg};margin-left:auto;margin-right:auto")
+		include template/logo
+		include template/logoSeparator
+		include template/menu
+		include template/hero
+		include template/imgCopyRow
+		include template/fullRow
+		include template/ctaLine
+		include template/separator
+
