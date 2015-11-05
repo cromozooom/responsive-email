@@ -1,11 +1,15 @@
 block config
+	include config
 	- var heroImgLink = "www.solopx.com"
 	- var heroImgName = "hero"
+	- var templateName = "heroTemplateName" //- used in tracking code
 block template
+	// http://www.football4u.it/en/football-boots.html?ga_campaign=27-3en_navHeaderFOOTBALL BOOTS&amp;ga_medium=DEM&amp;ga_source=NL
+	// link, trakingInit, data, lang, templateName, trakingEnd
 	tr
 		td(align="center" valign="top" class="mobile-hidden")
 			a(href="#" target="_blank" style="outline: none; text-decoration: none; border: none; color: #ffffff; font: 12px Helvetica, Arial, Sans-Serif; ")
-				img(src="../assets/images/#{heroImgName}_d.jpg" alt="" border="0" style="display: block; outline: none; text-decoration:none; color: #333333; font: bold 12px Helvetica, Arial, sans-serif;")
+				img(src="#{assets}images/#{heroImgName}_d.jpg" alt="" border="0" style="display: block; outline: none; text-decoration:none; color: #333333; font: bold 12px Helvetica, Arial, sans-serif;")
 	<!--[if !mso]><!-->
 	tr
 		td(align="center" valign="top" style="font-size: 1px; line-height: 1px; padding:0;")
@@ -14,5 +18,5 @@ block template
 					tr
 						td(align="center" valign="top")
 							a(href="#" target="_blank" style="outline: none; text-decoration: none; border: none; color: #ffffff; font: 12px Helvetica, Arial, Sans-Serif;")
-								img(src="../assets/images/#{heroImgName}_m.jpg" alt="" border="0" style="display: block; outline: none; text-decoration:none; color: #333333; font: bold 12px Helvetica, Arial, sans-serif;")
+								img(src="#{assets}images/#{heroImgName}_m.jpg" alt="" border="0" style="display: block; outline: none; text-decoration:none; color: #333333; font: bold 12px Helvetica, Arial, sans-serif;")
 	<!--<![endif]-->

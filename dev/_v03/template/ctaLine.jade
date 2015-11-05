@@ -1,36 +1,51 @@
 block config
+	include config
 
-	- var ctaLineLink01 					= "www.solopx.com"
-	- var ctaLineCopy01 					= "FOR MAN"
+	//- available Link01
+	- var ctaLineLink01 				= "www.solopx.com"
+	- var ctaLineCopy01 				= "FOR MAN"
 
+	//- available also Link02
 	- var ctaLineLink02 				= "www.solopx.com"
 	- var ctaLineCopy02 				= "FOR KIDS"
 
-	- var ctaLineLink03 				= "www.solopx.com"
-	- var ctaLineCopy03 				= "SEE MORE"
+	//- available also Link03
+		- var ctaLineLink03 				= "www.solopx.com"
+		- var ctaLineCopy03 				= "SEE MORE"
+
+	//- available also Link04
+		- var ctaLineLink04 				= "www.solopx.com"
+		- var ctaLineCopy04 				= "SEE MORE"
 
 	//- cta color
-	- var ctaLineColorCta 			= colorPrimaryDarkD
-	- var ctaLineBgColorCta 		= colorWhite
+	- var ctaLineColorCta 				= colorPrimaryDarkD
+	- var ctaLineBgColorCta 			= colorWhite
+	- var ctaLineFontSize 				= font14
+	- var ctaLineFontWeight 			= normal
+	- var ctaLineFontFamily 			= serifItalic
 
-	- var doubleCtaBg 					= colorPrimary
-	- var doubleCtaHeight 				= 80
-	- var doubleCtaDsitance 			= 10
+	- var ctaLineCtaBg 				= colorPrimary
+	- var ctaLineHeight 				= 80
+	//- spacer
+	- var ctaLineDsitance 				= 10
 
 
 block template
 	tr
-		td(align="center" bgcolor="#{doubleCtaBg}" style="background-color: #{doubleCtaBg};")
+		td(align="center" bgcolor="#{ctaLineCtaBg}" style="background-color: #{ctaLineCtaBg};")
 			table(cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse")
 				tr
 					if ctaLineLink01
-						+CTA(ctaLineCopy01, ctaLineLink01, ctaLineColorCta, ctaLineBgColorCta,  font16, sans, 12,8,20, left)
+						+CTA(ctaLineCopy01, ctaLineLink01, ctaLineColorCta, ctaLineBgColorCta,  ctaLineFontSize, ctaLineFontFamily, ctaLineFontWeight, 12,8,20, left)
 					if ctaLineLink02
-						+spacer (doubleCtaDsitance, doubleCtaHeight)
-						+CTA(ctaLineCopy02, ctaLineLink02, ctaLineColorCta, ctaLineBgColorCta,  font16, sans, 12,8,20, right)
+						+spacer (ctaLineDsitance, ctaLineHeight)
+						+CTA(ctaLineCopy02, ctaLineLink02, ctaLineColorCta, ctaLineBgColorCta,  ctaLineFontSize, ctaLineFontFamily, ctaLineFontWeight, 12,8,20, right)
 					if ctaLineLink03
-						+spacer (doubleCtaDsitance, doubleCtaHeight)
-						+CTA(ctaLineCopy03, ctaLineLink03, ctaLineColorCta, ctaLineBgColorCta,  font16, sans, 12,8,20, right)
+						+spacer (ctaLineDsitance, ctaLineHeight)
+						+CTA(ctaLineCopy03, ctaLineLink03, ctaLineColorCta, ctaLineBgColorCta,  ctaLineFontSize, ctaLineFontFamily, ctaLineFontWeight, 12,8,20, right)
+					if ctaLineLink04
+						+spacer (ctaLineDsitance, ctaLineHeight)
+						+CTA(ctaLineCopy04, ctaLineLink04, ctaLineColorCta, ctaLineBgColorCta,  ctaLineFontSize, ctaLineFontFamily, ctaLineFontWeight, 12,8,20, right)
 
 
 				// tr

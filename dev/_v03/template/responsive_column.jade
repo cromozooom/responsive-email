@@ -1,5 +1,6 @@
 //- tihs is the block column
-block columnResponsiveConfig
+block config
+	include config
 	- var tableWidth 		= 100								//- this is the column width in percent
 	- var emailWidth 		= 600								//- this is width in px of the email
 	- var colNumber 		= 2								//- col number
@@ -12,7 +13,7 @@ block columnResponsiveConfig
 
 	- var colMaxWidth 		= (emailWidth - (colNumber+1)*gapSpace)/colNumber	//- this is max-width in px
 
-block columnResponsiveHtml
+block template
 	<!--[if mso]><table width="#{emailWidth}" border="0" cellpadding="0" cellspacing="0"><tr><td valign="top" width="#{colMaxWidth}"><![endif]-->
 	//- col 2
 	if colNumber == 2

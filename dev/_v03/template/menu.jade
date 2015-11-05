@@ -1,45 +1,14 @@
-//- Begin nav_new
-- var menuLink 		= colorBlack
-- var menuFontSize_d		= font10
-- var menuFontSize_m		= font13
-- var menuPadding 		= "10px 0 10px 48px"
-- var menuBg 			= colorWhite
-tr
-	// menu
-	td.mobile-hidden(valign="top" bgcolor="#{menuBg}" style="border-bottom: solid 0px #{colorPrimary}; background-color: #{menuBg}; ")
-		table(align="center" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
-			tr
-				td(valign="top")
-					table(align="center" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse")
-						tr
-							td(align="center" style="padding:15px 0px")
-								table(align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse")
-									tr
-										td(align="center" valign="middle")
-											a(href="#" style="text-decoration:none; color:#{menuLink}; font-weight:Bold; #{menuFontSize_d} font-family:Helvetica,Arial,sans-serif" target="_blank")
-												//- UOMO
-												| BOOTS
-										td(align="center" valign="middle" style="padding:#{menuPadding}")
-											a(href="#" style="text-decoration:none; color:#{menuLink}; font-weight:Bold; #{menuFontSize_d} font-family:Helvetica,Arial,sans-serif" target="_blank")
-												//- DONNA
-												| EQUIPMENT
-										td(align="center" valign="middle" style="padding:#{menuPadding}")
-											a(href="#" style="text-decoration:none; color:#{menuLink}; font-weight:Bold; #{menuFontSize_d} font-family:Helvetica,Arial,sans-serif" target="_blank")
-												//- BAMBINO
-												| GOALKEEPER
-										td(align="center" valign="middle" style="padding:#{menuPadding}")
-											a(href="#" style="text-decoration:none; color:#{menuLink}; font-weight:Bold; #{menuFontSize_d} font-family:Helvetica,Arial,sans-serif" target="_blank")
-												//- BAMBINA
-												| TEAMSPORT
-										td(align="center" valign="middle" style="padding:#{menuPadding}")
-											a(href="#" style="text-decoration:none; color:#{menuLink}; font-weight:Bold; #{menuFontSize_d} font-family:Helvetica,Arial,sans-serif" target="_blank")
-												//- SALE
-												| PERSONALIZA
-<!--[if !mso]><!-->
-tr
-	// menu
-	td(valign="top" bgcolor="#{menuBg}" style="border-bottom: solid 0px #{colorPrimary}; background-color: #{menuBg}; ")
-		.show(style="display:block; width:0px; max-height:0px; overflow:hidden;")
+block config
+	include config
+	- var menuLink 		= colorBlack
+	- var menuFontSize_d		= font10
+	- var menuFontSize_m		= font13
+	- var menuPadding 		= "10px 0 10px 48px"
+	- var menuBg 			= colorWhite
+block template
+	tr
+		// menu
+		td.mobile-hidden(valign="top" bgcolor="#{menuBg}" style="border-bottom: solid 0px #{colorPrimary}; background-color: #{menuBg}; ")
 			table(align="center" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
 				tr
 					td(valign="top")
@@ -49,15 +18,48 @@ tr
 									table(align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse")
 										tr
 											td(align="center" valign="middle")
-												a(href="#" style="text-decoration:none; color:#{menuLink}; font-weight:Bold; #{menuFontSize_m} font-family:Helvetica,Arial,sans-serif" target="_blank")
+												a(href="#" style="text-decoration:none; color:#{menuLink}; font-weight:Bold; #{menuFontSize_d} font-family:Helvetica,Arial,sans-serif" target="_blank")
 													//- UOMO
 													| BOOTS
 											td(align="center" valign="middle" style="padding:#{menuPadding}")
-												a(href="#" style="text-decoration:none; color:#{menuLink}; font-weight:Bold; #{menuFontSize_m} font-family:Helvetica,Arial,sans-serif" target="_blank")
+												a(href="#" style="text-decoration:none; color:#{menuLink}; font-weight:Bold; #{menuFontSize_d} font-family:Helvetica,Arial,sans-serif" target="_blank")
+													//- DONNA
+													| EQUIPMENT
+											td(align="center" valign="middle" style="padding:#{menuPadding}")
+												a(href="#" style="text-decoration:none; color:#{menuLink}; font-weight:Bold; #{menuFontSize_d} font-family:Helvetica,Arial,sans-serif" target="_blank")
+													//- BAMBINO
+													| GOALKEEPER
+											td(align="center" valign="middle" style="padding:#{menuPadding}")
+												a(href="#" style="text-decoration:none; color:#{menuLink}; font-weight:Bold; #{menuFontSize_d} font-family:Helvetica,Arial,sans-serif" target="_blank")
 													//- BAMBINA
 													| TEAMSPORT
 											td(align="center" valign="middle" style="padding:#{menuPadding}")
-												a(href="#" style="text-decoration:none; color:#{menuLink}; font-weight:Bold; #{menuFontSize_m} font-family:Helvetica,Arial,sans-serif" target="_blank")
+												a(href="#" style="text-decoration:none; color:#{menuLink}; font-weight:Bold; #{menuFontSize_d} font-family:Helvetica,Arial,sans-serif" target="_blank")
 													//- SALE
 													| PERSONALIZA
-	<!--<![endif]-->
+	<!--[if !mso]><!-->
+	tr
+		// menu
+		td(valign="top" bgcolor="#{menuBg}" style="border-bottom: solid 0px #{colorPrimary}; background-color: #{menuBg}; ")
+			.show(style="display:block; width:0px; max-height:0px; overflow:hidden;")
+				table(align="center" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+					tr
+						td(valign="top")
+							table(align="center" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse")
+								tr
+									td(align="center" style="padding:15px 0px")
+										table(align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse")
+											tr
+												td(align="center" valign="middle")
+													a(href="#" style="text-decoration:none; color:#{menuLink}; font-weight:Bold; #{menuFontSize_m} font-family:Helvetica,Arial,sans-serif" target="_blank")
+														//- UOMO
+														| BOOTS
+												td(align="center" valign="middle" style="padding:#{menuPadding}")
+													a(href="#" style="text-decoration:none; color:#{menuLink}; font-weight:Bold; #{menuFontSize_m} font-family:Helvetica,Arial,sans-serif" target="_blank")
+														//- BAMBINA
+														| TEAMSPORT
+												td(align="center" valign="middle" style="padding:#{menuPadding}")
+													a(href="#" style="text-decoration:none; color:#{menuLink}; font-weight:Bold; #{menuFontSize_m} font-family:Helvetica,Arial,sans-serif" target="_blank")
+														//- SALE
+														| PERSONALIZA
+		<!--<![endif]-->
