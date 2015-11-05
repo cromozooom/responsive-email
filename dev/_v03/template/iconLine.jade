@@ -3,19 +3,23 @@ block config
 	- var iconLinetraking = "iconLineTraking01"
 	- var iconLineColor = colorWhiteC
 	- var iconLineBgColor = colorWhite
+	- var iconLineFontSize = font13
+	- var iconLineFontFamily = sans
+	- var iconLineFontWeight = bold
+	- var iconLineFontWeight = line-height: 18px; padding:3px 0px 0px 10px;
 block template
 	tr
-		td(align="center" valign="top" style="background: #{iconLineBgColor}")
+		td(align="center" valign="middle" style="background: #{iconLineBgColor}")
 			table(border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;")
 				tr
 					+spacer(10, 20, 2)
 				tr
 					td
-						a(href="#" target="_blank" style="outline: none; text-decoration: none; border: none; color: #{iconLineColor}; ")
-							img(src="#{assets}images/forKids.jpg" border="0" style="display: block; outline: none; text-decoration:none; color: #333333; font: bold 12px Helvetica, Arial, sans-serif;")
-					td(align="left" valign="top" class="purple2" style="display: block; outline: none; text-decoration: none; border: none; color: #{iconLineColor} !important; font: 10px Helvetica, Arial, Sans-Serif; font-weight:bold; line-height: 18px; padding:3px 0px 0px 10px;")
+						a(href="#" target="_blank" style="outline: none; text-decoration: none; border: none; color: #{iconLineColor}; #{iconLineFontSize}; #{iconLineFontFamily}; #{iconLineFontWeight};")
+							img(src="#{assets}images/forKids.jpg" border="0" style="display: block; outline: none; text-decoration:none; color: #333333; ; #{iconLineFontSize}; #{iconLineFontFamily}; #{iconLineFontWeight};")
+					td(align="left" valign="middle" class="purple2" style="display: block; outline: none; text-decoration: none; border: none; color: #{iconLineColor} !important; ; #{iconLineFontSize}; #{iconLineFontFamily}; #{iconLineFontWeight}; #{height}")
 							a.purple2(href="link" target="_blank" style="outline: none; text-decoration: none; border: none; color: #{iconLineColor} !important; font: 10px Helvetica, Arial, Sans-Serif; font-weight: bold;")
-								| DISPONIBILI ANCHE NELLE MISURE DA BAMBINI&nbsp;&nbsp;
+								| AVAILABLE EVEN FOR CHILDREN&nbsp;&nbsp;
 								img(alt="" src="#{assets}images/arrow/arrow10.jpg" style="display: inline; outline:none; text-decoration:none; border:none;")
 				tr
 					+spacer(10, 20, 2)
