@@ -6,7 +6,7 @@ block config
 	- var iconLineFontSize = font13
 	- var iconLineFontFamily = sans
 	- var iconLineFontWeight = bold
-	- var iconLineFontWeight = line-height: 18px; padding:3px 0px 0px 10px;
+	- var iconLineFontHeight = "line-height: 18px; padding:3px 0px 0px 10px;"
 block template
 	tr
 		td(align="center" valign="middle" style="background: #{iconLineBgColor}")
@@ -16,9 +16,9 @@ block template
 				tr
 					td
 						a(href="#" target="_blank" style="outline: none; text-decoration: none; border: none; color: #{iconLineColor}; #{iconLineFontSize}; #{iconLineFontFamily}; #{iconLineFontWeight};")
-							img(src="#{assets}images/forKids.jpg" border="0" style="display: block; outline: none; text-decoration:none; color: #333333; ; #{iconLineFontSize}; #{iconLineFontFamily}; #{iconLineFontWeight};")
-					td(align="left" valign="middle" class="purple2" style="display: block; outline: none; text-decoration: none; border: none; color: #{iconLineColor} !important; ; #{iconLineFontSize}; #{iconLineFontFamily}; #{iconLineFontWeight}; #{height}")
-							a.purple2(href="link" target="_blank" style="outline: none; text-decoration: none; border: none; color: #{iconLineColor} !important; font: 10px Helvetica, Arial, Sans-Serif; font-weight: bold;")
+							img(src="#{assets}images/forKids.jpg" border="0" style="display: block; outline: none; text-decoration:none; color: #333333; #{iconLineFontSize}; #{iconLineFontFamily}; #{iconLineFontWeight};")
+					td(align="left" valign="middle" class="purple2" style="display: block; outline: none; text-decoration: none; border: none; color: #{iconLineColor} !important; ; #{iconLineFontSize}; #{iconLineFontFamily}; #{iconLineFontWeight}; #{iconLineFontHeight}")
+							a.purple2(href="link" target="_blank" style="outline: none; text-decoration: none; border: none; color: #{iconLineColor} !important; #{iconLineFontSize};")
 								| AVAILABLE EVEN FOR CHILDREN&nbsp;&nbsp;
 								img(alt="" src="#{assets}images/arrow/arrow10.jpg" style="display: inline; outline:none; text-decoration:none; border:none;")
 				tr

@@ -1,0 +1,75 @@
+extend responsive_column
+block prepend colNumber
+	- var colNumber         = 3
+	- var prodLineBgColor = colorWhite
+
+	block infoProd01
+		- var prodImg 		= "http://demandware.edgesuite.net/sits_pod14-adidas/dw/image/v2/aagl_prd/on/demandware.static/Sites-adidas-IT-Site/Sites-adidas-products/it_IT/v1447046745190/zoom/S77878_04_standard.jpg?sw=2000&sfrm=jpg"
+		- var title 			= "X15.1 Primeknit Firm/Artificial Ground"
+		- var price 			= "101"
+	block infoProd02
+		- var prodImg 		= "http://demandware.edgesuite.net/sits_pod14-adidas/dw/image/v2/aagl_prd/on/demandware.static/Sites-adidas-IT-Site/Sites-adidas-products/it_IT/v1447046745190/zoom/B27001_04_standard.jpg?sw=2000&sfrm=jpg"
+		- var title 			= "X15.1 Primeknit Firm/Artificial Ground"
+		- var price 			= "102"
+	block infoProd03
+		- var prodImg 		= "http://demandware.edgesuite.net/sits_pod14-adidas/dw/image/v2/aagl_prd/on/demandware.static/Sites-adidas-IT-Site/Sites-adidas-products/it_IT/v1447046745190/zoom/B32771_04_standard.jpg?sw=2000&sfrm=jpg"
+		- var title 			= "X15.3 Firm/Artificial Ground"
+		- var price 			= "103"
+	block infoProd04
+		- var prodImg 		= "http://demandware.edgesuite.net/sits_pod14-adidas/dw/image/v2/aagl_prd/on/demandware.static/Sites-adidas-IT-Site/Sites-adidas-products/it_IT/v1447046745190/zoom/S77878_04_standard.jpg?sw=2000&sfrm=jpg"
+		- var title 			= "X15.1 Primeknit Firm/Artificial Ground"
+		- var price 			= "104"
+	block infoProd05
+		- var prodImg 		= "http://demandware.edgesuite.net/sits_pod14-adidas/dw/image/v2/aagl_prd/on/demandware.static/Sites-adidas-IT-Site/Sites-adidas-products/it_IT/v1447046745190/zoom/B27001_04_standard.jpg?sw=2000&sfrm=jpg"
+		- var title 			= "X15.1 Primeknit Firm/Artificial Ground"
+		- var price 			= "105"
+	block infoProd06
+		- var prodImg 		= "http://demandware.edgesuite.net/sits_pod14-adidas/dw/image/v2/aagl_prd/on/demandware.static/Sites-adidas-IT-Site/Sites-adidas-products/it_IT/v1447046745190/zoom/B32771_04_standard.jpg?sw=2000&sfrm=jpg"
+		- var title 			= "X15.1 Primeknit Firm/Artificial Ground"
+		- var price 			= "106"
+
+block col-1-content
+	block infoProd01
+	block productTemplate
+		table( cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; background-color: #{prodLineBgColor}; border-spacing: 1px !important; border-color: red;" bgcolor="#{prodLineBgColor}")
+				tr
+					+spacer("100%", 20, 100)
+				tr
+					+spacer(10, "100%", 1)
+					td
+						img(width="100%" src="#{prodImg}")
+					+spacer(10, "100%", 1)
+				tr
+					+spacer(10, "100%", 1)
+					td
+						p.h2(style="#{sans}; #{font13}; #{bold};") #{price} €
+					+spacer(10, "100%", 1)
+
+				tr
+					+spacer(10, 60, 1)
+					td(valign="top")
+						p.h1(style="#{sans}; #{font13}; #{bold};") #{title}
+					+spacer(10, 60, 1)
+
+
+
+
+block col-2-content
+	block infoProd02
+	block productTemplate
+
+block col-3-content
+	block infoProd03
+	block productTemplate
+
+block col-4-content
+	block infoProd04
+	block productTemplate
+
+block col-5-content
+	block infoProd05
+	block productTemplate
+
+block col-6-content
+	block infoProd06
+	block productTemplate
