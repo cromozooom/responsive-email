@@ -1,0 +1,8 @@
+block style
+	- var color = "red"
+	- var colorBg = "red"
+	- var font = "sample font"
+
+block template
+	a(href="mailto:email@echoecho.com?subject=SweetWords" style="#{color} #{colorBg} #{font}")
+		block content
