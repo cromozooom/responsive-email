@@ -25,9 +25,9 @@
 
 4. Open "files" folder in **SUBLIME TEXT** and add this folder to **PREPROS** project.
 
-5. Create copy of **"index.jade"** & rename with your f....dot jade name :)
+5. Create copy of **"index.jade"** & rename with your name, dot jade name
 
-6. **select and order** your content blocks (see the section: "include some F..... blocks")
+6. **select and order** your content blocks (see the section: "include some blocks")
 (remember to make content for IT / EN)
 
 7. Replace the **variable** inside included file
